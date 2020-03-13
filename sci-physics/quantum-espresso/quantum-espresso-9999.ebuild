@@ -27,6 +27,7 @@ DEPEND="
 	virtual/blas
 	virtual/lapack
 	sci-libs/fftw:3.0
+	sys-cluster/openmpi
 	"
 RDEPEND="${DEPEND}"
 BDEPEND=""
