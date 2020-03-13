@@ -18,7 +18,7 @@ fi
 
 S="${WORKDIR}/quantum-espresso-${PV}"
  
-LICENSE="GNU GPL 2.0"
+LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
