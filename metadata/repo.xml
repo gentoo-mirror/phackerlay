@@ -2,12 +2,12 @@
 
 <repositories version="1.0">
 	<repo priority="50" quality="experimental" status="unofficial">
-		<name>oulay</name>
-		<description>overlay for experiments</description>
-		<homepage>https://gitlab.phys-el.ru/ustinov/oulay</homepage>
+		<name>phackerlay</name>
+		<description>overlay for phackers</description>
+		<homepage>https://gitlab.phys-el.ru/ustinov/phackerlay</homepage>
 		<owner>
 			<email>ustinov@phys-el.ru</email>
 		</owner>
-		<source type="git">https://gitlab.phys-el.ru/ustinov/oulay.git</source>
+		<source type="git">https://gitlab.phys-el.ru/ustinov/phackerlay.git</source>
 	</repo>
 </repositories>
