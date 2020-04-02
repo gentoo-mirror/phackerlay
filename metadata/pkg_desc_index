@@ -1,0 +1,7 @@
+net-libs/ccnet 6.1.8: File syncing and sharing software with file encryption and group sharing
+net-libs/ccnet-server 7.1.1: File syncing and sharing software with file encryption and group sharing
+net-libs/libevhtp 9999: A simple C language RPC framework
+net-libs/libsearpc 3.2.0: A simple C language RPC framework
+net-misc/seafile-server 7.1.1 9999: File syncing and sharing software with file encryption and group sharing
+sci-libs/elpa 2016.05.004 2019.11.001 9999: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
+sci-physics/quantum-espresso 9999: 
