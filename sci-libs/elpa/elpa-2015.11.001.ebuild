@@ -13,7 +13,7 @@ if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="git://gitlab.mpcdf.mpg.de/elpa/elpa.git"
 	EGIT_CHECKOUT="ELPA-${PV}"
 	KEYWORDS=""
-	S="${WORKDIR}/elpa"
+	S="${WORKDIR}/q-e"
 else
 	SRC_URI="https://elpa.mpcdf.mpg.de/html/Releases/${PV}/elpa-${PV}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/elpa-${PV}"
@@ -22,7 +22,7 @@ fi
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="openmp cpu_flags_x86_sse cpu_flags_x86_avx cpu_flags_x86_avx2 cpu_flags_x86_avx512"
+IUSE="openmp +static-libs cpu_flags_x86_avx"
 
 RDEPEND="
 	app-editors/vim-core
@@ -31,10 +31,8 @@ RDEPEND="
 src_configure() {
 	./configure --prefix=/usr --libdir=/usr/lib64 \
 		$(use_enable openmp) \
-		$(use_enable cpu_flags_x86_sse sse) \
-		$(use_enable cpu_flags_x86_avx avx) \
-		$(use_enable cpu_flags_x86_avx2 avx2) \
-		$(use_enable cpu_flags_x86_avx512 avx512) 
+		$(use_enable static-libs static) \
+		$(use_with cpu_flags_x86_avx avx-optimization)
 	}
 
 src_compile() {
