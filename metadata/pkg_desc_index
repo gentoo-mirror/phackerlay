@@ -3,5 +3,6 @@ net-libs/ccnet-server 7.1.1: File syncing and sharing software with file encrypt
 net-libs/libevhtp 9999: A simple C language RPC framework
 net-libs/libsearpc 3.2.0: A simple C language RPC framework
 net-misc/seafile-server 7.1.1 9999: File syncing and sharing software with file encryption and group sharing
-sci-libs/elpa 2016.05.004 2019.11.001 9999: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
-sci-physics/quantum-espresso 9999: 
+sci-libs/elpa 2015.11.001 2016.11.001 2019.11.001 9999: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
+sci-libs/libxc 4.3.4: A library of exchange-correlation functionals for use in DFT
+sci-physics/quantum-espresso 6.5 9999: Suite for first-principles electronic-structure calculations and materials modeling

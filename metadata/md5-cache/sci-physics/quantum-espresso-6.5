@@ -5,9 +5,11 @@ DESCRIPTION=Suite for first-principles electronic-structure calculations and mat
 EAPI=7
 HOMEPAGE=https://www.quantum-espresso.org/
 IUSE=+system-blas +system-lapack +fftw +xc +hdf5 +openmp mpi elpa scalapack
+KEYWORDS=~amd64
 LICENSE=GPL-2
 PROPERTIES=live
 RDEPEND=system-blas? ( virtual/blas ) system-lapack? ( virtual/lapack ) fftw? ( sci-libs/fftw[fortran] ) mpi? ( virtual/mpi[fortran,threads] ) scalapack? ( sci-libs/scalapack ) hdf5? ( sci-libs/hdf5[fortran] ) openmp? ( sys-devel/gcc[openmp] fftw? ( sci-libs/fftw[openmp] ) ) xc? ( >sci-libs/libxc-4.0.0 fftw? ( sci-libs/libxc ) ) elpa? ( =sci-libs/elpa-2016.11.001 openmp? ( sci-libs/elpa[openmp] ) )
 SLOT=0
+SRC_URI=https://gitlab.com/QEF/q-e/-/archive/qe-6.5/q-e-qe-6.5.tar.gz -> quantum-espresso-6.5.tar.gz
 _eclasses_=autotools	7d999b62b8749fad43fff00620cedf47	git-r3	86a0188f2ad9eb3d65e4d031ab8a0422	libtool	f143db5a74ccd9ca28c1234deffede96	multilib	318e8ae683e57fd3ccd0d31a769d8ee8	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c
-_md5_=60237af2bf0477ac8a761024489f83cd
+_md5_=76d83b05dd85c0c782544adae6560eab
