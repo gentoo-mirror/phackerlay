@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <upstream>
+    <bugs-to>https://gitlab.com/QEF/q-e/-/issues</bugs-to>
+    <doc>https://www.quantum-espresso.org/resources/users-manual</doc>
+  </upstream>
+  <maintainer type="person">
+    <email>ustinov@phys-el.ru</email>
+    <name>Alexander B. Ustinov</name>
+  </maintainer>
+  <description>
+    An integrated suite of Open-Source computer codes for electronic-structure 
+    calculations and materials modeling at the nanoscale. It is based on density-functional
+    theory, plane waves, and pseudopotentials.    
+  </description>
+  <use>
+    <flag name="system-blas">use system BLAS instead of bundled one</flag>
+    <flag name="system-lapack">use system LAPACK instead of bundled one</flag>
+    <flag name="fftw">use <pkg>sci-libs/fftw</pkg></flag>
+    <flag name="xc">use <pkg>sci-libs/libxc</pkg></flag>
+    <flag name="hdf5">use <pkg>sci-libs/hdf5</pkg></flag>
+    <flag name="openmp">enable openmp parallelization</flag>
+    <flag name="mpi">enable mpi parallelization</flag>
+    <flag name="elpa">integrate with <pkg>sci-libs/elpa</pkg></flag>
+    <flag name="scalapack">use <pkg>sci-libs/scalapack</pkg> with mpi</flag>
+  </use>
+</pkgmetadata>
+

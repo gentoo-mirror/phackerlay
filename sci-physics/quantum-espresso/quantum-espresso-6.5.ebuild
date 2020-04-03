@@ -82,10 +82,14 @@ src_compile() {
 	make ${MAKEOPTS} gwl || die
 }
 
+src_install() {
+    make -j1 install
+}
+
 
 pkg_postinst () {
     elog
 	elog "If pseudo-potentials are needed"
-	elog "you can install =sci-physics/pslibrary-9999"
+	elog "you can merge =sci-physics/pslibrary-9999"
     elog
 }
