@@ -11,7 +11,6 @@ inherit autotools git-r3
 if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="https://github.com/QEF/q-e.git"
 	EGIT_BRANCH="master"
-	EGIT_CHECKOUT_DIR=${WORKDIR}/${P}
 	KEYWORDS=""
 else
 	SRC_URI="https://gitlab.com/QEF/q-e/-/archive/qe-${PV}/q-e-qe-${PV}.tar.gz -> ${P}.tar.gz"
@@ -40,7 +39,7 @@ DEPEND="${RDEPEND} \
 BDEPEND=""
 
 src_unpack() {
-	git-r3_checkout
+	default
 }
 
 src_configure() {
@@ -86,8 +85,7 @@ src_compile() {
 
 pkg_postinst () {
     elog
-    elog "If pseudo-potentials are needed"
-    elog "you can install =sci-physics/pslibrary-9999"
+	elog "If pseudo-potentials are needed"
+	elog "you can install =sci-physics/pslibrary-9999"
     elog
 }
-
