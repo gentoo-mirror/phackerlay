@@ -15,28 +15,27 @@ if [[ ${PV} == 9999 ]]; then
 	KEYWORDS=""
 	S="${WORKDIR}/q-e"
 else
-	SRC_URI="https://elpa.mpcdf.mpg.de/html/Releases/${PV}/elpa-${PV}.tar.gz -> ${P}.tar.gz"
-	S="${WORKDIR}/elpa-${PV}"
+	SRC_URI="https://elpa.mpcdf.mpg.de/html/Releases/${PV}.pre/elpa-${PV}.pre.tar.gz -> ${P}.tar.gz"
+	S="${WORKDIR}/elpa-${PV}.pre"
 	KEYWORDS="~amd64"
 fi
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="-openmp cpu_flags_x86_sse cpu_flags_x86_avx cpu_flags_x86_avx2 cpu_flags_x86_avx512"
+IUSE="openmp static-libs cpu_flags_x86_avx cpu_flags_x86_avx2"
 
 RDEPEND="
 	app-editors/vim-core
 	"
 
 src_configure() {
-	./configure \
+	./configure --prefix=/usr --libdir=/usr/lib64 \
 		$(use_enable openmp) \
-		$(use_enable cpu_flags_x86_sse sse) \
+		$(use_enable static-libs static) \
 		$(use_enable cpu_flags_x86_avx avx) \
-		$(use_enable cpu_flags_x86_avx2 avx2) \
-		$(use_enable cpu_flags_x86_avx512 avx512) 
+		$(use_enable cpu_flags_x86_avx2 avx2)
 	}
 
 src_compile() {
-	make ${MAKEOPTS} all
+	make ${MAKEOPTS}
 }
