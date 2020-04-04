@@ -69,7 +69,7 @@ src_compile() {
 		let num=$num+1
 	done
 	PARA_POSTFIX=""
-	if ! has_version sci-physics/quantum-espresso[openmp] && sci-physics/quantum-espresso[mpi];
+	if ! has_version sci-physics/quantum-espresso[openmp] && has_version sci-physics/quantum-espresso[mpi];
 		then
 		PARA_PREFIX="mpirun -n $num"
 	else
