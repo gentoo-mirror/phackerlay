@@ -15,11 +15,12 @@
     theory, plane waves, and pseudopotentials.    
   </description>
   <use>
-    <flag name="system-blas">use system BLAS instead of bundled one</flag>
-    <flag name="system-lapack">use system LAPACK instead of bundled one</flag>
-    <flag name="fftw">use <pkg>sci-libs/fftw</pkg></flag>
+    <flag name="system-openblas">use system <pkg>sci-libs/openblas</pkg> instead of bundled (netlib) one</flag>
+    <flag name="system-fftw">use system <pkg>sci-libs/fftw</pkg>instead of bundled one</flag>
     <flag name="xc">use <pkg>sci-libs/libxc</pkg></flag>
     <flag name="hdf5">use <pkg>sci-libs/hdf5</pkg></flag>
+    <flag name="mkl">use <pkg>sci-libs/mkl</pkg></flag>
+    <!-- <flag name="intel">compile with intel compilers</flag> -->
     <flag name="openmp">enable openmp parallelization</flag>
     <flag name="mpi">enable mpi parallelization</flag>
     <flag name="elpa">integrate with <pkg>sci-libs/elpa</pkg></flag>

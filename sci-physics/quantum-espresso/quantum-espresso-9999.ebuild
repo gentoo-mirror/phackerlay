@@ -11,7 +11,6 @@ inherit autotools git-r3
 if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="https://github.com/QEF/q-e.git"
 	EGIT_BRANCH="master"
-	EGIT_CHECKOUT_DIR=${WORKDIR}/${P}
 	KEYWORDS=""
 else
 	SRC_URI="https://gitlab.com/QEF/q-e/-/archive/qe-${PV}/q-e-qe-${PV}.tar.gz -> ${P}.tar.gz"
@@ -21,46 +20,100 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="+system-blas +system-lapack +fftw +xc +hdf5 +openmp mpi elpa scalapack"
+IUSE="+system-openblas +system-fftw +xc +hdf5 +openmp mpi elpa scalapack mkl" # intel"
 
 RDEPEND="
-	system-blas? ( virtual/blas )
-	system-lapack? ( virtual/lapack )
-	fftw? ( sci-libs/fftw[fortran] )
+	system-openblas? ( sci-libs/openblas )
+	system-fftw? ( sci-libs/fftw[fortran] )
+	mkl? ( sci-libs/mkl-rt )
 	mpi? ( virtual/mpi[fortran,threads] )
 	scalapack? ( sci-libs/scalapack )
 	hdf5? ( sci-libs/hdf5[fortran] )
-	openmp? ( sys-devel/gcc[openmp] fftw? ( sci-libs/fftw[openmp] ) )
-	xc? ( >sci-libs/libxc-4.0.0 fftw? ( sci-libs/libxc ) )
+	openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) )
+	xc? ( >sci-libs/libxc-4.0.0 system-fftw? ( sci-libs/libxc ) )
 	elpa? ( =sci-libs/elpa-2016.11.001 openmp? ( sci-libs/elpa[openmp] ) )
 "
+# 	intel? ( =dev-lang/icc-19.0.4.243 =dev-lang/ifc-19.0.4.243 )
+
 DEPEND="${RDEPEND} \
 	sys-devel/gcc[fortran]
 "
 BDEPEND=""
 
+
+
 src_unpack() {
-	git-r3_checkout
+	if [[ ${PV} == 9999 ]]; then
+		git-r3_checkout
+	else
+		default
+	fi
 }
 
 src_configure() {
+    if ! use system-openblas
+        then
+        lapackinc=--with-netlib
+    fi
+    if ! use scalapack;
+        then
+        export SCALAPACK_LIBS=" "
+    fi
+#    if use intel;
+#        then
+#	source /opt/intel/compilers_and_libraries_2019.4.243/linux/bin/compilervars.sh intel64
+#	if use mpi;
+#		then
+#		source /opt/intel/compilers_and_libraries_2019.4.243/linux/mpi/intel64/bin/mpivars.sh
+#	fi
+#        export CC=icc
+#	export F77=ifort
+#	export AR=xiar
+
+ #   fi
+#    if use mkl;
+#        then
+#	export SCALAPACK_LIBS="-lmkl_scalapack_lp64 -lmkl_blacs_intelmpi_lp64"
+#	export LAPACK_LIBS="-mkl=parallel"
+#	export BLAS_LIBS="-mkl=parallel"
+#	export FFT_LIBS="-mkl=parallel"
+#    fi
+    if ! use mpi;
+        then
+        export MPI_LIBS=" "
+    fi
 	if use elpa;
 		then
 		elpainc='--with-elpa-include=/usr/include/elpa_openmp-2016.11.001.pre/modules --with-elpa-lib="-lelpa_openmp" --with-elpa-version=2016'
 	else
 		elpainc=''
 	fi
+	if use hdf5;
+		then
+		hdf5inc='--with-hdf5=/usr'
+	else
+		hdf5inc=''
+	fi
 	if use openmp;
 		then
 		sed -e "s:ac_lib -lm:ac_lib -lm -lfftw3:g" -i install/configure || die
 	fi
 	./configure --prefix ${D} \
-		$(use_enable mpi parallel) \
 		$(use_enable openmp) \
-		$(use_with hdf5 hdf5=/usr) \
 		$(use_with scalapack) \
 		$(use_with xc libxc) \
+		$hdf5inc \
+		$lapackinc \
 		$elpainc || die
+	if ! use scalapack;
+		then
+		sed -e 's:SCALAPACK_LIBS = :# SCALAPACK_LIBS = :g' -i make.inc || die
+	fi
+	if ! use system-fftw;
+	then
+		sed -e 's:FFT_LIBS     :# FFT_LIBS     :g' -i make.inc || die
+		sed -e 's:__FFTW3:__FFTW:g' -i make.inc || die
+	fi
 	if use xc;
 		then
 		sed -e "s:-lxcf90:-lxcf90 -lxcf03:g" -i make.inc || die
@@ -83,14 +136,17 @@ src_compile() {
 	make ${MAKEOPTS} gwl || die
 }
 
-src_install() { 
+src_install() {
     make -j1 install
 }
 
-pkg_postinst () {
-    elog
-    elog "If pseudo-potentials are needed"
-    elog "you can merge =sci-physics/pslibrary-9999"
-    elog
-}
 
+pkg_postinst () {
+	if ! has_version sci-physics/pslibrary;
+		then
+		elog
+		elog "If pseudo-potentials are needed"
+		elog "you can merge =sci-physics/pslibrary-9999"
+		elog
+	fi
+}
