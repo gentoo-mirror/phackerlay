@@ -30,11 +30,11 @@ RDEPEND="
 	>=dev-libs/glib-2
 	>=x11-libs/gdk-pixbuf-2
 	>=x11-libs/gtk+-3
-	>=gui-libs/libhandy-1
-	>=media-libs/gstreamer-1.16:poly-c
-	>=media-libs/gst-plugins-base-1.16:poly-c
-	>=media-libs/gst-plugins-bad-1.16:poly-c
-	>=media-libs/gst-plugins-good-1.16:poly-c
+	>=gui-libs/libhandy-0.0.13
+	>=media-libs/gstreamer-1.16
+	>=media-libs/gst-plugins-base-1.16
+	>=media-libs/gst-plugins-bad-1.16
+	>=media-libs/gst-plugins-good-1.16
 "
 DEPEND="${RDEPEND}"
 BDEPEND=""
