@@ -6,12 +6,12 @@ EAPI=6
 DESCRIPTION="Listen to internet radio"
 HOMEPAGE="https://gitlab.gnome.org/World/Shortwave"
 
-inherit autotools git-r3 meson gnome2
+inherit autotools meson gnome2
 
 if [[ ${PV} == 9999 ]]; then
+	inherit git-r3
 	EGIT_REPO_URI="https://gitlab.gnome.org/World/Shortwave.git"
-#	EGIT_BRANCH="master"
-
+	EGIT_BRANCH="master"
 	KEYWORDS=""
 	SRC_URI=""
 else
@@ -32,6 +32,7 @@ RDEPEND="
 	>=x11-libs/gtk+-3
 	>=gui-libs/libhandy-0.0.13
 	>=media-libs/gstreamer-1.16
+	>=media-plugins/gst-plugins-meta-1.16[mp3,http]
 	>=media-libs/gst-plugins-base-1.16
 	>=media-libs/gst-plugins-bad-1.16
 	>=media-libs/gst-plugins-good-1.16
@@ -42,13 +43,13 @@ BDEPEND=""
 RESTRICT=network-sandbox
 
 src_unpack() {
-	if [[ ${PV} == 9999 ]]; then
-		git-r3_fetch
-		git-r3_checkout
-	else
-		default
-		mv ${WORKDIR}/*${PV}* ${WORKDIR}/${P}
-	fi
+    if [[ ${PV} == 9999 ]]; then
+	git-r3_fetch
+        git-r3_checkout
+    else
+        default
+    fi
+	mv ${WORKDIR}/*${PV}* ${WORKDIR}/${P}
 	${S}=${WORKDIR}/${P}
 	sed -e "s:Audio:Audio;AudioVideo:g" -i ${S}/data/de.haeckerfelix.Shortwave.desktop.in.in
 }
