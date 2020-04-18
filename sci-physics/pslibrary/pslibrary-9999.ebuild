@@ -27,6 +27,7 @@ DEPEND="${RDEPEND} \
 BDEPEND=""
 
 src_unpack() {
+	git-r3_fetch
 	git-r3_checkout
 }
 
