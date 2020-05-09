@@ -20,7 +20,7 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="+system-openblas +system-fftw +xc +hdf5 +openmp mpi elpa scalapack mkl" # intel"
+IUSE="+system-openblas +system-fftw +xc +hdf5 +openmp mpi elpa scalapack mkl +intel"
 
 RDEPEND="
 	system-openblas? ( sci-libs/openblas )
@@ -32,8 +32,8 @@ RDEPEND="
 	openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) )
 	xc? ( >sci-libs/libxc-4.0.0 system-fftw? ( sci-libs/libxc ) )
 	elpa? ( =sci-libs/elpa-2016.11.001 openmp? ( sci-libs/elpa[openmp] ) )
+	intel? ( =dev-lang/icc-19.0.4.243 =dev-lang/ifc-19.0.4.243 )
 "
-# 	intel? ( =dev-lang/icc-19.0.4.243 =dev-lang/ifc-19.0.4.243 )
 
 DEPEND="${RDEPEND} \
 	sys-devel/gcc[fortran]
@@ -59,18 +59,22 @@ src_configure() {
         then
         export SCALAPACK_LIBS=" "
     fi
-#    if use intel;
-#        then
-#	source /opt/intel/compilers_and_libraries_2019.4.243/linux/bin/compilervars.sh intel64
-#	if use mpi;
-#		then
-#		source /opt/intel/compilers_and_libraries_2019.4.243/linux/mpi/intel64/bin/mpivars.sh
-#	fi
-#        export CC=icc
-#	export F77=ifort
-#	export AR=xiar
+    if use intel;
+        then
+	source /opt/intel/compilers_and_libraries_2019.4.243/linux/bin/compilervars.sh intel64
+	if use mpi;
+		then
+		source /opt/intel/compilers_and_libraries_2019.4.243/linux/mpi/intel64/bin/mpivars.sh
+	fi
+        export CC=icc
+	export F77=ifort
+	export AR=xiar
+	export LD=xild
+	export LDFLAGS=" "
+	export CXX=icpc
+	export F90=ifort
 
- #   fi
+   fi
 #    if use mkl;
 #        then
 #	export SCALAPACK_LIBS="-lmkl_scalapack_lp64 -lmkl_blacs_intelmpi_lp64"
