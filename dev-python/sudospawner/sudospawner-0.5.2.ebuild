@@ -11,7 +11,7 @@ DESCRIPTION="The SudoSpawner enables JupyterHub to spawn single-user servers wit
 HOMEPAGE="https://github.com/jupyterhub/sudospawner"
 SRC_URI="https://github.com/jupyterhub/sudospawner/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="BSD-3"
+LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
