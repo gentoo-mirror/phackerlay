@@ -7,6 +7,9 @@ dev-python/jupyter-telemetry 0.1.0: Telemetry for Jupyter Applications and exten
 dev-python/jupyterhub 1.1.0: A multi-user server for Jupyter notebooks
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/prometheus_client 0.7.1: The official Python 2 and 3 client for Prometheus.
+dev-python/python-json-logger 0.1.11: This library is provided to allow standard python logging to output log data as json objects
+dev-python/ruamel-yaml 0.16.10: YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order
+dev-python/ruamel-yaml-clib 0.2.0: C based reader/scanner and emitter for ruamel.yaml
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 media-sound/shortwave 1.0.1 9999: Listen to internet radio
 media-video/kurento-bundle 6.13.0: WebRTC Media Server and a set of client APIs that simplify the development of advanced video applications for web and smartphone platforms.(orphaned, made it compile, then switched to attention to jitsi)
