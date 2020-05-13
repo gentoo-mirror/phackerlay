@@ -15,7 +15,24 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND=""
+RDEPEND="\
+	dev-python/async_generator \
+	dev-python/entrypoints \
+	dev-python/alembic \
+	>=dev-python/async_generator-1.8 \
+	>=dev-python/certipy-0.1.2 \
+	dev-python/entrypoints \
+	>=dev-python/jinja-2 \
+	dev-python/jupyter-telemetry \
+	>=dev-python/oauthlib-3.0 \
+	dev-python/pamela \
+	>=dev-python/prometheus_client-0.0.21 \
+	dev-python/python-dateutil \
+	dev-python/requests \
+	>=dev-python/sqlalchemy-1.1 \
+	>=www-servers/tornado-5.0 \
+	>=dev-python/traitlets-4.3.2 \
+"
 
 src_prepare() {
 	distutils-r1_src_prepare

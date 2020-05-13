@@ -7,16 +7,15 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="The SudoSpawner enables JupyterHub to spawn single-user servers without being root"
-HOMEPAGE="https://github.com/jupyterhub/sudospawner"
-SRC_URI="https://github.com/jupyterhub/sudospawner/archive/${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="Yet another Python wrapper for PAM"
+HOMEPAGE="https://https://github.com/minrk/pamela"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD-2"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	dev-python/jupyterhub \
 "
 
 src_prepare() {
