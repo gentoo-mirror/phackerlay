@@ -3,7 +3,8 @@
 
 EAPI=7
 
-DESCRIPTION="WebRTC Media Server and a set of client APIs that simplify the development of advanced video applications for web and smartphone platforms."
+DESCRIPTION="WebRTC Media Server and a set of client APIs that simplify the development of advanced video applications for web and smartphone platforms.\
+(orphaned, made it compile, then switched to attention to jitsi)"
 HOMEPAGE="https://github.com/Kurento/kurento-media-server"
 
 inherit git-r3 cmake
@@ -41,7 +42,7 @@ src_unpack() {
 	git-r3_fetch
 	git-r3_checkout
 	default
-	find ${SRC} -type f -exec sed -e 's:-1.5:-1.0:g' -i '{}' \;
+	find ${S} -type f -exec sed -e 's:-1.5:-1.0:g' -i '{}' \;
 }
 
 src_prepare() {
@@ -50,6 +51,8 @@ src_prepare() {
 }
 
 src_configure() {
+        export FINAL_INSTALL_DIR=/usr
+
 if use clang
 	then
 	export CC='clang'
@@ -58,8 +61,7 @@ else
 	export CC='gcc'
 	export CXX='g++'
 fi
-	echo ${SRC} ${BUILD_DIR}
-	cmake -S ${S} -B ${BUILD_DIR} -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ${CMAKE_ARGS}
+	cmake -S ${S} -B ${BUILD_DIR} -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_SYSCONFDIR=/etc -DGENERATE_TESTS=TRUE ${CMAKE_ARGS}
 }
 
 src_compile() {
@@ -68,8 +70,9 @@ src_compile() {
 }
 
 src_install() {
+	make install
 	insinto /etc/kurento
-	doins "${BUILD_DIR}"/config/kurento.conf.json
+	doins "${S}"/kurento-media-server/kurento.conf.json
 	exeinto /usr/bin
 	doexe "${BUILD_DIR}"/kurento-media-server/server/kurento-media-server
 	find ${BUILD_DIR} -type f -name '*.so*' -exec dolib.so '{}' \;
