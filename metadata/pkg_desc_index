@@ -2,7 +2,11 @@ dev-lang/icc 19.0.4.243: Intel C/C++ Compiler (parallel studio cluster edition)
 dev-lang/ifc 19.0.4.243: Intel FORTRAN Compiler (parallel studio cluster edition)
 dev-libs/intel-common 19.0.4.243: Common libraries and utilities needed for Intel compilers and libraries (parallel studio cluster edition)
 dev-libs/kms-jsoncpp 1.6.4: Kurento's stale C++ JSON reader and writer
+dev-python/certipy 0.1.3: A simple python tool for creating certificate authorities and certificates on the fly.
+dev-python/jupyter-telemetry 0.1.0: Telemetry for Jupyter Applications and extensions
 dev-python/jupyterhub 1.1.0: A multi-user server for Jupyter notebooks
+dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
+dev-python/prometheus_client 0.7.1: The official Python 2 and 3 client for Prometheus.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 media-sound/shortwave 1.0.1 9999: Listen to internet radio
 media-video/kurento-bundle 6.13.0: WebRTC Media Server and a set of client APIs that simplify the development of advanced video applications for web and smartphone platforms.(orphaned, made it compile, then switched to attention to jitsi)
