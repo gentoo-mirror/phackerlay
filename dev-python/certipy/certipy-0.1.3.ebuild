@@ -3,13 +3,13 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_6 ) #{6,7}
 
 inherit distutils-r1
 
-DESCRIPTION="The SudoSpawner enables JupyterHub to spawn single-user servers without being root"
-HOMEPAGE="https://github.com/jupyterhub/sudospawner"
-SRC_URI="https://github.com/jupyterhub/sudospawner/archive/${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="A simple python tool for creating certificate authorities and certificates on the fly."
+HOMEPAGE="https://github.com/LLNL/certipy"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
