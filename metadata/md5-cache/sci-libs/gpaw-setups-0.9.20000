@@ -1,0 +1,10 @@
+DEFINED_PHASES=install postinst
+DESCRIPTION=Setup collection for sci-physics/gpaw
+EAPI=7
+HOMEPAGE=https://wiki.fysik.dtu.dk/gpaw/setups/setups.html
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=
+SLOT=0
+SRC_URI=https://wiki.fysik.dtu.dk/gpaw-files/gpaw-setups-0.9.20000.tar.gz -> gpaw-setups-0.9.20000.tar.gz
+_md5_=b9ee412594c5fab9d2394cf31a704de6

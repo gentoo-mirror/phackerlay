@@ -2,14 +2,19 @@ dev-lang/icc 19.0.4.243: Intel C/C++ Compiler (parallel studio cluster edition)
 dev-lang/ifc 19.0.4.243: Intel FORTRAN Compiler (parallel studio cluster edition)
 dev-libs/intel-common 19.0.4.243: Common libraries and utilities needed for Intel compilers and libraries (parallel studio cluster edition)
 dev-libs/kms-jsoncpp 1.6.4: Kurento's stale C++ JSON reader and writer
+dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 media-sound/shortwave 1.0.1 9999: Listen to internet radio
-media-video/kurento-bundle 6.13.0: WebRTC Media Server and a set of client APIs that simplify the development of advanced video applications for web and smartphone platforms.
+media-video/kurento-bundle 6.13.0: WebRTC Media Server and a set of client APIs that simplify the development of advanced video applications for web and smartphone platforms.(orphaned, made it compile, then switched to attention to jitsi)
+net-im/jitsi-meet-bin 2.0.2: Desktop application for Jitsi Meet built with Electron
 net-libs/ccnet 6.1.8: File syncing and sharing software with file encryption and group sharing
 net-libs/ccnet-server 7.1.1: File syncing and sharing software with file encryption and group sharing
 net-libs/libevhtp 9999: A simple C language RPC framework
 net-libs/libsearpc 3.2.0: A simple C language RPC framework
 net-misc/seafile-server 7.1.1 9999: File syncing and sharing software with file encryption and group sharing
 sci-libs/elpa 2015.11.001 2016.11.001 2019.11.001 9999: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
+sci-libs/gpaw-setups 0.9.20000: Setup collection for sci-physics/gpaw
 sci-libs/libxc 4.3.4: A library of exchange-correlation functionals for use in DFT
+sci-physics/ase 3.19.1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
+sci-physics/gpaw 20.1.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
 sci-physics/quantum-espresso 6.5 9999: Suite for first-principles electronic-structure calculations and materials modeling
