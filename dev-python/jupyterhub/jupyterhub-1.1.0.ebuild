@@ -32,6 +32,7 @@ RDEPEND="\
 	>=dev-python/sqlalchemy-1.1 \
 	>=www-servers/tornado-5.0 \
 	>=dev-python/traitlets-4.3.2 \
+	dev-python/jupyter \
 "
 
 src_prepare() {
