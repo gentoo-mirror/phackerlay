@@ -7,25 +7,21 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Telemetry for Jupyter Applications and extensions"
-HOMEPAGE="https://github.com/jupyter/telemetry"
-SRC_URI="mirror://pypi/${PN:0:1}/jupyter_telemetry/jupyter_telemetry-${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order"
+HOMEPAGE="https://sourceforge.net/projects/ruamel-yaml/"
+SRC_URI="mirror://pypi/ruamel/ruamel.yaml/ruamel.yaml-${PV}.tar.gz"
 
-LICENSE="BSD"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	dev-python/ruamel-yaml \
-	dev-python/jsonschema \
-	dev-python/python-json-logger \
-	dev-python/traitlets \
+	>=dev-python/ruamel-yaml-clib-0.1.2
 "
-
 
 src_unpack() {
 	default
-	mv * ${P}
+        mv * ${P}
 }
 
 src_prepare() {
@@ -37,6 +33,7 @@ python_compile() {
 }
 
 python_install() {
+	export RUAMEL_NO_PIP_INSTALL_CHECK=1
 	distutils-r1_python_install --skip-build
 }
 
