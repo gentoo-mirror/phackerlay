@@ -7,26 +7,16 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Telemetry for Jupyter Applications and extensions"
-HOMEPAGE="https://github.com/jupyter/telemetry"
-SRC_URI="mirror://pypi/${PN:0:1}/jupyter_telemetry/jupyter_telemetry-${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="This library is provided to allow standard python logging to output log data as json objects"
+HOMEPAGE="https://github.com/madzak/python-json-logger"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	dev-python/ruamel-yaml \
-	dev-python/jsonschema \
-	dev-python/python-json-logger \
-	dev-python/traitlets \
 "
-
-
-src_unpack() {
-	default
-	mv * ${P}
-}
 
 src_prepare() {
 	distutils-r1_src_prepare
