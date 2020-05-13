@@ -7,16 +7,15 @@ PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order"
-HOMEPAGE="https://sourceforge.net/projects/ruamel-yaml/"
-SRC_URI="mirror://pypi/ruamel/ruamel.yaml/ruamel.yaml-${PV}.tar.gz"
+DESCRIPTION="C based reader/scanner and emitter for ruamel.yaml"
+HOMEPAGE="https://sourceforge.net/projects/ruamel-yaml-clib/"
+SRC_URI="mirror://pypi/ruamel/ruamel.yaml.clib/ruamel.yaml.clib-${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	>=dev-python/ruamel-yaml-clib-0.1.2
 "
 
 src_unpack() {
