@@ -15,6 +15,8 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
+#dev-libs/kpathsea no mpl plots
+
 RDEPEND="\
 	dev-python/async_generator \
 	dev-python/entrypoints \
