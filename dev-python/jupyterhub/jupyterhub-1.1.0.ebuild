@@ -17,6 +17,8 @@ KEYWORDS="~amd64"
 
 IUSE="+ldapauthenticator"
 
+RESTRICT=network-sandbox
+
 #dev-libs/kpathsea no mpl plots
 
 RDEPEND="\
@@ -41,6 +43,10 @@ RDEPEND="\
 "
 
 src_prepare() {
+        einfo
+	einfo 'Note, allowing network access from the sandbox via RESTRICT=network-sandbox'
+        einfo '(needed for building jupyterhub assets via npm)'
+        einfo
 	distutils-r1_src_prepare
 }
 
