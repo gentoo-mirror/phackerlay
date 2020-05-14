@@ -19,6 +19,11 @@ RDEPEND="\
 	sys-cluster/slurm \
 "
 
+src_unpack() {
+	default
+        mv * ${P}
+}
+
 src_prepare() {
 	distutils-r1_src_prepare
 }
