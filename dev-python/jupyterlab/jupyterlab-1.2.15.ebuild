@@ -17,7 +17,7 @@ KEYWORDS="~amd64"
 
 RESTRICT=network-sandbox
 
-IUSE="+ipympl"
+IUSE="+ipympl slurm"
 
 RDEPEND="\
 	ipympl? ( >=net-libs/nodejs-14 ) \
@@ -27,6 +27,8 @@ RDEPEND="\
 	>=dev-python/jupyterlab-server-1.1.0 \
 	sys-apps/yarn \
 	ipympl? ( dev-python/ipympl ) \
+	slurm? ( dev-python/jupyterlab-slurm ) \
+
 "
 
 src_prepare() {
@@ -43,6 +45,9 @@ python_compile() {
 	jupyter lab build --app-dir=${S}/assets/lab --debug
 	if use ipympl; then
 		jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib --app-dir=${S}/assets/lab --debug
+	fi
+	if use slurm; then
+		jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyterlab-slurm --app-dir=${S}/assets/lab --debug
 	fi
 	cd ${S}/assets/lab/staging
 }

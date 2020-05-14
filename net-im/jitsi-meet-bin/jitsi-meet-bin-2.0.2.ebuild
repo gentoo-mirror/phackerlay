@@ -31,7 +31,7 @@ src_compile() {
 	einfo
 	einfo 'Fetching dependenies via npm'
 	npm install >> npm.log 2>&1 || die
-	chmod 4755 ${S}/node_modules/electron/dist/chrome-sandbox || die # https://github.com/electron/electron/issues/17972
+	chmod 4755 ${S}/dist/linux-unpacked/chrome-sandbox  # https://github.com/electron/electron/issues/17972
 	einfo 'Building package via npm'
 	npm run dist >> npm.log 2>&1 || die
 }
