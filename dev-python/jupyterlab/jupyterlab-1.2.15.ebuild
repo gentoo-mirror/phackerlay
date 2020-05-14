@@ -20,12 +20,13 @@ RESTRICT=network-sandbox
 IUSE="+ipympl"
 
 RDEPEND="\
-	ipympl? ( dev-python/ipympl )
+	ipympl? ( >=net-libs/nodejs-14 ) \
 	>=dev-python/notebook-4.3.1 \
 	>=dev-python/jinja-2 \
 	>www-servers/tornado-6.0.2 \
 	>=dev-python/jupyterlab-server-1.1.0 \
 	sys-apps/yarn \
+	ipympl? ( dev-python/ipympl ) \
 "
 
 src_prepare() {
@@ -42,8 +43,8 @@ python_compile() {
 	jupyter lab build --app-dir=${S}/assets/lab --debug
 	if use ipympl; then
 		jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib --app-dir=${S}/assets/lab --debug
-		rm ${S}/assets/lab/extensions/jupyter-matplotlib-*.tgz
 	fi
+	cd ${S}/assets/lab/staging
 }
 
 python_install() {

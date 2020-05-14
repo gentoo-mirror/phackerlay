@@ -29,6 +29,7 @@ python_compile() {
 
 python_install() {
 	distutils-r1_python_install --skip-build
+	rm ${D}/usr/share/jupyter/lab/extensions/jupyter-matplotlib-*.tgz
 }
 
 python_install_all() {
