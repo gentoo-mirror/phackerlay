@@ -15,6 +15,8 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
+IUSE="+ldapauthenticator"
+
 #dev-libs/kpathsea no mpl plots
 
 RDEPEND="\
@@ -35,6 +37,7 @@ RDEPEND="\
 	>=www-servers/tornado-5.0 \
 	>=dev-python/traitlets-4.3.2 \
 	dev-python/jupyter \
+	ldapauthenticator? ( dev-python/jupyterhub-ldapauthenticator ) \
 "
 
 src_prepare() {
