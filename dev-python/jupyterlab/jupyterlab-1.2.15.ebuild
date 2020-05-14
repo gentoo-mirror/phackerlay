@@ -17,7 +17,10 @@ KEYWORDS="~amd64"
 
 RESTRICT=network-sandbox
 
+IUSE="+ipympl"
+
 RDEPEND="\
+	ipympl? ( dev-python/ipympl )
 	>=dev-python/notebook-4.3.1 \
 	>=dev-python/jinja-2 \
 	>www-servers/tornado-6.0.2 \
@@ -37,6 +40,10 @@ python_compile() {
 	distutils-r1_python_compile
 	mkdir -p assets/lab
 	jupyter lab build --app-dir=${S}/assets/lab --debug
+	if use ipympl; then
+		jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib --app-dir=${S}/assets/lab --debug
+		rm ${S}/assets/lab/extensions/jupyter-matplotlib-*.tgz
+	fi
 }
 
 python_install() {
