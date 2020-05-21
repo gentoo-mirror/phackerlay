@@ -19,7 +19,7 @@ dev-python/ruamel-yaml-clib 0.2.0: C based reader/scanner and emitter for ruamel
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 media-sound/shortwave 1.0.1 9999: Listen to internet radio
 media-video/kurento-bundle 6.13.0: WebRTC Media Server and a set of client APIs that simplify the development of advanced video applications for web and smartphone platforms.(orphaned, made it compile, then switched to attention to jitsi)
-net-im/jitsi-meet-bin 2.0.2: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet-bin 2.0.2 2.1.0: Desktop application for Jitsi Meet built with Electron
 net-libs/ccnet 6.1.8: File syncing and sharing software with file encryption and group sharing
 net-libs/ccnet-server 7.1.1: File syncing and sharing software with file encryption and group sharing
 net-libs/libevhtp 9999: A simple C language RPC framework
