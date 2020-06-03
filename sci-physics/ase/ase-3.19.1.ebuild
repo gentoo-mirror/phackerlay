@@ -16,9 +16,12 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
+IUSE="+visualize"
+
 RDEPEND="
 	>=sci-libs/scipy-0.17
 	>=dev-python/numpy-1.10
+	visualize? ( dev-lang/python[tk] )
 	"
 
 #distutils_enable_sphinx docs \
