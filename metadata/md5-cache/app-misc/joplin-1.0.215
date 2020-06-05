@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare unpack
+DEPEND=net-libs/nodejs sys-apps/yarn dev-util/desktop-file-utils x11-misc/shared-mime-info
+DESCRIPTION=Note taking and to-do application
+EAPI=7
+HOMEPAGE=https://joplinapp.org/
+KEYWORDS=~amd64
+LICENSE=MIT
+RESTRICT=network-sandbox
+SLOT=0
+SRC_URI=https://github.com/laurent22/joplin/archive/v1.0.215.tar.gz -> joplin-1.0.215.tar.gz
+_eclasses_=desktop	7fd20552ce4cc97e8acb132a499a7dd8	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=572a61a9ea057d2a145a0c269b4e47b5
