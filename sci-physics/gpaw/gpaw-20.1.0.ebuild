@@ -33,9 +33,6 @@ RDEPEND="
         elpa? ( sci-libs/scalapack =sci-libs/elpa-20171201 )
 	"
 
-REQUIRED_USE="!mpi? ( !virtual/mpi )"
-
-
 #distutils_enable_sphinx docs \
 #	dev-python/sphinx-issues \
 #	dev-python/pallets-sphinx-themes
