@@ -29,10 +29,12 @@ RDEPEND="
 	setups? ( sci-libs/gpaw-setups )
 	fftw? ( sci-libs/fftw )
         mpi? ( virtual/mpi )
-        !mpi? ( !virtual/mpi )
         scalapack? ( sci-libs/scalapack )
         elpa? ( sci-libs/scalapack =sci-libs/elpa-20171201 )
 	"
+
+REQUIRED_USE="!mpi? ( !virtual/mpi )"
+
 
 #distutils_enable_sphinx docs \
 #	dev-python/sphinx-issues \
@@ -42,8 +44,6 @@ RDEPEND="
 # XXX: handle Babel better?
 
 src_configure() {
-
-
 	cp ${S}/siteconfig_example.py ${S}/siteconfig.py
 	GPAW_CONFIG=${S}/siteconfig.py
 	if use fftw; then
@@ -56,6 +56,8 @@ src_configure() {
 	fi
 	if use mpi; then
 		echo "libraries += ['mpi']" >> ${S}/siteconfig.py || die
+	else
+		sed -e "s:os.name != 'nt':False:g" -i ${S}/setup.py || die
 	fi
 }
 
