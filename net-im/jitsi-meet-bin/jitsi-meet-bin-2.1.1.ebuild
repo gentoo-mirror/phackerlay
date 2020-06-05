@@ -31,14 +31,15 @@ src_compile() {
 	einfo
 	einfo 'Fetching dependenies via npm'
 	npm install >> npm.log 2>&1 || die
-	chmod 4755 ${S}/dist/linux-unpacked/chrome-sandbox  # https://github.com/electron/electron/issues/17972
+	sed -e 's:AppImage:dir:g' -i package.json
 	einfo 'Building package via npm'
 	npm run dist >> npm.log 2>&1 || die
 }
 
 src_install() {
-	BIN=jitsi-meet-x86_64.AppImage
-	dobin ${S}/dist/${BIN}
+	mkdir -p ${D}/opt/jitsi-meet
+	cp ${S}/dist/linux-unpacked/* ${D}/opt/jitsi-meet -r
+	dosym /opt/jitsi-meet/jitsi-meet /usr/bin/jitsi-meet
 
 	local size
 	for size in 16 24 48 64 96 128 256 512; do
