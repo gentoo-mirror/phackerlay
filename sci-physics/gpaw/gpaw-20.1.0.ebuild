@@ -29,6 +29,7 @@ RDEPEND="
 	setups? ( sci-libs/gpaw-setups )
 	fftw? ( sci-libs/fftw )
         mpi? ( virtual/mpi )
+        !mpi? ( !virtual/mpi )
         scalapack? ( sci-libs/scalapack )
         elpa? ( sci-libs/scalapack =sci-libs/elpa-20171201 )
 	"
@@ -41,6 +42,8 @@ RDEPEND="
 # XXX: handle Babel better?
 
 src_configure() {
+
+
 	cp ${S}/siteconfig_example.py ${S}/siteconfig.py
 	GPAW_CONFIG=${S}/siteconfig.py
 	if use fftw; then
