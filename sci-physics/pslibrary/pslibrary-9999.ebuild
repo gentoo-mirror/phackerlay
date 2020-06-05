@@ -21,10 +21,7 @@ Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg \
 Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu"
 
 RDEPEND=""
-DEPEND="${RDEPEND} \
-	sci-physics/quantum-espresso
-"
-BDEPEND=""
+BDEPEND="sci-physics/quantum-espresso"
 
 src_unpack() {
 	git-r3_fetch
