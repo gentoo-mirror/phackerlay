@@ -17,6 +17,7 @@ KEYWORDS="~amd64"
 
 RDEPEND="\
 	sys-cluster/slurm \
+	dev-python/notebook[${PYTHON_USEDEP}] \
 "
 
 src_unpack() {

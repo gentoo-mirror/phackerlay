@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	>=dev-python/ruamel-yaml-clib-0.1.2
+	>=dev-python/ruamel-yaml-clib-0.1.2[${PYTHON_USEDEP}]
 "
 
 src_unpack() {

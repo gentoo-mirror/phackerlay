@@ -21,13 +21,13 @@ IUSE="+ipympl slurm"
 
 RDEPEND="\
 	ipympl? ( >=net-libs/nodejs-14 ) \
-	>=dev-python/notebook-4.3.1 \
-	>=dev-python/jinja-2 \
-	>www-servers/tornado-6.0.2 \
-	>=dev-python/jupyterlab-server-1.1.0 \
+	>=dev-python/notebook-4.3.1[${PYTHON_USEDEP}] \
+	>=dev-python/jinja-2[${PYTHON_USEDEP}] \
+	>www-servers/tornado-6.0.2[${PYTHON_USEDEP}] \
+	>=dev-python/jupyterlab-server-1.1.0[${PYTHON_USEDEP}] \
 	sys-apps/yarn \
-	ipympl? ( dev-python/ipympl ) \
-	slurm? ( dev-python/jupyterlab-slurm ) \
+	ipympl? ( dev-python/ipympl[${PYTHON_USEDEP}] ) \
+	slurm? ( dev-python/jupyterlab-slurm[${PYTHON_USEDEP}] ) \
 
 "
 
