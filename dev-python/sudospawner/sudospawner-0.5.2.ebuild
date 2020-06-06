@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	dev-python/jupyterhub \
+	dev-python/jupyterhub[${PYTHON_USEDEP}] \
 "
 
 src_prepare() {

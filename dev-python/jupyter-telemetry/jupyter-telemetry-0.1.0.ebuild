@@ -16,10 +16,10 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	dev-python/ruamel-yaml \
-	dev-python/jsonschema \
-	dev-python/python-json-logger \
-	dev-python/traitlets \
+	dev-python/ruamel-yaml[${PYTHON_USEDEP}] \
+	dev-python/jsonschema[${PYTHON_USEDEP}] \
+	dev-python/python-json-logger[${PYTHON_USEDEP}] \
+	dev-python/traitlets[${PYTHON_USEDEP}] \
 "
 
 

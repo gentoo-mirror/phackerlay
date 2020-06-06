@@ -16,11 +16,11 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	dev-python/json5 \
-	>=dev-python/jsonschema-3.0.1 \
-	>=dev-python/jinja-2.1 \
-	dev-python/requests \
-	>=dev-python/notebook-4.2.0 \
+	dev-python/json5[${PYTHON_USEDEP}] \
+	>=dev-python/jsonschema-3.0.1[${PYTHON_USEDEP}] \
+	>=dev-python/jinja-2.1[${PYTHON_USEDEP}] \
+	dev-python/requests[${PYTHON_USEDEP}] \
+	>=dev-python/notebook-4.2.0[${PYTHON_USEDEP}] \
 "
 
 src_unpack() {

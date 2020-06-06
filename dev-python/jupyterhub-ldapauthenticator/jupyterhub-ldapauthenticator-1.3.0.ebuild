@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	dev-python/ldap3 \
+	dev-python/ldap3[${PYTHON_USEDEP}] \
 "
 
 src_prepare() {

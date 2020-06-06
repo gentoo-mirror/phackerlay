@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	dev-python/ipywidgets \
+	dev-python/ipywidgets[${PYTHON_USEDEP}] \
 "
 
 src_prepare() {

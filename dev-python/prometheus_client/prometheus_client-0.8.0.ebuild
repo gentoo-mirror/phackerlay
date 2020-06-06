@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="
-	dev-python/twisted
+	dev-python/twisted[${PYTHON_USEDEP}]
 "
 
 src_prepare() {
