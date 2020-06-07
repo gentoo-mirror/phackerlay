@@ -19,8 +19,9 @@ SLOT="0"
 
 RESTRICT=network-sandbox
 
-RDEPEND="\
+RDEPEND="
 	dev-python/ipython[${PYTHON_USEDEP}]
+	dev-python/pandas[${PYTHON_USEDEP}]
 "
 
 src_unpack() {
