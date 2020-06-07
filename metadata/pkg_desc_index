@@ -17,6 +17,7 @@ dev-python/prometheus_client 0.7.1 0.8.0: The official Python 2 and 3 client for
 dev-python/python-json-logger 0.1.11: This library is provided to allow standard python logging to output log data as json objects
 dev-python/ruamel-yaml 0.16.10: YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order
 dev-python/ruamel-yaml-clib 0.2.0: C based reader/scanner and emitter for ruamel.yaml
+dev-python/slurm-magic 9999: Package implements magic commands for interacting with the SLURM workload manager
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 media-sound/shortwave 1.0.1 9999: Listen to internet radio
 media-video/kurento-bundle 6.13.0: WebRTC Media Server and a set of client APIs that simplify the development of advanced video applications for web and smartphone platforms.(orphaned, made it compile, then switched to attention to jitsi)
@@ -29,7 +30,7 @@ net-misc/seafile-server 7.1.1 9999: File syncing and sharing software with file 
 sci-libs/elpa 2015.11.001 2016.11.001 2019.11.001 9999: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000: Setup collection for sci-physics/gpaw
 sci-libs/libxc 4.3.4: A library of exchange-correlation functionals for use in DFT
+sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
 sci-physics/ase 3.19.1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 20.1.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
-sci-physics/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
 sci-physics/quantum-espresso 6.5 9999: Suite for first-principles electronic-structure calculations and materials modeling
