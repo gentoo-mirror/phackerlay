@@ -44,6 +44,7 @@ BDEPEND=""
 
 src_unpack() {
 	if [[ ${PV} == 9999 ]]; then
+	        git-r3_fetch
 		git-r3_checkout
 	else
 		default
@@ -146,11 +147,11 @@ src_install() {
 
 
 pkg_postinst () {
-	if ! has_version sci-physics/pslibrary;
+	if ! has_version sci-libs/pslibrary;
 		then
 		elog
 		elog "If pseudo-potentials are needed"
-		elog "you can merge =sci-physics/pslibrary-9999"
+		elog "you can merge =sci-libs/pslibrary-9999"
 		elog
 	fi
 }
