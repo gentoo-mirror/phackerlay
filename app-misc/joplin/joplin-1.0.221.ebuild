@@ -53,7 +53,7 @@ src_compile() {
 src_install() {
 	mkdir -p ${D}/opt/joplin
 	cp ${S}/ElectronClient/dist/linux-unpacked/* ${D}/opt/joplin/ -r
-
+	chmod 4755 ${D}/opt/joplin/chrome-sandbox
 #	for dir in ElectronClient CliClient Clipper/popup; do
 #		mkdir -p ${D}/opt/joplin/${dir}
 #		cp ${S}/${dir}/dist/linux-unpacked/* ${D}/opt/joplin/${dir}/ -r

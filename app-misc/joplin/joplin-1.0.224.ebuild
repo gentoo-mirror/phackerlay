@@ -58,6 +58,7 @@ src_install() {
 #		mkdir -p ${D}/opt/joplin/${dir}
 #		cp ${S}/${dir}/dist/linux-unpacked/* ${D}/opt/joplin/${dir}/ -r
 #	done
+	chmod 4755 ${D}/opt/joplin/chrome-sandbox
 	dosym /opt/joplin/joplin /usr/bin/joplin
 
 	local size
