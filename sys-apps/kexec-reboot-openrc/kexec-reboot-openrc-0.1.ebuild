@@ -16,6 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
+sys-apps/kexec-tools
 "
 
 src_prepare() {
