@@ -7,8 +7,8 @@ PYTHON_COMPAT=( python3_{7,8} )
 
 inherit distutils-r1
 
-DESCRIPTION="Simple initrd-aware script to kexec-reboot openrc-running system into grub.cfg first mentioned kernel"
-HOMEPAGE="https://gitlab.phys-el.ru/ustinov/kexec-reboot-openrc"
+DESCRIPTION="Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel"
+HOMEPAGE="https://gitlab.phys-el.ru/ustinov/kexec-reboot-gentoo"
 SRC_URI="https://gitlab.phys-el.ru/ustinov/${PN}/-/archive/${PV}/${PN}-${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD-2"
