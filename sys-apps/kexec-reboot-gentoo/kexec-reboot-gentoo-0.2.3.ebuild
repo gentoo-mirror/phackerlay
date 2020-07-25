@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 CONFIG_CHECK="
-	kexec
+	~KEXEC
 "
 
 RDEPEND="\
