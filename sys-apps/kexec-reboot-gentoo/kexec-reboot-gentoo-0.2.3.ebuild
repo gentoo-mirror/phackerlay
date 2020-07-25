@@ -5,7 +5,7 @@ EAPI=7
 
 PYTHON_COMPAT=( python3_{6,7,8} )
 
-inherit distutils-r1
+inherit distutils-r1 linux-info
 
 DESCRIPTION="Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel"
 HOMEPAGE="https://gitlab.phys-el.ru/ustinov/kexec-reboot-gentoo"
@@ -14,6 +14,10 @@ SRC_URI="https://gitlab.phys-el.ru/ustinov/${PN}/-/archive/${PV}/${PN}-${PV}.tar
 LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64"
+
+CONFIG_CHECK="
+	kexec
+"
 
 RDEPEND="\
 sys-apps/kexec-tools
