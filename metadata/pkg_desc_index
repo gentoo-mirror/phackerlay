@@ -34,4 +34,4 @@ sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code w
 sci-physics/ase 3.19.1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 20.1.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 6.5 9999: Suite for first-principles electronic-structure calculations and materials modeling
-sys-apps/kexec-reboot-gentoo 0.2: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
+sys-apps/kexec-reboot-gentoo 0.2.1: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
