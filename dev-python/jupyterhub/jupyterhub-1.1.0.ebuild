@@ -27,7 +27,7 @@ RDEPEND="\
 	dev-python/alembic[${PYTHON_USEDEP}] \
 	>=dev-python/async_generator-1.8[${PYTHON_USEDEP}] \
 	>=dev-python/certipy-0.1.2[${PYTHON_USEDEP}] \
-	dev-python/entrypoints [${PYTHON_USEDEP}]\
+	dev-python/entrypoints [${PYTHON_USEDEP}] \
 	>=dev-python/jinja-2[${PYTHON_USEDEP}] \
 	dev-python/jupyter-telemetry[${PYTHON_USEDEP}] \
 	>=dev-python/oauthlib-3.0[${PYTHON_USEDEP}] \
