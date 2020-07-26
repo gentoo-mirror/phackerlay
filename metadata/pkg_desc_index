@@ -1,4 +1,4 @@
-app-misc/joplin 1.0.221 1.0.224: Note taking and to-do application
+app-misc/joplin 1.0.231: Note taking and to-do application
 dev-lang/icc 19.0.4.243: Intel C/C++ Compiler (parallel studio cluster edition)
 dev-lang/ifc 19.0.4.243: Intel FORTRAN Compiler (parallel studio cluster edition)
 dev-libs/intel-common 19.0.4.243: Common libraries and utilities needed for Intel compilers and libraries (parallel studio cluster edition)
@@ -15,6 +15,7 @@ dev-python/jupyterlab-slurm 1.0.5: A Jupyter Notebook server extension that impl
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/prometheus_client 0.7.1 0.8.0: The official Python 2 and 3 client for Prometheus.
 dev-python/python-json-logger 0.1.11: This library is provided to allow standard python logging to output log data as json objects
+dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/ruamel-yaml 0.16.10: YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order
 dev-python/ruamel-yaml-clib 0.2.0: C based reader/scanner and emitter for ruamel.yaml
 dev-python/slurm-magic 9999: Package implements magic commands for interacting with the SLURM workload manager
