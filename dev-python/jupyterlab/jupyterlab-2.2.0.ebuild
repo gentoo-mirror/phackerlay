@@ -24,7 +24,8 @@ RDEPEND="\
 	>=dev-python/notebook-4.3.1[${PYTHON_USEDEP}] \
 	>=dev-python/jinja-2[${PYTHON_USEDEP}] \
 	>www-servers/tornado-6.0.2[${PYTHON_USEDEP}] \
-	>=dev-python/jupyterlab-server-1.1.0[${PYTHON_USEDEP}] \
+	>=dev-python/jupyterlab-server-1.1.5[${PYTHON_USEDEP}] \
+	<dev-python/jupyterlab-server-2[${PYTHON_USEDEP}] \
 	sys-apps/yarn \
 	ipympl? ( dev-python/ipympl[${PYTHON_USEDEP}] ) \
 	slurm? ( dev-python/jupyterlab-slurm[${PYTHON_USEDEP}] ) \
