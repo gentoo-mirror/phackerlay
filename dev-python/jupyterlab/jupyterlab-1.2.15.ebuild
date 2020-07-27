@@ -26,6 +26,7 @@ RDEPEND="\
 	>www-servers/tornado-6.0.2[${PYTHON_USEDEP}] \
 	>=dev-python/jupyterlab-server-1.1.0[${PYTHON_USEDEP}] \
 	sys-apps/yarn \
+    dev-python/ipydatawidgets[${PYTHON_USEDEP}]
 	ipympl? ( dev-python/ipympl[${PYTHON_USEDEP}] ) \
 	slurm? ( dev-python/jupyterlab-slurm[${PYTHON_USEDEP}] ) \
 
@@ -43,6 +44,7 @@ python_compile() {
 	distutils-r1_python_compile
 	mkdir -p assets/lab
 	jupyter lab build --app-dir=${S}/assets/lab --debug
+    jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-datawidgets --app-dir=${S}/assets/lab --debug
 	if use ipympl; then
 		jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib --app-dir=${S}/assets/lab --debug
 	fi
