@@ -1,5 +1,5 @@
 app-misc/joplin 1.0.231: Note taking and to-do application
-app-portage/remerge 0.0.3: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
+app-portage/remerge 0.0.4: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-lang/icc 19.0.4.243: Intel C/C++ Compiler (parallel studio cluster edition)
 dev-lang/ifc 19.0.4.243: Intel FORTRAN Compiler (parallel studio cluster edition)
 dev-libs/intel-common 19.0.4.243: Common libraries and utilities needed for Intel compilers and libraries (parallel studio cluster edition)
