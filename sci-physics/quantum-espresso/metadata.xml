@@ -20,7 +20,6 @@
     <flag name="xc">use <pkg>sci-libs/libxc</pkg></flag>
     <flag name="hdf5">use <pkg>sci-libs/hdf5</pkg></flag>
     <flag name="mkl">use <pkg>sci-libs/mkl</pkg></flag>
-    <!-- <flag name="intel">compile with intel compilers</flag> -->
     <flag name="openmp">enable openmp parallelization</flag>
     <flag name="mpi">enable mpi parallelization</flag>
     <flag name="elpa">integrate with <pkg>sci-libs/elpa</pkg></flag>

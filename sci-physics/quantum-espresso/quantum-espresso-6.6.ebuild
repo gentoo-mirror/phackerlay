@@ -6,21 +6,15 @@ EAPI=7
 DESCRIPTION="Suite for first-principles electronic-structure calculations and materials modeling"
 HOMEPAGE="https://www.quantum-espresso.org/"
 
-inherit autotools git-r3
+inherit autotools
 
-if [[ ${PV} == 9999 ]]; then
-	EGIT_REPO_URI="https://github.com/QEF/q-e.git"
-	EGIT_BRANCH="master"
-	KEYWORDS=""
-else
-	SRC_URI="https://gitlab.com/QEF/q-e/-/archive/qe-${PV}/q-e-qe-${PV}.tar.gz -> ${P}.tar.gz"
-	S="${WORKDIR}/q-e-qe-${PV}"
-	KEYWORDS="~amd64"
-fi
+SRC_URI="https://gitlab.com/QEF/q-e/-/archive/qe-${PV}/q-e-qe-${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/q-e-qe-${PV}"
+KEYWORDS="~amd64"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="+system-openblas +system-fftw +xc +hdf5 +openmp mpi elpa scalapack mkl +intel"
+IUSE="+system-openblas +system-fftw +xc +hdf5 +openmp mpi elpa scalapack mkl"
 
 RDEPEND="
 	system-openblas? ( sci-libs/openblas )
@@ -32,7 +26,6 @@ RDEPEND="
 	openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) )
 	xc? ( >sci-libs/libxc-4.0.0 system-fftw? ( sci-libs/libxc ) )
 	elpa? ( =sci-libs/elpa-2016.11.001 openmp? ( sci-libs/elpa[openmp] ) )
-	intel? ( =dev-lang/icc-19.0.4.243 =dev-lang/ifc-19.0.4.243 )
 "
 
 DEPEND="${RDEPEND} \
@@ -40,15 +33,16 @@ DEPEND="${RDEPEND} \
 "
 BDEPEND=""
 
-
-
 src_unpack() {
-	if [[ ${PV} == 9999 ]]; then
-	        git-r3_fetch
-		git-r3_checkout
-	else
-		default
+	if has_version dev-util/nvidia-cuda-toolkit | dev-util/nvidia-cuda-sdk;
+		then
+		elog
+		elog "I sense CUDA is merged."
+		elog "Possibly, you would be intereted in"
+		elog "merging sci-physics/quantum-espresso-gpu instead"
+		elog
 	fi
+	default
 }
 
 src_configure() {
@@ -60,29 +54,6 @@ src_configure() {
         then
         export SCALAPACK_LIBS=" "
     fi
-    if use intel;
-        then
-	source /opt/intel/compilers_and_libraries_2019.4.243/linux/bin/compilervars.sh intel64
-	if use mpi;
-		then
-		source /opt/intel/compilers_and_libraries_2019.4.243/linux/mpi/intel64/bin/mpivars.sh
-	fi
-        export CC=icc
-	export F77=ifort
-	export AR=xiar
-	export LD=xild
-	export LDFLAGS=" "
-	export CXX=icpc
-	export F90=ifort
-
-   fi
-#    if use mkl;
-#        then
-#	export SCALAPACK_LIBS="-lmkl_scalapack_lp64 -lmkl_blacs_intelmpi_lp64"
-#	export LAPACK_LIBS="-mkl=parallel"
-#	export BLAS_LIBS="-mkl=parallel"
-#	export FFT_LIBS="-mkl=parallel"
-#    fi
     if ! use mpi;
         then
         export MPI_LIBS=" "
@@ -134,7 +105,6 @@ src_compile() {
 	make ${MAKEOPTS} pwall || die
 	make ${MAKEOPTS} cp || die
 	make ${MAKEOPTS} ld1 || die
-	make ${MAKEOPTS} upf || die
 	make ${MAKEOPTS} tddfpt || die
 	make ${MAKEOPTS} hp || die
 	make ${MAKEOPTS} xspectra || die
