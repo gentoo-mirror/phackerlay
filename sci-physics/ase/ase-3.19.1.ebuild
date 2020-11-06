@@ -19,7 +19,7 @@ KEYWORDS="~amd64"
 IUSE="+visualize"
 
 RDEPEND="
-	>=sci-libs/scipy-0.18.1[${PYTHON_USEDEP}]
+	>=dev-python/scipy-0.18.1[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.11.3[${PYTHON_USEDEP}]
 	>=dev-python/matplotlib-2[${PYTHON_USEDEP}]
 	visualize? ( dev-lang/python[tk] )
