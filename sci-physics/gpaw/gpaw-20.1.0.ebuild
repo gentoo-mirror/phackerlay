@@ -21,7 +21,7 @@ IUSE="+setups +fftw mpi scalapack vdwxc elpa"
 RESTRICT="libvdwxc elpa"
 
 RDEPEND="
-	>=sci-libs/scipy-0.14[${PYTHON_USEDEP}]
+	>=dev-python/scipy-0.14[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.9[${PYTHON_USEDEP}]
 	>=sci-physics/ase-3.18[${PYTHON_USEDEP}]
 	>=sci-libs/libxc-3
