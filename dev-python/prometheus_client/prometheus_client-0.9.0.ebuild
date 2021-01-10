@@ -19,6 +19,10 @@ DEPEND="
 	dev-python/twisted[${PYTHON_USEDEP}]
 "
 
+src_unpack() {
+	default
+	mv ${WORKDIR}/client_python-${PV} ${S}
+}
 src_prepare() {
 	distutils-r1_src_prepare
 }
