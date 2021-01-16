@@ -13,6 +13,7 @@ dev-python/jupyterlab 1.2.15: JupyterLab computational environment
 dev-python/jupyterlab-server 1.1.4: A set of server components for JupyterLab and JupyterLab like applications
 dev-python/jupyterlab-slurm 1.0.5: A Jupyter Notebook server extension that implements common Slurm commands
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
+dev-python/pillow 7.2.0: Python Imaging Library (fork)
 dev-python/prometheus_client 0.9.0: The official Python 2 and 3 client for Prometheus.
 dev-python/python-json-logger 2.0.1: This library is provided to allow standard python logging to output log data as json objects
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
