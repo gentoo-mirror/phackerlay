@@ -1,3 +1,4 @@
+app-admin/unattended-upgrades 0.0.1: Dangerous automatic upgrades script
 app-portage/remerge 0.0.4: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-lang/icc 19.0.4.243: Intel C/C++ Compiler (parallel studio cluster edition)
 dev-lang/ifc 19.0.4.243: Intel FORTRAN Compiler (parallel studio cluster edition)
@@ -34,4 +35,3 @@ sci-physics/ase 3.19.1: A set of tools and Python modules for setting up, manipu
 sci-physics/gpaw 20.1.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 6.6: Suite for first-principles electronic-structure calculations and materials modeling
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
-sys-cluster/slurm 19.05.5.1: A Highly Scalable Resource Manager
