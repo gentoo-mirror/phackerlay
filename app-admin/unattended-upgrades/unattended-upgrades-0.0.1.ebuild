@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-SRC_URI="https://gitlab.phys-el.ru/ustinov/phackerlay/-/blob/master/app-portage/remerge/remerge-0.0.4.ebuild"
+SRC_URI="https://gitlab.phys-el.ru/ustinov/phackerlay/-/raw/master/app-admin/unattended-upgrades/files/unattended-upgrades"
 KEYWORDS="~amd64 ~x86"
 
 DESCRIPTION="Dangerous automatic upgrades script"
@@ -13,7 +13,11 @@ LICENSE="Artistic"
 SLOT="0"
 IUSE="+cron-daily cron-weekly news"
 
-RDEPEND="virtual/mta"
+RDEPEND="
+	virtual/mta
+	virtual/cron
+	app-admin/restart-services
+"
 
 RESTRICT="test"
 
