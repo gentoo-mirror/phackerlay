@@ -1,0 +1,15 @@
+#!/bin/bash
+if [[ ! -e ~/.wine/drive_c/Program\ Files\ \(x86\)/Hantek6082BE/Hantek6082BE\ USB.exe ]]; then
+    if [[ ! -e /tmp/HT6082_Software/Setup.exe ]]; then
+        cd /tmp && unzip -o /usr/share/wine-hantek/HT6082_Software.zip
+    fi
+    wine /tmp/HT6082_Software/Setup.exe
+fi
+if [ /usr/share/wine-hantek/drive_c/windows/syswow64/drivers/hantekdso.sys -nt ~/.wine/drive_c/windows/syswow64/drivers/hantekdso.sys ]; then
+    cp /usr/share/wine-hantek/drive_c ~/.wine/ -r
+    wine regedit /usr/share/wine-hantek/hantekdso.reg
+#    wine regedit /usr/share/wine-hantek/hantekdso64.reg
+fi
+if [[ -e ~/.wine/drive_c/Program\ Files\ \(x86\)/Hantek6082BE/Hantek6082BE\ USB.exe ]]; then
+    bash -c 'wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Hantek6082BE/Hantek6082BE\ USB.exe'
+fi
