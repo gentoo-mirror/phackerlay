@@ -39,7 +39,7 @@ src_configure () {
 }
 
 src_install () {
-	mv ${WORKDIR}/${P}_build/openhantek/OpenHantek ${WORKDIR}/${P}_build/openhantek/openhantek
 	cmake_src_install
 	mv ${D}/usr/share/doc/openhantek ${D}/usr/share/doc/${P}
+	mv ${D}/usr/bin/OpenHantek ${D}/usr/bin/openhantek
 }
