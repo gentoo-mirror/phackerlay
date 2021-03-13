@@ -15,9 +15,9 @@ LICENSE="GPL-3"
 SLOT="0"
 
 RDEPEND="
-	>=dev-qt/qtcore-5.4
+	>=dev-qt/qtwidgets-5.4
 	>=sci-libs/fftw-3
-	>=dev-lib/libusb-1
+	>=dev-libs/libusb-1
 "
 
 DEPEND="
