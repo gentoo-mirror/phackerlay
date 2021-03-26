@@ -4,7 +4,7 @@
 EAPI=7
 
 DISTUTILS_USE_SETUPTOOLS=rdepend
-PYTHON_COMPAT=( python3_{5,6,7,8} )
+PYTHON_COMPAT=( python3_{6,7,8,9} )
 
 inherit distutils-r1
 
@@ -21,9 +21,8 @@ IUSE="+setups +fftw mpi scalapack vdwxc elpa"
 RESTRICT="libvdwxc elpa"
 
 RDEPEND="
-	>=dev-python/scipy-0.14[${PYTHON_USEDEP}]
-	>=dev-python/numpy-1.9[${PYTHON_USEDEP}]
-	>=sci-physics/ase-3.18[${PYTHON_USEDEP}]
+	dev-python/numpy[${PYTHON_USEDEP}]
+	>=sci-physics/ase-3.20.1[${PYTHON_USEDEP}]
 	>=sci-libs/libxc-3
 	virtual/blas
 	setups? ( sci-libs/gpaw-setups )
