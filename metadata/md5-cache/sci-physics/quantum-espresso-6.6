@@ -1,0 +1,15 @@
+BDEPEND=>=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEFINED_PHASES=compile configure install postinst unpack
+DEPEND=system-openblas? ( sci-libs/openblas ) system-fftw? ( sci-libs/fftw[fortran] ) mkl? ( sci-libs/mkl-rt ) mpi? ( virtual/mpi[fortran,threads] ) scalapack? ( sci-libs/scalapack ) hdf5? ( sci-libs/hdf5[fortran] ) openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) ) xc? ( >sci-libs/libxc-4.0.0 system-fftw? ( sci-libs/libxc ) ) elpa? ( =sci-libs/elpa-2016.11.001 openmp? ( sci-libs/elpa[openmp] ) ) sys-devel/gcc[fortran]
+DESCRIPTION=Suite for first-principles electronic-structure calculations and materials modeling
+EAPI=7
+HOMEPAGE=https://www.quantum-espresso.org/
+INHERIT=autotools
+IUSE=+system-openblas +system-fftw +xc +hdf5 +openmp mpi elpa scalapack mkl
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=system-openblas? ( sci-libs/openblas ) system-fftw? ( sci-libs/fftw[fortran] ) mkl? ( sci-libs/mkl-rt ) mpi? ( virtual/mpi[fortran,threads] ) scalapack? ( sci-libs/scalapack ) hdf5? ( sci-libs/hdf5[fortran] ) openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) ) xc? ( >sci-libs/libxc-4.0.0 system-fftw? ( sci-libs/libxc ) ) elpa? ( =sci-libs/elpa-2016.11.001 openmp? ( sci-libs/elpa[openmp] ) )
+SLOT=0
+SRC_URI=https://gitlab.com/QEF/q-e/-/archive/qe-6.6/q-e-qe-6.6.tar.gz -> quantum-espresso-6.6.tar.gz
+_eclasses_=toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	libtool	f143db5a74ccd9ca28c1234deffede96	autotools	6ff8412ccf96444868b310b0a28973ba
+_md5_=44c4db6c223240d4e11b03bfeb105e8b
