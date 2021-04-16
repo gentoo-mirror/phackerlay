@@ -15,7 +15,7 @@ dev-python/jupyterlab-server 1.1.4: A set of server components for JupyterLab an
 dev-python/jupyterlab-slurm 1.0.5: A Jupyter Notebook server extension that implements common Slurm commands
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/pillow 7.2.0: Python Imaging Library (fork)
-dev-python/prometheus_client 0.9.0: The official Python 2 and 3 client for Prometheus.
+dev-python/prometheus_client 0.10.1: The official Python 2 and 3 client for Prometheus.
 dev-python/python-json-logger 2.0.1: This library is provided to allow standard python logging to output log data as json objects
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/ruamel-yaml 0.16.10: YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order
@@ -25,8 +25,8 @@ dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
 media-sound/shortwave 1.1.1: Listen to internet radio
 media-video/kurento-bundle 6.13.0: WebRTC Media Server and a set of client APIs that simplify the development of advanced video applications for web and smartphone platforms.(orphaned, made it compile, then switched to attention to jitsi)
-net-im/jitsi-meet-bin 2.8.2: Desktop application for Jitsi Meet built with Electron
-sci-electronics/openhantek6022 3.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
+net-im/jitsi-meet-bin 2.8.5: Desktop application for Jitsi Meet built with Electron
+sci-electronics/openhantek6022 3.2.1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-libs/elpa 2015.11.001 2016.11.001 2019.11.001 9999: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000: Setup collection for sci-physics/gpaw
 sci-libs/libxc 4.3.4 5.1.2: A library of exchange-correlation functionals for use in DFT
