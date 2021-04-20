@@ -42,7 +42,7 @@ src_install() {
 	dosym /opt/jitsi-meet/jitsi-meet /usr/bin/jitsi-meet
 
 	local size
-	for size in 24 48 64 96 128 256 512; do
+	for size in 512; do
 		newicon -s ${size} "${S}/resources/icons/icon_${size}x${size}.png" jitsi-meet.png
 	done
 	newicon -s scalable ${S}/app/images/logo.svg jitsi-meet.svg
