@@ -43,7 +43,7 @@ src_install() {
 
 	local size
 	for size in 512; do
-		newicon -s ${size} "${S}/resources/icons/icon_${size}x${size}.png" jitsi-meet.png
+		newicon -s ${size} "${S}/resources/icons/${size}x${size}.png" jitsi-meet.png
 	done
 	newicon -s scalable ${S}/app/images/logo.svg jitsi-meet.svg
 	make_desktop_entry "${PN}" Jitsi-meet jitsi-meet \
