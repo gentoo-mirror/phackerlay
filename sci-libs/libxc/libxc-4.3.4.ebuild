@@ -1,11 +1,11 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=7
 
 AUTOTOOLS_AUTORECONF=true
 
-inherit autotools-utils flag-o-matic fortran-2 multilib
+inherit flag-o-matic fortran-2 multilib
 
 MY_P=${P//_/-}
 
