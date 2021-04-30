@@ -5,7 +5,7 @@ EAPI=7
 
 AUTOTOOLS_AUTORECONF=true
 
-inherit flag-o-matic fortran-2 multilib
+inherit autotools flag-o-matic fortran-2 multilib
 
 MY_P=${P//_/-}
 
@@ -28,6 +28,8 @@ src_prepare() {
 	sed \
 		-e "s:${PN}.f90:${PN}.F90:g" \
 		-i src/Makefile.am || die
+	eautoreconf
+	eautomake
     default
 }
 
