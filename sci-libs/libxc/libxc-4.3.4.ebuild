@@ -28,12 +28,12 @@ src_prepare() {
 	sed \
 		-e "s:${PN}.f90:${PN}.F90:g" \
 		-i src/Makefile.am || die
-	autotools-utils_src_prepare
+    default
 }
 
 src_configure() {
 	local myeconfargs=( $(use_enable fortran) )
-	autotools-utils_src_configure
+    default
 }
 
 ## Upstream recommends not running the test suite because it requires
@@ -50,7 +50,3 @@ src_test() {
 	popd > /dev/null || die
 }
 
-src_install() {
-	autotools-utils_src_install
-
-}
