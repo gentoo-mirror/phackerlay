@@ -25,7 +25,7 @@ dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
 media-sound/shortwave 1.1.1: Listen to internet radio
 media-video/kurento-bundle 6.13.0: WebRTC Media Server and a set of client APIs that simplify the development of advanced video applications for web and smartphone platforms.(orphaned, made it compile, then switched to attention to jitsi)
-net-im/jitsi-meet-bin 2.8.5: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet-bin 2.8.6: Desktop application for Jitsi Meet built with Electron
 sci-electronics/openhantek6022 3.2.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-libs/elpa 2015.11.001 2016.11.001 2019.11.001 9999: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000: Setup collection for sci-physics/gpaw
@@ -37,3 +37,4 @@ sci-physics/gpaw 21.1.0: GPAW is a density-functional theory (DFT) Python code b
 sci-physics/quantum-espresso 6.6: Suite for first-principles electronic-structure calculations and materials modeling
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
+www-apps/element 1.7.26: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
