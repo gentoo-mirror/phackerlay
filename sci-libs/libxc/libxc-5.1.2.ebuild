@@ -1,11 +1,11 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=7
 
 AUTOTOOLS_AUTORECONF=true
 
-inherit autotools-utils flag-o-matic fortran-2 multilib
+inherit autotools flag-o-matic fortran-2 multilib
 
 MY_P=${P//_/-}
 
@@ -28,12 +28,14 @@ src_prepare() {
 	sed \
 		-e "s:${PN}.f90:${PN}.F90:g" \
 		-i src/Makefile.am || die
-	autotools-utils_src_prepare
+    eautoreconf
+    eautomake
+    default
 }
 
 src_configure() {
 	local myeconfargs=( $(use_enable fortran) )
-	autotools-utils_src_configure
+    default
 }
 
 ## Upstream recommends not running the test suite because it requires
@@ -50,7 +52,3 @@ src_test() {
 	popd > /dev/null || die
 }
 
-src_install() {
-	autotools-utils_src_install
-
-}
