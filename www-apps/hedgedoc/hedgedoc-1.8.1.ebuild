@@ -26,17 +26,18 @@ S=${WORKDIR}/${PN}
 RESTRICT="network-sandbox"
 
 src_compile() {
-	elog
-	elog Fetching npm packages with yarn
-	elog
+	einfo
+	einfo Fetching npm packages with yarn
+	einfo
 	yarn install --production=false --pure-lockfile
-	elog
-	elog Building hedgedoc
-	elog
+	einfo
+	einfo Building hedgedoc
+	einfo
+	eapply ${FILESDIR}/allow_any_file_upload.patch
 	yarn run build
-	elog
-	elog Removing leftovers
-	elog
+	einfo
+	einfo Removing leftovers
+	einfo
 	rm node_modules -rf
 	yarn install --production=true --pure-lockfile
 	find node_modules -type f \
@@ -102,7 +103,6 @@ src_compile() {
          \) \
          -exec rm -rf {} +
 	rm public/uploads -rf
-	eapply ${FILESDIR}/allow_any_file_upload.patch
 	eapply ${FILESDIR}/stuck_on_start.patch
 }
 
@@ -121,7 +121,8 @@ src_install() {
 	dodir /var/lib/hedgedoc
 	dodir /var/lib/hedgedoc/public
 	keepdir /var/lib/hedgedoc/public/uploads
-	chown -R hedgedoc:hedgedoc "${ED}/var/lib/hedgedoc/public/uploads"
+	chown -R hedgedoc:hedgedoc "${ED}/var/lib/hedgedoc"
+	chmod -R ug=rwX "${ED}/var/lib/hedgedoc"
 	dosym ${EPREFIX}/var/lib/hedgedoc/public/uploads ${EPREFIX}/opt/hedgedoc/public/uploads
 
 	doinitd ${FILESDIR}/hedgedoc
