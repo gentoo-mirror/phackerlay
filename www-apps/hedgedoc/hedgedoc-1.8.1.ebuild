@@ -15,8 +15,9 @@ IUSE=""
 RDEPEND="
 	acct-group/hedgedoc
 	acct-user/hedgedoc
-	net-libs/nodejs
+	>=net-libs/nodejs-12
 	<sys-apps/yarn-2
+	>=sys-apps/yarn-1.22
 "
 DEPEND=""
 
@@ -25,14 +26,19 @@ S=${WORKDIR}/${PN}
 RESTRICT="network-sandbox"
 
 src_compile() {
-	# Build steps from Dockerfile
-	elog Fetching npm packages
-	yarn install --production=true
+	elog
+	elog Fetching npm packages with yarn
+	elog
+	yarn install --production=false --pure-lockfile
+	elog
 	elog Building hedgedoc
+	elog
 	yarn run build
-	#rm -rf node_modules
-	# Production modules
-	#yarn install --production=true
+	elog
+	elog Removing leftovers
+	elog
+	rm node_modules -rf
+	yarn install --production=true --pure-lockfile
 	find node_modules -type f \
           \( \
          -iname '*Makefile*' -o \
@@ -94,17 +100,19 @@ src_compile() {
          -iwholename '*/win32-x64' -o \
          -iwholename '*/darwin-x64' \
          \) \
-         -exec rm -rvf {} +
+         -exec rm -rf {} +
 	rm public/uploads -rf
+	eapply ${FILESDIR}/allow_any_file_upload.patch
+	eapply ${FILESDIR}/stuck_on_start.patch
 }
 
 src_install() {
 	insinto "/opt/hedgedoc"
-	insopts -o hedgedoc -g hedgedoc -m 0664
+	#insopts -o hedgedoc -g hedgedoc -m 0664
 	doins -r app.js package.json bin public lib locales node_modules
 	# insopts doesn't affect directories.
-	chown -R hedgedoc:hedgedoc "${ED}/opt/hedgedoc"
-	chmod -R ug=rwX "${ED}/opt/hedgedoc"
+	#chown -R hedgedoc:hedgedoc "${ED}/opt/hedgedoc"
+	#chmod -R ug=rwX "${ED}/opt/hedgedoc"
 	dodir /etc/hedgedoc
 	insinto /etc/hedgedoc
 	doins config.json.example
@@ -113,13 +121,17 @@ src_install() {
 	dodir /var/lib/hedgedoc
 	dodir /var/lib/hedgedoc/public
 	keepdir /var/lib/hedgedoc/public/uploads
+	chown -R hedgedoc:hedgedoc "${ED}/var/lib/hedgedoc/public/uploads"
 	dosym ${EPREFIX}/var/lib/hedgedoc/public/uploads ${EPREFIX}/opt/hedgedoc/public/uploads
 
 	doinitd ${FILESDIR}/hedgedoc
 }
 
 pkg_postinst() {
-	elog Feel free to copy /etc/hedgedoc/config.json.sample and tune it to suite your needs
-	elog After that - run
+	elog
+	elog Feel free to copy /etc/hedgedoc/config.json.sample
+	elog over /etc/hedgedoc/config.json and tune it to suite your needs.
+	elog Afterwards run
 	elog rc-service hedgedoc start
+	elog
 }

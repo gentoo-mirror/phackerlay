@@ -1,0 +1,63 @@
+diff --git a/public/js/lib/editor/toolbar.html b/public/js/lib/editor/toolbar.html
+index dc5b8ad4..b9216c80 100644
+--- a/public/js/lib/editor/toolbar.html
++++ b/public/js/lib/editor/toolbar.html
+@@ -34,8 +34,8 @@
+       <a id="makeImage" class="btn btn-sm text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Image">
+           <i class="fa fa-image fa-fw"></i>
+       </a>
+-      <a id="uploadImage" class="btn btn-sm btn-file ui-upload-image" title="Upload Image">
+-          <i class="fa fa-upload fa-fw"></i><input type="file" accept="image/*" name="upload" multiple title="Upload Image">
++      <a id="uploadImage" class="btn btn-sm btn-file ui-upload-image" title="Upload File">
++          <i class="fa fa-upload fa-fw"></i><input type="file" name="upload" multiple title="Upload File">
+       </a>
+       <a id="makeTable" class="btn btn-sm text-uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Table">
+           <i class="fa fa-table fa-fw"></i>
+diff --git a/public/vendor/inlineAttachment/inline-attachment.js b/public/vendor/inlineAttachment/inline-attachment.js
+index 5c7c7166..e8e87a9c 100644
+--- a/public/vendor/inlineAttachment/inline-attachment.js
++++ b/public/vendor/inlineAttachment/inline-attachment.js
+@@ -141,7 +141,7 @@
+     /**
+      * Allowed MIME types
+      */
+-    allowedTypes: window.allowedUploadMimeTypes,
++    imageTypes: window.allowedUploadMimeTypes,
+ 
+     /**
+      * Text which will be inserted when dropping or pasting a file.
+@@ -282,11 +282,7 @@
+    * @param {File} clipboard data file
+    */
+   inlineAttachment.prototype.isFileAllowed = function(file) {
+-    if (this.settings.allowedTypes.indexOf('*') === 0){
+       return true;
+-    } else {
+-      return this.settings.allowedTypes.indexOf(file.type) >= 0;
+-    }
+   };
+ 
+   /**
+
+
+diff --git a/lib/web/imageRouter/index.js b/lib/web/imageRouter/index.js
+index 0a72c65c..a3e75859 100644
+--- a/lib/web/imageRouter/index.js
++++ b/lib/web/imageRouter/index.js
+@@ -20,7 +20,7 @@ async function checkUploadType (filePath) {
+     logger.error('Image upload error: Could not determine MIME-type')
+     return false
+   }
+-  if (extension !== '.' + typeFromMagic.ext) {
++  /*if (extension !== '.' + typeFromMagic.ext) {
+     logger.error(
+       'Image upload error: Provided file extension does not match MIME-type'
+     )
+@@ -35,7 +35,7 @@ async function checkUploadType (filePath) {
+       )}" are allowed`
+     )
+     return false
+-  }
++  }*/
+   return true
+ }
