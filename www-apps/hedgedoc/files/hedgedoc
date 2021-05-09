@@ -1,9 +1,10 @@
 #!/sbin/openrc-run
 command=/usr/bin/yarn
-command_args="start --production"
+command_args="start"
 pidfile=/var/run/hedgedoc.pid
 name="Hedgedoc real-time collaborative markdown editor"
-start_stop_daemon_args="--user hedgedoc --wait 5 --chdir /opt/hedgedoc -b --pidfile ${pidfile} -m"
+start_stop_daemon_args="--user hedgedoc --wait 5 --chdir /opt/hedgedoc -e NODE_ENV=production -b --pidfile ${pidfile} -m"
+
 
 depend() {
 	need net
