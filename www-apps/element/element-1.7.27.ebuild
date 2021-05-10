@@ -30,9 +30,10 @@ src_install() {
 }
 
 pkg_postinst() {
-	if [ ! -e "${MY_HTDOCSDIR}"/config.json ]; then
-		elog Please copy config.sample.json to config.json
-		elog in ${MY_HTDOCSDIR} and tune it to your needs
+	local mydir="${ROOT%/}/${VHOST_ROOT}/${MY_HTDOCSBASE}/${PN}"
+	if [ ! -e $mydir/config.json ]; then
+		einfo Please copy config.sample.json to config.json
+		einfo in $mydir and tune it to your needs
 	fi
 	webapp_pkg_postinst
 }
