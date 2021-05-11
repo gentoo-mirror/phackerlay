@@ -21,6 +21,11 @@ RDEPEND="
 	>=dev-python/matplotlib-2.0.0[${PYTHON_USEDEP}]
 "
 
+src_unpack() {
+	default
+        mv * ${P}
+}
+
 src_prepare() {
 	distutils-r1_src_prepare
 }
