@@ -26,9 +26,9 @@ RDEPEND="
 	=dev-python/jupyterlab_server-2.3.0[${PYTHON_USEDEP}]
 	=dev-python/nbclassic-0.2.6[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.1[${PYTHON_USEDEP}]
-	ipympl? ( dev-python/ipympl[${PYTHON_USEDEP}] )
+	ipympl? ( >=dev-python/ipympl-0.7[${PYTHON_USEDEP}] )
         slurm? ( dev-python/jupyterlab-slurm[${PYTHON_USEDEP}] )
-	sys-apps/yarn
+	net-libs/nodejs
 "
 
 src_prepare() {
