@@ -15,10 +15,14 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 
+RESTRICT="network-sandbox"
+
 RDEPEND="
+	dev-python/jupyter-packaging[${PYTHON_USEDEP}]
 	>=dev-python/ipykernel-4.7[${PYTHON_USEDEP}]
 	>=dev-python/ipywidgets-7.6.0[${PYTHON_USEDEP}]
 	>=dev-python/matplotlib-2.0.0[${PYTHON_USEDEP}]
+	sys-apps/yarn
 "
 
 src_unpack() {
