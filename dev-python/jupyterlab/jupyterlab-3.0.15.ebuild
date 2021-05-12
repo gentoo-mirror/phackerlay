@@ -11,7 +11,7 @@ DESCRIPTION="JupyterLab computational environment"
 HOMEPAGE="https://github.com/jupyterlab/jupyterlab"
 SRC_URI="https://github.com/jupyterlab/jupyterlab/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="BSD-2"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 
@@ -48,4 +48,13 @@ python_install() {
 
 python_install_all() {
 	distutils-r1_python_install_all
+}
+
+pkg_postinst() {
+    if [ "$JUPYTERLAB_DIR" = "" ]; then
+        elog
+        elog Before running jupyterlab in the existing shell please source
+        elog . /etc/bash/bashrc.d/jupyterlab-assets.sh
+        elog
+    fi
 }
