@@ -13,7 +13,7 @@ SRC_URI="https://github.com/jupyterlab-server/jupyterlab_server/archive/v${PV}.t
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 RDEPEND="
 	dev-python/jinja[${PYTHON_USEDEP}]
