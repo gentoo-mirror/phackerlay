@@ -16,7 +16,7 @@ DEPEND="<net-libs/nodejs-16[npm]
 	sys-fs/fuse
 "
 
-KEYWORDS=""
+KEYWORDS="~amd64"
 
 RESTRICT=network-sandbox
 
