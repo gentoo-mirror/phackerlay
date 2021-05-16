@@ -12,11 +12,11 @@ SRC_URI="https://github.com/jitsi/jitsi-meet-electron/archive/v${PV}.tar.gz -> $
 LICENSE="Apache-2.0"
 SLOT="0"
 
-DEPEND="net-libs/nodejs[npm] \
-	sys-fs/fuse \
+DEPEND="<net-libs/nodejs-16[npm]
+	sys-fs/fuse
 "
 
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 RESTRICT=network-sandbox
 
