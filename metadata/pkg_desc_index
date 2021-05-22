@@ -1,7 +1,7 @@
 acct-group/hedgedoc 0: System group: hedgedoc
 acct-user/hedgedoc 0: User for www-apps/hedgedoc
 app-admin/unattended-emerges 0.0.1: Dangerous automatic upgrades script
-app-portage/remerge 0.0.7: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
+app-portage/remerge 0.0.8: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-python/anyio 2.0.2 2.2.0: High level compatibility layer for multiple asynchronous event loop implementations
 dev-python/certipy 0.1.3: A simple python tool for creating certificate authorities and certificates on the fly.
 dev-python/ipydatawidgets 4.0.1: A set of widgets to help facilitate reuse of large datasets across widgets
