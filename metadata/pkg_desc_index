@@ -27,7 +27,7 @@ dev-python/slurm-magic 9999: Package implements magic commands for interacting w
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/tomlkit 0.7.0: Style-preserving TOML library for Python
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
-media-sound/shortwave 1.1.1: Listen to internet radio
+media-sound/shortwave 1.1.1 2.0.1: Listen to internet radio
 net-im/jitsi-meet-bin 2.8.6: Desktop application for Jitsi Meet built with Electron
 sci-electronics/openhantek6022 3.2.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-libs/elpa 2015.11.001 2016.11.001 2019.11.001 9999: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
