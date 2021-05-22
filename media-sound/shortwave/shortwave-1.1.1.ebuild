@@ -31,6 +31,7 @@ RDEPEND="
 	>=x11-libs/gdk-pixbuf-2
 	>=x11-libs/gtk+-3
 	>=gui-libs/libhandy-0.0.13
+	<gui-libs/libhandy-1
 	>=media-libs/gstreamer-1.16
 	>=media-plugins/gst-plugins-meta-1.16[mp3,http]
 	>=media-libs/gst-plugins-base-1.16
