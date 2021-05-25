@@ -10,7 +10,6 @@ HOMEPAGE="https://www.st.com/en/development-tools/stm32cubemx.html"
 SRC_URI="${DISTDIR}/${FN}"
 LICENSE="https://www.st.com/resource/en/license/SLA0048_STM32CubeIDE.pdf"
 
-LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="strip fetch"
