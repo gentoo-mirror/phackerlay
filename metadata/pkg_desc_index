@@ -40,5 +40,5 @@ sci-physics/gpaw 21.1.0: GPAW is a density-functional theory (DFT) Python code b
 sci-physics/quantum-espresso 6.6: Suite for first-principles electronic-structure calculations and materials modeling
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
-www-apps/element 1.7.28: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.7.29: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/hedgedoc 1.8.1: Hedgedoc real-time collaborative markdown editor
