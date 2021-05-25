@@ -5,20 +5,24 @@ EAPI=7
 
 FN="en.stm32cubemx-lin_v6-2-1.zip"
 
-DESCRIPTION="stm32cubemx for configuring microcontrollers"
+DESCRIPTION="A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors"
 HOMEPAGE="https://www.st.com/en/development-tools/stm32cubemx.html"
 SRC_URI="${DISTDIR}/${FN}"
 LICENSE="https://www.st.com/resource/en/license/SLA0048_STM32CubeIDE.pdf"
 
-LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="strip fetch"
 
+pkg_nofetch() {
+    einfo
+    einfo Please download ${FN} from 
+    einfo https://www.st.com/en/development-tools/stm32cubemx.html#get-software
+    einfo to ${PORTAGE_ACTUAL_DISTDIR}
+    einfo
+}
+
 src_unpack() {
-    if [ ! -e ${DISTDIR}/${FN} ]; then
-        die Please download ${FN} from site to ${PORTAGE_ACTUAL_DISTDIR}
-    fi
     default
     S=${WORKDIR}
 }
