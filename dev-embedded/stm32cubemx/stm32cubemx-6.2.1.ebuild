@@ -14,10 +14,15 @@ SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="strip fetch"
 
+pkg_nofetch() {
+    einfo
+    einfo Please download ${FN} from 
+    einfo https://www.st.com/en/development-tools/stm32cubemx.html#get-software
+    einfo to ${PORTAGE_ACTUAL_DISTDIR}
+    einfo
+}
+
 src_unpack() {
-    if [ ! -e ${DISTDIR}/${FN} ]; then
-        die Please download ${FN} from site to ${PORTAGE_ACTUAL_DISTDIR}
-    fi
     default
     S=${WORKDIR}
 }
