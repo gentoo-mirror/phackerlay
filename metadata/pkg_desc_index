@@ -1,10 +1,14 @@
 acct-group/hedgedoc 0: System group: hedgedoc
+acct-group/synapse 0: System group: synapse
 acct-user/hedgedoc 0: User for www-apps/hedgedoc
+acct-user/synapse 0: User for net-im/synapse
 app-admin/unattended-emerges 0.0.1: Dangerous automatic upgrades script
 app-portage/remerge 0.0.8: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
 dev-python/anyio 2.0.2 2.2.0: High level compatibility layer for multiple asynchronous event loop implementations
+dev-python/canonicaljson 1.4.0: Canonical JSON
 dev-python/certipy 0.1.3: A simple python tool for creating certificate authorities and certificates on the fly.
+dev-python/h2 4.0.0: HTTP/2 State-Machine based protocol implementation
 dev-python/ipydatawidgets 4.0.1: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.7.0: Matplotlib Jupyter Extension
 dev-python/json5 0.9.4: A Python implementation of the JSON5 data format
@@ -20,16 +24,21 @@ dev-python/nbclassic 0.2.6: Jupyter Notebook as a Jupyter Server Extension
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/pillow 7.2.0: Python Imaging Library (fork)
 dev-python/prometheus_client 0.10.1: The official Python 2 and 3 client for Prometheus.
+dev-python/pymacaroons 0.13.0: PyMacaroons is a Python implementation of Macaroons. They’re better than cookies!
 dev-python/python-json-logger 2.0.1: This library is provided to allow standard python logging to output log data as json objects
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/ruamel-yaml 0.16.10: YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order
 dev-python/ruamel-yaml-clib 0.2.0: C based reader/scanner and emitter for ruamel.yaml
+dev-python/selenium-wire 4.3.0: Extends Selenium to give you the ability to inspect requests made by the browser.
+dev-python/signedjson 1.1.1: Signs JSON objects with ED25519 signatures.
 dev-python/slurm-magic 9999: Package implements magic commands for interacting with the SLURM workload manager
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/tomlkit 0.7.0: Style-preserving TOML library for Python
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
+dev-python/unpaddedbase64 2.1.0: Unpadded Base64
 media-sound/shortwave 1.1.1 2.0.1: Listen to internet radio
 net-im/jitsi-meet-bin 2.8.6: Desktop application for Jitsi Meet built with Electron
+net-im/synapse 1.34.0: Reference homeserver for the Matrix decentralised comms protocol
 sci-electronics/openhantek6022 3.2.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-libs/elpa 2015.11.001 2016.11.001 2019.11.001 9999: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000: Setup collection for sci-physics/gpaw
