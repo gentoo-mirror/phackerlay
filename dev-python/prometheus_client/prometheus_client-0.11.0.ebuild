@@ -15,10 +15,6 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND="
-	dev-python/twisted[${PYTHON_USEDEP}]
-"
-
 src_unpack() {
 	default
 	mv ${WORKDIR}/client_python-${PV} ${S}
