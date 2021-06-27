@@ -35,6 +35,8 @@ dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single
 dev-python/tomlkit 0.7.0: Style-preserving TOML library for Python
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
 dev-python/unpaddedbase64 2.1.0: Unpadded Base64
+dev-ruby/fluent-plugin-prometheus 2.0.1: A fluent plugin that collects metrics and exposes for Prometheus.
+dev-ruby/prometheus-client 2.1.0: A suite of instrumentation metric primitivesthat can be exposed through a web services interface
 media-sound/shortwave 1.1.1 2.0.1: Listen to internet radio
 net-im/jitsi-meet-bin 2.8.7: Desktop application for Jitsi Meet built with Electron
 net-im/synapse 1.34.0 1.35.1 1.36.0: Reference homeserver for the Matrix decentralised comms protocol
