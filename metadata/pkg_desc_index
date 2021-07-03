@@ -8,6 +8,7 @@ dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configu
 dev-python/anyio 2.0.2 2.2.0: High level compatibility layer for multiple asynchronous event loop implementations
 dev-python/canonicaljson 1.4.0: Canonical JSON
 dev-python/certipy 0.1.3: A simple python tool for creating certificate authorities and certificates on the fly.
+dev-python/frozendict 1.2: A simple immutable mapping for python
 dev-python/h2 4.0.0: HTTP/2 State-Machine based protocol implementation
 dev-python/ipydatawidgets 4.0.1: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.7.0: Matplotlib Jupyter Extension
