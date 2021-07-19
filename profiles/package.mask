@@ -1,1 +1,0 @@
->=media-sound/shortwave-2.0.0
