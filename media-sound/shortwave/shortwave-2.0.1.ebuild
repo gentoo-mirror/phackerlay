@@ -27,10 +27,8 @@ RDEPEND="
 	>=media-libs/gst-plugins-base-1.16
 	>=media-libs/gst-plugins-bad-1.16
 	>=media-libs/gst-plugins-good-1.16
-	media-libs/adwaita
+	>=gui-libs/libadwaita-1.0.0
 "
-#	>=gui-libs/libhandy-0.0.13
-#	>=x11-libs/gtk+-4
 
 DEPEND="${RDEPEND}"
 BDEPEND=""
