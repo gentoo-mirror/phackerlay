@@ -55,7 +55,7 @@ $(usev Th) $(usev Pa) $(usev U) $(usev Np) $(usev Pu)"
 	sed -e 's:mv *.UPF PSEUDOPOTENTIALS::g' -i make_ps || die
 	sed -e 's:mv *.in WORK::g' -i make_ps || die
 	sed -e 's:"$elem":"$elem.":g' -i make_ps || die
-	sed -e "s:/path_to_quantum_espresso:/:g" -i QE_path || die
+	sed -e "s:/path_to_quantum_espresso:/usr:g" -i QE_path || die
 }
 
 src_compile() {
