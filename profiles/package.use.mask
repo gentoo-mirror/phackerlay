@@ -1,1 +1,2 @@
 sci-physics/gpaw elpa vdwxc
+sci-physics/quantum-espresso elpa scalapack
