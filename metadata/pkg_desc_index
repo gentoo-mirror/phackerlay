@@ -47,8 +47,8 @@ sci-libs/gpaw-setups 0.9.20000: Setup collection for sci-physics/gpaw
 sci-libs/libxc 4.3.4 5.1.2: A library of exchange-correlation functionals for use in DFT
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
 sci-libs/scikits_image 0.17.2: Image processing routines for SciPy
-sci-physics/ase 3.21.1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
-sci-physics/gpaw 21.1.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
+sci-physics/ase 3.22.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
+sci-physics/gpaw 21.6.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 6.6: Suite for first-principles electronic-structure calculations and materials modeling
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
