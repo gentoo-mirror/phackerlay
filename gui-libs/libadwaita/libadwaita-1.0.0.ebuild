@@ -3,7 +3,7 @@
 
 EAPI=7
 
-GNOME_TARBALL_SUFFIX ?= "bz2"
+GNOME_TARBALL_SUFFIX="bz2"
 
 inherit gnome.org meson xdg vala virtualx
 
