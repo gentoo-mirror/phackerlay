@@ -17,6 +17,8 @@ KEYWORDS="~amd64"
 
 IUSE="+ipympl slurm"
 
+distutils_enable_tests pytest
+
 RDEPEND="
 	dev-python/ipython[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
