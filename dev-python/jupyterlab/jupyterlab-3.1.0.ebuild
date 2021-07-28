@@ -17,6 +17,8 @@ KEYWORDS="~amd64"
 
 IUSE="+ipympl slurm"
 
+distutils_enable_tests pytest
+
 RDEPEND="
 	dev-python/ipython[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
@@ -41,6 +43,9 @@ python_compile() {
 
 python_install() {
 	distutils-r1_python_install --skip-build
+    mkdir -p ${D}/etc
+    mv ${D}/usr/etc/* ${D}/etc/
+    rm ${D}/usr/etc -r
         echo "export JUPYTERLAB_DIR=~/.jupyter/lab/assets" > jupyterlab-assets.sh
         insinto /etc/bash/bashrc.d
         doins ${S}/jupyterlab-assets.sh
