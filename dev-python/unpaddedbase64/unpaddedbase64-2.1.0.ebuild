@@ -13,10 +13,12 @@ SRC_URI="https://github.com/matrix-org/python-unpaddedbase64/archive/v${PV}.tar.
 
 S="${WORKDIR}/python-${P}"
 
+DEPEND="dev-python/pyproject2setuppy"
+RDEPEND="${DEPEND}"
+
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=""
-RDEPEND="${DEPEND}"
+distutils_enable_tests pytest
