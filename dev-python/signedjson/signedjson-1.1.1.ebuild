@@ -14,6 +14,8 @@ SRC_URI="https://github.com/matrix-org/python-signedjson/archive/refs/tags/v${PV
 
 export SETUPTOOLS_SCM_PRETEND_VERSION="${PV}"
 
+distutils_enable_tests pytest
+
 S="${WORKDIR}/python-${P}"
 
 LICENSE="Apache-2.0"
