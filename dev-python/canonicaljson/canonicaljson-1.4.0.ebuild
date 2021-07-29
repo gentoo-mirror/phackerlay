@@ -19,3 +19,5 @@ IUSE=""
 
 DEPEND="dev-python/simplejson"
 RDEPEND="${DEPEND}"
+
+distutils_enable_tests pytest
