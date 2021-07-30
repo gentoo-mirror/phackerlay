@@ -15,7 +15,7 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="+ldapauthenticator"
+IUSE="ldapauthenticator"
 
 RESTRICT=network-sandbox
 
@@ -36,7 +36,7 @@ RDEPEND="\
 	>=dev-python/sqlalchemy-1.1[${PYTHON_USEDEP}]
 	>=www-servers/tornado-5.1[${PYTHON_USEDEP}]
 	>=dev-python/traitlets-4.3.2[${PYTHON_USEDEP}]
-	|| ( dev-python/jupyter[${PYTHON_USEDEP}] dev-python/jupyterlab[${PYTHON_USEDEP}] )
+	|| ( dev-python/jupyterlab[${PYTHON_USEDEP}] dev-python/jupyter[${PYTHON_USEDEP}] )
 	ldapauthenticator? ( dev-python/jupyterhub-ldapauthenticator[${PYTHON_USEDEP}] )
 "
 
