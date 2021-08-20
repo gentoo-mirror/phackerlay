@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="A Jupyter Notebook server extension that implements common Slurm commands"
 HOMEPAGE="https://github.com/NERSC/jupyterlab-slurm"
-SRC_URI="mirror://pypi/j/jupyterlab_slurm/jupyterlab_slurm-${PV}.tar.gz"
+SRC_URI="https://github.com/NERSC/jupyterlab-slurm/archive/refs/tags/v${PV}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
