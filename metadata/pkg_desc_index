@@ -43,7 +43,7 @@ dev-ruby/prometheus-client 2.1.0: A suite of instrumentation metric primitivesth
 gui-libs/libadwaita 1.0.0: Building blocks for modern GNOME applications
 media-sound/shortwave 1.1.1 2.0.1: Listen to internet radio
 net-im/jitsi-meet-bin 2.8.11: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.38.1 1.39.0 1.40.0 1.41.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.38.1 1.39.0 1.40.0 1.41.1: Reference homeserver for the Matrix decentralised comms protocol
 sci-electronics/openhantek6022 3.2.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-libs/elpa 2021.05.002: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000: Setup collection for sci-physics/gpaw
@@ -54,5 +54,5 @@ sci-physics/gpaw 21.6.0: GPAW is a density-functional theory (DFT) Python code b
 sci-physics/quantum-espresso 6.8: Suite for first-principles electronic-structure calculations and materials modeling
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
-www-apps/element 1.8.1: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.8.2: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/hedgedoc 1.8.1: Hedgedoc real-time collaborative markdown editor
