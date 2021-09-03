@@ -1,0 +1,10 @@
+--- a/tests/test.pl	2021-09-03 17:20:43.933943877 +0300
++++ b/tests/test.pl	2021-09-03 17:20:53.319933335 +0300
+@@ -19,7 +19,6 @@
+     [ "./fort77 -k foo.f",		   qw(a.out foo.c) ],
+     [ "./fort77 -g -k foo.f",		   qw(foo.c a.out) ],
+     [ "./fort77 -c -f long.f",		   qw(long.o) ],
+-    [ "./fort77 mainmiss.f"				],
+     [ "./fort77 -c foo.f && ./fort77 -c mainmiss.f && ./fort77 -o foo foo.o mainmiss.o",
+            qw(foo.o mainmiss.o foo) ],
+     [ "./fort77 -c foo.f && ./fort77 -o foo foo.o mainmiss.f",
