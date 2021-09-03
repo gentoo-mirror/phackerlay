@@ -1,0 +1,14 @@
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.2-r1:1.16 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEFINED_PHASES=compile install test
+DESCRIPTION=Utility is the interface to the FORTRAN compilation system
+EAPI=8
+HOMEPAGE=https://pubs.opengroup.org/onlinepubs/9699919799/utilities/fort77.html
+INHERIT=autotools
+IUSE=test
+KEYWORDS=~amd64
+LICENSE=public-domain
+RDEPEND=dev-lang/f2c dev-lang/perl
+SLOT=0
+SRC_URI=ftp://ftp.icm.edu.pl/pub/Linux/sunsite/devel/lang/fortran/fort77-1.18.tar.gz -> fort77-1.18.tar.gz
+_eclasses_=gnuconfig	262062cef0ba4f22b397193da514a350	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	libtool	241a8f577b9781a42a7421e53448a44e	autotools	c7052b276346587968d52ea8eaf5aca1
+_md5_=5796b6c1d0e3673d2c2341a3d4b4d84c
