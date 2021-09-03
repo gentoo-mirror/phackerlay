@@ -11,7 +11,7 @@ inherit autotools
 SRC_URI="ftp://ftp.icm.edu.pl/pub/Linux/sunsite/devel/lang/fortran/fort77-${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64"
 
-LICENSE="Public domain"
+LICENSE="public-domain"
 SLOT="0"
 IUSE="test"
 
