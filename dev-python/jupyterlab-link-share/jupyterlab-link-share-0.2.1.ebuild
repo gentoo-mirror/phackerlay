@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="JupyterLab Extension to share the URL to a running Jupyter Server"
 HOMEPAGE="https://github.com/jupyterlab-contrib/jupyterlab-link-share"
-SRC_URI="https://github.com/jupyterlab-contrib/jupyterlab-link-share/archive/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/jupyterlab-contrib/jupyterlab-link-share/releases/download/v${PV}/${P}.tar.gz"
 DISTUTILS_USE_SETUPTOOLS="pyproject.toml"
 
 LICENSE="BSD"
