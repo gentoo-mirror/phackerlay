@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="Hedgedoc real-time collaborative markdown editor"
 HOMEPAGE="https://hedgedoc.org/"
-SRC_URI="https://github.com/hedgedoc/hedgedoc/releases/download/1.8.1/hedgedoc-1.8.1.tar.gz"
+SRC_URI="https://github.com/hedgedoc/hedgedoc/releases/download/${PV}/hedgedoc-${PV}.tar.gz"
 
 LICENSE="AGPL-3"
 SLOT="0"
