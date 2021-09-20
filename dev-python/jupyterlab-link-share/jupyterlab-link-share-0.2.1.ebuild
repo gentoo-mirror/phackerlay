@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-    =dev-python/jupyter-packaging-0.10.1[${PYTHON_USEDEP}]
+    >=dev-python/jupyter_packaging-0.10.0[${PYTHON_USEDEP}]
     >=dev-python/jupyterlab-3.0.0[${PYTHON_USEDEP}]
     >=dev-python/setuptools-40.8.0[${PYTHON_USEDEP}]
     dev-python/wheel[${PYTHON_USEDEP}]
