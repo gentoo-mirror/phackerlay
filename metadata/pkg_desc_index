@@ -16,7 +16,6 @@ dev-python/h2 4.0.0: HTTP/2 State-Machine based protocol implementation
 dev-python/ipydatawidgets 4.0.1: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.7.0: Matplotlib Jupyter Extension
 dev-python/json5 0.9.4: A Python implementation of the JSON5 data format
-dev-python/jupyter-packaging 0.10.1: Tools to help build and install Jupyter Python packages
 dev-python/jupyter-telemetry 0.1.0: Telemetry for Jupyter Applications and extensions
 dev-python/jupyter_server 1.4.0 1.6.4: The backend—i.e. core services, APIs, and REST endpoints—to Jupyter web applications
 dev-python/jupyterhub 1.4.2: A multi-user server for Jupyter notebooks
