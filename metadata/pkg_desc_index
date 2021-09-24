@@ -13,6 +13,7 @@ dev-python/certipy 0.1.3: A simple python tool for creating certificate authorit
 dev-python/frozendict 1.2: A simple immutable mapping for python
 dev-python/h2 4.0.0: HTTP/2 State-Machine based protocol implementation
 dev-python/ipydatawidgets 4.0.1: A set of widgets to help facilitate reuse of large datasets across widgets
+dev-python/ipympl 0.8.0: Matplotlib Jupyter Extension
 dev-python/json5 0.9.4: A Python implementation of the JSON5 data format
 dev-python/jupyter-telemetry 0.1.0: Telemetry for Jupyter Applications and extensions
 dev-python/jupyterhub 1.4.2: A multi-user server for Jupyter notebooks
