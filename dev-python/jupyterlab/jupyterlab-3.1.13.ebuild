@@ -27,7 +27,6 @@ RDEPEND="
 	=dev-python/jupyterlab_server-2*[${PYTHON_USEDEP}]
 	>=dev-python/jupyterlab_server-2.3.0[${PYTHON_USEDEP}]
 	>=dev-python/jupyter_server-1.4.0[${PYTHON_USEDEP}]
-	=dev-python/jupyter_server-1.4*[${PYTHON_USEDEP}]
 	=dev-python/jupyter_server-1*[${PYTHON_USEDEP}]
 	=dev-python/nbclassic-0.2*[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.1[${PYTHON_USEDEP}]

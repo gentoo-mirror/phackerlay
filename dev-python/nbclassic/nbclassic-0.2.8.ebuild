@@ -16,7 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	=dev-python/jupyter_server-1.4.0[${PYTHON_USEDEP}]
+	=dev-python/jupyter_server-1*[${PYTHON_USEDEP}]
+	>=dev-python/jupyter_server-1.4.0[${PYTHON_USEDEP}]
 	<dev-python/notebook-7[${PYTHON_USEDEP}]
 "
 
