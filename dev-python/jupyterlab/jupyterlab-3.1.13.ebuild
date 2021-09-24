@@ -24,8 +24,10 @@ RDEPEND="
 	dev-python/packaging[${PYTHON_USEDEP}]
 	>=www-servers/tornado-6.1[${PYTHON_USEDEP}]
 	dev-python/jupyter_core[${PYTHON_USEDEP}]
-	=dev-python/jupyterlab_server-2.3.0[${PYTHON_USEDEP}]
-	=dev-python/jupyter_server-1.4.0[${PYTHON_USEDEP}]
+	=dev-python/jupyterlab_server-2.*[${PYTHON_USEDEP}]
+	>=dev-python/jupyterlab_server-2.3.0[${PYTHON_USEDEP}]
+	>=dev-python/jupyter_server-1.4.0[${PYTHON_USEDEP}]
+	=dev-python/jupyter_server-1.*[${PYTHON_USEDEP}]
 	=dev-python/nbclassic-0.2.6[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.1[${PYTHON_USEDEP}]
 	ipympl? ( >=dev-python/ipympl-0.7[${PYTHON_USEDEP}] )
@@ -44,9 +46,9 @@ python_compile() {
 
 python_install() {
 	distutils-r1_python_install --skip-build
-    mkdir -p ${D}/etc
-    mv ${D}/usr/etc/* ${D}/etc/
-    rm ${D}/usr/etc -r
+        mkdir -p ${D}/etc
+        mv ${D}/usr/etc/* ${D}/etc/
+        rm ${D}/usr/etc -r
         echo "export JUPYTERLAB_DIR=~/.jupyter/lab/assets" > jupyterlab-assets.sh
         insinto /etc/bash/bashrc.d
         doins ${S}/jupyterlab-assets.sh
