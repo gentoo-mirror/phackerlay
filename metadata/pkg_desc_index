@@ -51,5 +51,5 @@ sci-physics/quantum-espresso 6.8: Suite for first-principles electronic-structur
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gentoo-sources-autobuild 0.0.1: autobuilding kernel with olddefconfig
-www-apps/element 1.8.5: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.9.0: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/hedgedoc 1.9.0: Hedgedoc real-time collaborative markdown editor
