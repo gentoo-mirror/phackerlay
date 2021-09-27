@@ -17,6 +17,7 @@ KEYWORDS="~amd64"
 
 
 RDEPEND="
+	sys-apps/portage[${PYTHON_USEDEP}]
 "
 
 src_prepare() {
