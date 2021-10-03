@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Continue unsuccessfull merge of last ebuild from /var/log/emerge.log"
 HOMEPAGE="https://gitlab.phys-el.ru/ustinov/remerge"
-SRC_URI="https://gitlab.phys-el.ru/ustinov/${PN}/-/archive/${PV}/${PN}-${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://gitlab.phys-el.ru/ustinov/${PN}/-/archive/v${PV}/${PN}-v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
