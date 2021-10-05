@@ -5,10 +5,10 @@ EAPI=7
 
 inherit acct-user
 
-DESCRIPTION="prog user for fs"
+DESCRIPTION="oper user for fs"
 
 ACCT_USER_ID=-1
-ACCT_USER_HOME="/home/oper"
+ACCT_USER_HOME="/usr2/oper"
 ACCT_USER_GROUPS=( oper )
 
 acct-user_add_deps
