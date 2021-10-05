@@ -20,6 +20,11 @@ RDEPEND="
 	sys-apps/portage[${PYTHON_USEDEP}]
 "
 
+src_unpack () {
+	default
+	S=${WORKDIR}/${PN}-v${PV}
+}
+
 src_prepare() {
 	distutils-r1_src_prepare
 }
