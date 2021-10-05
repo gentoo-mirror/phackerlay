@@ -1,0 +1,28 @@
+--- a/Makefile	2021-10-05 15:41:12.179676752 +0300
++++ b/Makefile	2021-10-05 15:52:34.357820245 +0300
+@@ -1,24 +1,7 @@
+ #
+ pwd := $(patsubst %/,%,$(dir $(realpath $(lastword $(MAKEFILE_LIST)))))
+ FS_DIRECTORY := $(shell echo $(pwd) | rev | cut -d/ -f1 | rev )
+-#look for git first
+-FS_COMMIT := $(shell git describe --always --tags 2>/dev/null)
+-ifneq ($(FS_COMMIT),)
+-#for old git, 1.5.6.5 in FSL8 anyway, --dirty isn't supported by
+-# git describe, so we do a git diff HEAD instead (for all versions)
+-# further, in 1.5.6.5, git diff HEAD --quiet thinks there is a change
+-# after root does a make install, redirecting output has the opposite
+-# problem, no changes are detected, but doing a git status first
+-# seems to clean it up and seems benign for other versions
+-FS_VERSION := $(shell git status 2>&1 >/dev/null)
+-FS_VERSION := $(FS_COMMIT)$(shell git diff HEAD --quiet || echo "-dirty")
+-else
+-#alternatively, an archive version
+-# there should be no other dashes except in the basename:
+-#  fs-VERSION.SUBLEVEL.PATCHLEVEL-RELEASE
+-#  -RELEASE is optional
+-FS_VERSION := $(shell echo $(pwd) | cut -d- -f2-)
+-endif
++FS_VERSION := $(shell echo $(pwd) | rev | cut -d/ -f1 | rev | cut -d- -f2)
+ #
+ VERSION    := $(shell echo $(FS_VERSION) | cut -d. -f1 -s )
+ SUBLEVEL   := $(shell echo $(FS_VERSION) | cut -d. -f2 -s )
