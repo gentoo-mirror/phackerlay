@@ -55,7 +55,7 @@ src_prepare () {
 src_compile () {
 	export FC=fort77
 	export FS_TINFO_LIB=1
-	default
+	make
 	make clean
 	make rmdoto
 	if use strip-sources; then
