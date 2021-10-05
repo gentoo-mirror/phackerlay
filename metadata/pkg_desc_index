@@ -3,7 +3,7 @@ acct-group/oper 0: System group: oper
 acct-group/prog 0: System group: prog
 acct-group/synapse 0: System group: synapse
 acct-user/hedgedoc 0: User for www-apps/hedgedoc
-acct-user/oper 0: prog user for fs
+acct-user/oper 0: oper user for fs
 acct-user/prog 0: prog user for fs
 acct-user/synapse 0: User for net-im/synapse
 app-admin/unattended-emerges 0.0.1: Dangerous automatic upgrades script
