@@ -1,12 +1,17 @@
 acct-group/hedgedoc 0: System group: hedgedoc
+acct-group/oper 0: System group: oper
+acct-group/prog 0: System group: prog
 acct-group/synapse 0: System group: synapse
 acct-user/hedgedoc 0: User for www-apps/hedgedoc
+acct-user/oper 0: prog user for fs
+acct-user/prog 0: prog user for fs
 acct-user/synapse 0: User for net-im/synapse
 app-admin/unattended-emerges 0.0.1: Dangerous automatic upgrades script
 app-portage/remerge 0.1.0: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
 dev-lang/fort77 1.18: Utility is the interface to the FORTRAN compilation system
 dev-libs/libf2c 20130927-r1 20160102: Library that converts FORTRAN to C source
+dev-libs/nng 1.3.2 1.5.2: High-performance messaging interface for distributed applications
 dev-python/antfs-cli 9999: ANT-FS Command Line Interface
 dev-python/canonicaljson 1.4.0: Canonical JSON
 dev-python/certipy 0.1.3: A simple python tool for creating certificate authorities and certificates on the fly.
@@ -40,6 +45,7 @@ gui-libs/libadwaita 1.0.0: Building blocks for modern GNOME applications
 media-sound/shortwave 1.1.1 2.0.1: Listen to internet radio
 net-im/jitsi-meet-bin 2.9.0: Desktop application for Jitsi Meet built with Electron
 net-im/synapse 1.38.1 1.39.0 1.40.0 1.41.1 1.42.0 1.43.0: Reference homeserver for the Matrix decentralised comms protocol
+sci-astronomy/fs 10.0.0: VLBI Field System
 sci-electronics/openhantek6022 3.2.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-libs/elpa 2021.05.002: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000: Setup collection for sci-physics/gpaw
