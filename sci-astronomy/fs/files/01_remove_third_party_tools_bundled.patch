@@ -1,0 +1,62 @@
+--- a/Makefile	2021-10-05 14:28:23.911855662 +0300
++++ b/Makefile	2021-10-05 14:29:40.549925924 +0300
+@@ -47,10 +47,6 @@
+ LIB_DIR = clib flib bosslb fclib fmpsee fslb lnfch newlb polb port rtelb vis \
+ poclb skdrlnfch skdrut vex rclco/rcl s2das
+ 
+-ifndef FS_DISPLAY_SERVER_NO_MAKE
+-LIB_DIR += third_party
+-endif
+-
+ EXE_DIR = rwand chekr fserr ddout fs fsalloc incom matcn oprin pcalr onoff \
+ fivpt pfmed error resid sigma xtrac boss antcn monit run labck setcl aquir \
+ quikv mcbcn brk moon logex headp fmset ibcon quikr rte_go drudg rclcn pdplt logpl \
+@@ -64,9 +60,6 @@
+ endif
+ 
+ 
+-export LDFLAGS += -L$(shell pwd)/third_party/lib
+-export CPPFLAGS += -I$(shell pwd)/third_party/include
+-
+ .PHONY: all $(LIB_DIR) $(EXE_DIR) version
+ 
+ all: version $(EXE_DIR)
+@@ -106,12 +99,6 @@
+ 	cd /; find usr2/fs-$(FS_VERSION) -name 'y.tab.h'      -print >> /tmp/fsdist-exclude
+ 	cd /; find usr2/fs-$(FS_VERSION)/bin -mindepth 1 \
+ 	                                            -name '*' -print >> /tmp/fsdist-exclude
+-	cd /; find usr2/fs-$(FS_VERSION)/third_party/src/* \
+-			! -iname '*.tar.gz'   \
+-			! -iname '*.template' \
+-			! -iname '*.make'                     -print >> /tmp/fsdist-exclude 
+-	echo usr2/fs-$(FS_VERSION)/third_party/lib                   >> /tmp/fsdist-exclude
+-	echo usr2/fs-$(FS_VERSION)/third_party/include               >> /tmp/fsdist-exclude
+ 	echo usr2/fs-$(FS_VERSION)/rclco/rcl/all                     >> /tmp/fsdist-exclude
+ 	cd /; tar -czf /tmp/fs-$(FS_VERSION).tgz -X /tmp/fsdist-exclude usr2/fs-$(FS_VERSION)
+ 	chmod a+rw /tmp/fs-$(FS_VERSION).tgz
+@@ -122,12 +109,6 @@
+ 	rm -f `find . -name '*~' -print`
+ 	rm -f `find . -name '.*~' -print`
+ 	rm -f `find . -name '*.pyc' -print`
+-	rm -rf third_party/include third_party/lib third_party/bin
+-	find third_party/src/* \
+-		! -iname '*.tar.gz' \
+-		! -iname '*.make' \
+-		! -iname '*.template' \
+-		-delete
+ #
+ rmexe:
+ 	rm -fr bin/*
+@@ -136,12 +117,6 @@
+ 	rm -f `find . -name '*.[oas]' -print`
+ 	rm -rf oprin/readline-2.0
+ 	rm -f `find . -name '*.pyc' -print`
+-	rm -rf third_party/include third_party/lib third_party/bin
+-	find third_party/src/* \
+-		! -iname '*.tar.gz' \
+-		! -iname '*.make' \
+-		! -iname '*.template' \
+-		-delete
+ #
+ libs:
+ 	for dir in $(LIB_DIR); do\

@@ -1,0 +1,8 @@
+--- a/rdtcn/Makefile	2021-10-05 16:17:46.172136872 +0300
++++ b/rdtcn/Makefile	2021-10-05 16:17:32.501134073 +0300
+@@ -1,4 +1,4 @@
+-LIBS = ../poclb/poclb.a ../clib/clib.a ../poclb/poclb.a ../rtelb/rtelb.a -lm
++LIBS = ../poclb/poclb.a ../clib/clib.a ../poclb/poclb.a ../rtelb/rtelb.a /usr/lib64/libm.so
+ OBJECTS = rdtcn.o FFT.o rdbe_freqz.o rt_nonfinite.o rtGetInf.o rtGetNaN.o
+ 
+ ../bin/rdtcn: $(OBJECTS) $(LIBS)
