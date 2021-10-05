@@ -13,6 +13,8 @@ LICENSE="GPL-3"
 SLOT="10/0"
 KEYWORDS="~amd64"
 
+IUSE="+strip-sources"
+
 PATCHES=(
 	"${FILESDIR}"/01_remove_third_party_tools_bundled.patch
 	"${FILESDIR}"/02_version_detection.patch
@@ -56,6 +58,11 @@ src_compile () {
 	default
 	make clean
 	make rmdoto
+	if use strip-sources; then
+		find ${S} -type f -name '*.c' -exec rm '{}' \;
+		find ${S} -type f -name '*.f' -exec rm '{}' \;
+		find ${S} -type f -name '*.cpp' -exec rm '{}' \;
+	fi
 }
 
 src_install () {

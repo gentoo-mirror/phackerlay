@@ -8,7 +8,7 @@ inherit acct-user
 DESCRIPTION="prog user for fs"
 
 ACCT_USER_ID=-1
-ACCT_USER_HOME="/home/prog"
-ACCT_USER_GROUPS=( prog )
+ACCT_USER_HOME="/home/oper"
+ACCT_USER_GROUPS=( oper )
 
 acct-user_add_deps
