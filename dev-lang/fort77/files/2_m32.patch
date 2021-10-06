@@ -5,7 +5,7 @@
  $fast_math = 1;
  $debug = 0;
 -$cc = $ENV{'CC'} || 'cc';
-+$cc = $ENV{'CC'} =~ s/ -m32//r || 'cc';
++$cc = ($ENV{'CC'} || 'cc' =~ m/ -m32/ ? $ENV{'CC'} =~ s/ -m32//r : $ENV{'CC'} || 'cc');
  
  # Loop over all options; pull all options from @ARGV and put all
  # arguments into @argv.	 This is needed because, apparently, UNIX
