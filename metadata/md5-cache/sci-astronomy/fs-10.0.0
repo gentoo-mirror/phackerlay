@@ -1,14 +1,14 @@
-BDEPEND=<sys-devel/gcc-10[fortran] dev-lang/fort77
+BDEPEND=<sys-devel/gcc-10 dev-lang/fort77
 DEFINED_PHASES=compile install prepare
 DEPEND=sys-libs/ncurses[tinfo] sys-libs/gpm net-libs/libnsl net-libs/libtirpc sys-libs/readline dev-libs/libf2c =dev-libs/nng-1.3.2 =dev-libs/jansson-2* acct-group/oper acct-group/prog acct-user/oper acct-user/prog
-DESCRIPTION=VLBI Field System
+DESCRIPTION=MarkIV Field System
 EAPI=8
 HOMEPAGE=https://github.com/nvi-inc/fs
 INHERIT=toolchain-funcs
-IUSE=+strip-sources
+IUSE=+strip-sources doc
 KEYWORDS=~amd64
 LICENSE=GPL-3
 SLOT=10/0
 SRC_URI=https://github.com/nvi-inc/fs/archive/refs/tags/10.0.0.tar.gz -> fs-10.0.0.tar.gz
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988
-_md5_=5f4d68b383cdcc45af27d2ab39f4836b
+_md5_=d2d0be7f2f1a5d7db4415be0cbe395ec
