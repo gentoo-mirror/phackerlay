@@ -5,7 +5,7 @@ EAPI=8
 
 inherit toolchain-funcs
 
-DESCRIPTION="VLBI Field System"
+DESCRIPTION="MarkIV Field System"
 HOMEPAGE="https://github.com/nvi-inc/fs"
 SRC_URI="https://github.com/nvi-inc/fs/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
@@ -13,17 +13,17 @@ LICENSE="GPL-3"
 SLOT="10/0"
 KEYWORDS="~amd64"
 
-IUSE="+strip-sources"
+IUSE="+strip-sources doc"
 
 PATCHES=(
-	"${FILESDIR}"/01_remove_third_party_tools_bundled.patch
-	"${FILESDIR}"/02_version_detection.patch
-	"${FILESDIR}"/03_glib_stime.patch
-	"${FILESDIR}"/04_rdtcn_libm_miss.patch
+	"${FILESDIR}"/10/01_remove_third_party_tools_bundled.patch
+	"${FILESDIR}"/10/02_version_detection.patch
+	"${FILESDIR}"/10/03_glib_stime.patch
+	"${FILESDIR}"/10/04_rdtcn_libm_miss.patch
 	)
 
 BDEPEND="
-	<sys-devel/gcc-10[fortran]
+	<sys-devel/gcc-10
 	dev-lang/fort77
 "
 
@@ -55,18 +55,24 @@ src_prepare () {
 src_compile () {
 	export FC=fort77
 	export FS_TINFO_LIB=1
-	make
+	make # should not be parallel, unhandled race conditions
 	make clean
 	make rmdoto
 	if use strip-sources; then
 		find ${S} -type f -name '*.c' -exec rm '{}' \;
 		find ${S} -type f -name '*.f' -exec rm '{}' \;
 		find ${S} -type f -name '*.cpp' -exec rm '{}' \;
+                find ${S} -type f -name 'makefile*' -exec rm '{}' \;
+                find ${S} -type f -name 'Makefile*' -exec rm '{}' \;
+                find ${S} -type f -name '*.h' -exec rm '{}' \;
 	fi
 }
 
 src_install () {
 	mkdir ${D}/usr2
+        if ! use doc; then
+                rm ${S}/help -r
+        fi
 	cp -r ${S}/../${P} ${D}/usr2/
 	elog
 	elog	Compiled ${P} has been put to /usr2/${P},
