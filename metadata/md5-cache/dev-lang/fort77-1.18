@@ -11,4 +11,4 @@ RDEPEND=dev-lang/f2c dev-lang/perl
 SLOT=0
 SRC_URI=ftp://ftp.icm.edu.pl/pub/Linux/sunsite/devel/lang/fortran/fort77-1.18.tar.gz -> fort77-1.18.tar.gz
 _eclasses_=gnuconfig	262062cef0ba4f22b397193da514a350	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	libtool	241a8f577b9781a42a7421e53448a44e	autotools	c9df06c186913b43eb211100ef5fe2cf
-_md5_=5796b6c1d0e3673d2c2341a3d4b4d84c
+_md5_=6cd2505623903bedc4196ca2eaf8b8d3
