@@ -45,7 +45,7 @@ gui-libs/libadwaita 1.0.0: Building blocks for modern GNOME applications
 media-sound/shortwave 1.1.1 2.0.1: Listen to internet radio
 net-im/jitsi-meet-bin 2.9.0: Desktop application for Jitsi Meet built with Electron
 net-im/synapse 1.38.1 1.39.0 1.40.0 1.41.1 1.42.0 1.43.0 1.44.0: Reference homeserver for the Matrix decentralised comms protocol
-sci-astronomy/fs 9.13.2 10.0.0: MarkIV Field System
+sci-astronomy/fs 9.11.19 9.12.13 9.13.2 10.0.0: MarkIV Field System
 sci-electronics/openhantek6022 3.2.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-libs/elpa 2021.05.002: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000: Setup collection for sci-physics/gpaw
