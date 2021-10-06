@@ -10,5 +10,6 @@ DESCRIPTION="prog user for fs"
 ACCT_USER_ID=-1
 ACCT_USER_HOME="/usr2/prog"
 ACCT_USER_GROUPS=( prog )
+ACCT_USER_NO_MODIFY=1
 
 acct-user_add_deps
