@@ -55,6 +55,8 @@ src_prepare () {
 		-exec sed -i 's:gcc :\$(CC) \$(CFLAGS) :g' '{}' \;
 	find ${S} -type f \( -name makefile -o -name Makefile \) \
 		-exec sed -i 's:cc :\$(CC) \$(CFLAGS) :g' '{}' \;
+	find ${S} -type f \( -name makefile -o -name Makefile \) \
+		-exec sed -i 's: -lncurses: -lncurses -ltinfo:g' '{}' \;
 	find ${S}/rclco -type f \( -name makefile -o -name Makefile \) \
 		-exec sed -i 's:CC= gcc::g' '{}' \;
 	find ${S}/vex -type f \( -name makefile -o -name Makefile \) \
