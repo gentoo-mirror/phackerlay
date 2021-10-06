@@ -12,7 +12,7 @@ HOMEPAGE="https://github.com/nvi-inc/fs"
 SRC_URI="https://github.com/nvi-inc/fs/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
-SLOT="9.13"
+SLOT="9.12"
 KEYWORDS="~amd64"
 
 IUSE="+strip-sources +abi_x86_32 doc"
