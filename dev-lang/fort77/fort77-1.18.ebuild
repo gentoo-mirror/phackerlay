@@ -22,6 +22,7 @@ RDEPEND="
 
 PATCHES=(
 	"${FILESDIR}"/1_mainmiss.patch
+	"${FILESDIR}"/2_m32.patch
 )
 
 src_compile () {

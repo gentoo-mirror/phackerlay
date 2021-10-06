@@ -1,0 +1,24 @@
+--- a/fort77	2021-10-06 12:14:44.710669992 +0300
++++ b/fort77	2021-10-06 12:24:09.090647397 +0300
+@@ -13,7 +13,7 @@
+ $cpp = 0;
+ $fast_math = 1;
+ $debug = 0;
+-$cc = $ENV{'CC'} || 'cc';
++$cc = $ENV{'CC'} =~ s/ -m32//r || 'cc';
+ 
+ # Loop over all options; pull all options from @ARGV and put all
+ # arguments into @argv.	 This is needed because, apparently, UNIX
+@@ -55,6 +55,12 @@
+ 	$cpp++;
+     }
+ 
++# -m32 for abi_x86_32 compiling
++    elsif (/^-m32/) {
++	push(@copts, $_);
++	push(@lopts, $_);
++    }
++
+ # These are common to both f2c and gcc
+     elsif (/^-w$/) {
+ 	push(@fopts, $_);
