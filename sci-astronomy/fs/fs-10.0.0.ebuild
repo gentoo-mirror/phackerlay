@@ -76,7 +76,7 @@ src_install () {
 	cp -r ${S}/../${P} ${D}/usr2/
 	elog
 	elog	Compiled ${P} has been put to /usr2/${P},
-	elog	prog and oper users are created. If you\'d
+	elog	prog and oper users have been created. If you\'d
 	elog	like to have it properly installed, close
 	elog	your eyes, cd /usr/${P} and make install as
 	elog	root.
