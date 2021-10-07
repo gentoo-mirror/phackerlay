@@ -7,7 +7,7 @@ acct-user/oper 0: oper user for fs
 acct-user/prog 0: prog user for fs
 acct-user/synapse 0: User for net-im/synapse
 app-admin/unattended-emerges 0.0.1: Dangerous automatic upgrades script
-app-portage/remerge 0.1.0: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
+app-portage/remerge 0.1.1: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
 dev-lang/fort77 1.18: Utility is the interface to the FORTRAN compilation system
 dev-libs/libf2c 20130927-r1 20160102: Library that converts FORTRAN to C source
