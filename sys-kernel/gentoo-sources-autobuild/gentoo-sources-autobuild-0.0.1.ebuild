@@ -9,7 +9,12 @@ KEYWORDS="amd64 ~ppc ~ppc64 x86 arm arm64"
 IUSE=""
 SLOT="0"
 
-RDEPEND="sys-kernel/gentoo-sources[symlink]"
+IUSE="+eclean-kernel patch"
+
+RDEPEND="
+	sys-kernel/gentoo-sources[symlink]
+	( eclean-kernel ? app-portage/eclean-kernel )
+"
 
 S="${WORKDIR}/"
 
