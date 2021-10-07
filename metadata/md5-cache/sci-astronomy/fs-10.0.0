@@ -11,4 +11,4 @@ LICENSE=GPL-3
 SLOT=10.0
 SRC_URI=https://github.com/nvi-inc/fs/archive/refs/tags/10.0.0.tar.gz -> fs-10.0.0.tar.gz
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988
-_md5_=edef1e9e7bf6a95f8b9d1ac0353ae830
+_md5_=a2a9cdc9b41ae74f7ee572397905280c
