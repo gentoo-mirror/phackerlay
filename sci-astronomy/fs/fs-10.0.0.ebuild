@@ -55,9 +55,13 @@ src_prepare () {
 src_compile () {
 	export FC=fort77
 	export FS_TINFO_LIB=1
-	make # should not be parallel, unhandled race conditions
+	export MAKEOPTS="-j1" # should not be parallel, unhandled race conditions
+	default
 	make clean
 	make rmdoto
+}
+
+src_install () {
 	if use strip-sources; then
 		find ${S} -type f -name '*.c' -exec rm '{}' \;
 		find ${S} -type f -name '*.f' -exec rm '{}' \;
@@ -66,9 +70,6 @@ src_compile () {
                 find ${S} -type f -name 'Makefile*' -exec rm '{}' \;
                 find ${S} -type f -name '*.h' -exec rm '{}' \;
 	fi
-}
-
-src_install () {
 	mkdir ${D}/usr2
         if ! use doc; then
                 rm ${S}/help -r

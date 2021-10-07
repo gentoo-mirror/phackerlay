@@ -75,19 +75,20 @@ multilib_src_configure () {
 multilib_src_compile () {
 	export FC="fort77 -m32"
 	export F77="fort77 -m32" # should be defined here, otherwise is overwritten by gfortran
-	make || die # should not be parallel, unhandled race conditions
+        export MAKEOPTS="-j1" # should not be parallel, unhandled race conditions
+        default
 	make clean
 	make rmdoto
-	if use strip-sources; then
-		find ${BUILD_DIR} -type f -name '*.c*' -exec rm '{}' \;
-		find ${BUILD_DIR} -type f -name '*.f*' -exec rm '{}' \;
-		find ${BUILD_DIR} -type f -name 'makefile*' -exec rm '{}' \;
-		find ${BUILD_DIR} -type f -name 'Makefile*' -exec rm '{}' \;
-		find ${BUILD_DIR} -type f -name '*.h' -exec rm '{}' \;
-	fi
 }
 
 multilib_src_install () {
+	if use strip-sources; then
+		find ${WORKDIR} -type f -name '*.c*' -exec rm '{}' \;
+		find ${WORKDIR} -type f -name '*.f*' -exec rm '{}' \;
+		find ${WORKDIR} -type f -name 'makefile*' -exec rm '{}' \;
+		find ${WORKDIR} -type f -name 'Makefile*' -exec rm '{}' \;
+		find ${WORKDIR} -type f -name '*.h' -exec rm '{}' \;
+	fi
 	mkdir -p ${D}/usr2/${P}
 	cp -r ${WORKDIR}/${P}-abi_x86_32.x86/* ${D}/usr2/${P}/
 	elog
