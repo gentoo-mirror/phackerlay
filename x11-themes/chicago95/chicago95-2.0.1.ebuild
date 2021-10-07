@@ -18,6 +18,7 @@ RDEPEND="
 	>=xfce-base/xfce4-panel-4.12
 	>=xfce-base/xfwm4-4.12
 	x11-libs/gdk-pixbuf
+	xfce-extra/xfce4-panel-profiles
 "
 
 S=${WORKDIR}/Chicago95-${PV}
@@ -31,7 +32,7 @@ src_install() {
 	doins ${S}/Extras/Chicago95_Panel_Preferences.tar.bz2
 	elog
 	elog	Theme is installed, for information on tuning visit:
-	elog	https://github.com/grassmunk/Chicago95/blob/v${PV}/INSTALL.md#install_system
+	elog	https://github.com/grassmunk/Chicago95/blob/v${PV}/INSTALL.md#enabling-chicago95
 	elog	or/and just use supplied helper:
 	elog	xfce4-panel-profiles load /usr/share/xfce4/helpers/Chicago95_Panel_Preferences.tar.bz2
 	elog	\(note: not all files from original repository are contained in this ebuild,
