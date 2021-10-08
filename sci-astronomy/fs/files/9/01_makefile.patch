@@ -57,3 +57,18 @@
  #
  libs:
  	for dir in $(LIB_DIR); do\
+@@ -83,12 +83,12 @@
+ #
+ libs:
+ 	for dir in $(LIB_DIR); do\
+-		make --no-print-directory -C $$dir ;\
++		make --no-print-directory -C $$dir || exit 1;\
+ 	done
+ #
+ execs:
+ 	for dir in $(EXEC_DIR); do \
+-		make --no-print-directory -C $$dir; \
++		make --no-print-directory -C $$dir || exit 1; \
+ 	done
+ install:
+ 	sh misc/fsinstall

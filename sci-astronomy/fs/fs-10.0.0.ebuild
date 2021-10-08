@@ -25,6 +25,7 @@ PATCHES=(
 BDEPEND="
 	<sys-devel/gcc-10
 	dev-lang/fort77
+	sys-devel/bison
 "
 
 DEPEND="
