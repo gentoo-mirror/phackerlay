@@ -1,4 +1,4 @@
-BDEPEND=<sys-devel/gcc-10 dev-lang/fort77
+BDEPEND=<sys-devel/gcc-10 dev-lang/fort77 sys-devel/bison
 DEFINED_PHASES=compile install prepare
 DEPEND=sys-libs/ncurses[tinfo] sys-libs/gpm net-libs/libnsl net-libs/libtirpc sys-libs/readline dev-libs/libf2c =dev-libs/nng-1.3.2 =dev-libs/jansson-2* acct-group/oper acct-group/prog acct-user/oper acct-user/prog
 DESCRIPTION=MarkIV Field System
@@ -11,4 +11,4 @@ LICENSE=GPL-3
 SLOT=10.0
 SRC_URI=https://github.com/nvi-inc/fs/archive/refs/tags/10.0.0.tar.gz -> fs-10.0.0.tar.gz
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988
-_md5_=a2a9cdc9b41ae74f7ee572397905280c
+_md5_=026ef6a67672b21d958df6f8093ebe8f
