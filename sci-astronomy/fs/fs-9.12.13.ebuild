@@ -25,6 +25,8 @@ PATCHES=(
 BDEPEND="
 	<sys-devel/gcc-10
 	dev-lang/fort77
+        sys-devel/bison
+        sys-devel/flex
 "
 
 DEPEND="
@@ -36,6 +38,7 @@ DEPEND="
 	dev-libs/libf2c[${MULTILIB_USEDEP}]
 	=dev-libs/nng-1.3.2[${MULTILIB_USEDEP}]
 	=dev-libs/jansson-2*[${MULTILIB_USEDEP}]
+	sys-devel/flex[${MULTILIB_USEDEP}]
 	acct-group/oper
 	acct-group/prog
 	acct-user/oper
@@ -89,6 +92,9 @@ multilib_src_install () {
 		find ${WORKDIR} -type f -name 'Makefile*' -exec rm '{}' \;
 		find ${WORKDIR} -type f -name '*.h' -exec rm '{}' \;
 	fi
+        if ! use doc; then
+                find ${WORKDIR} -type d -name help -exec rm '{}' -r \;
+        fi
 	mkdir -p ${D}/usr2/${P}
 	cp -r ${WORKDIR}/${P}-abi_x86_32.x86/* ${D}/usr2/${P}/
 	elog

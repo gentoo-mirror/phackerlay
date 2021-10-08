@@ -25,6 +25,7 @@ PATCHES=(
 BDEPEND="
 	<sys-devel/gcc-10
 	dev-lang/fort77
+        sys-devel/bison
 "
 
 DEPEND="
@@ -87,6 +88,9 @@ multilib_src_install () {
 		find ${WORKDIR} -type f -name 'Makefile*' -exec rm '{}' \;
 		find ${WORKDIR} -type f -name '*.h' -exec rm '{}' \;
 	fi
+        if ! use doc; then
+                find ${WORKDIR} -type d -name help -exec rm '{}' -r \;
+        fi
 	mkdir -p ${D}/usr2/${P}
 	cp -r ${WORKDIR}/${P}-abi_x86_32.x86/* ${D}/usr2/${P}/
 	elog
