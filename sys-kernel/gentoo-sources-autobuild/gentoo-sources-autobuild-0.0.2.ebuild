@@ -12,7 +12,7 @@ IUSE="+eclean-kernel patch"
 
 RDEPEND="
 	sys-kernel/gentoo-sources[symlink]
-	eclean-kernel? ( app-portage/eclean-kernel )
+	eclean-kernel? ( app-admin/eclean-kernel )
 "
 
 S="${WORKDIR}/"
