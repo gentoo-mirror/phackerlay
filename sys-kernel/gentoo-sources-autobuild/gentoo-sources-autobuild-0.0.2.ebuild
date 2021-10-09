@@ -27,7 +27,7 @@ src_install() {
 	fi
 
 	if use patch; then
-	cat ${FILESDIR}/patch >> $f
+		cat ${FILESDIR}/patch >> $f
 	fi
 	cat ${FILESDIR}/compile >> $f
 	echo '}' >> $f
