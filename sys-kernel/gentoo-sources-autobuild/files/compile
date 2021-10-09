@@ -1,0 +1,9 @@
+        CURRENT_KV=$(uname -r)
+        unset ARCH
+        if [[ -f "${EROOT:-/}usr/src/linux-${CURRENT_KV}/.config" ]] ; then
+                cp -n "${EROOT:-/}usr/src/linux-${CURRENT_KV}/.config" "${EROOT:-/}usr/src/linux/.config"
+                cd "${EROOT:-/}usr/src/linux/" && \
+                make olddefconfig && \
+                make ${MAKEOPTS} && make modules_install && make install && \
+                grub-mkconfig -o /boot/grub/grub.cfg
+        fi
