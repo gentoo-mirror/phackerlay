@@ -22,13 +22,13 @@ src_install() {
 	f=${D}/etc/portage/env/sys-kernel/gentoo-sources
 	echo 'post_pkg_postinst() {' > $f
 
-	if use eclean-kernel; then
-        	echo '	eclean-kernel -n 3' >> $f 
-	fi
-
 	if use patch; then
 		cat ${FILESDIR}/patch >> $f
 	fi
 	cat ${FILESDIR}/compile >> $f
+
+	if use eclean-kernel; then
+        	echo '	eclean-kernel -n 3' >> $f 
+	fi
 	echo '}' >> $f
 }
