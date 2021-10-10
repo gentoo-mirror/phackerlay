@@ -217,11 +217,11 @@ RESTRICT+=" test"
 
 src_compile() {
 	unset LDFLAGS
-	go build -o ${S}/apcupsd_exporter
+	cd ${S} && go build ${S}/cmd/apcupsd_exporter/main.go
 }
 
 src_install() {
-	dobin ${S}/apcupsd_exporter
+	newbin ${S}/main apcupsd_exporter
 	newconfd "${FILESDIR}"/apcupsd_exporter.confd apcupsd_exporter
 	newinitd "${FILESDIR}"/apcupsd_exporter.rc apcupsd_exporter
 }
