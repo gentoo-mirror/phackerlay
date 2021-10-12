@@ -60,6 +60,6 @@ sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot g
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gentoo-sources-autobuild 0.0.3: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.2.0: Prometheus exporter that exposes metrics from apcupsd's NIS
-www-apps/element 1.9.1: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.9.2: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/hedgedoc 1.9.0: Hedgedoc real-time collaborative markdown editor
 x11-themes/chicago95 2.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
