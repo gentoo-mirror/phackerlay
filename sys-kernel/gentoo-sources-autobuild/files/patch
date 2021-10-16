@@ -2,6 +2,6 @@
 	if [ **"$files" != "0"** ]; then
                 cd ${EROOT:-/}usr/src/linux/
                 for p in `ls ../*.patch`; do
-                        patch -p1 < ../$p
+                        patch -p1 < $p
                 done
         fi
