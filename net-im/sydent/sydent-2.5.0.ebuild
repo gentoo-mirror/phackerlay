@@ -50,7 +50,7 @@ python_compile() {
 
 python_install() {
 	cd ${S} && python -c 'from sydent.sydent import *; SydentConfig().parse_config_file(get_config_file_path())'
-	sed -i 's:res:/etc/sydent/templates:g' ${S}/sydent.conf
+	sed -i 's:res:/etc/sydent/templates/<brand.default>:g' ${S}/sydent.conf
         distutils-r1_python_install --skip-build
 }
 
@@ -75,14 +75,13 @@ pkg_postinst() {
                 elog "Note that all of keys of config, as it may seem, should be transferred"
 		elog "from DEFAULT to other relevant section of config (strange idea, yes?)"
                 elog
+                elog "Also please cp /etc/sydent/templates/matrix-org/* /etc/sydent/templates/<brand.default>/"
+                elog "And tune them to your needs (brand.default being set in sydent.conf and need substitution)"
+                elog
         else
+                elog
                 elog "May be it is good idea to compare working config with example one"
                 elog "diff /etc/sydent/sydent.conf.example /etc/sydent/sydent.conf"
-        fi
-        if [ ! -e /etc/sydent/templates/verification_template.eml ]; then
-                elog
-                elog "Also please cp /etc/sydent/templates/matrix-org/* /etc/sydent/templates/"
-                elog "And tune them to your needs"
                 elog
         fi
 }
