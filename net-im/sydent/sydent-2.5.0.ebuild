@@ -59,6 +59,6 @@ python_install_all() {
 }
 
 pkg_preinst() {
-	keepdir /etc/sydent /var/lib/sydent
+	keepdir /var/lib/sydent
 	fowners sydent:sydent /var/lib/sydent
 }
