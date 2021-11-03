@@ -11,7 +11,7 @@
 +             'sydent=sydent.sydent:execute',
 +        ]
 +    },
-+    package_data={'sydent': ['res/*']},
++    package_data={'sydent': ['res/*/*']},
      description="Reference Matrix Identity Verification and Lookup Server",
      python_requires=">=3.6",
      install_requires=[
