@@ -15,8 +15,8 @@ KEYWORDS="~amd64"
 LICENSE="Apache-2.0"
 SLOT="0"
 
-PATCHES=( "${FILESDIR}/01_remove_tests.patch"
-	  "${FILESDIR}/02_sydent_exec.patch" )
+PATCHES="${FILESDIR}/01_remove_tests.patch
+	 ${FILESDIR}/02_sydent_exec.patch"
 
 RDEPEND="
 	acct-user/sydent
@@ -55,7 +55,7 @@ python_install_all() {
 	distutils-r1_python_install_all
 	newinitd "${FILESDIR}"/sydent.initd sydent
 	insinto /etc/sydent
-	newins sydent.conf sydent.conf.example
+	newins ${S}/sydent.conf sydent.conf.example
 }
 
 pkg_preinst() {
