@@ -62,3 +62,14 @@ pkg_preinst() {
 	keepdir /var/lib/sydent
 	fowners sydent:sydent /var/lib/sydent
 }
+pkg_postinst() {
+        if [ ! -e /etc/sydent/sydent.conf ]; then
+                elog
+                elog "Please cp /etc/sydent/sydent.conf.example /etc/sydent/sydent.conf"
+                elog "And tune it to your needs"
+                elog
+        else
+                elog "May be it is good idea to compare working config with example one"
+                elog "diff /etc/sydent/sydent.conf.example /etc/sydent/sydent.conf"
+        fi
+}
