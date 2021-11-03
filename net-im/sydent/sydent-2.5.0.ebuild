@@ -60,7 +60,7 @@ python_install_all() {
 	insinto /etc/sydent
 	newins ${S}/sydent.conf sydent.conf.example
 	insinto /etc/sydent/templates
-	newins matrix-org matrix-org-example -r
+	newins ${S}/res/matrix-org matrix-org-example -r
 }
 
 pkg_preinst() {
