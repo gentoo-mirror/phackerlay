@@ -1,6 +1,6 @@
 --- a/setup.py	2021-11-03 20:27:01.133381554 +0300
 +++ b/setup.py	2021-11-03 20:27:24.447419198 +0300
-@@ -37,7 +37,12 @@
+@@ -37,7 +37,13 @@
  setup(
      name="matrix-sydent",
      version=read_version(),
@@ -11,6 +11,7 @@
 +             'sydent=sydent.sydent:execute',
 +        ]
 +    },
++    package_data={'sydent': ['res/*/*']},
      description="Reference Matrix Identity Verification and Lookup Server",
      python_requires=">=3.6",
      install_requires=[
