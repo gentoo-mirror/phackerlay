@@ -60,7 +60,7 @@ python_install_all() {
 	insinto /etc/sydent
 	newins ${S}/sydent.conf sydent.conf.example
 	insinto /etc/sydent/templates
-	newins -r ${S}/res/matrix-org matrix-org-example
+	doins -r ${S}/res/matrix-org
 }
 
 pkg_preinst() {
@@ -81,8 +81,8 @@ pkg_postinst() {
         fi
         if [ ! -e /etc/sydent/templates/verification_template.eml ]; then
                 elog
-                elog "Also please cp /etc/sydent/templates/matrix-org-example/* /etc/sydent/templates/"
-                elog "And tune it to your needs"
+                elog "Also please cp /etc/sydent/templates/matrix-org/* /etc/sydent/templates/"
+                elog "And tune them to your needs"
                 elog
         fi
 }
