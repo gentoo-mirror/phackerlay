@@ -2,11 +2,13 @@ acct-group/apcupsd_exporter 0: System group: apcupsd_exporter
 acct-group/hedgedoc 0: System group: hedgedoc
 acct-group/oper 0: System group: oper
 acct-group/prog 0: System group: prog
+acct-group/sydent 0: System group: sydent
 acct-group/synapse 0: System group: synapse
 acct-user/apcupsd_exporter 0: user for apcupsd_exporter
 acct-user/hedgedoc 0: User for www-apps/hedgedoc
 acct-user/oper 0: oper user for fs
 acct-user/prog 0: prog user for fs
+acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/unattended-emerges 0.0.1: Dangerous automatic upgrades script
 app-portage/remerge 0.1.4: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
@@ -45,6 +47,7 @@ dev-ruby/prometheus-client 2.1.0: A suite of instrumentation metric primitivesth
 gui-libs/libadwaita 1.0.0: Building blocks for modern GNOME applications
 media-sound/shortwave 1.1.1 2.0.1: Listen to internet radio
 net-im/jitsi-meet-bin 2.9.1: Desktop application for Jitsi Meet built with Electron
+net-im/sydent 2.5.0: Reference Matrix Identity Verification and Lookup Server
 net-im/synapse 1.46.0: Reference homeserver for the Matrix decentralised comms protocol
 sci-astronomy/fs 9.12.13 9.13.2 10.0.0: MarkIV Field System
 sci-electronics/openhantek6022 3.2.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
