@@ -8,7 +8,7 @@
 +    packages=find_packages(exclude=('tests',)),
 +    entry_points={
 +        'console_scripts': [
-+             'sydent=sydent:sydent',
++             'sydent=sydent.sydent:execute',
 +        ]
 +    },
      description="Reference Matrix Identity Verification and Lookup Server",

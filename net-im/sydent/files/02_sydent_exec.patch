@@ -1,0 +1,18 @@
+--- a/sydent/sydent.py	2021-11-03 21:25:27.850264726 +0300
++++ b/sydent/sydent.py	2021-11-03 21:26:08.279333527 +0300
+@@ -356,11 +356,13 @@
+     observer = log.PythonLoggingObserver()
+     observer.start()
+ 
+-
+-if __name__ == "__main__":
++def execute():
+     sydent_config = SydentConfig()
+     sydent_config.parse_config_file(get_config_file_path())
+     setup_logging(sydent_config)
+ 
+     syd = Sydent(sydent_config)
+     syd.run()
++
++if __name__ == "__main__":
++    execute()
