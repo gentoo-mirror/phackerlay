@@ -6,4 +6,4 @@ user=${SYNAPSE_USER:-sydent}
 group=${SYNAPSE_GROUP:-sydent}
 pidfile="/var/run/sydent/sydent.pid"
 command="/usr/bin/sydent"
-start_stop_daemon_args="--user ${user} --env SYDENT_CONF=/etc/sydent/sydent.conf --env SYDENT_DB_PATH=${pidfile} --env SYDENT_DB_PATH=/var/lib/sydent/sydent.db --group ${group} --pidfile ${pidfile} -b -m -3 logger -4 logger"
+start_stop_daemon_args="--user ${user} --env SYDENT_CONF=/etc/sydent/sydent.conf --env SYDENT_PID_FILE=${pidfile} --env SYDENT_DB_PATH=/var/lib/sydent/sydent.db --group ${group} --pidfile ${pidfile} -b -3 logger -4 logger"
