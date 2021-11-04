@@ -39,7 +39,7 @@ src_compile() {
 src_install() {
 	mkdir -p ${D}/opt/jitsi-meet
 	cp ${S}/dist/linux-unpacked/* ${D}/opt/jitsi-meet -r
-	dosym /opt/jitsi-meet/jitsi-meet /usr/bin/jitsi-meet
+	dosym ${EPREFIX}/opt/jitsi-meet/jitsi-meet ${EPREFIX}/usr/bin/jitsi-meet
 
 	local size
 	for size in 512; do
