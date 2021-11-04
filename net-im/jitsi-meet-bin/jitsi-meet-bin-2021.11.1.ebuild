@@ -32,9 +32,9 @@ src_compile() {
 	einfo 'Note, allowing network access from the sandbox via RESTRICT=network-sandbox'
 	einfo
 	einfo 'Fetching dependenies via npm'
-	bash -c 'npm install >> npm.log 2>&1 || die'
 	sed -e 's:AppImage:dir:g' -i package.json
 	sed -e 's:postinstall:pi:g' -i package.json
+	bash -c 'npm install >> npm.log 2>&1 || die'
 	einfo 'Building package via npm'
 	bash -c 'npm run dist >> npm.log 2>&1 || die'
 }
