@@ -34,6 +34,7 @@ src_compile() {
 	einfo 'Fetching dependenies via npm'
 	bash -c 'npm install >> npm.log 2>&1 || die'
 	sed -e 's:AppImage:dir:g' -i package.json
+	sed -e 's:postinstall:pi:g' -i package.json
 	einfo 'Building package via npm'
 	bash -c 'npm run dist >> npm.log 2>&1 || die'
 }
