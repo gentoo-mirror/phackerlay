@@ -30,15 +30,15 @@ src_compile() {
 	einfo 'Note, allowing network access from the sandbox via RESTRICT=network-sandbox'
 	einfo
 	einfo 'Fetching dependenies via npm'
-	npm install >> npm.log 2>&1 || die
+	bash -c 'npm install >> npm.log 2>&1 || die'
 	sed -e 's:AppImage:dir:g' -i package.json
 	einfo 'Building package via npm'
-	npm run dist >> npm.log 2>&1 || die
+	bash -c 'npm run dist >> npm.log 2>&1 || die'
 }
 
 src_install() {
 	mkdir -p ${D}/opt/jitsi-meet
-	cp ${S}/dist/linux-unpacked/* ${D}/opt/jitsi-meet -r
+	cp ${S}/dist/linux-unpacked/* ${D}/opt/jitsi-meet/ -r
 	dosym ${EPREFIX}/opt/jitsi-meet/jitsi-meet ${EPREFIX}/usr/bin/jitsi-meet
 
 	local size
