@@ -12,9 +12,11 @@ SRC_URI="https://github.com/jitsi/jitsi-meet-electron/archive/v${PV}.tar.gz -> $
 LICENSE="Apache-2.0"
 SLOT="0"
 
-DEPEND="<net-libs/nodejs-16[npm]
-	sys-fs/fuse
+BDEPEND="
+	<net-libs/nodejs-16[npm]
+	sys-apps/gyp
 "
+RDEPEND="sys-fs/fuse"
 
 KEYWORDS="~amd64"
 
@@ -32,6 +34,7 @@ src_compile() {
 	einfo 'Fetching dependenies via npm'
 	bash -c 'npm install >> npm.log 2>&1 || die'
 	sed -e 's:AppImage:dir:g' -i package.json
+	sed -e 's:postinstall:pi:g' -i package.json
 	einfo 'Building package via npm'
 	bash -c 'npm run dist >> npm.log 2>&1 || die'
 }
