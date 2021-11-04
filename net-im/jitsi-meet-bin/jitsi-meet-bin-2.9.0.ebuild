@@ -14,7 +14,6 @@ SLOT="0"
 
 BDEPEND="
 	<net-libs/nodejs-16[npm]
-	sys-apps/gyp
 "
 RDEPEND="sys-fs/fuse"
 
@@ -33,7 +32,6 @@ src_compile() {
 	einfo
 	einfo 'Fetching dependenies via npm'
 	sed -e 's:AppImage:dir:g' -i package.json
-	sed -e 's:postinstall:pi:g' -i package.json
 	bash -c 'npm install >> npm.log 2>&1 || die'
 	einfo 'Building package via npm'
 	bash -c 'npm run dist >> npm.log 2>&1 || die'
