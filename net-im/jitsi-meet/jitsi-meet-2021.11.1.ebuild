@@ -66,10 +66,3 @@ src_install() {
 	fperms +x /usr/bin/jitsi-meet
 	fperms +x "/opt/Jitsi Meet/jitsi-meet.bin"
 }
-
-pkg_postinst() {
-	elog
-	elog "Please switch to net-im/jitsi-meet (renaming package)"
-	elog
-
-}
