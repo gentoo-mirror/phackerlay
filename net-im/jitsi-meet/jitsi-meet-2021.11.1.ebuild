@@ -27,9 +27,9 @@ RDEPEND="
 	x11-libs/libXtst
 	app-accessibility/at-spi2-core:2
 	app-accessibility/at-spi2-atk:2
-	sys-libs/libuuid
 	system-ffmpeg? ( <media-video/ffmpeg-4.3[chromium] )
 "
+#	sys-libs/libuuid seems to be included in sys-apps/util-linux
 #	sys-fs/fuse
 
 KEYWORDS="~amd64"
