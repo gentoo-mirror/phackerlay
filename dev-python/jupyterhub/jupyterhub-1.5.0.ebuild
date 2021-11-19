@@ -30,6 +30,7 @@ RDEPEND="\
 	>=dev-python/jupyter-telemetry-0.1.0[${PYTHON_USEDEP}]
 	>=dev-python/oauthlib-3.0[${PYTHON_USEDEP}]
 	dev-python/pamela[${PYTHON_USEDEP}]
+	dev-python/packaging[${PYTHON_USEDEP}]
 	>=dev-python/prometheus_client-0.4.0[${PYTHON_USEDEP}]
 	dev-python/python-dateutil[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
