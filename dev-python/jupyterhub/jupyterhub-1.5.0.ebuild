@@ -21,6 +21,8 @@ RESTRICT=network-sandbox
 
 #dev-libs/kpathsea no mpl plots
 
+distutils_enable_tests pytest
+
 RDEPEND="\
 	>=dev-python/alembic-1.4[${PYTHON_USEDEP}]
 	>=dev-python/async_generator-1.9[${PYTHON_USEDEP}]
