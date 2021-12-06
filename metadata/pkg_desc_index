@@ -46,7 +46,7 @@ dev-ruby/fluent-plugin-prometheus 2.0.1: A fluent plugin that collects metrics a
 dev-ruby/prometheus-client 2.1.0: A suite of instrumentation metric primitivesthat can be exposed through a web services interface
 gui-libs/libadwaita 1.0.0: Building blocks for modern GNOME applications
 media-sound/shortwave 1.1.1 2.0.1: Listen to internet radio
-net-im/jitsi-meet 2021.12.1: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2021.12.2: Desktop application for Jitsi Meet built with Electron
 net-im/jitsi-meet-bin 2021.11.1: Desktop application for Jitsi Meet built with Electron
 net-im/sydent 2.5.1: Reference Matrix Identity Verification and Lookup Server
 net-im/synapse 1.48.0: Reference homeserver for the Matrix decentralised comms protocol
@@ -63,6 +63,6 @@ sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot g
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gentoo-sources-autobuild 0.0.4: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.2.0: Prometheus exporter that exposes metrics from apcupsd's NIS
-www-apps/element 1.9.5: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
-www-apps/hedgedoc 1.9.1: Hedgedoc real-time collaborative markdown editor
+www-apps/element 1.9.6: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/hedgedoc 1.9.2: Hedgedoc real-time collaborative markdown editor
 x11-themes/chicago95 2.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
