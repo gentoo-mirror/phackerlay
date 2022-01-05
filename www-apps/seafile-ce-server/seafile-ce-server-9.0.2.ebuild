@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-PYTHON_COMPAT=( python3_{9..10} )
+PYTHON_COMPAT=( python3_{7..8} )
 inherit python-single-r1
 
 DESCRIPTION="Meta package for Seafile Community Edition, file sync share solution"
@@ -12,7 +12,7 @@ SRC_URI="https://s3.eu-central-1.amazonaws.com/download.seadrive.org/seafile-ser
 LICENSE="seafile"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE="mysql oauth"
+IUSE="mysql oauth memcached"
 
 RDEPEND="${PYTHON_DEPS}
 	acct-user/seafile
@@ -20,7 +20,6 @@ RDEPEND="${PYTHON_DEPS}
 	$(python_gen_cond_dep '
 	dev-python/future[${PYTHON_USEDEP}]
 	dev-python/pillow[${PYTHON_USEDEP}]
-	dev-python/pylibmc[${PYTHON_USEDEP}]
 	dev-python/django-simple-captcha[${PYTHON_USEDEP}]
 
 	dev-python/jinja[${PYTHON_USEDEP}]
@@ -32,6 +31,7 @@ RDEPEND="${PYTHON_DEPS}
 	')
 
 	oauth? (  $(python_gen_cond_dep ' dev-python/requests-oauthlib[${PYTHON_USEDEP}]') )
+	memcached? (  $(python_gen_cond_dep ' dev-python/pylibmc[${PYTHON_USEDEP}]') )
 	!mysql? (  $(python_gen_cond_dep 'dev-python/sqlalchemy[sqlite,${PYTHON_USEDEP}]') )
 	mysql? (  $(python_gen_cond_dep ' dev-python/mysqlclient[${PYTHON_USEDEP}]') )
 	"
@@ -47,6 +47,7 @@ src_install() {
 	insinto /opt/seafile
 	doins -r ${WORKDIR}/seafile-server-${PV}
 	chown -R seafile:seafile ${ED}/opt/seafile
+	chmod +x ${ED}/opt/seafile/seafile-server-${PV}/seafile/bin/*
         newinitd "${FILESDIR}"/seafile.initd seafile
 }
 
@@ -65,5 +66,8 @@ pkg_postinst() {
 	elog Otherwise, please follow either:
 	elog https://manual.seafile.com/deploy/using_sqlite/#setting-up-seafile-server
 	elog https://manual.seafile.com/deploy/using_mysql/#setting-up-seafile-ce
+	elog
+	elog 'All the actions should be done from seafile user:'
+	elog su seafile -s /bin/bash
 	elog
 }
