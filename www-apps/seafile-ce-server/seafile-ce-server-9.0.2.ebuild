@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-PYTHON_COMPAT=( python3_{7..8} )
+PYTHON_COMPAT=( python3_{9..10} )
 inherit python-single-r1
 
 DESCRIPTION="Meta package for Seafile Community Edition, file sync share solution"
@@ -25,21 +25,26 @@ RDEPEND="${PYTHON_DEPS}
 	dev-python/jinja[${PYTHON_USEDEP}]
 	dev-python/django-pylibmc[${PYTHON_USEDEP}]
 	dev-python/ldap3[${PYTHON_USEDEP}]
-	dev-python/pycryptodome[${PYTHON_USEDEP}]
-	dev-python/cffi[${PYTHON_USEDEP}]
+	=dev-python/pycryptodome-3.12*[${PYTHON_USEDEP}]
+	=dev-python/cffi-1.14*[${PYTHON_USEDEP}]
 	=dev-python/django-3.2*[${PYTHON_USEDEP}]
 	')
+	# see deletes from bundled below
 
 	oauth? (  $(python_gen_cond_dep ' dev-python/requests-oauthlib[${PYTHON_USEDEP}]') )
 	memcached? (  $(python_gen_cond_dep ' dev-python/pylibmc[${PYTHON_USEDEP}]') )
-	!mysql? (  $(python_gen_cond_dep 'dev-python/sqlalchemy[sqlite,${PYTHON_USEDEP}]') )
+	!mysql? (  $(python_gen_cond_dep '=dev-python/sqlalchemy-1.4.3[sqlite,${PYTHON_USEDEP}]') )
 	mysql? (  $(python_gen_cond_dep ' dev-python/mysqlclient[${PYTHON_USEDEP}]') )
 	"
 DEPEND="${RDEPEND}"
 
-src_unpack () {
+src_unpack() {
 	default
 	S=${WORKDIR}/seafile-server-${PV}
+}
+
+src_prepare() {
+	rm ${S}/seahub/thirdpart/cffi* -r
 }
 
 src_install() {
@@ -48,6 +53,9 @@ src_install() {
 	doins -r ${WORKDIR}/seafile-server-${PV}
 	chown -R seafile:seafile ${ED}/opt/seafile
 	chmod +x ${ED}/opt/seafile/seafile-server-${PV}/seafile/bin/*
+	chmod +x ${ED}/opt/seafile/seafile-server-${PV}/*.py
+	chmod +x ${ED}/opt/seafile/seafile-server-${PV}/*.sh
+	chmod +x ${ED}/opt/seafile/seafile-server-${PV}/seahub/thirdpart/bin/*
         newinitd "${FILESDIR}"/seafile.initd seafile
 }
 
