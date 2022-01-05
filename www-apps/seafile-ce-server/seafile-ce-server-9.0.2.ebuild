@@ -33,8 +33,7 @@ RDEPEND="${PYTHON_DEPS}
 
 	oauth? (  $(python_gen_cond_dep ' dev-python/requests-oauthlib[${PYTHON_USEDEP}]') )
 	!mysql? (  $(python_gen_cond_dep 'dev-python/sqlalchemy[sqlite,${PYTHON_USEDEP}]') )
-	mysql? (  $(python_gen_cond_dep ' dev-python/mysqlclient[${PYTHON_USEDEP}]
-					  dev-python/sqlalchemy[mysql,${PYTHON_USEDEP}]') )
+	mysql? (  $(python_gen_cond_dep ' dev-python/mysqlclient[${PYTHON_USEDEP}]') )
 	"
 DEPEND="${RDEPEND}"
 
