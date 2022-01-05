@@ -47,7 +47,7 @@ dev-ruby/fluent-plugin-prometheus 2.0.1: A fluent plugin that collects metrics a
 dev-ruby/prometheus-client 2.1.0: A suite of instrumentation metric primitivesthat can be exposed through a web services interface
 gui-libs/libadwaita 1.0.0: Building blocks for modern GNOME applications
 media-sound/shortwave 1.1.1 2.0.1: Listen to internet radio
-net-im/jitsi-meet 2021.12.2: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2022.1.1: Desktop application for Jitsi Meet built with Electron
 net-im/jitsi-meet-bin 2021.11.1: Desktop application for Jitsi Meet built with Electron
 net-im/sydent 2.5.1: Reference Matrix Identity Verification and Lookup Server
 net-im/synapse 1.49.2: Reference homeserver for the Matrix decentralised comms protocol
