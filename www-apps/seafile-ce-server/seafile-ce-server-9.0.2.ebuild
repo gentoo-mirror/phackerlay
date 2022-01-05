@@ -26,16 +26,14 @@ RDEPEND="${PYTHON_DEPS}
 	dev-python/jinja[${PYTHON_USEDEP}]
 	dev-python/django-pylibmc[${PYTHON_USEDEP}]
 	dev-python/ldap3[${PYTHON_USEDEP}]
-	dev-python/captcha[${PYTHON_USEDEP}]
 	dev-python/pycryptodome[${PYTHON_USEDEP}]
 	dev-python/cffi[${PYTHON_USEDEP}]
-	~dev-python/django-3.2[${PYTHON_USEDEP}]
+	=dev-python/django-3.2*[${PYTHON_USEDEP}]
 	')
 
 	oauth? (  $(python_gen_cond_dep ' dev-python/requests-oauthlib[${PYTHON_USEDEP}]') )
 	!mysql? (  $(python_gen_cond_dep 'dev-python/sqlalchemy[sqlite,${PYTHON_USEDEP}]') )
-	mysql? (  $(python_gen_cond_dep ' dev-python/mysqlclient[${PYTHON_USEDEP}]
-					  dev-python/sqlalchemy[mysql,${PYTHON_USEDEP}]') )
+	mysql? (  $(python_gen_cond_dep ' dev-python/mysqlclient[${PYTHON_USEDEP}]') )
 	"
 DEPEND="${RDEPEND}"
 
