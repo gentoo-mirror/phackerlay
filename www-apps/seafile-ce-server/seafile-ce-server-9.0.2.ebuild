@@ -26,7 +26,6 @@ RDEPEND="${PYTHON_DEPS}
 	dev-python/jinja[${PYTHON_USEDEP}]
 	dev-python/django-pylibmc[${PYTHON_USEDEP}]
 	dev-python/ldap3[${PYTHON_USEDEP}]
-	dev-python/captcha[${PYTHON_USEDEP}]
 	dev-python/pycryptodome[${PYTHON_USEDEP}]
 	dev-python/cffi[${PYTHON_USEDEP}]
 	=dev-python/django-3.2*[${PYTHON_USEDEP}]
