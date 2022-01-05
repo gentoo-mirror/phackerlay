@@ -1,0 +1,16 @@
+#!/sbin/openrc-run
+# Copyright 1999-2021 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+user=seafile
+group=seafile
+
+start() {
+	/opt/seafile/seafile-server-latest/seafile.sh start
+	/opt/seafile/seafile-server-latest/seahub.sh start
+}
+
+stop() {
+	/opt/seafile/seafile-server-latest/seafile.sh stop
+	/opt/seafile/seafile-server-latest/seahub.sh stop
+}
