@@ -29,7 +29,7 @@ RDEPEND="${PYTHON_DEPS}
 	dev-python/captcha[${PYTHON_USEDEP}]
 	dev-python/pycryptodome[${PYTHON_USEDEP}]
 	dev-python/cffi[${PYTHON_USEDEP}]
-	~dev-python/django-3.2[${PYTHON_USEDEP}]
+	=dev-python/django-3.2.*[${PYTHON_USEDEP}]
 	')
 
 	oauth? (  $(python_gen_cond_dep ' dev-python/requests-oauthlib[${PYTHON_USEDEP}]') )
