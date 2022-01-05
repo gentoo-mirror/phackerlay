@@ -45,6 +45,7 @@ src_unpack() {
 }
 
 src_prepare() {
+	default
 	rm ${S}/seahub/thirdpart/cffi* -r
 }
 
