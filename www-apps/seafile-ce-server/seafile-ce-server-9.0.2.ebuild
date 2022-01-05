@@ -29,13 +29,14 @@ RDEPEND="${PYTHON_DEPS}
 	=dev-python/cffi-1.14*[${PYTHON_USEDEP}]
 	=dev-python/django-3.2*[${PYTHON_USEDEP}]
 	')
-	# see deletes from bundled below
 
 	oauth? (  $(python_gen_cond_dep ' dev-python/requests-oauthlib[${PYTHON_USEDEP}]') )
 	memcached? (  $(python_gen_cond_dep ' dev-python/pylibmc[${PYTHON_USEDEP}]') )
 	!mysql? (  $(python_gen_cond_dep '=dev-python/sqlalchemy-1.4.3[sqlite,${PYTHON_USEDEP}]') )
 	mysql? (  $(python_gen_cond_dep ' dev-python/mysqlclient[${PYTHON_USEDEP}]') )
 	"
+	# see deletes from bundled below
+
 DEPEND="${RDEPEND}"
 
 src_unpack() {
