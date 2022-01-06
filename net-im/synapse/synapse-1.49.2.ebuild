@@ -85,10 +85,10 @@ pkg_postinst() {
 		elog
 		elog "For initial config run somewhat like"
 		elog "sudo -u synapse python -m synapse.app.homeserver --server-name matrix.domain.tld --config-path /tmp/matrix.domain.tld.yaml --generate-config --report-stats=no"
-		elog "Read https://github.com/matrix-org/synapse/blob/develop/INSTALL.md if interested in more"
+		elog "Read https://github.com/matrix-org/synapse/blob/v${PV}/docs/setup/installation.md if interested in more"
 		elog
 	else
-		elog "Please read upgrade instructions avaliable at https://github.com/matrix-org/synapse/blob/v1.34.0/UPGRADE.rst"
+		elog "Please read upgrade instructions avaliable at https://github.com/matrix-org/synapse/blob/v${PV}/docs/upgrade.md"
 		elog "And restart synapse afterwards"
 	fi
 }

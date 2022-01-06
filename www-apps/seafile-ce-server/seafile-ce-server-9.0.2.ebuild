@@ -62,7 +62,7 @@ src_install() {
 }
 
 pkg_preinst() {
-        fowners seafile:seafile /opt/seafile
+	keepdir /opt/seafile
 }
 
 pkg_postinst() {
