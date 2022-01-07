@@ -77,8 +77,8 @@ python_install_all() {
 }
 
 pkg_preinst() {
-	keepdir /var/{run,lib,log}/synapse /etc/synapse
-	fowners synapse:synapse /var/{run,lib,log}/synapse /etc/synapse
+	keepdir /var/lib/synapse /etc/synapse
+	fowners synapse:synapse /var/lib/synapse /etc/synapse
 }
 
 pkg_postinst() {
