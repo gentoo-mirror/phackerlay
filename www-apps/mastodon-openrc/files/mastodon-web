@@ -1,0 +1,34 @@
+#!/sbin/openrc-run
+
+. /etc/conf.d/mastodon
+
+name="Mastodon Web Service"
+pidfile="${root}/web.pid"
+
+depend() {
+    use net
+}
+
+start() {
+    ebegin "Starting Mastodon web workers"
+
+    start-stop-daemon --start \
+        --chdir "${INSTALLROOT}" \
+        --user="${USER}" \
+        --pidfile="${pidfile}" \
+	-3 logger \
+	-4 logger \
+	-b -m \
+        --exec /usr/bin/env -- RAILS_ENV=production PORT=${WEB_PORT} \
+	MAX_THREADS=${WEB_MAX_THREADS} WEB_CONCURRENCY=${WEB_CONCURRENCY} bundle \
+	exec puma -C config/puma.rb
+
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping Mastodon web workers"
+    start-stop-daemon --stop \
+        --pidfile=${pidfile} \
+    eend $?
+}
