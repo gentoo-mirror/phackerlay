@@ -13,6 +13,11 @@ SLOT="0"
 RDEPEND="
 	sys-apps/openrc
 "
+src_prepare() {
+	default
+	S=${WORKDIR}
+}
+
 
 src_install() {
 	newinitd "${FILESDIR}"/mastodon-web
