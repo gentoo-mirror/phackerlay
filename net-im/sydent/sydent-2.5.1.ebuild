@@ -3,7 +3,7 @@
 
 EAPI="8"
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+PYTHON_COMPAT=( python3_{8,9} )
 inherit distutils-r1
 
 DESCRIPTION="Reference Matrix Identity Verification and Lookup Server"
@@ -14,6 +14,8 @@ KEYWORDS="~amd64"
 
 LICENSE="Apache-2.0"
 SLOT="0"
+
+IUSE="gammu"
 
 distutils_enable_tests pytest
 
@@ -37,11 +39,14 @@ RDEPEND="
         >=dev-python/frozendict-1[${PYTHON_USEDEP}]
 	>=dev-python/canonicaljson-1.4.0[${PYTHON_USEDEP}]
 	dev-python/importlib_metadata
+	gammu? ( dev-python/python-gammu[${PYTHON_USEDEP}] )
 "
 DEPEND="${RDEPEND}"
 
+
 src_prepare() {
         distutils-r1_src_prepare
+	use gammu && eapply "${FILESDIR}/03_local_gammu_sms.patch"
 }
 
 python_compile() {
