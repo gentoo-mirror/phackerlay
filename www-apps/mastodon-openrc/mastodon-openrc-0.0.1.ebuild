@@ -16,6 +16,7 @@ RDEPEND="
 src_prepare() {
 	default
 	S=${WORKDIR}
+	mkdir -p ${S}
 }
 
 
