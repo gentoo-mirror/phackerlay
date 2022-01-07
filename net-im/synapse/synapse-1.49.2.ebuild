@@ -16,6 +16,8 @@ LICENSE="Apache-2.0"
 SLOT="0"
 IUSE="postgres saml oidc ldap +redis"
 
+distutils_enable_tests pytest
+
 RDEPEND="
 	acct-user/synapse
 	acct-group/synapse
