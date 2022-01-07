@@ -20,10 +20,10 @@ src_unpack() {
 
 
 src_install() {
-	newinitd "${FILESDIR}"/mastodon-web
-	newinitd "${FILESDIR}"/mastodon-sidekiq
-	newinitd "${FILESDIR}"/mastodon-streaming
-	newconfd "${FILESDIR}"/mastodon
+	doinitd "${FILESDIR}"/mastodon-web
+	doinitd "${FILESDIR}"/mastodon-sidekiq
+	doinitd "${FILESDIR}"/mastodon-streaming
+	doconfd "${FILESDIR}"/mastodon
 }
 
 pkg_postinst() {
