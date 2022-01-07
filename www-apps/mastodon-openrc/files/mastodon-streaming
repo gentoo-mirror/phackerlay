@@ -1,0 +1,29 @@
+#!/sbin/openrc-run
+
+. /etc/conf.d/mastodon
+
+name="Mastodon streaming API service"
+
+depend() {
+    use net
+}
+
+start() {
+    ebegin "Starting Mastodon streaming API"
+
+    start-stop-daemon --start \
+        --background --quiet \
+        --chdir "${INSTALLROOT}" \
+        --user="${USER}" \
+        --make-pidfile --pidfile=${INSTALLROOT}/streaming.pid \
+        --exec /usr/bin/env -- NODE_ENV=production PORT=${STREAMING_PORT} \
+	STREAMING_CLUSTER_NUM=${STREAMING_WORKERS} /usr/bin/npm run start
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping Mastodon streaming API"
+    start-stop-daemon --stop \
+        --pidfile=${INSTALLROOT}/streaming.pid \
+    eend $?
+}

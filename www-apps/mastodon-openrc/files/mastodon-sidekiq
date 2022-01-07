@@ -1,0 +1,33 @@
+#!/sbin/openrc-run
+
+. /etc/conf.d/mastodon
+
+name="Mastodon background workers Service"
+
+pidfile="${INSTALLROOT}/worker.pid"
+
+depend() {
+    use net
+}
+
+start() {
+    ebegin "Starting Mastodon background workers"
+
+    start-stop-daemon --start \
+        --chdir "${INSTALLROOT}" \
+        --user="${USER}" \
+        --pidfile="${pidfile}" \
+	-3 logger \
+	-4 logger \
+	-b -m \
+        --exec /usr/bin/env -- RAILS_ENV=production DB_POOL=${DB_POOL} \
+	bundle exec sidekiq -c ${SIDEKIQ_WORKERS} -q default -q mailers -q pull -q push
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping Mastodon background workers"
+    start-stop-daemon --stop \
+        --pidfile=${pidfile} \
+    eend $?
+}
