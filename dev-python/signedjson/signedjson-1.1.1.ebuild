@@ -24,5 +24,6 @@ KEYWORDS="~amd64"
 
 DEPEND="
 	dev-python/pynacl[${PYTHON_USEDEP}]
+	importlib_metadata[${PYTHON_USEDEP}]
 "
 RDEPEND="${DEPEND}"
