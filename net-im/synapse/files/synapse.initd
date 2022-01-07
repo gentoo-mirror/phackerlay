@@ -4,7 +4,7 @@
 
 user=${SYNAPSE_USER:-synapse}
 group=${SYNAPSE_GROUP:-synapse}
-pidfile="/var/run/synapse/synapse.pid"
+pidfile="/run/synapse.pid"
 command="/usr/bin/synapse_homeserver"
 command_args="-c /etc/synapse/homeserver.yaml"
 start_stop_daemon_args="--user ${user} --group ${group} -b --pidfile ${pidfile} -4 logger -3 logger -m"
