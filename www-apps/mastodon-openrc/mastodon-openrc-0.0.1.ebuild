@@ -13,10 +13,9 @@ SLOT="0"
 RDEPEND="
 	sys-apps/openrc
 "
-src_prepare() {
+src_unpack() {
 	default
 	S=${WORKDIR}
-	mkdir -p ${S}
 }
 
 
