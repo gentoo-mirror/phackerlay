@@ -14,7 +14,7 @@ KEYWORDS="~amd64"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-IUSE="postgres saml oidc ldap"
+IUSE="postgres saml oidc ldap +redis"
 
 RDEPEND="
 	acct-user/synapse
@@ -55,6 +55,7 @@ RDEPEND="
 	postgres? ( >=dev-python/psycopg-2.8[${PYTHON_USEDEP}] )
 	saml? ( >=dev-python/pysaml2-4.5.0[${PYTHON_USEDEP}] )
 	oidc? ( >=dev-python/authlib-0.14.0[${PYTHON_USEDEP}] )
+	redis? ( dev-python/hiredis[${PYTHON_USEDEP}] >=dev-python/txredisapi-1.4.7[${PYTHON_USEDEP}] )
 "
 DEPEND="${RDEPEND}"
 
