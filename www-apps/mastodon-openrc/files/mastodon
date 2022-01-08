@@ -8,7 +8,7 @@ RBENV_ROOT="${USERHOME}/.rbenv"
 PATH="${RBENV_ROOT}/bin:${RBENV_ROOT}/shims:$PATH"
 
 # these are tuned to rather small values from defaults to suite compact instance
-# feel free to experiment with these
+# feel free to experiment
 DB_POOL=1
 SIDEKIQ_WORKERS=1
 

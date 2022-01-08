@@ -3,7 +3,7 @@
 
 EAPI="8"
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+PYTHON_COMPAT=( python3_{8,9} )
 inherit distutils-r1
 
 DESCRIPTION="Reference homeserver for the Matrix decentralised comms protocol"
@@ -41,7 +41,7 @@ RDEPEND="
 	>=dev-python/pymacaroons-0.13.0[${PYTHON_USEDEP}]
 	>=dev-python/msgpack-0.5.2[${PYTHON_USEDEP}]
 	>=dev-python/phonenumbers-8.2.0[${PYTHON_USEDEP}]
-	>=dev-python/prometheus-client-0.4.0[${PYTHON_USEDEP}] 
+	>=dev-python/prometheus_client-0.4.0[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.2.0[${PYTHON_USEDEP}]
 	!=dev-python/attrs-21.1.0[${PYTHON_USEDEP}]
 	>=dev-python/netaddr-0.7.18[${PYTHON_USEDEP}]
