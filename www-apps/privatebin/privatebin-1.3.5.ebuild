@@ -38,7 +38,8 @@ src_install() {
 }
 
 pkg_postinst() {
-	local mydir="${ROOT%}/${VHOST_ROOT}/${MY_HTDOCSBASE}/${PN}"
+	webapp_pkg_postinst
+	local mydir="${VHOST_ROOT}/${MY_HTDOCSBASE}/${PN}"
 	if [ ! -e $mydir/cfg/conf.php ]; then
 		elog
 		elog Please copy conf.sample.php to conf.php
@@ -54,5 +55,4 @@ pkg_postinst() {
 		elog
 
 	fi
-	webapp_pkg_postinst
 }
