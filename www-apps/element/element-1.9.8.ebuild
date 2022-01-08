@@ -12,7 +12,7 @@ LICENSE="Apache-2.0"
 
 KEYWORDS="~amd64"
 
-RDEPEND="app-admin/webapp-config"
+DEPEND="app-admin/webapp-config"
 
 S=${WORKDIR}/${PN}-v${PV}
 

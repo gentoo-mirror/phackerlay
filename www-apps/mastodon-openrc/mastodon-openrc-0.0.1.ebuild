@@ -3,7 +3,7 @@
 
 EAPI="8"
 
-DESCRIPTION="set of an OpenRC scripts to run mastodon services"
+DESCRIPTION="a set of an OpenRC scripts to run mastodon services"
 
 KEYWORDS="~amd64"
 
@@ -35,6 +35,6 @@ pkg_postinst() {
                 elog "rc-service mastodon-streaming start"
                 elog "rc-service mastodon-web start"
                 elog
-		elog "Messages will be sent to syslog"
+		elog "All messages will be sent to syslog"
 		elog
 }
