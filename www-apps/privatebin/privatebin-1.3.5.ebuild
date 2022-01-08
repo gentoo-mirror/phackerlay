@@ -38,10 +38,21 @@ src_install() {
 }
 
 pkg_postinst() {
-	local mydir="${ROOT%/}/${VHOST_ROOT}/${MY_HTDOCSBASE}/${PN}"
-	if [ ! -e $mydir/cfg/conf.php ]; then
-		einfo Please copy conf.sample.php to conf.php
-		einfo in $mydir/cfg and tune it to your needs
-	fi
 	webapp_pkg_postinst
+	local mydir="${VHOST_ROOT}/${MY_HTDOCSBASE}/${PN}"
+	if [ ! -e $mydir/cfg/conf.php ]; then
+		elog
+		elog Please copy conf.sample.php to conf.php
+		elog in $mydir/cfg and tune it to your needs
+		elog
+	else
+		elog
+		elog See release notes at
+		elog https://github.com/PrivateBin/PrivateBin/releases/tag/${PVw}
+		elog
+		elog And maybe look at diff conf.sample.php conf.php at
+		elog $mydir
+		elog
+
+	fi
 }
