@@ -70,6 +70,7 @@ sys-kernel/gentoo-sources-autobuild 0.0.4: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.2.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 www-apps/element 1.9.8: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/hedgedoc 1.9.2: Hedgedoc real-time collaborative markdown editor
-www-apps/mastodon-openrc 0.0.1: set of an OpenRC scripts to run mastodon services
+www-apps/mastodon-openrc 0.0.1: a set of an OpenRC scripts to run mastodon services
+www-apps/privatebin 1.3.5: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-apps/seafile-ce-server 9.0.2: Meta package for Seafile Community Edition, file sync share solution
 x11-themes/chicago95 2.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux

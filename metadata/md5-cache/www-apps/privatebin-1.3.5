@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND=app-admin/webapp-config app-admin/webapp-config
+DESCRIPTION=A minimalist, open source online pastebin where the server has zero knowledge of pasted data
+EAPI=8
+HOMEPAGE=https://privatebin.info/
+INHERIT=webapp
+IUSE=vhosts
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/php-7[fpm,zlib,gd] app-admin/webapp-config
+SLOT=1.3.5
+SRC_URI=https://github.com/PrivateBin/PrivateBin/archive/refs/tags/1.3.5.tar.gz -> privatebin-1.3.5.tar.gz
+_eclasses_=webapp	60f2eb31dec733d05e8114cc078ebc33
+_md5_=aab3f394ce6d7e4a2f0daf033d9a72c8
