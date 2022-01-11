@@ -43,7 +43,7 @@ src_install() {
 	doins -r "opt/Jitsi Meet"
 
 	dobin "opt/Jitsi Meet/jitsi-meet"
-	dosym "${EPREFIX}/opt/Jitsi Meet/jitsi-meet.bin" ${EPREFIX}/usr/bin/jitsi-meet.bin
+	dosym "${EPREFIX}/opt/Jitsi Meet/jitsi-meet" ${EPREFIX}/usr/bin/jitsi-meet
 	domenu usr/share/applications/jitsi-meet.desktop
 	doicon usr/share/icons/hicolor/512x512/apps/jitsi-meet.png
 
@@ -64,5 +64,5 @@ src_install() {
 	fi
 
 	fperms +x /usr/bin/jitsi-meet
-	fperms +x "/opt/Jitsi Meet/jitsi-meet.bin"
+	fperms +x "/opt/Jitsi Meet/jitsi-meet"
 }
