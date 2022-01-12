@@ -63,6 +63,5 @@ src_install() {
 		elog "or you experience graphic issues, then try with USE=swiftshader enabled."
 	fi
 
-	fperms +x ${EPREFIX}/usr/bin/jitsi-meet
 	fperms +x "/opt/Jitsi Meet/jitsi-meet"
 }
