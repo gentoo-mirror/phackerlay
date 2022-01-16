@@ -16,8 +16,7 @@ IUSE=""
 
 BDEPEND="
 	>=net-libs/nodejs-14
-        >=sys-apps/yarn-2.4.2
-        <sys-apps/yarn-2
+        || ( >=sys-apps/yarn-2.4.2 <sys-apps/yarn-2 )
 "
 DEPEND="app-admin/webapp-config"
 
