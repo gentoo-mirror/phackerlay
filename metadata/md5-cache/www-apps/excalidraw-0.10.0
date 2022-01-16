@@ -1,5 +1,5 @@
 BDEPEND=>=net-libs/nodejs-14 || ( >=sys-apps/yarn-2.4.2 <sys-apps/yarn-2 )
-DEFINED_PHASES=compile install postinst prerm setup
+DEFINED_PHASES=compile install postinst prepare prerm setup
 DEPEND=app-admin/webapp-config app-admin/webapp-config
 DESCRIPTION=Virtual whiteboard for sketching hand-drawn like diagrams
 EAPI=8
@@ -13,4 +13,4 @@ RESTRICT=network-sandbox
 SLOT=0.10.0
 SRC_URI=https://github.com/excalidraw/excalidraw/archive/refs/tags/v0.10.0.tar.gz
 _eclasses_=webapp	60f2eb31dec733d05e8114cc078ebc33
-_md5_=8d051017a71caf0f7c215515cd2e6f48
+_md5_=0cf7e8a5a20727be525de40d5524da1d
