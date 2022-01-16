@@ -1,0 +1,16 @@
+BDEPEND=>=net-libs/nodejs-14 || ( >=sys-apps/yarn-2.4.2 <sys-apps/yarn-2 )
+DEFINED_PHASES=compile install postinst prerm setup
+DEPEND=app-admin/webapp-config app-admin/webapp-config
+DESCRIPTION=Virtual whiteboard for sketching hand-drawn like diagrams
+EAPI=8
+HOMEPAGE=https://excalidraw.com/ https://github.com/excalidraw/excalidraw
+INHERIT=webapp
+IUSE=vhosts
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=app-admin/webapp-config
+RESTRICT=network-sandbox
+SLOT=0
+SRC_URI=https://github.com/excalidraw/excalidraw/archive/refs/tags/v0.10.0.tar.gz
+_eclasses_=webapp	60f2eb31dec733d05e8114cc078ebc33
+_md5_=bd1edce6d479078e687b98d249355c3e

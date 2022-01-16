@@ -69,6 +69,7 @@ sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 sc
 sys-kernel/gentoo-sources-autobuild 0.0.4: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.2.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 www-apps/element 1.9.8: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/excalidraw 0.10.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/hedgedoc 1.9.2: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.1: a set of an OpenRC scripts to run mastodon services
 www-apps/privatebin 1.3.5: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
