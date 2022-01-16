@@ -22,6 +22,12 @@ DEPEND="app-admin/webapp-config"
 S=${WORKDIR}/${P}
 
 RESTRICT="network-sandbox"
+src_prepare() {
+	default
+	echo 'REACT_APP_SOCKET_SERVER_URL=https://draw.phys-el.ru' > ${S}/.env
+	echo '' > ${S}/.env.production
+
+}
 
 src_compile() {
         einfo
