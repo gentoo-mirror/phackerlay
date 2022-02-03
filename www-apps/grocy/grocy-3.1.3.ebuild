@@ -21,6 +21,8 @@ DEPEND="
 	app-admin/webapp-config
 "
 
+S=${WORKDIR}
+
 pkg_setup() {
 	webapp_pkg_setup
 }
