@@ -1,0 +1,14 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND=app-admin/webapp-config app-admin/webapp-config
+DESCRIPTION=Web-based self-hosted groceries & household management solution for your home
+EAPI=8
+HOMEPAGE=https://grocy.info/
+INHERIT=webapp
+IUSE=vhosts
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/php-7[ctype,curl,fpm,exif,fileinfo,gd,iconv,phar,ldap,simplexml,tokenizer,zip,intl] app-admin/webapp-config
+SLOT=3.1.3
+SRC_URI=https://github.com/grocy/grocy/archive/refs/tags/v3.1.3.tar.gz -> grocy-3.1.3.tar.gz
+_eclasses_=webapp	60f2eb31dec733d05e8114cc078ebc33
+_md5_=7b15f6585acee017762cd3e5f3d2df5c
