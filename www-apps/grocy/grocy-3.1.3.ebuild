@@ -7,19 +7,21 @@ inherit webapp
 
 DESCRIPTION="Web-based self-hosted groceries & household management solution for your home"
 HOMEPAGE="https://grocy.info/"
-SRC_URI="https://github.com/grocy/grocy/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/grocy/grocy/releases/download/v${PV}/grocy_${PV}.zip -> ${P}.zip"
 
 
-LICENSE="GPL-2"
+LICENSE="MIT"
 KEYWORDS="~amd64"
 IUSE=""
 
 RDEPEND="
-	>=dev-lang/php-7[ctype,curl,fpm,exif,fileinfo,gd,iconv,phar,ldap,simplexml,tokenizer,zip,intl]
+	>=dev-lang/php-7[ctype,curl,fpm,exif,fileinfo,gd,iconv,phar,ldap,simplexml,sqlite,tokenizer,zip,intl]
 "
 DEPEND="
 	app-admin/webapp-config
 "
+
+S=${WORKDIR}
 
 pkg_setup() {
 	webapp_pkg_setup
@@ -50,6 +52,7 @@ pkg_postinst() {
 		elog
 		elog See release notes at
 		elog https://github.com/grocy/releases/tag/v${PVw}
+		elog https://github.com/grocy/grocy#how-to-update
 		elog
 		elog And maybe look at diff config-dist.php data/config.php at
 		elog $mydir
