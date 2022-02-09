@@ -36,13 +36,13 @@ python_install() {
 
 python_install_all() {
         insinto /etc/sudoers.d
-        newins ${S}/sudospawner.sudoers sudospawner
+        newins ${FILESDIR}/sudospawner.sudoers sudospawner
 	distutils-r1_python_install_all
 }
 
 pkg_postinst() {
                 elog
-                elog "All jupyterhub users should members of jupyterhub group"
+                elog "All jupyterhub users should be members of jupyterhub group"
                 elog "(see /etc/sudoers.d/jupyterhub)"
                 elog
 }
