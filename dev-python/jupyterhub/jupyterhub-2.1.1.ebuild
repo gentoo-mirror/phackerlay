@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+PYTHON_COMPAT=( python3_{8,9} )
 
 inherit distutils-r1
 
@@ -23,7 +23,9 @@ RESTRICT=network-sandbox
 
 distutils_enable_tests pytest
 
-RDEPEND="\
+RDEPEND="
+	acct-user/sydent
+	acct-group/sydent
 	>=dev-python/alembic-1.4[${PYTHON_USEDEP}]
 	>=dev-python/async_generator-1.9[${PYTHON_USEDEP}]
 	>=dev-python/certipy-0.1.2[${PYTHON_USEDEP}]
@@ -56,9 +58,32 @@ python_compile() {
 }
 
 python_install() {
-	distutils-r1_python_install --skip-build
+	cd ${S} && python -c 'python -m jupyterhub --generate-config'
+        distutils-r1_python_install --skip-build
 }
 
 python_install_all() {
 	distutils-r1_python_install_all
+	newinitd "${FILESDIR}"/jupyterhub.initd jupyterhub
+	insinto /etc/jupyterhub
+	newins ${S}/jupyterhub_config.py config.example.py
+}
+
+pkg_preinst() {
+	keepdir /var/lib/jupyterhub
+	fowners jupyterhub:jupyterhub /var/lib/jupyterhub /var/run/jupyterhub
+}
+pkg_postinst() {
+        if [ ! -e /etc/jupyterhub/config.py ]; then
+                elog
+                elog "Please cp /etc/jupyterhub/config.example.py /etc/jupyterhub/config.py"
+                elog "And tune it to your needs"
+                elog
+        else
+                elog
+                elog "May be it is good idea to compare working config with example one"
+                elog "diff /etc/jupyterhub/config.example.py /etc/jupyterhub/config.py"
+		elog "and see the changelog at https://jupyterhub.readthedocs.io/en/${PV}/changelog.html"
+                elog
+        fi
 }
