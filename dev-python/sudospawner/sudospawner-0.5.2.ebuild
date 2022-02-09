@@ -36,7 +36,7 @@ python_install() {
 
 python_install_all() {
         insinto /etc/sudoers.d
-        newins ${S}/sudospawner.sudoers sudospawner
+        newins ${FILESDIR}/sudospawner.sudoers sudospawner
 	distutils-r1_python_install_all
 }
 
