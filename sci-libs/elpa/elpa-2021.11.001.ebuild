@@ -1,18 +1,18 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
+
+inherit autotools
 
 DESCRIPTION="The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices"
 HOMEPAGE="https://elpa.mpcdf.mpg.de/"
 
-inherit autotools
-SRC_URI="https://gitlab.mpcdf.mpg.de/elpa/elpa/-/archive/new_release_2021_05_002/elpa-new_release_2021_05_002.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/elpa-new_release_2021_05_002"
+SRC_URI="https://gitlab.mpcdf.mpg.de/elpa/elpa/-/archive/new_release_${PV}/elpa-new_release_${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/elpa-new_release_${PV}"
 KEYWORDS="~amd64"
 
 LICENSE="GPL-3"
-SLOT="0"
 IUSE="openmp mpi cpu_flags_x86_sse cpu_flags_x86_avx cpu_flags_x86_avx2 cpu_flags_x86_avx512 cpu_flags_x86_sve128 cpu_flags_x86_sve256 cpu_flags_x86_sve512"
 
 RDEPEND="
