@@ -15,7 +15,7 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="ldapauthenticator"
+IUSE="ldapauthenticator sudospawner"
 
 RESTRICT=network-sandbox
 
@@ -24,8 +24,8 @@ RESTRICT=network-sandbox
 distutils_enable_tests pytest
 
 RDEPEND="
-	acct-user/sydent
-	acct-group/sydent
+	acct-user/jupyterhub
+	acct-group/jupyterhub
 	>=dev-python/alembic-1.4[${PYTHON_USEDEP}]
 	>=dev-python/async_generator-1.9[${PYTHON_USEDEP}]
 	>=dev-python/certipy-0.1.2[${PYTHON_USEDEP}]
@@ -43,6 +43,7 @@ RDEPEND="
 	>=dev-python/traitlets-4.3.2[${PYTHON_USEDEP}]
 	|| ( dev-python/jupyterlab[${PYTHON_USEDEP}] dev-python/jupyter[${PYTHON_USEDEP}] )
 	ldapauthenticator? ( dev-python/jupyterhub-ldapauthenticator[${PYTHON_USEDEP}] )
+	sudospawner? ( dev-python/sudospawner[${PYTHON_USEDEP}] )
 "
 
 src_prepare() {
@@ -71,7 +72,7 @@ python_install_all() {
 
 pkg_preinst() {
 	keepdir /var/lib/jupyterhub
-	fowners jupyterhub:jupyterhub /var/lib/jupyterhub /var/run/jupyterhub
+	fowners jupyterhub:jupyterhub /var/lib/jupyterhub
 }
 pkg_postinst() {
         if [ ! -e /etc/jupyterhub/config.py ]; then
