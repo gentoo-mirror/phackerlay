@@ -58,7 +58,7 @@ python_compile() {
 }
 
 python_install() {
-	cd ${S} && python -c 'python -m jupyterhub --generate-config'
+	cd ${S} && python -m jupyterhub --generate-config
         distutils-r1_python_install --skip-build
 }
 
