@@ -42,7 +42,7 @@ python_install_all() {
 
 pkg_postinst() {
                 elog
-                elog "All jupyterhub users should members of jupyterhub group"
+                elog "All jupyterhub users should be members of jupyterhub group"
                 elog "(see /etc/sudoers.d/jupyterhub)"
                 elog
 }
