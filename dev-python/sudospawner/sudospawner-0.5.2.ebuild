@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+PYTHON_COMPAT=( python3_{8,9} )
 
 inherit distutils-r1
 
@@ -15,8 +15,11 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND="\
-	dev-python/jupyterhub[${PYTHON_USEDEP}] \
+RDEPEND="
+	dev-python/jupyterhub[${PYTHON_USEDEP}]
+	app-admin/sudo
+	acct-user/jupyterhub
+        acct-group/jupyterhub
 "
 
 src_prepare() {
@@ -32,5 +35,14 @@ python_install() {
 }
 
 python_install_all() {
+        insinto /etc/sudoers.d
+        newins ${S}/sudospawner.sudoers sudospawner
 	distutils-r1_python_install_all
+}
+
+pkg_postinst() {
+                elog
+                elog "All jupyterhub users should members of jupyterhub group"
+                elog "(see /etc/sudoers.d/jupyterhub)"
+                elog
 }
