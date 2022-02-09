@@ -72,7 +72,7 @@ python_install_all() {
 
 pkg_preinst() {
 	keepdir /var/lib/jupyterhub
-	fowners jupyterhub:jupyterhub /var/lib/jupyterhub /var/run/jupyterhub
+	fowners jupyterhub:jupyterhub /var/lib/jupyterhub
 }
 pkg_postinst() {
         if [ ! -e /etc/jupyterhub/config.py ]; then
