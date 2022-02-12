@@ -51,7 +51,7 @@ pkg_postinst() {
 	else
 		elog
 		elog See release notes at
-		elog https://github.com/grocy/releases/tag/v${PVw}
+		elog https://github.com/grocy/releases/tag/v${PV}
 		elog https://github.com/grocy/grocy#how-to-update
 		elog
 		elog And maybe look at diff config-dist.php data/config.php at

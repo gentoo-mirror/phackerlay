@@ -1,2 +1,1 @@
-%jupyterhub ALL=(jupyterhub) /usr/bin/sudo
-jupyterhub ALL=(%jupyterhub) NOPASSWD:/usr/bin/jupyterhub
+jupyterhub ALL=(ALL) NOPASSWD: /usr/bin/sudospawner

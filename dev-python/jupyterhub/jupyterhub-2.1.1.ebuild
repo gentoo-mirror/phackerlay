@@ -15,7 +15,7 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="ldapauthenticator sudospawner"
+IUSE="ldapauthenticator postgres sudospawner"
 
 RESTRICT=network-sandbox
 
@@ -42,6 +42,7 @@ RDEPEND="
 	>=www-servers/tornado-5.1[${PYTHON_USEDEP}]
 	>=dev-python/traitlets-4.3.2[${PYTHON_USEDEP}]
 	|| ( dev-python/jupyterlab[${PYTHON_USEDEP}] dev-python/jupyter[${PYTHON_USEDEP}] )
+	postgres? ( dev-python/psycopg[${PYTHON_USEDEP}] )
 	ldapauthenticator? ( dev-python/jupyterhub-ldapauthenticator[${PYTHON_USEDEP}] )
 	sudospawner? ( dev-python/sudospawner[${PYTHON_USEDEP}] )
 "
