@@ -7,4 +7,4 @@ group=jupyterhub
 pidfile=/var/run/jupyterhub.pid
 command="/usr/bin/jupyterhub"
 command_args="-f /etc/jupyterhub/config.py"
-start_stop_daemon_args="--user ${user} --group ${group} -m --pidfile ${pidfile} -b -3 logger -4 logger"
+start_stop_daemon_args="--user ${user} --group ${group} --chdir /var/lib/jupyterhub -m --pidfile ${pidfile} -b -3 logger -4 logger"
