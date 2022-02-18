@@ -17,6 +17,8 @@ KEYWORDS="~amd64"
 
 distutils_enable_tests pytest
 
+S=${WORKDIR}/jupyterlab_widgets-${PV}
+
 RDEPEND="
 	dev-python/jupyterlab[${PYTHON_USEDEP}]
 "
