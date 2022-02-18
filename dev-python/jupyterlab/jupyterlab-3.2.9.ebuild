@@ -15,7 +15,7 @@ LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="ipympl collaborative slurm"
+IUSE="ipympl collaborative slurm +widgets"
 
 distutils_enable_tests pytest
 
@@ -33,6 +33,7 @@ RDEPEND="
 	ipympl? ( >=dev-python/ipympl-0.7[${PYTHON_USEDEP}] )
     slurm? ( dev-python/jupyterlab-slurm[${PYTHON_USEDEP}] )
     collaborative? ( dev-python/jupyterlab-link-share[${PYTHON_USEDEP}] )
+    widgets? ( dev-python/ipywidgets[${PYTHON_USEDEP}] >dev-python/jupyterlab-widgets-1.0.0[${PYTHON_USEDEP}] )
 	net-libs/nodejs
 "
 
