@@ -57,6 +57,7 @@ net-im/synapse 1.52.0: Reference homeserver for the Matrix decentralised comms p
 sci-astronomy/fs 9.12.13 9.13.2 10.0.0: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.2.5: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
+sci-electronics/qucs-s 0.0.23: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-libs/elpa 2021.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000: Setup collection for sci-physics/gpaw
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
