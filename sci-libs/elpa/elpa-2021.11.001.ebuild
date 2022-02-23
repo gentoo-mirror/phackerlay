@@ -14,6 +14,7 @@ KEYWORDS="~amd64"
 
 LICENSE="GPL-3"
 IUSE="openmp mpi cpu_flags_x86_sse cpu_flags_x86_avx cpu_flags_x86_avx2 cpu_flags_x86_avx512 cpu_flags_x86_sve128 cpu_flags_x86_sve256 cpu_flags_x86_sve512"
+SLOT="0"
 
 RDEPEND="
 	app-editors/vim-core

@@ -4,7 +4,7 @@
 
 EAPI=8
 
-inherit cmake
+inherit cmake xdg
 
 DESCRIPTION="Quite Universal Circuit Simulator with ability to use different circuit simulation kernels"
 HOMEPAGE="https://ra3xdh.github.io/"
@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	app-electronics/ngspice
+	sci-electronics/ngspice
 	dev-qt/qtcore:5
 	dev-qt/qtgui:5
 	dev-qt/qtsvg:5
@@ -25,3 +25,11 @@ RDEPEND="
 	dev-qt/qtwidgets:5
 	dev-qt/qtprintsupport:5
 "
+
+pkg_postinst() {
+	xdg_icon_cache_update
+}
+
+pkg_postrm() {
+	xdg_icon_cache_update
+}
