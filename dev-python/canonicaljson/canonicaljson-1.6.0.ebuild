@@ -1,9 +1,9 @@
 # Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
-PYTHON_COMPAT=( python3_6 python3_7 python3_8 python3_9 )
+PYTHON_COMPAT=( python3_7 python3_8 python3_9 )
 inherit distutils-r1
 
 DESCRIPTION="Canonical JSON"
@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="dev-python/simplejson"
+DEPEND=">=dev-python/simplejson-3.14.0"
 RDEPEND="${DEPEND}"
 
 distutils_enable_tests pytest
