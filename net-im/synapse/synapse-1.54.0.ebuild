@@ -53,6 +53,7 @@ RDEPEND="
 	>=dev-python/cryptography-3.4.7[${PYTHON_USEDEP}]
 	>=dev-python/ijson-3.1.4[${PYTHON_USEDEP}]
 	=dev-python/matrix-common-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/packaging-16.1.0[${PYTHON_USEDEP}]
 	>=dev-python/lxml-3.5.0[${PYTHON_USEDEP}]
 	>=dev-python/sentry-sdk-0.7.2[${PYTHON_USEDEP}]
     >=dev-python/pyjwt-1.6.4[${PYTHON_USEDEP}]
