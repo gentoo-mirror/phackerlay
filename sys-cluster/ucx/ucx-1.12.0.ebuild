@@ -10,7 +10,7 @@ SRC_URI="https://github.com/openucx/ucx/releases/download/v${PV}/${P}.tar.gz"
 SLOT="0"
 LICENSE="BSD"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
-IUSE="+numa +openmp"
+IUSE="+numa +openmp cpu_flags_x86_avx cpu_flags_x86_sse41 cpu_flags_x86_sse42"
 
 RDEPEND="
 	sys-libs/binutils-libs:=
@@ -22,6 +22,10 @@ src_configure() {
 	BASE_CFLAGS="" \
 	econf \
 		--disable-compiler-opt \
+		--without-go \
+		$(use_with cpu_flags_x86_avx avx) \
+		$(use_with cpu_flags_x86_sse41 sse41) \
+		$(use_with cpu_flags_x86_sse42 sse42) \
 		$(use_enable numa) \
 		$(use_enable openmp)
 }
