@@ -3,10 +3,10 @@ DEPEND=sys-libs/binutils-libs:= numa? ( sys-process/numactl )
 DESCRIPTION=Unified Communication X
 EAPI=8
 HOMEPAGE=https://www.openucx.org
-IUSE=+numa +openmp
+IUSE=+numa +openmp cpu_flags_x86_avx cpu_flags_x86_sse41 cpu_flags_x86_sse42
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=BSD
 RDEPEND=sys-libs/binutils-libs:= numa? ( sys-process/numactl )
 SLOT=0
 SRC_URI=https://github.com/openucx/ucx/releases/download/v1.12.0/ucx-1.12.0.tar.gz
-_md5_=eebe08b970d96bf27939322ff9bde452
+_md5_=ff73042d617a80ae9976936070e6b04d
