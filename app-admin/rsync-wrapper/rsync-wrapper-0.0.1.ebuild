@@ -16,6 +16,8 @@ RDEPEND="
 	net-misc/rsync
 "
 
+S=${WORKDIR}
+
 src_install() {
 	dobin "${FILESDIR}"/rsync-wrapper.sh
 	insinto /etc/sudoers.d
