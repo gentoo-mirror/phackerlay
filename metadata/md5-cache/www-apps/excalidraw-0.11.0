@@ -12,5 +12,5 @@ RDEPEND=app-admin/webapp-config
 RESTRICT=network-sandbox
 SLOT=0.11.0
 SRC_URI=https://github.com/excalidraw/excalidraw/archive/refs/tags/v0.11.0.tar.gz
-_eclasses_=webapp	60f2eb31dec733d05e8114cc078ebc33
+_eclasses_=webapp	cbf94d7383f416c5ead4634aa89916a9
 _md5_=0cf7e8a5a20727be525de40d5524da1d
