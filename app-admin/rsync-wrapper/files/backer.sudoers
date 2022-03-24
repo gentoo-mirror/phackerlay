@@ -1,0 +1,5 @@
+backer    ALL=(root) NOPASSWD: /usr/bin/rsync
+backer    ALL=(root) NOPASSWD: /usr/bin/mysqlcheck
+backer    ALL=(root) NOPASSWD: /usr/bin/mysqldump
+backer    ALL=(git) NOPASSWD: /opt/gitlab/gitlab-gitaly/bin/gitaly-backup
+backer    ALL=(postgres) NOPASSWD: /usr/bin/pg_dump
