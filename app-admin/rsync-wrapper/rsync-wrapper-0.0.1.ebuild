@@ -16,7 +16,7 @@ RDEPEND="
 	net-misc/rsync
 "
 
-${S}=${WORKDIR}
+S=${WORKDIR}
 
 src_install() {
 	dobin "${FILESDIR}"/rsync-wrapper.sh
