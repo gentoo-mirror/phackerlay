@@ -1,4 +1,5 @@
 acct-group/apcupsd_exporter 0: System group: apcupsd_exporter
+acct-group/backer 0: System group: backer
 acct-group/hedgedoc 0: System group: hedgedoc
 acct-group/jupyterhub 0: System group: jupyterhub
 acct-group/oper 0: System group: oper
@@ -7,6 +8,7 @@ acct-group/seafile 0: System group: seafile
 acct-group/sydent 0: System group: sydent
 acct-group/synapse 0: System group: synapse
 acct-user/apcupsd_exporter 0: user for apcupsd_exporter
+acct-user/backer 0: User for app-admin/rsync-wrapper
 acct-user/hedgedoc 0: User for www-apps/hedgedoc
 acct-user/jupyterhub 0: User for dev-python/jupyterhub
 acct-user/oper 0: oper user for fs
@@ -14,6 +16,7 @@ acct-user/prog 0: prog user for fs
 acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
+app-admin/rsync-wrapper 0.0.1: rsync wrapper for running with rsnapshot
 app-admin/unattended-emerges 0.0.1: Dangerous automatic upgrades script
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
