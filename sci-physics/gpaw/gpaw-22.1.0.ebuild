@@ -29,7 +29,7 @@ RDEPEND="
 	fftw? ( sci-libs/fftw )
         mpi? ( virtual/mpi )
         scalapack? ( sci-libs/scalapack )
-        elpa? ( sci-libs/scalapack =sci-libs/elpa )
+        elpa? ( sci-libs/scalapack sci-libs/elpa )
 	"
 
 #distutils_enable_sphinx docs \
