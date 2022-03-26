@@ -1,7 +1,7 @@
 BDEPEND=python_targets_python3_8? ( >=dev-lang/python-3.8.12_p1-r1:3.8 ) python_targets_python3_9? ( >=dev-lang/python-3.9.9-r1:3.9 ) >=dev-python/setuptools-42.0.2[python_targets_python3_8(-)?,python_targets_python3_9(-)?]
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
-EAPI=7
+EAPI=8
 HOMEPAGE=https://wiki.fysik.dtu.dk/ase/ https://pypi.org/project/ase/
 INHERIT=distutils-r1
 IUSE=+visualize python_targets_python3_8 python_targets_python3_9
@@ -11,5 +11,5 @@ RDEPEND=>=dev-python/scipy-0.18.1[python_targets_python3_8(-)?,python_targets_py
 REQUIRED_USE=|| ( python_targets_python3_8 python_targets_python3_9 )
 SLOT=0
 SRC_URI=https://pypi.org/packages/source/a/ase/ase-3.22.1.tar.gz -> ase-3.22.1.tar.gz
-_eclasses_=multibuild	d26d81f242cb193d899a72bca423d0bd	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	eapi8-dosym	cd7d420bb5be5ee079f27239ce76b8f5	python-utils-r1	dfa3a38467793e97fcf791b156510654	python-r1	8638751691200e941f26fe0ac3aef1d1	distutils-r1	e91901adfcf0640d2daa4dc863ff5377
-_md5_=52ce887bf92bf0043f58e872a7f08900
+_eclasses_=multibuild	d26d81f242cb193d899a72bca423d0bd	multiprocessing	61c959fc55c15c00bbb1079d6a71370b	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	4a33c9008e5ee30cb8840a3fdc24df2b	python-utils-r1	dfa3a38467793e97fcf791b156510654	python-r1	8638751691200e941f26fe0ac3aef1d1	distutils-r1	e91901adfcf0640d2daa4dc863ff5377
+_md5_=531fb3a28188853d290d44f43912ab47
