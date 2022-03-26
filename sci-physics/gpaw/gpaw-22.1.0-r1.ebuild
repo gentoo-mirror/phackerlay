@@ -45,10 +45,14 @@ src_configure() {
 	if use fftw; then
 		sed -e "s:fftw = False:fftw = True:g" -i ${S}/siteconfig.py || die
 		sed -e "s:'fftw3':'fftw3','blas':g" -i ${S}/siteconfig.py || die
+	else
+		sed -e "s:fftw = True:fftw = False:g" -i ${S}/siteconfig.py || die
 	fi
 	if use scalapack; then
 		sed -e "s:scalapack = False:scalapack = True:g" -i ${S}/siteconfig.py || die
 		sed -e "s:'scalapack-openmpi':'scalapack':g" -i ${S}/siteconfig.py || die
+	else
+		sed -e "s:scalapack = True:scalapack = False:g" -i ${S}/siteconfig.py || die
 	fi
 	if use mpi; then
 		echo "libraries += ['mpi']" >> ${S}/siteconfig.py || die
