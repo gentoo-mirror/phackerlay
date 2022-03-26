@@ -16,7 +16,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="+setups +fftw mpi scalapack vdwxc elpa"
+IUSE="+setups +fftw +openmp mpi scalapack vdwxc elpa"
 
 RESTRICT="libvdwxc elpa"
 
@@ -39,21 +39,33 @@ RDEPEND="
 
 # XXX: handle Babel better?
 
+pkg_pretend() {
+	use openmp && tc-check-openmp || die
+}
+
 src_configure() {
 	cp ${S}/siteconfig_example.py ${S}/siteconfig.py
 	GPAW_CONFIG=${S}/siteconfig.py
 	if use fftw; then
 		sed -e "s:fftw = False:fftw = True:g" -i ${S}/siteconfig.py || die
 		sed -e "s:'fftw3':'fftw3','blas':g" -i ${S}/siteconfig.py || die
+	else
+		sed -e "s:fftw = True:fftw = False:g" -i ${S}/siteconfig.py || die
 	fi
 	if use scalapack; then
 		sed -e "s:scalapack = False:scalapack = True:g" -i ${S}/siteconfig.py || die
 		sed -e "s:'scalapack-openmpi':'scalapack':g" -i ${S}/siteconfig.py || die
+	else
+		sed -e "s:scalapack = True:scalapack = False:g" -i ${S}/siteconfig.py || die
 	fi
 	if use mpi; then
 		echo "libraries += ['mpi']" >> ${S}/siteconfig.py || die
 	else
 		sed -e "s:os.name != 'nt':False:g" -i ${S}/setup.py || die
+	fi
+	if use openmp; then
+		echo "extra_compile_args += ['-fopenmp']" >> ${S}/siteconfig.py
+		echo "extra_link_args += ['-fopenmp']" >> ${S}/siteconfig.py
 	fi
 }
 

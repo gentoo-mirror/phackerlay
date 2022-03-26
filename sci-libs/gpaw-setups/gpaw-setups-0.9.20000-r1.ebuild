@@ -1,7 +1,7 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 DESCRIPTION="Setup collection for sci-physics/gpaw"
 HOMEPAGE="https://wiki.fysik.dtu.dk/gpaw/setups/setups.html"
@@ -17,6 +17,7 @@ RDEPEND="
 src_install(){
 	GPAW_SETUP_PATH=/usr/share/gpaw/setups
 	insinto $GPAW_SETUP_PATH
+	docompress -x "${S}"/*
 	doins "${S}"/*
 	echo "export GPAW_SETUP_PATH=$GPAW_SETUP_PATH" > gpaw-setups.sh
 	insinto /etc/bash/bashrc.d
