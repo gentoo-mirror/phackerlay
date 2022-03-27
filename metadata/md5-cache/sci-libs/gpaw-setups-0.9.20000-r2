@@ -7,4 +7,4 @@ LICENSE=GPL-3
 RDEPEND=
 SLOT=0
 SRC_URI=https://wiki.fysik.dtu.dk/gpaw-files/gpaw-setups-0.9.20000.tar.gz -> gpaw-setups-0.9.20000.tar.gz
-_md5_=ed70ee964e1f97e1ebf2d3a0b9bb8a12
+_md5_=48ca70870de132863b3fd657f715c49d
