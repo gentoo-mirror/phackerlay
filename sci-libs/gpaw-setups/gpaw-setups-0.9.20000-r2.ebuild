@@ -17,8 +17,8 @@ RDEPEND="
 src_install(){
 	GPAW_SETUP_PATH=/usr/share/gpaw/setups
 	insinto $GPAW_SETUP_PATH
-	docompress -x "${S}"/*
 	doins "${S}"/*
+	docompress -x "${D}"/usr/share/gpaw/setups/*
 	echo "export GPAW_SETUP_PATH=$GPAW_SETUP_PATH" > gpaw-setups.sh
 	insinto /etc/bash/bashrc.d
 	doins ${S}/gpaw-setups.sh
