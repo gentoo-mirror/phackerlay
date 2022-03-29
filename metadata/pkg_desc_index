@@ -47,7 +47,7 @@ dev-python/pymacaroons 0.13.0: PyMacaroons is a Python implementation of Macaroo
 dev-python/python-json-logger 2.0.2: This library is provided to allow standard python logging to output log data as json objects
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/selenium-wire 4.3.0: Extends Selenium to give you the ability to inspect requests made by the browser.
-dev-python/signedjson 1.1.1: Signs JSON objects with ED25519 signatures.
+dev-python/signedjson 1.1.4: Signs JSON objects with ED25519 signatures.
 dev-python/slurm-magic 9999: Package implements magic commands for interacting with the SLURM workload manager
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
