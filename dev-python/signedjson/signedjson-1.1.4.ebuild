@@ -1,9 +1,9 @@
 # Copyright 1999-2021 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_6 python3_7 python3_8 python3_9 )
+PYTHON_COMPAT=( python3_8 python3_9 )
 inherit distutils-r1
 #DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
@@ -23,7 +23,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="
-	dev-python/pynacl[${PYTHON_USEDEP}]
-	dev-python/importlib_metadata[${PYTHON_USEDEP}]
+	>=dev-python/canonicaljson-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/unpaddedbase64-1.0.1[${PYTHON_USEDEP}]
+	>=dev-python/pynacl-0.3.0[${PYTHON_USEDEP}]
 "
 RDEPEND="${DEPEND}"
