@@ -80,10 +80,12 @@ python_compile() {
 }
 
 python_install() {
+        unset CC
 	distutils-r1_python_install --skip-build
 }
 
 python_install_all() {
+        unset CC
 #	if use examples ; then
 #		docinto examples
 #		dodoc -r examples/.
