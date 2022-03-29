@@ -14,8 +14,11 @@ KEYWORDS="~amd64"
 RDEPEND="
 	"
 
+src_compile() {
+	gunzip ${S}/*.gz
+}
+
 src_install(){
-	docompress -x /usr/share/gpaw/setups
 	GPAW_SETUP_PATH=/usr/share/gpaw/setups
 	insinto $GPAW_SETUP_PATH
 	doins "${S}"/*
