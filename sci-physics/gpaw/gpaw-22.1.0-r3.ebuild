@@ -1,10 +1,10 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 DISTUTILS_USE_SETUPTOOLS=rdepend
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+PYTHON_COMPAT=( python3_{8,9} )
 
 inherit distutils-r1
 
@@ -75,14 +75,17 @@ src_prepare() {
 }
 
 python_compile() {
+        unset CC
 	distutils-r1_python_compile
 }
 
 python_install() {
+        unset CC
 	distutils-r1_python_install --skip-build
 }
 
 python_install_all() {
+        unset CC
 #	if use examples ; then
 #		docinto examples
 #		dodoc -r examples/.
