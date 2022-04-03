@@ -1,9 +1,0 @@
-#!/usr/bin/env python3
-import sys
-import subprocess
-if sys.argv[1]=='@system':
-    result = subprocess.run('emerge -pav @system'.split(' '))
-else:
-    result = subprocess.run('emerge -pav @world'.split(' '))
-
-print(result.text)
