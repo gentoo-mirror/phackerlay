@@ -18,7 +18,7 @@ SLOT="0"
 # IUSE="+cron-daily cron-weekly news"
 
 RDEPEND="
-	app-portage/emerge
+	sys-app/portage
 "
 
 RESTRICT="test"
