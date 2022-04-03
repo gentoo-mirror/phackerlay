@@ -32,12 +32,7 @@ RDEPEND="
         elpa? ( sci-libs/scalapack sci-libs/elpa )
 	"
 
-#distutils_enable_sphinx docs \
-#	dev-python/sphinx-issues \
-#	dev-python/pallets-sphinx-themes
-#distutils_enable_tests pytest
-
-# XXX: handle Babel better?
+distutils_enable_tests pytest
 
 pkg_pretend() {
 	use openmp && tc-check-openmp || die

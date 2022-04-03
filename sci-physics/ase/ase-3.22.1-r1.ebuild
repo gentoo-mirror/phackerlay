@@ -26,12 +26,7 @@ RDEPEND="
 	>=dev-python/matplotlib-3.1[${PYTHON_USEDEP}]
 	"
 
-#distutils_enable_sphinx docs \
-#	dev-python/sphinx-issues \
-#	dev-python/pallets-sphinx-themes
-#distutils_enable_tests pytest
-
-# XXX: handle Babel better?
+distutils_enable_tests pytest
 
 src_prepare() {
 	distutils-r1_src_prepare
