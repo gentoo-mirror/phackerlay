@@ -4,10 +4,11 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8,9} )
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 inherit distutils-r1
 
-SRC_URI="https://gitlab.phys-el.ru/ustinov/${PN}/-/archive/v${PV}/${PN}-v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://gitlab.phys-el.ru/gentoo/unattended_emerges/-/archive/v${PV}/unattended_emerges-v${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64 ~x86"
 
 DESCRIPTION="dangerous tool for automatic upgrades*"
@@ -23,4 +24,4 @@ RDEPEND="
 
 RESTRICT="test"
 
-S="${WORKDIR}/"
+S="${WORKDIR}/unattended_emerges-v${PV}"
