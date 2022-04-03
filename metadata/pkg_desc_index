@@ -17,7 +17,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.0.1: rsync wrapper for running with rsnapshot
-app-admin/unattended-emerges 0.0.1: Dangerous automatic upgrades script
+app-admin/unattended-emerges 0.0.2: dangerous tool for automatic upgrades*
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
 dev-lang/fort77 1.18: Utility is the interface to the FORTRAN compilation system
