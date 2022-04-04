@@ -37,7 +37,7 @@ RDEPEND="
 	>=dev-python/signedjson-1.1.1[${PYTHON_USEDEP}]
 	>=dev-python/sortedcontainers-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/twisted-18.4.0[${PYTHON_USEDEP}]
-	>=dev-python/typing-extrnsions-3.7.4[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-3.7.4[${PYTHON_USEDEP}]
 	>=dev-python/unpaddedbase64-1.1.0[${PYTHON_USEDEP}]
 	gammu? ( dev-python/python-gammu[${PYTHON_USEDEP}] )
 "
