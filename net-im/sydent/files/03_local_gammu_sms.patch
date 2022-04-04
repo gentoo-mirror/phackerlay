@@ -20,7 +20,7 @@
  
      async def sendTextSMS(
          self, body: str, dest: str, source: Optional[Dict[str, str]] = None
-@@ -71,101 +73,15 @@
+@@ -73,94 +73,15 @@
          :param body: The message to send.
          :param dest: The destination MSISDN to send the text message to.
          """
@@ -46,7 +46,7 @@
 -                "ton": tonFromType(source["type"]),
 -                "address": source["text"],
 -            }
--
+ 
 -        username = self.sydent.config.sms.api_username
 -        password = self.sydent.config.sms.api_password
 -
@@ -113,6 +113,7 @@
 -                    "Got response from sending SMS with malformed location header: %s",
 -                    value,
 -                )
+-                return
 -            else:
 -                ticket_id = parts[-1]
 -
@@ -123,13 +124,4 @@
 -            request_id,
 -            resp.code,
 -        )
--
--        logger.info(
--            "Successfully sent SMS (ticket ID: %s, request ID %s), OpenMarket API"
--            " responded with code %d",
--            parts[-1],
--            request_id,
--            resp.code,
--        )
-+
 +        sm.SendSMS(message)
