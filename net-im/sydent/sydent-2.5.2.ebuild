@@ -25,20 +25,20 @@ PATCHES="${FILESDIR}/01_remove_tests.patch
 RDEPEND="
 	acct-user/sydent
 	acct-group/sydent
-	>=dev-python/jinja-3.0[${PYTHON_USEDEP}]
-	>=dev-python/signedjson-1.1.0[${PYTHON_USEDEP}]
-	>=dev-python/unpaddedbase64-1.1.0[${PYTHON_USEDEP}]
-	>=dev-python/twisted-18.4.0[${PYTHON_USEDEP}]
-	>=dev-python/service_identity-18.1.0[${PYTHON_USEDEP}]
-	dev-python/pyopenssl[${PYTHON_USEDEP}]
 	>=dev-python/attrs-19.1.0[${PYTHON_USEDEP}]
+	>=dev-python/jinja-3.0[${PYTHON_USEDEP}]
 	>=dev-python/netaddr-0.7.0[${PYTHON_USEDEP}]
-	>=dev-python/sortedcontainers-1.4.4[${PYTHON_USEDEP}]
+	=dev-python/matrix-common-1.1*[${PYTHON_USEDEP}]
+	>=dev-python/phonenumbers-8.12.32[${PYTHON_USEDEP}]
+	>=dev-python/pynacl-1.2.1[${PYTHON_USEDEP}]
+	>=dev-python/pyopenssl-16.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-3.11[${PYTHON_USEDEP}]
-	dev-python/phonenumbers[${PYTHON_USEDEP}]
-        >=dev-python/frozendict-1[${PYTHON_USEDEP}]
-	>=dev-python/canonicaljson-1.4.0[${PYTHON_USEDEP}]
-	dev-python/importlib_metadata
+	>=dev-python/service_identity-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/signedjson-1.1.1[${PYTHON_USEDEP}]
+	>=dev-python/sortedcontainers-2.1.0[${PYTHON_USEDEP}]
+	>=dev-python/twisted-18.4.0[${PYTHON_USEDEP}]
+	>=dev-python/typing-extrnsions-3.7.4[${PYTHON_USEDEP}]
+	>=dev-python/unpaddedbase64-1.1.0[${PYTHON_USEDEP}]
 	gammu? ( dev-python/python-gammu[${PYTHON_USEDEP}] )
 "
 DEPEND="${RDEPEND}"
