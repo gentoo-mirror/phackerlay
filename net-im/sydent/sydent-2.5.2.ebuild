@@ -21,10 +21,6 @@ IUSE="gammu"
 
 distutils_enable_tests pytest
 
-PATCHES="
-	 ${FILESDIR}/02_sydent_exec.patch
-"
-
 RDEPEND="
 	acct-user/sydent
 	acct-group/sydent
