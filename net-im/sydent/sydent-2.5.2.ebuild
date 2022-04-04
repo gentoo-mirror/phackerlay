@@ -3,7 +3,9 @@
 
 EAPI="8"
 
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 PYTHON_COMPAT=( python3_{8,9} )
+
 inherit distutils-r1
 
 DESCRIPTION="Reference Matrix Identity Verification and Lookup Server"
@@ -19,8 +21,9 @@ IUSE="gammu"
 
 distutils_enable_tests pytest
 
-PATCHES="${FILESDIR}/01_remove_tests.patch
-	 ${FILESDIR}/02_sydent_exec.patch"
+PATCHES="
+	 ${FILESDIR}/02_sydent_exec.patch
+"
 
 RDEPEND="
 	acct-user/sydent
