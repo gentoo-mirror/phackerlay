@@ -3,7 +3,9 @@
 
 EAPI="8"
 
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 PYTHON_COMPAT=( python3_{8,9} )
+
 inherit distutils-r1
 
 DESCRIPTION="Reference Matrix Identity Verification and Lookup Server"
@@ -18,9 +20,6 @@ SLOT="0"
 IUSE="gammu"
 
 distutils_enable_tests pytest
-
-PATCHES="${FILESDIR}/01_remove_tests.patch
-	 ${FILESDIR}/02_sydent_exec.patch"
 
 RDEPEND="
 	acct-user/sydent
@@ -37,7 +36,7 @@ RDEPEND="
 	>=dev-python/signedjson-1.1.1[${PYTHON_USEDEP}]
 	>=dev-python/sortedcontainers-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/twisted-18.4.0[${PYTHON_USEDEP}]
-	>=dev-python/typing-extrnsions-3.7.4[${PYTHON_USEDEP}]
+	>=dev-python/typing-extensions-3.7.4[${PYTHON_USEDEP}]
 	>=dev-python/unpaddedbase64-1.1.0[${PYTHON_USEDEP}]
 	gammu? ( dev-python/python-gammu[${PYTHON_USEDEP}] )
 "
