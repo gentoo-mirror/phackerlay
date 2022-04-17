@@ -11,6 +11,7 @@ HOMEPAGE="https://gitlab.gnome.org/World/Shortwave"
 if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
 	unset SRC_URI
+	KEYWORDS="~amd64"
 else
 	SRC_URI="https://gitlab.gnome.org/World/Shortwave/-/archive/${PV}/${P}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64"
@@ -35,7 +36,6 @@ RDEPEND="
 	>=media-libs/gst-plugins-bad-1.16
 	>=media-libs/gst-plugins-good-1.16
 	>=gui-libs/libadwaita-1.0.0
-	>=gui-libs/libshumate-1.0.0
 "
 
 DEPEND="${RDEPEND}"
@@ -50,8 +50,9 @@ src_unpack() {
 	else
 		base_uri="https://gitlab.gnome.org/World/Shortwave.git"
 		branch="master"
-		git-r3_fetch "${base_uri}" "refs/heads/${branch}"
-		git-r3_checkout "${base_uri}"
+		git-r3_fetch "${base_uri}/${PN}/core" "refs/heads/${branch}"
+		git-r3_checkout "${base_uri}/${PN}/core"
+		S="${WORKDIR}/Shortwave"
 	fi
 }
 
