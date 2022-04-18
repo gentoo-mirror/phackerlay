@@ -36,6 +36,7 @@ RDEPEND="
 	>=media-libs/gst-plugins-bad-1.16
 	>=media-libs/gst-plugins-good-1.16
 	>=gui-libs/libadwaita-1.0.0
+	>=gui-libs/libshumate-1.0.0
 "
 
 DEPEND="${RDEPEND}"
