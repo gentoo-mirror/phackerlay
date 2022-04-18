@@ -29,6 +29,7 @@ RDEPEND="
 	>=dev-python/nbclassic-0.2[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.1[${PYTHON_USEDEP}]
 	dev-python/fastjsonschema[${PYTHON_USEDEP}]
+	dev-python/tinycss2[${PYTHON_USEDEP}]
 "
 DEPEND="
     net-libs/nodejs
