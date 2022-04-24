@@ -3,6 +3,7 @@ acct-group/backer 0: System group: backer
 acct-group/hedgedoc 0: System group: hedgedoc
 acct-group/jupyterhub 0: System group: jupyterhub
 acct-group/oper 0: System group: oper
+acct-group/pleroma 0: System group: pleroma
 acct-group/prog 0: System group: prog
 acct-group/seafile 0: System group: seafile
 acct-group/sydent 0: System group: sydent
@@ -12,6 +13,7 @@ acct-user/backer 0: User for app-admin/rsync-wrapper
 acct-user/hedgedoc 0: User for www-apps/hedgedoc
 acct-user/jupyterhub 0: User for dev-python/jupyterhub
 acct-user/oper 0: oper user for fs
+acct-user/pleroma 0: User for www-apps/pleroma
 acct-user/prog 0: prog user for fs
 acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
