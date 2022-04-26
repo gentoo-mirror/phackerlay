@@ -11,7 +11,7 @@ HOMEPAGE="https://gitlab.gnome.org/World/Shortwave"
 if [[ ${PV} == *9999* ]]; then
 	inherit git-r3
 	unset SRC_URI
-	KEYWORDS="~amd64"
+	KEYWORDS=""
 else
 	SRC_URI="https://gitlab.gnome.org/World/Shortwave/-/archive/${PV}/${P}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64"
