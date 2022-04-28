@@ -57,7 +57,7 @@ dev-python/txredisapi 1.4.7: non-blocking redis client for python twisted
 dev-python/unpaddedbase64 2.1.0: Unpadded Base64
 gui-libs/libshumate 1.0.0: Shumate is a GTK toolkit providing widgets for embedded maps
 media-sound/shortwave 9999: Listen to internet radio
-net-im/jitsi-meet 2022.3.1: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2022.4.1: Desktop application for Jitsi Meet built with Electron
 net-im/jitsi-meet-bin 2021.11.1: Desktop application for Jitsi Meet built with Electron
 net-im/sydent 2.5.2: Reference Matrix Identity Verification and Lookup Server
 net-im/synapse 1.57.0: Reference homeserver for the Matrix decentralised comms protocol
