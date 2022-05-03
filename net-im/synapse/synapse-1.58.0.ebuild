@@ -23,11 +23,10 @@ RDEPEND="
 	acct-group/synapse
 	>=dev-python/jsonschema-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/frozendict-1[${PYTHON_USEDEP}]
-	<dev-python/frozendict-2.1.2[${PYTHON_USEDEP}]
-	>=dev-python/unpaddedbase64-1.1.0[${PYTHON_USEDEP}]
+	!=dev-python/frozendict-2.1.2[${PYTHON_USEDEP}]
+	>=dev-python/unpaddedbase64-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/canonicaljson-1.4.0[${PYTHON_USEDEP}]
 	>=dev-python/signedjson-1.1.0[${PYTHON_USEDEP}]
-	<=dev-python/signedjson-1.1.1[${PYTHON_USEDEP}]
 	>=dev-python/pynacl-1.2.1[${PYTHON_USEDEP}]
 	>=dev-python/idna-2.5[${PYTHON_USEDEP}]
 	>=dev-python/service_identity-18.1.0[${PYTHON_USEDEP}]
