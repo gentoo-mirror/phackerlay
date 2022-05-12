@@ -3,7 +3,7 @@
 
 EAPI="8"
 
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
+DISTUTILS_USE_PEP517=poetry
 PYTHON_COMPAT=( python3_{8,9} )
 inherit distutils-r1
 
@@ -11,8 +11,7 @@ DESCRIPTION="Reference homeserver for the Matrix decentralised comms protocol"
 HOMEPAGE="https://matrix.org/"
 
 SRC_URI="https://github.com/matrix-org/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-#KEYWORDS="~amd64"
-KEYWORDS=""
+KEYWORDS="~amd64"
 
 LICENSE="Apache-2.0"
 SLOT="0"
