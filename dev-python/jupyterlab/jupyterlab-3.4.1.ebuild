@@ -1,10 +1,11 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+PYTHON_COMPAT=( python3_{8,9} )
 
+DISTUTILS_USE_PEP517="jupyter"
 inherit distutils-r1
 
 DESCRIPTION="JupyterLab computational environment"
@@ -34,6 +35,9 @@ RDEPEND="
 DEPEND="
     net-libs/nodejs
 "
+
+RESTRICT="network-sandbox"
+
 #    widgets? ( dev-python/ipywidgets[${PYTHON_USEDEP}] >dev-python/jupyterlab-widgets-1.0.0[${PYTHON_USEDEP}] )
 # get installed to system path instead of JUPYTERLAB_DIR, do not work
 
