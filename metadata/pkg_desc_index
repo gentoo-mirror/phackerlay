@@ -56,7 +56,7 @@ dev-python/traittypes 0.2.1: Custom trait types for scientific computing
 dev-python/txredisapi 1.4.7: non-blocking redis client for python twisted
 dev-python/unpaddedbase64 2.1.0: Unpadded Base64
 gui-libs/libshumate 1.0.0: Shumate is a GTK toolkit providing widgets for embedded maps
-media-gfx/cura-tronxytron 0.0.1: cura profiles for tronxytron printer
+media-gfx/cura-tronxytron 0.0.2: cura profiles for tronxytron printer
 media-sound/shortwave 9999: Listen to internet radio
 net-im/jitsi-meet 2022.4.1: Desktop application for Jitsi Meet built with Electron
 net-im/jitsi-meet-bin 2021.11.1: Desktop application for Jitsi Meet built with Electron
