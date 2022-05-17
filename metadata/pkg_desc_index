@@ -82,7 +82,7 @@ www-apps/element 1.10.12: Element (formerly known as Vector and Riot) is a Matri
 www-apps/excalidraw 0.11.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/grocy 3.3.0: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.3: Hedgedoc real-time collaborative markdown editor
-www-apps/mastodon-openrc 0.0.1: a set of an OpenRC scripts to run mastodon services
+www-apps/mastodon-openrc 0.0.2: a set of an OpenRC scripts to run mastodon services
 www-apps/privatebin 1.4.0: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-apps/seafile-ce-server 9.0.5: Meta package for Seafile Community Edition, file sync share solution
 www-apps/synapse-admin 0.8.5: Admin UI for Matrix Synapse homeserver
