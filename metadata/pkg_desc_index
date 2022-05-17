@@ -68,7 +68,7 @@ sci-electronics/openhantek6022 3.2.5: DSO software for Hantek USB digital signal
 sci-electronics/qucs-s 0.0.23: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-libs/elpa 2021.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000-r4: Setup collection for sci-physics/gpaw
-sci-libs/libxc 5.2.2: A library of exchange-correlation functionals for use in DFT
+sci-libs/libxc 5.2.3: A library of exchange-correlation functionals for use in DFT
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 22.1.0-r3: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
