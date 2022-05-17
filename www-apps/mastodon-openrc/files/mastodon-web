@@ -20,7 +20,8 @@ start() {
 	-4 logger \
 	-b -m \
         --exec /usr/bin/env -- RAILS_ENV=production PORT=${WEB_PORT} \
-	MAX_THREADS=${WEB_MAX_THREADS} WEB_CONCURRENCY=${WEB_CONCURRENCY} bundle \
+	MAX_THREADS=${WEB_MAX_THREADS} WEB_CONCURRENCY=${WEB_CONCURRENCY} \
+	BIND=${WEB_BIND} bundle \
 	exec puma -C config/puma.rb
 
     eend $?
