@@ -20,6 +20,7 @@ src_unpack() {
 
 
 src_install() {
+	newinitd "${FILESDIR}"/mastodon-all mastodon
 	doinitd "${FILESDIR}"/mastodon-web
 	doinitd "${FILESDIR}"/mastodon-sidekiq
 	doinitd "${FILESDIR}"/mastodon-streaming
@@ -31,9 +32,7 @@ pkg_postinst() {
                 elog "Please tune /etc/conf.d/mastodon to suite your needs, then "
 		elog "cross your fingers and run:"
 		elog
-                elog "rc-service mastodon-sidekiq start"
-                elog "rc-service mastodon-streaming start"
-                elog "rc-service mastodon-web start"
+                elog "rc-service mastodon start"
                 elog
 		elog "All messages will be sent to syslog"
 		elog
