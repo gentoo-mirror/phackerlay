@@ -5,4 +5,4 @@ KEYWORDS=~amd64
 LICENSE=Artistic
 RDEPEND=sys-apps/openrc
 SLOT=0
-_md5_=b38935cffafb4a44a4f29b43eee47c35
+_md5_=e6eef4a089618731fa025589d3ffb223
