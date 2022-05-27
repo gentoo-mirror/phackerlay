@@ -32,8 +32,16 @@ pkg_postinst() {
                 elog "Please tune /etc/conf.d/mastodon to suite your needs, then "
 		elog "cross your fingers and run:"
 		elog
-                elog "rc-service mastodon start"
+                elog "rc-service mastodon-web start"
+                elog "rc-service mastodon-streaming start"
+                elog "rc-service mastodon-sidekiq start"
                 elog
+                elog
+                elog "All services could be restarted with:"
+		elog
+                elog "rc-service mastodon restart"
+		elog
+		elog
 		elog "All messages will be sent to syslog"
 		elog
 }

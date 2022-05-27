@@ -8,6 +8,7 @@ pidfile="${INSTALLROOT}/worker.pid"
 
 depend() {
     use net
+    need mastodon
 }
 
 start() {

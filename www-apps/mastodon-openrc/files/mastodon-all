@@ -5,5 +5,9 @@
 name="Mastodon meta service"
 
 depend() {
-    needs mastodon-web mastodon-streaming mastodon-sidekiq
+    provide mastodon
+}
+
+start() {
+:
 }
