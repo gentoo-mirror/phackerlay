@@ -5,7 +5,7 @@
 name="Mastodon meta service"
 
 depend() {
-    provides mastodon
+    provide mastodon
 }
 
 start() {
