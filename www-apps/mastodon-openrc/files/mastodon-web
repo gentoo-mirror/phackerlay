@@ -7,7 +7,7 @@ pidfile="${root}/web.pid"
 
 depend() {
     use net
-    needs mastodon
+    need mastodon
 }
 
 start() {

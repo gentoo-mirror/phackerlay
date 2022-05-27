@@ -36,8 +36,11 @@ pkg_postinst() {
                 elog "rc-service mastodon-streaming start"
                 elog "rc-service mastodon-sidekiq start"
                 elog
-                elog "All services could be restarted with"
+                elog
+                elog "All services could be restarted with:"
+		elog
                 elog "rc-service mastodon restart"
+		elog
 		elog
 		elog "All messages will be sent to syslog"
 		elog

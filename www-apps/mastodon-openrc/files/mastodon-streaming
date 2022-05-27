@@ -6,7 +6,7 @@ name="Mastodon streaming API service"
 
 depend() {
     use net
-    needs mastodon
+    need mastodon
 }
 
 start() {
