@@ -1,0 +1,9 @@
+#!/sbin/openrc-run
+
+. /etc/conf.d/mastodon
+
+name="Mastodon meta service"
+
+depend() {
+    needs mastodon-web mastodon-streaming mastodon-sidekiq
+}
