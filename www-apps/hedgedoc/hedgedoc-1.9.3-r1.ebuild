@@ -16,6 +16,7 @@ RDEPEND="
 	acct-group/hedgedoc
 	acct-user/hedgedoc
 	>=net-libs/nodejs-12
+	<net-libs/nodejs-18
 	<sys-apps/yarn-2
 	>=sys-apps/yarn-1.22
 "
