@@ -28,7 +28,6 @@ RDEPEND="
 	>=dev-python/unpaddedbase64-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/canonicaljson-1.4.0[${PYTHON_USEDEP}]
 	>=dev-python/signedjson-1.1.0[${PYTHON_USEDEP}]
-	>=dev-python/pynacl-1.2.1[${PYTHON_USEDEP}]
 	>=dev-python/idna-2.5[${PYTHON_USEDEP}]
 	>=dev-python/service_identity-18.1.0[${PYTHON_USEDEP}]
 	>=dev-python/twisted-18.9.0[${PYTHON_USEDEP},crypt]
