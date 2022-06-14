@@ -17,8 +17,8 @@ IUSE="+strip-sources doc"
 
 PATCHES=(
 	"${FILESDIR}"/10/01_remove_third_party_tools_bundled.patch
-	"${FILESDIR}"/10/02_version_detection.patch
 	"${FILESDIR}"/10/03_glib_stime.patch
+	"${FILESDIR}"/10/02_version_detection.patch
 	"${FILESDIR}"/10/04_rdtcn_libm_miss.patch
 	)
 

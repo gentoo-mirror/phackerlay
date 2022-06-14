@@ -6,3 +6,11 @@
  OBJECTS = rdtcn.o FFT.o rdbe_freqz.o rt_nonfinite.o rtGetInf.o rtGetNaN.o
  
  ../bin/rdtcn: $(OBJECTS) $(LIBS)
+
+--- a/dbrcn/Makefile	2022-06-14 10:11:26.703568106 +0300
++++ b/dbtcn/Makefile	2022-06-14 10:10:56.511550596 +0300
+@@ -1,4 +1,4 @@
+-LIBS = ../clib/clib.a ../poclb/poclb.a ../rtelb/rtelb.a -lm
++LIBS = ../clib/clib.a ../poclb/poclb.a ../rtelb/rtelb.a /usr/lib64/libm.so
+ OBJECTS = dbtcn.o open_mcast.o get_if_addr.o read_mcast.o log_mcast.o\
+           packet_unpack.o calc_ts.o update_shm.o version_check.o
