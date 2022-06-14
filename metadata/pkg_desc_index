@@ -57,7 +57,7 @@ dev-python/txredisapi 1.4.7: non-blocking redis client for python twisted
 dev-python/unpaddedbase64 2.1.0: Unpadded Base64
 gui-libs/libshumate 1.0.0: Shumate is a GTK toolkit providing widgets for embedded maps
 media-gfx/cura-tronxytron 0.0.2: cura profiles for tronxytron printer
-media-sound/shortwave 9999: Listen to internet radio
+media-sound/shortwave 3.0.0 9999: Listen to internet radio
 net-im/jitsi-meet 2022.4.1: Desktop application for Jitsi Meet built with Electron
 net-im/jitsi-meet-bin 2021.11.1: Desktop application for Jitsi Meet built with Electron
 net-im/sydent 2.5.2: Reference Matrix Identity Verification and Lookup Server
@@ -78,7 +78,7 @@ sys-cluster/ucx 1.12.1: Unified Communication X
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gentoo-sources-autobuild 0.0.4: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.2.0: Prometheus exporter that exposes metrics from apcupsd's NIS
-www-apps/element 1.10.14: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.10.15: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.11.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/grocy 3.3.1: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.3-r1: Hedgedoc real-time collaborative markdown editor
