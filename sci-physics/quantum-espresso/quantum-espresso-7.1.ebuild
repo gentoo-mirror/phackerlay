@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -28,7 +28,7 @@ RDEPEND="
 	scalapack? ( sci-libs/scalapack )
 	hdf5? ( sci-libs/hdf5[fortran] )
 	openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) )
-	libxc? ( sci-libs/libxc ) 
+	libxc? ( >=sci-libs/libxc-5.1.2 ) 
 	elpa? ( sci-libs/elpa openmp? ( sci-libs/elpa[openmp] ) mpi? ( sci-libs/elpa[mpi] ) )
 "
 
@@ -54,6 +54,7 @@ src_install() {
 	cmake_src_install
 	dolib.so ${BUILD_DIR}/external/mbd/src/libmbd.so
 	dolib.so ${BUILD_DIR}/QEHeat/libqe_qeheat.so
+	dolib.so ${BUILD_DIR}/KCW/PP/libqe_kcwpp.so
 }
 
 pkg_postinst () {
