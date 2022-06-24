@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+PYTHON_COMPAT=( python3_{8,9,10,11} )
 
 inherit distutils-r1
 
@@ -18,10 +18,15 @@ KEYWORDS="~amd64"
 RESTRICT="network-sandbox"
 
 RDEPEND="
-	dev-python/jupyter_packaging[${PYTHON_USEDEP}]
+	dev-python/numpy[${PYTHON_USEDEP}]
+	<dev-python/ipython-9[${PYTHON_USEDEP}]
+	dev-python/ipython_genutils[${PYTHON_USEDEP}]
+	dev-python/pillow[${PYTHON_USEDEP}]
 	>=dev-python/ipykernel-4.7[${PYTHON_USEDEP}]
 	>=dev-python/ipywidgets-7.6.0[${PYTHON_USEDEP}]
-	>=dev-python/matplotlib-2.0.0[${PYTHON_USEDEP}]
+	<dev-python/ipywidgets-8.0.0[${PYTHON_USEDEP}]
+	>=dev-python/matplotlib-3.4.0[${PYTHON_USEDEP}]
+	<dev-python/matplotlib-4.0.0[${PYTHON_USEDEP}]
 	sys-apps/yarn
 "
 
