@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+PYTHON_COMPAT=( python3_{8,9,10,11} )
 
 inherit distutils-r1
 
@@ -16,8 +16,9 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="\
-	sys-cluster/slurm \
-	dev-python/notebook[${PYTHON_USEDEP}] \
+	>=dev-python/jupyter_packaging-0.10.0[${PYTHON_USEDEP}]
+	>=dev-python/jupyterlab-3.0.0[${PYTHON_USEDEP}]
+	sys-cluster/slurm
 "
 
 src_unpack() {
