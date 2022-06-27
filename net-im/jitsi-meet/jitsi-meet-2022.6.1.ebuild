@@ -1,10 +1,10 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 CHROMIUM_LANGS="am ar bg bn ca cs da de el en-GB en-US es-419 es et fa fil fi fr gu he hi hr hu id it 
-ja kn ko lt lv ml mr ms nb nl pl pt-BR pt-PT ro ru sk sl sr sv sw ta te th tr uk vi zh-CN zh-TW"
+ja kn ko lt lv ml mr ms nb nl pl pt-BR pt-PT ro ru sk sl sr sv sw ta te th tr uk vi zh-CN zh-TW af ur"
 
 inherit desktop xdg unpacker chromium-2
 
@@ -58,7 +58,7 @@ src_install() {
 	fi
 
 	if ! use swiftshader; then
-		rm -r "${D}/opt/Jitsi Meet/swiftshader" || die
+		rm -r "${D}/opt/Jitsi Meet/libvk_swiftshader.so" || die
 		elog "Running without SwiftShader OpenGL implementation. If Jitsi doesn't start "
 		elog "or you experience graphic issues, then try with USE=swiftshader enabled."
 	fi
