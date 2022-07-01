@@ -5,6 +5,8 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8,9,10,11} )
 
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
+
 inherit distutils-r1
 
 DESCRIPTION="An LDAP3 auth provider for Synapse "
