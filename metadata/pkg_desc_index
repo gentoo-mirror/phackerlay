@@ -39,7 +39,7 @@ dev-python/jupyterlab 3.4.3: JupyterLab computational environment
 dev-python/jupyterlab-link-share 0.2.4: JupyterLab Extension to share the URL to a running Jupyter Server
 dev-python/jupyterlab-slurm 3.0.2: A Jupyter Notebook server extension that implements common Slurm commands
 dev-python/matrix-common 1.1.0 1.2.1: Common code for Synapse, Sydent and Sygnal
-dev-python/matrix-synapse-ldap3 0.2.0: An LDAP3 auth provider for Synapse
+dev-python/matrix-synapse-ldap3 0.2.1: An LDAP3 auth provider for Synapse
 dev-python/openant 0.4.0: ANT and ANT-FS Python Library
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/pymacaroons 0.13.0: PyMacaroons is a Python implementation of Macaroons. They’re better than cookies!
