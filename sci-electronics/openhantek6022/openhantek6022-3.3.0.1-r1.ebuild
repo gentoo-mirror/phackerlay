@@ -18,6 +18,9 @@ RDEPEND="
 	>=dev-qt/qtwidgets-5.4
 	>=sci-libs/fftw-3
 	>=dev-libs/libusb-1
+	dev-qt/qtopengl
+	dev-qt/qtprintsupport
+	dev-qt/linguist-tools
 "
 
 DEPEND="
