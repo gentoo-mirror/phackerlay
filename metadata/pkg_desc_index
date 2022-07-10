@@ -45,7 +45,7 @@ dev-python/openant 0.4.0: ANT and ANT-FS Python Library
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
 dev-python/pymacaroons 0.13.0: PyMacaroons is a Python implementation of Macaroons. They’re better than cookies!
-dev-python/python-json-logger 2.0.2: This library is provided to allow standard python logging to output log data as json objects
+dev-python/python-json-logger 2.0.3: This library is provided to allow standard python logging to output log data as json objects
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/selenium-wire 4.6.4: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/signedjson 1.1.1 1.1.4: Signs JSON objects with ED25519 signatures.
@@ -76,7 +76,7 @@ sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 sc
 sys-kernel/gentoo-sources-autobuild 0.0.4: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.2.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 www-apps/element 1.11.0: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
-www-apps/excalidraw 0.11.0: Virtual whiteboard for sketching hand-drawn like diagrams
+www-apps/excalidraw 0.12.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/grocy 3.3.1: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.3-r1: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.3-r3: a set of an OpenRC scripts to run mastodon services
