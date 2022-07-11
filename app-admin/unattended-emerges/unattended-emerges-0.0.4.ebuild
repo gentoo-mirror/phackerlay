@@ -11,7 +11,7 @@ inherit distutils-r1
 SRC_URI="https://gitlab.phys-el.ru/gentoo/unattended_emerges/-/archive/v${PV}/unattended_emerges-v${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64 ~x86"
 
-DESCRIPTION="dangerous tool for automatic upgrades*"
+DESCRIPTION="dangerous tool for automatic upgrades"
 HOMEPAGE="https://gitlab.phys-el.ru/gentoo/unattended_emerges"
 
 LICENSE="MIT"
