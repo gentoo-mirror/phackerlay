@@ -3,8 +3,9 @@
 
 EAPI=8
 
+
 PYTHON_COMPAT=( python3_{9,10,11} )
-DISTUTILS_USE_SETUPTOOLS="pyproject.toml"
+DISTUTILS_USE_PEP517=setuptools
 
 inherit distutils-r1
 
@@ -42,7 +43,7 @@ RESTRICT="test"
 S="${WORKDIR}/sendr4d4-v${PV}"
 
 src_install() {
-	default()
+	default
 	if use mta; then
 		dosym ../bin/sendr4d4 /usr/lib/sendmail
 		dosym ../bin/sendr4d4 /usr/sbin/sendmail
