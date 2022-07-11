@@ -45,7 +45,7 @@ dev-python/openant 0.4.0: ANT and ANT-FS Python Library
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
 dev-python/pymacaroons 0.13.0: PyMacaroons is a Python implementation of Macaroons. They’re better than cookies!
-dev-python/python-json-logger 2.0.3: This library is provided to allow standard python logging to output log data as json objects
+dev-python/python-json-logger 2.0.4: This library is provided to allow standard python logging to output log data as json objects
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/selenium-wire 4.6.4: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/signedjson 1.1.1 1.1.4: Signs JSON objects with ED25519 signatures.
