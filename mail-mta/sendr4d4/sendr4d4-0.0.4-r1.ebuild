@@ -22,6 +22,7 @@ IUSE="+mta"
 RDEPEND="
 	dev-python/toml
 	dev-python/requests
+	net-mail/mailbase
 	mta? (
 		!mail-mta/courier
 		!mail-mta/esmtp
@@ -42,8 +43,8 @@ RESTRICT="test"
 
 S="${WORKDIR}/sendr4d4-v${PV}"
 
-src_install() {
-	default
+python_install() {
+        distutils-r1_python_install --skip-build
 	if use mta; then
 		dosym ../bin/sendr4d4 /usr/lib/sendmail
 		dosym ../bin/sendr4d4 /usr/sbin/sendmail
