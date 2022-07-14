@@ -17,5 +17,5 @@ RDEPEND="|| (	mail-mta/nullmailer
 				mail-mta/notqmail
 				mail-mta/postfix
 				mail-mta/sendmail
-				mail-mta/opensmtpd[mta] )
-				mail-mta/sendr4d4[mta]"
+				mail-mta/opensmtpd[mta]
+				mail-mta/sendr4d4[mta] )"
