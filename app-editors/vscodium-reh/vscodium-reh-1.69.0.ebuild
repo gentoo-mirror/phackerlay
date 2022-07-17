@@ -34,7 +34,7 @@ KEYWORDS="-* ~amd64 ~arm ~arm64"
 IUSE=""
 
 RDEPEND="
-	net-libs/nodejs
+	<net-libs/nodejs-18
 "
 
 S="${WORKDIR}"
