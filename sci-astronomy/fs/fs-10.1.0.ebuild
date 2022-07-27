@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/nvi-inc/fs"
 SRC_URI="https://github.com/nvi-inc/fs/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
-SLOT="10.0"
+SLOT="10.1"
 KEYWORDS="~amd64"
 
 IUSE="+strip-sources doc"
@@ -23,7 +23,7 @@ PATCHES=(
 	)
 
 BDEPEND="
-	<sys-devel/gcc-10
+	=sys-devel/gcc:9.5.0
 	dev-lang/fort77
 	sys-devel/bison
 "
