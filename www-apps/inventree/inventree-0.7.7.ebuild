@@ -21,9 +21,6 @@ RDEPEND="
 	acct-user/inventree
 	acct-group/inventree
 	$(python_gen_cond_dep '
-		dev-python/invoke[${PYTHON_USEDEP}]
-	')
-	$(python_gen_cond_dep '
 		dev-python/pip[${PYTHON_USEDEP}]
 	')
 	postgres? ( dev-db/postgresql )
@@ -43,10 +40,12 @@ src_install() {
 	keepdir /opt/inventree/static
 	keepdir /opt/inventree/data
 	cd ${ED}/opt/inventree
-	chown -R inventree:inventree log static data
+	chown -R inventree:inventree log static data src/InvenTree
 	${EPYTHON} -m venv venv
+	venv/bin/python -m pip install invoke wheel
 	venv/bin/python -m pip install -r ${S}/requirements.txt
-	use postgres && venv/bin/python -m pip install psycopg2 || die
+	use postgres && venv/bin/python -m pip install psycopg2 pgcli || die
+	sed -i "s:var/tmp/portage/www-apps/inventree-${PV}/image/::g" ${ED}/opt/inventree/venv/bin/activate
 }
 
 pkg_postinst() {
