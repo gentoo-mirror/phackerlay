@@ -43,9 +43,9 @@ src_install() {
 	chown -R inventree:inventree log static data src/InvenTree
 	${EPYTHON} -m venv venv
 	venv/bin/python -m pip install invoke wheel
-	venv/bin/python -m pip install -r ${S}/requirements.txt
+	venv/bin/python -m pip install -r ${S}/requirements.txt --no-binary :all:
 	use postgres && venv/bin/python -m pip install psycopg2 pgcli || die
-	sed -i "s:var/tmp/portage/www-apps/inventree-${PV}/image/::g" ${ED}/opt/inventree/venv/bin/activate
+	sed -i "s:var/tmp/portage/www-apps/inventree-${PV}/image/::g" ${ED}/opt/inventree/venv/bin/*
 }
 
 pkg_postinst() {
@@ -56,4 +56,16 @@ pkg_postinst() {
 		elog	prior to execution
 		elog
 	fi
+	elog	su -s /bin/bash inventree
+	elog	cd
+	elog	. venv/bin/activate
+	elog	cd src
+	elog	invoke migrate
+	elog	invoke translate_stat
+	elog	invoke static
+	elog	invoke clean_settings
+	elog
+	elog	cd InvenTree
+	elog	gunicorn -c gunicorn.conf.py InvenTree.wsgi -b 0.0.0.0:8000
+	elog
 }
