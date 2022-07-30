@@ -38,9 +38,11 @@ src_install() {
 	doins ${S}/InvenTree/config_template.yaml
 	# ln -s ${EPREFIX}/etc/config.yaml ${EPREFIX}/inventree/src/InvenTree/config.yaml
 	insinto /opt/inventree/src
-	doins -r ${S}/InvenTree
+	doins -r ${S}/*
+	keepdir /opt/inventree/log
+	keepdir /opt/inventree/static
+	keepdir /opt/inventree/data
 	cd ${ED}/opt/inventree
-	mkdir log static data
 	chown -R inventree:inventree log static data
 	${EPYTHON} -m venv venv
 	venv/bin/python -m pip install -r ${S}/requirements.txt
@@ -48,7 +50,7 @@ src_install() {
 }
 
 pkg_postinst() {
-	if [ ! -e /opt/inventree/src/InvenTree/config.yaml ]; then
+	if [ ! -f /opt/inventree/src/InvenTree/config.yaml ]; then
 		elog
 		elog	Please create /etc/inventree/config.yaml from template and
 		elog	symlink it to /opt/inventree/src/InvenTree/
