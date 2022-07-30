@@ -24,9 +24,6 @@ RDEPEND="
 		dev-python/invoke[${PYTHON_USEDEP}]
 	')
 	$(python_gen_cond_dep '
-		dev-python/venv[${PYTHON_USEDEP}]
-	')
-	$(python_gen_cond_dep '
 		dev-python/pip[${PYTHON_USEDEP}]
 	')
 	postgres? ( dev-db/postgresql )
