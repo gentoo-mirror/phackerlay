@@ -44,7 +44,7 @@ src_install() {
 	chown -R inventree:inventree log static data src/InvenTree
 	${EPYTHON} -m venv venv
 	venv/bin/python -m pip install invoke wheel
-	venv/bin/python -m pip install -r ${S}/requirements.txt --no-binary :all:
+	venv/bin/python -m pip install -r ${S}/requirements.txt --no-binary pillow || die
 	use postgres && venv/bin/python -m pip install psycopg2 pgcli || die
 	sed -i "s:var/tmp/portage/www-apps/inventree-${PV}/image/::g" ${ED}/opt/inventree/venv/bin/*
 	sed -i "s:/home/inventree:/opt/inventree:g" ${S}/deploy/supervisord.conf
