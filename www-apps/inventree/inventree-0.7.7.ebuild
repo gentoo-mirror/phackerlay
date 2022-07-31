@@ -48,6 +48,7 @@ src_install() {
 	use postgres && venv/bin/python -m pip install psycopg2 pgcli || die
 	sed -i "s:var/tmp/portage/www-apps/inventree-${PV}/image/::g" ${ED}/opt/inventree/venv/bin/*
 	sed -i "s:/home/inventree:/opt/inventree:g" ${S}/deploy/supervisord.conf
+	sed -i "s:inventree/env:inventree/venv:g" ${S}/deploy/supervisord.conf
 	insinto /etc/supervisord.d
 	newins ${S}/deploy/supervisord.conf inventree.conf
 }
