@@ -20,6 +20,7 @@ IUSE="+postgres"
 RDEPEND="
 	acct-user/inventree
 	acct-group/inventree
+	app-admin/supervisor
 	$(python_gen_cond_dep '
 		dev-python/pip[${PYTHON_USEDEP}]
 	')
@@ -46,6 +47,9 @@ src_install() {
 	venv/bin/python -m pip install -r ${S}/requirements.txt --no-binary :all:
 	use postgres && venv/bin/python -m pip install psycopg2 pgcli || die
 	sed -i "s:var/tmp/portage/www-apps/inventree-${PV}/image/::g" ${ED}/opt/inventree/venv/bin/*
+	sed -i "s:/home/inventree:/opt/inventree:g" ${S}/deploy/supervisord.conf
+	insinto /etc/supervisord.d
+	newins ${S}/deploy/supervisord.conf inventree.conf
 }
 
 pkg_postinst() {
