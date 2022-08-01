@@ -50,7 +50,7 @@ dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Pytho
 dev-python/pymacaroons 0.13.0: PyMacaroons is a Python implementation of Macaroons. They’re better than cookies!
 dev-python/python-json-logger 2.0.4: This library is provided to allow standard python logging to output log data as json objects
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
-dev-python/selenium-wire 4.6.4: Extends Selenium to give you the ability to inspect requests made by the browser.
+dev-python/selenium-wire 4.6.5: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/signedjson 1.1.1 1.1.4: Signs JSON objects with ED25519 signatures.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
@@ -65,7 +65,7 @@ net-im/sydent 2.5.2: Reference Matrix Identity Verification and Lookup Server
 net-im/synapse 1.63.1: Reference homeserver for the Matrix decentralised comms protocol
 sci-astronomy/fs 9.12.13 9.13.2 10.1.0: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
-sci-electronics/openhantek6022 3.3.0.1-r1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
+sci-electronics/openhantek6022 3.3.1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-s 0.0.24: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-libs/elpa 2021.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000-r4: Setup collection for sci-physics/gpaw
