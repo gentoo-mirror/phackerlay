@@ -1,9 +1,9 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+PYTHON_COMPAT=( python3_{9,10,11} )
 
 inherit distutils-r1
 
@@ -17,6 +17,7 @@ KEYWORDS="~amd64"
 
 RDEPEND="
 	>=dev-python/blinker-1.4[${PYTHON_USEDEP}]
+	>=dev-python/brotli-1.0.9[${PYTHON_USEDEP}]
 	dev-python/certifi[${PYTHON_USEDEP}]
 	>=dev-python/h2-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/hyperframe-6.0.0[${PYTHON_USEDEP}]
