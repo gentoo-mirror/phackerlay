@@ -61,6 +61,9 @@ pkg_postinst() {
 		elog	prior to execution
 		elog
 	fi
+	elog
+	elog	Beware, everything is experimental
+	elog
 	elog	su -s /bin/bash inventree
 	elog	cd
 	elog	. venv/bin/activate
@@ -70,7 +73,6 @@ pkg_postinst() {
 	elog	invoke static
 	elog	invoke clean_settings
 	elog
-	elog	cd InvenTree
-	elog	gunicorn -c gunicorn.conf.py InvenTree.wsgi -b 0.0.0.0:8000
+	elog	rc-service supervisord restart
 	elog
 }
