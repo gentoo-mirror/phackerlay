@@ -1,10 +1,10 @@
-# Copyright 1999-2021 Gentoo Foundation
+# Copyright 1999-2022 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{8,9,10,11} )
+PYTHON_COMPAT=( python3_{9,10,11} )
 inherit distutils-r1
 
 DESCRIPTION="Reference homeserver for the Matrix decentralised comms protocol"
@@ -26,7 +26,7 @@ RDEPEND="
 	>=dev-python/frozendict-1[${PYTHON_USEDEP}]
 	!=dev-python/frozendict-2.1.2[${PYTHON_USEDEP}]
 	>=dev-python/unpaddedbase64-2.1.0[${PYTHON_USEDEP}]
-	>=dev-python/canonicaljson-1.4.0[${PYTHON_USEDEP}]
+	>=dev-python/canonicaljson-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/signedjson-1.1.0[${PYTHON_USEDEP}]
 	>=dev-python/idna-2.5[${PYTHON_USEDEP}]
 	>=dev-python/service_identity-18.1.0[${PYTHON_USEDEP}]
