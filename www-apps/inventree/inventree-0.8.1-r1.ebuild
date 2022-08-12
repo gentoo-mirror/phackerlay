@@ -45,6 +45,7 @@ src_install() {
 	${EPYTHON} -m venv venv
 	venv/bin/python -m pip install invoke wheel
 	venv/bin/python -m pip install -r ${S}/requirements.txt --no-binary pillow || die
+	touch ${ED}/opt/inventree/venv/lib/python3.10/site-packages/weasyprint/text/__init__.py
 	use postgres && venv/bin/python -m pip install psycopg2 pgcli || die
 	find ${ED}/opt/inventree/venv/bin -type f -exec sed -i "s:var/tmp/portage/www-apps/inventree-${PV}/image/::g" '{}' \;
 	sed -i "s:/home/inventree:/opt/inventree:g" ${S}/deploy/supervisord.conf
