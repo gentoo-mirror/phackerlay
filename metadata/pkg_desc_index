@@ -62,7 +62,7 @@ gui-libs/libshumate 1.0.0: Shumate is a GTK toolkit providing widgets for embedd
 mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.0.2: cura profiles for tronxytron printer
 media-sound/shortwave 3.0.0 9999: Listen to internet radio
-net-im/jitsi-meet 2022.7.1: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2022.8.1: Desktop application for Jitsi Meet built with Electron
 net-im/sydent 2.5.2: Reference Matrix Identity Verification and Lookup Server
 net-im/synapse 1.64.0-r1: Reference homeserver for the Matrix decentralised comms protocol
 sci-astronomy/fs 9.12.13 9.13.2 10.1.0: MarkIV Field System
