@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8,9,10,11} )
+PYTHON_COMPAT=( python3_{9,10,11} )
 
 inherit distutils-r1
 
@@ -22,9 +22,8 @@ RDEPEND="
 	<dev-python/ipython-9[${PYTHON_USEDEP}]
 	dev-python/ipython_genutils[${PYTHON_USEDEP}]
 	dev-python/pillow[${PYTHON_USEDEP}]
-	>=dev-python/ipykernel-4.7[${PYTHON_USEDEP}]
 	>=dev-python/ipywidgets-7.6.0[${PYTHON_USEDEP}]
-	<dev-python/ipywidgets-8.0.0[${PYTHON_USEDEP}]
+	<dev-python/ipywidgets-9.0.0[${PYTHON_USEDEP}]
 	>=dev-python/matplotlib-3.4.0[${PYTHON_USEDEP}]
 	<dev-python/matplotlib-4.0.0[${PYTHON_USEDEP}]
 	sys-apps/yarn
