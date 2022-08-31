@@ -66,7 +66,7 @@ media-gfx/cura-tronxytron 0.0.2: cura profiles for tronxytron printer
 media-sound/shortwave 3.0.0 9999: Listen to internet radio
 net-im/jitsi-meet 2022.8.1: Desktop application for Jitsi Meet built with Electron
 net-im/sydent 2.5.2: Reference Matrix Identity Verification and Lookup Server
-net-im/synapse 1.65.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.66.0: Reference homeserver for the Matrix decentralised comms protocol
 sci-astronomy/fs 9.12.13 9.13.2 10.1.0: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
