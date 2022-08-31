@@ -74,6 +74,7 @@ pkg_postinst() {
 	elog	invoke static
 	elog	invoke clean_settings
 	elog
+	elog	exit
 	elog	rc-service supervisord restart
 	elog
 }
