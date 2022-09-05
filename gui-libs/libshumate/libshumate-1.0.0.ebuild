@@ -8,7 +8,7 @@ inherit autotools meson
 DESCRIPTION="Shumate is a GTK toolkit providing widgets for embedded maps"
 HOMEPAGE="https://gitlab.gnome.org/GNOME/libshumate"
 
-SRC_URI="https://gitlab.gnome.org/GNOME/libshumate/-/archive/1.0.0.alpha.1/libshumate-1.0.0.alpha.1.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://gitlab.gnome.org/GNOME/libshumate/-/archive/1.0.0.alpha.1/libshumate-1.0.0.beta.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64"
 
 LICENSE="LGPL-2.1"
