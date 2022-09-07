@@ -79,7 +79,7 @@ sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, man
 sci-physics/gpaw 22.8.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 7.1: Suite for first-principles electronic-structure calculations and materials modeling
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
-sys-cluster/ucx 1.12.1: Unified Communication X
+sys-cluster/ucx 1.13.1: Unified Communication X
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gentoo-sources-autobuild 0.0.5: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.2.0: Prometheus exporter that exposes metrics from apcupsd's NIS
@@ -91,6 +91,6 @@ www-apps/hedgedoc 1.9.4: Hedgedoc real-time collaborative markdown editor
 www-apps/inventree 0.8.2: Open Source Inventory Management System
 www-apps/mastodon-openrc 0.0.3-r3: a set of an OpenRC scripts to run mastodon services
 www-apps/privatebin 1.4.0: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
-www-apps/seafile-ce-server 9.0.7: Meta package for Seafile Community Edition, file sync share solution
+www-apps/seafile-ce-server 9.0.8: Meta package for Seafile Community Edition, file sync share solution
 www-apps/synapse-admin 0.8.5: Admin UI for Matrix Synapse homeserver
 x11-themes/chicago95 2.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
