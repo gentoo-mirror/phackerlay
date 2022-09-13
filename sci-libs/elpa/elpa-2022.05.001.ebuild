@@ -27,9 +27,7 @@ CFLAGS="${CFLAGS} -march=native"
 
 src_prepare() {
 	default
-
-	${S}/generate_automake_test_programs.py > ${S}/test_programs.am
-	eautoreconf --force --install
+	${S}/autogen.sh
 }
 
 
@@ -46,6 +44,3 @@ src_configure() {
 		$(use_enable cpu_flags_x86_sve512 sve512) || die
 	}
 
-#src_compile() {
-#	make ${MAKEOPTS}
-#}
