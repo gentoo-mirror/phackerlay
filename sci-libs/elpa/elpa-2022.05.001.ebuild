@@ -17,6 +17,7 @@ IUSE="openmp mpi cpu_flags_x86_sse cpu_flags_x86_avx cpu_flags_x86_avx2 cpu_flag
 SLOT="0"
 
 RDEPEND="
+	sys-devel/gcc[fortran]
 	app-editors/vim-core
 	mpi? ( virtual/mpi[fortran,threads] )
         openmp? ( sys-devel/gcc[openmp] )
@@ -24,9 +25,16 @@ RDEPEND="
 
 CFLAGS="${CFLAGS} -march=native"
 
+src_prepare() {
+	default
+
+	${S}/generate_automake_test_programs.py > ${S}/test_programs.am
+	eautoreconf --force --install
+}
+
+
 src_configure() {
-	${S}/autogen.sh
-	${S}/configure --prefix=/usr --libdir=/usr/lib64 \
+	econf CPP=g++ --prefix=/usr --libdir=/usr/lib64 \
 		$(use_with mpi) \
 		$(use_enable openmp) \
 		$(use_enable cpu_flags_x86_sse sse) \
@@ -38,6 +46,6 @@ src_configure() {
 		$(use_enable cpu_flags_x86_sve512 sve512) || die
 	}
 
-src_compile() {
-	make ${MAKEOPTS}
-}
+#src_compile() {
+#	make ${MAKEOPTS}
+#}
