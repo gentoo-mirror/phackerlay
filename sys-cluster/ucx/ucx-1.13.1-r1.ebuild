@@ -27,7 +27,8 @@ src_configure() {
 		$(use_with cpu_flags_x86_sse41 sse41) \
 		$(use_with cpu_flags_x86_sse42 sse42) \
 		$(use_enable numa) \
-		$(use_enable openmp)
+		$(use_enable openmp) \
+		--without-bfd
 }
 
 src_compile() {
