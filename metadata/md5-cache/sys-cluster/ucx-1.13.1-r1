@@ -9,4 +9,4 @@ LICENSE=BSD
 RDEPEND=sys-libs/binutils-libs:= numa? ( sys-process/numactl )
 SLOT=0
 SRC_URI=https://github.com/openucx/ucx/releases/download/v1.13.1/ucx-1.13.1.tar.gz
-_md5_=ff73042d617a80ae9976936070e6b04d
+_md5_=350cc373e99a3ace7ff7174899d89ebf
