@@ -30,7 +30,7 @@ dev-lang/fort77 1.18: Utility is the interface to the FORTRAN compilation system
 dev-libs/libf2c 20130927-r1 20160102: Library that converts FORTRAN to C source
 dev-libs/nng 1.3.2 1.5.2: High-performance messaging interface for distributed applications
 dev-python/antfs-cli 9999: ANT-FS Command Line Interface
-dev-python/canonicaljson 1.6.2: Canonical JSON
+dev-python/canonicaljson 1.6.3: Canonical JSON
 dev-python/certipy 0.1.3: A simple python tool for creating certificate authorities and certificates on the fly.
 dev-python/cffi 1.14.6: Foreign Function Interface for Python calling C code
 dev-python/fenics-basix 0.5.1: FEniCS finite element basis evaluation library
