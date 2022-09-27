@@ -51,7 +51,10 @@ inherit distutils-r1 cargo
 DESCRIPTION="Reference homeserver for the Matrix decentralised comms protocol"
 HOMEPAGE="https://matrix.org/"
 
-SRC_URI="https://github.com/matrix-org/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="
+	https://github.com/matrix-org/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
+	$(cargo_crate_uris ${CRATES})
+"
 KEYWORDS="~amd64"
 
 LICENSE="Apache-2.0"
