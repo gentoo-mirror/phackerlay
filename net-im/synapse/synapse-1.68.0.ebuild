@@ -108,6 +108,11 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
+src_unpack() {
+	cargo_src_unpack
+	default
+}
+
 src_prepare() {
         distutils-r1_src_prepare
 }
