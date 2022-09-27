@@ -55,7 +55,7 @@ SRC_URI="
 	https://github.com/matrix-org/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	$(cargo_crate_uris ${CRATES})
 "
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 LICENSE="Apache-2.0"
 SLOT="0"
