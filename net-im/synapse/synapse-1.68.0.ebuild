@@ -46,7 +46,7 @@ CRATES="
 	windows_x86_64_msvc-0.36.1
 "
 
-inherit distutils-r1 cargo
+inherit cargo distutils-r1
 
 DESCRIPTION="Reference homeserver for the Matrix decentralised comms protocol"
 HOMEPAGE="https://matrix.org/"
@@ -55,7 +55,7 @@ SRC_URI="
 	https://github.com/matrix-org/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	$(cargo_crate_uris ${CRATES})
 "
-KEYWORDS=""
+KEYWORDS="~amd64"
 
 LICENSE="Apache-2.0"
 SLOT="0"
