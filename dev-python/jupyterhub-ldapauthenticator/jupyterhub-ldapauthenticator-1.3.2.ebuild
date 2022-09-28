@@ -19,7 +19,7 @@ RDEPEND="
 	dev-python/ldap3[${PYTHON_USEDEP}]
 	dev-python/traitlets[${PYTHON_USEDEP}]
 	dev-python/jupyterhub[${PYTHON_USEDEP}]
-	www-servers/tornado
+	dev-python/tornado
 "
 
 src_prepare() {

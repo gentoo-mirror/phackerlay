@@ -21,7 +21,7 @@ distutils_enable_tests pytest
 RDEPEND="
 	dev-python/ipython[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
-	>=www-servers/tornado-6.1[${PYTHON_USEDEP}]
+	>=dev-python/tornado-6.1[${PYTHON_USEDEP}]
 	dev-python/jupyter_core[${PYTHON_USEDEP}]
 	=dev-python/jupyterlab_server-2*[${PYTHON_USEDEP}]
 	>=dev-python/jupyterlab_server-2.3.0[${PYTHON_USEDEP}]
