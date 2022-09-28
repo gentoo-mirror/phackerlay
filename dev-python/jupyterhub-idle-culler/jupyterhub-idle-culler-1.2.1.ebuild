@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	www-servers/tornado
+	dev-python/tornado
 	dev-python/python-dateutil
 "
 

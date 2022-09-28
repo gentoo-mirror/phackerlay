@@ -39,7 +39,7 @@ RDEPEND="
 	dev-python/python-dateutil[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	>=dev-python/sqlalchemy-1.1[${PYTHON_USEDEP}]
-	>=www-servers/tornado-5.1[${PYTHON_USEDEP}]
+	>=dev-python/tornado-5.1[${PYTHON_USEDEP}]
 	>=dev-python/traitlets-4.3.2[${PYTHON_USEDEP}]
 	|| ( dev-python/jupyterlab[${PYTHON_USEDEP}] dev-python/jupyter[${PYTHON_USEDEP}] )
 	postgres? ( <dev-python/psycopg-3[${PYTHON_USEDEP}] )

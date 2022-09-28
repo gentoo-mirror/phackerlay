@@ -19,7 +19,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	dev-python/pexpect[${PYTHON_USEDEP}]
 	dev-python/notebook[${PYTHON_USEDEP}]
-	www-servers/tornado
+	dev-python/tornado
 "
 src_unpack() {
 	default
