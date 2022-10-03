@@ -21,6 +21,7 @@ RDEPEND="
 	>=dev-db/sqlite-3
 	>=x11-libs/cairo-1.4
 	>=dev-libs/gobject-introspection-0.6.3
+	net-libs/libsoup:3.0
 "
 
 DEPEND="${RDEPEND}"
