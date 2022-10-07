@@ -9,7 +9,7 @@ DESCRIPTION="Shumate is a GTK toolkit providing widgets for embedded maps"
 HOMEPAGE="https://gitlab.gnome.org/GNOME/libshumate"
 
 SRC_URI="https://gitlab.gnome.org/GNOME/libshumate/-/archive/${PV}/libshumate-${PV}.tar.gz -> ${P}.tar.gz"
-KEYWORDS="~amd64"
+KEYWORDS=""
 
 LICENSE="LGPL-2.1"
 SLOT="0"
