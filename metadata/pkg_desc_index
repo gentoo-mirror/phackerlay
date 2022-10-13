@@ -20,7 +20,7 @@ acct-user/prog 0: prog user for fs
 acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
-app-admin/rsync-wrapper 0.0.1: rsync wrapper for running with rsnapshot
+app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
 app-editors/vscodium-reh 1.72.0.22279 1.72.1.22284: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/xtensor 0.24.3: C++ tensors with broadcasting and lazy computing
