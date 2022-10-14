@@ -30,7 +30,6 @@ LICENSE="
 	W3C
 "
 SLOT="0"
-#KEYWORDS=""
 KEYWORDS="-* ~amd64 ~arm ~arm64"
 IUSE=""
 
