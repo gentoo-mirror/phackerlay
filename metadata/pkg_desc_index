@@ -56,7 +56,7 @@ dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Pytho
 dev-python/pymacaroons 0.13.0: PyMacaroons is a Python implementation of Macaroons. They’re better than cookies!
 dev-python/python-json-logger 2.0.4: This library is provided to allow standard python logging to output log data as json objects
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
-dev-python/selenium-wire 5.0.0: Extends Selenium to give you the ability to inspect requests made by the browser.
+dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/signedjson 1.1.1 1.1.4: Signs JSON objects with ED25519 signatures.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
@@ -65,7 +65,7 @@ dev-python/unpaddedbase64 2.1.0: Unpadded Base64
 gui-libs/libshumate 1.0.0 1.0.1: Shumate is a GTK toolkit providing widgets for embedded maps
 mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.0.2: cura profiles for tronxytron printer
-media-sound/shortwave 3.0.0: Listen to internet radio
+media-sound/shortwave 3.1.0: Listen to internet radio
 net-im/jitsi-meet 2022.9.1: Desktop application for Jitsi Meet built with Electron
 net-im/sydent 2.5.2-r1: Reference Matrix Identity Verification and Lookup Server
 net-im/synapse 1.68.0: Reference homeserver for the Matrix decentralised comms protocol
@@ -75,7 +75,7 @@ sci-electronics/openhantek6022 3.3.1: DSO software for Hantek USB digital signal
 sci-electronics/qucs-s 0.0.24: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-libs/elpa 2022.05.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000-r4: Setup collection for sci-physics/gpaw
-sci-libs/libxc 5.2.3: A library of exchange-correlation functionals for use in DFT
+sci-libs/libxc 5.2.3 6.0.0: A library of exchange-correlation functionals for use in DFT
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 22.8.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
