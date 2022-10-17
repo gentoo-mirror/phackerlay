@@ -96,4 +96,4 @@ www-apps/privatebin 1.4.0: A minimalist, open source online pastebin where the s
 www-apps/seafile-ce-server 9.0.9: Meta package for Seafile Community Edition, file sync share solution
 www-apps/synapse-admin 0.8.5: Admin UI for Matrix Synapse homeserver
 x11-misc/arandr 0.1.10-r3: Another XRandR GUI
-x11-themes/chicago95 2.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
+x11-themes/chicago95 3.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
