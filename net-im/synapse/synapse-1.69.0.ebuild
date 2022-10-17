@@ -6,6 +6,9 @@ EAPI="8"
 DISTUTILS_USE_PEP517=poetry
 PYTHON_COMPAT=( python3_{9,10,11} )
 CRATES="
+	aho-corasick-0.7.19
+	anyhow-1.0.65
+	arc-swap-1.5.1
 	autocfg-1.1.0
 	bitflags-1.3.2
 	blake2-0.10.4
@@ -16,8 +19,13 @@ CRATES="
 	generic-array-0.14.6
 	hex-0.4.3
 	indoc-1.0.7
+	itoa-1.0.3
+	lazystatic-1.4.0
 	libc-0.2.132
 	lock_api-0.4.7
+	log-0.4.17
+	memchr-2.5.0
+	memoffset-0.6.5
 	once_cell-1.13.1
 	parking_lot-0.12.1
 	parking_lot_core-0.9.3
