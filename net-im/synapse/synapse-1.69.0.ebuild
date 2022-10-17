@@ -30,14 +30,22 @@ CRATES="
 	parking_lot-0.12.1
 	parking_lot_core-0.9.3
 	proc-macro2-1.0.43
-	pyo3-0.16.6
-	pyo3-build-config-0.16.6
-	pyo3-ffi-0.16.6
-	pyo3-macros-0.16.6
-	pyo3-macros-backend-0.16.6
+	pyo3-0.17.1
+	pyo3-build-config-0.17.1
+	pyo3-ffi-0.17.1
+	pyo3-log-0.7.0
+	pyo3-macros-0.17.1
+	pyo3-macros-backend-0.17.1
+	pythonize-0.17.0
 	quote-1.0.21
 	redox_syscall-0.2.16
+	regex-1.6.0
+	regex-syntax-0.6.27
+	ryu-1.0.11
 	scopeguard-1.1.0
+	serde-1.0.145
+	serde_derive-1.0.145
+	serde_json-1.0.85
 	smallvec-1.9.0
 	subtle-2.4.1
 	syn-1.0.99
