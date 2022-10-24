@@ -22,6 +22,7 @@ RDEPEND="
 	>=x11-libs/cairo-1.4
 	>=dev-libs/gobject-introspection-0.6.3
 	net-libs/libsoup:3.0
+	!gui-libs/libshumate
 "
 
 DEPEND="${RDEPEND}"
