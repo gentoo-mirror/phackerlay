@@ -19,23 +19,23 @@ CRATES="
 	generic-array-0.14.6
 	hex-0.4.3
 	indoc-1.0.7
-	itoa-1.0.3
+	itoa-1.0.4
 	lazy_static-1.4.0
-	libc-0.2.132
-	lock_api-0.4.7
+	libc-0.2.135
+	lock_api-0.4.9
 	log-0.4.17
 	memchr-2.5.0
 	memoffset-0.6.5
-	once_cell-1.13.1
+	once_cell-1.15.0
 	parking_lot-0.12.1
 	parking_lot_core-0.9.3
-	proc-macro2-1.0.43
-	pyo3-0.17.1
-	pyo3-build-config-0.17.1
-	pyo3-ffi-0.17.1
+	proc-macro2-1.0.46
+	pyo3-0.17.2
+	pyo3-build-config-0.17.2
+	pyo3-ffi-0.17.2
 	pyo3-log-0.7.0
-	pyo3-macros-0.17.1
-	pyo3-macros-backend-0.17.1
+	pyo3-macros-0.17.2
+	pyo3-macros-backend-0.17.2
 	pythonize-0.17.0
 	quote-1.0.21
 	redox_syscall-0.2.16
@@ -45,13 +45,13 @@ CRATES="
 	scopeguard-1.1.0
 	serde-1.0.145
 	serde_derive-1.0.145
-	serde_json-1.0.85
-	smallvec-1.9.0
+	serde_json-1.0.86
+	smallvec-1.10.0
 	subtle-2.4.1
-	syn-1.0.99
+	syn-1.0.102
 	target-lexicon-0.12.4
 	typenum-1.15.0
-	unicode-ident-1.0.3
+	unicode-ident-1.0.5
 	unindent-0.1.10
 	version_check-0.9.4
 	windows-sys-0.36.1
