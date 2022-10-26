@@ -86,7 +86,7 @@ sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 sc
 sys-kernel/gentoo-sources-autobuild 0.0.6: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.3.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.10: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.11: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.12.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/grocy 3.3.1: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.4: Hedgedoc real-time collaborative markdown editor
