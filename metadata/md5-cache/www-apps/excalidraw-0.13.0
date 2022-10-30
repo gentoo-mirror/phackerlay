@@ -13,4 +13,4 @@ RESTRICT=network-sandbox
 SLOT=0.13.0
 SRC_URI=https://github.com/excalidraw/excalidraw/archive/refs/tags/v0.13.0.tar.gz
 _eclasses_=webapp	67df5bab481d0b9428f9ab7b3de690e4
-_md5_=0cf7e8a5a20727be525de40d5524da1d
+_md5_=9b844bf4bd5e6ea88960ea47bbaf9954
