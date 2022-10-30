@@ -24,7 +24,7 @@ S=${WORKDIR}/${P}
 RESTRICT="network-sandbox"
 src_prepare() {
 	default
-	echo 'REACT_APP_SOCKET_SERVER_URL=https://draw.phys-el.ru' > ${S}/.env
+	echo 'REACT_APP_WS_SERVER_URL=https://draw.phys-el.ru' > ${S}/.env
 	echo '' > ${S}/.env.production
 
 }
