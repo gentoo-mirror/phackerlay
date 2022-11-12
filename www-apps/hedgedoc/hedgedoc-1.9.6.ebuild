@@ -104,7 +104,6 @@ src_compile() {
          \) \
          -exec rm -rf {} +
 	rm public/uploads -rf
-	eapply ${FILESDIR}/stuck_on_start.patch
 }
 
 src_install() {
