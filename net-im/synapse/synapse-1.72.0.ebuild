@@ -11,7 +11,7 @@ CRATES="
 	arc-swap-1.5.1
 	autocfg-1.1.0
 	bitflags-1.3.2
-	blake2-0.10.4
+	blake2-0.10.5
 	block-buffer-0.10.3
 	cfg-if-1.0.0
 	crypto-common-0.1.6
