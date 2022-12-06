@@ -48,7 +48,7 @@ CRATES="
 	serde_json-1.0.89
 	smallvec-1.10.0
 	subtle-2.4.1
-	syn-1.0.102
+	syn-1.0.104
 	target-lexicon-0.12.4
 	typenum-1.15.0
 	unicode-ident-1.0.5
