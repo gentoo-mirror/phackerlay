@@ -21,8 +21,14 @@ S=$WORKDIR
 
 src_install(){
 	rm ${S}/usr/share/doc/octave-jsonlab/NEWS ${S}/usr/share/doc/octave-jsonlab/*.gz
-	insinto /usr/share/octave/octave_packages
+	insinto /usr/share/octave/packages
 	doins -r ${S}/usr/share/octave/packages/jsonlab-2.0
 	dodoc -r ${S}/usr/share/doc/octave-jsonlab
+}
 
+pkg_postinst(){
+	octave --eval 'pkg rebuild'
+}
+pkg_postrm(){
+	octave --eval 'pkg rebuild'
 }
