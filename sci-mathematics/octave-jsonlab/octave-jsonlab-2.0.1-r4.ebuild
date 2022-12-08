@@ -24,5 +24,11 @@ src_install(){
 	insinto /usr/share/octave/packages
 	doins -r ${S}/usr/share/octave/packages/jsonlab-2.0
 	dodoc -r ${S}/usr/share/doc/octave-jsonlab
+}
 
+pkg_postinst(){
+	octave --eval 'pkg rebuild'
+}
+pkg_postrm(){
+	octave --eval 'pkg rebuild'
 }
