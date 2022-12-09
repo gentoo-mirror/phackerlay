@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.73.0.22306 1.73.1.22314: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.73.1.22314 1.74.0.22342: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/xtensor 0.24.3: C++ tensors with broadcasting and lazy computing
 dev-cpp/xtl 0.7.4: The x template library
@@ -97,4 +97,5 @@ www-apps/privatebin 1.4.0: A minimalist, open source online pastebin where the s
 www-apps/seafile-ce-server 9.0.10: Meta package for Seafile Community Edition, file sync share solution
 www-apps/synapse-admin 0.8.5: Admin UI for Matrix Synapse homeserver
 x11-misc/arandr 0.1.10-r3: Another XRandR GUI
+x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
 x11-themes/chicago95 3.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
