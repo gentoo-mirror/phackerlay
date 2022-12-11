@@ -77,7 +77,7 @@ sci-libs/elpa 2022.05.001: The publicly available ELPA library provides highly e
 sci-libs/gpaw-setups 0.9.20000-r4: Setup collection for sci-physics/gpaw
 sci-libs/libxc 5.2.3 6.0.0: A library of exchange-correlation functionals for use in DFT
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
-sci-mathematics/octave-jsonlab 2.0.1-r4: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
+sci-mathematics/octave-jsonlab 2.0.1-r5: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 22.8.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 7.1: Suite for first-principles electronic-structure calculations and materials modeling
