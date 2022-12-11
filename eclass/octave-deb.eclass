@@ -22,5 +22,5 @@ octave-deb_pkg_postinst(){
         octave --eval 'pkg rebuild' 2>&1 >> /dev/null || die "could not run octave"
 }
 octave-deb_pkg_postrm(){
-	octave --eval 'pkg rebuild' 2>&1 >> /dev/null || die "could not run octave"
+	octave --eval 'pkg rebuild' 2>&1 >> /dev/null
 }
