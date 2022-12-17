@@ -35,7 +35,6 @@ IUSE=""
 
 RDEPEND="
 	<net-libs/nodejs-18
-	!!=app-editors/vscodium-${PV}
 "
 BDEPEND="
 	=app-editors/vscodium-${PV}
