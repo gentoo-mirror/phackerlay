@@ -36,9 +36,6 @@ IUSE=""
 RDEPEND="
 	<net-libs/nodejs-18
 "
-BDEPEND="
-	=app-editors/vscodium-${PV}
-"
 
 
 S="${WORKDIR}"
