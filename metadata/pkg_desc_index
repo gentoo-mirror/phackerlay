@@ -67,7 +67,7 @@ media-gfx/cura-tronxytron 0.0.2: cura profiles for tronxytron printer
 media-sound/shortwave 3.1.0: Listen to internet radio
 net-im/jitsi-meet 2022.12.0: Desktop application for Jitsi Meet built with Electron
 net-im/sydent 2.5.2-r1: Reference Matrix Identity Verification and Lookup Server
-net-im/synapse 1.73.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.74.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 sci-astronomy/fs 9.12.13 9.13.2 10.1.0: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
