@@ -43,7 +43,7 @@ CRATES="
 	regex-syntax-0.6.27
 	ryu-1.0.11
 	scopeguard-1.1.0
-	serde-1.0.148
+	serde-1.0.150
 	serde_derive-1.0.148
 	serde_json-1.0.89
 	smallvec-1.10.0
@@ -119,6 +119,7 @@ RDEPEND="
 	>=dev-python/lxml-3.5.0[${PYTHON_USEDEP}]
 	>=dev-python/sentry-sdk-0.7.2[${PYTHON_USEDEP}]
     >=dev-python/pyjwt-1.6.4[${PYTHON_USEDEP}]
+	>=dev-python/pyicu-2.10.2[${PYTHON_USEDEP}]
 	ldap? ( >=dev-python/matrix-synapse-ldap3-0.1[${PYTHON_USEDEP}] )
 	postgres? ( >=dev-python/psycopg-2.8[${PYTHON_USEDEP}] <dev-python/psycopg-3[${PYTHON_USEDEP}] )
 	saml? ( >=dev-python/pysaml2-4.5.0[${PYTHON_USEDEP}] )
