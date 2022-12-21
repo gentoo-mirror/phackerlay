@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.74.0.22342 1.74.1.22349: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.74.1.22349 1.74.2.22355: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/xtensor 0.24.3: C++ tensors with broadcasting and lazy computing
 dev-cpp/xtl 0.7.4: The x template library
@@ -87,7 +87,7 @@ sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 sc
 sys-kernel/gentoo-sources-autobuild 0.0.6: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.3.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.16: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.17: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/grocy 3.3.2: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.6: Hedgedoc real-time collaborative markdown editor
