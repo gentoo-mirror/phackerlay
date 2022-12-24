@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8,9,10,11} )
+PYTHON_COMPAT=( python3_{10,11} )
 
 DISTUTILS_USE_PEP517="jupyter"
 inherit distutils-r1
@@ -19,18 +19,20 @@ KEYWORDS="~amd64"
 distutils_enable_tests pytest
 
 RDEPEND="
-	dev-python/ipython[${PYTHON_USEDEP}]
+	dev-python/ipykernel[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
 	>=dev-python/tornado-6.1[${PYTHON_USEDEP}]
 	dev-python/jupyter_core[${PYTHON_USEDEP}]
 	=dev-python/jupyterlab_server-2*[${PYTHON_USEDEP}]
-	>=dev-python/jupyterlab_server-2.3.0[${PYTHON_USEDEP}]
-	>=dev-python/jupyter_server-1.4.0[${PYTHON_USEDEP}]
-	=dev-python/jupyter_server-1*[${PYTHON_USEDEP}]
+	>=dev-python/jupyterlab_server-2.16.0[${PYTHON_USEDEP}]
+	>=dev-python/jupyter-lsp-1.5.1[${PYTHON_USEDEP}]
+	=dev-python/jupyter_server-2*[${PYTHON_USEDEP}]
 	>=dev-python/nbclassic-0.2[${PYTHON_USEDEP}]
-	>=dev-python/jinja-2.1[${PYTHON_USEDEP}]
+	>=dev-python/jinja-3.0.3[${PYTHON_USEDEP}]
 	dev-python/fastjsonschema[${PYTHON_USEDEP}]
 	dev-python/tinycss2[${PYTHON_USEDEP}]
+        dev-python/tomli[${PYTHON_USEDEP}]
+        dev-python/traitlets[${PYTHON_USEDEP}]
 "
 DEPEND="
     net-libs/nodejs
