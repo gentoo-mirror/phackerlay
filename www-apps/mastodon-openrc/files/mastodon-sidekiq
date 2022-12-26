@@ -22,7 +22,7 @@ start() {
 	-4 logger \
 	-b -m \
         --exec /usr/bin/env -- RAILS_ENV=production DB_POOL=${DB_POOL} \
-	bundle exec sidekiq -c ${SIDEKIQ_WORKERS} -q default -q mailers -q pull -q push
+	bundle exec sidekiq -c ${SIDEKIQ_WORKERS} -q default -q mailers -q pull -q push -q ingress
     eend $?
 }
 
