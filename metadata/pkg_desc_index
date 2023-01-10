@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.74.2.22355 1.74.2.23007: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.74.2.23007 1.74.3.23010: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/xtensor 0.24.3: C++ tensors with broadcasting and lazy computing
 dev-cpp/xtl 0.7.4: The x template library
@@ -75,7 +75,7 @@ sci-electronics/openhantek6022 3.3.2.1: DSO software for Hantek USB digital sign
 sci-electronics/qucs-s 1.0.0: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-libs/elpa 2022.05.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000-r4: Setup collection for sci-physics/gpaw
-sci-libs/libxc 5.2.3 6.0.0: A library of exchange-correlation functionals for use in DFT
+sci-libs/libxc 5.2.3 6.1.0: A library of exchange-correlation functionals for use in DFT
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
 sci-mathematics/octave-jsonlab 2.0.1-r5: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
