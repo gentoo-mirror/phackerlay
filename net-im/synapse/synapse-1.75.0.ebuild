@@ -7,11 +7,11 @@ DISTUTILS_USE_PEP517=poetry
 PYTHON_COMPAT=( python3_{9,10,11} )
 CRATES="
 	aho-corasick-0.7.19
-	anyhow-1.0.66
+	anyhow-1.0.68
 	arc-swap-1.5.1
 	autocfg-1.1.0
 	bitflags-1.3.2
-	blake2-0.10.5
+	blake2-0.10.6
 	block-buffer-0.10.3
 	cfg-if-1.0.0
 	crypto-common-0.1.6
@@ -43,9 +43,9 @@ CRATES="
 	regex-syntax-0.6.27
 	ryu-1.0.11
 	scopeguard-1.1.0
-	serde-1.0.150
-	serde_derive-1.0.150
-	serde_json-1.0.89
+	serde-1.0.152
+	serde_derive-1.0.152
+	serde_json-1.0.91
 	smallvec-1.10.0
 	subtle-2.4.1
 	syn-1.0.104
@@ -93,7 +93,7 @@ RDEPEND="
 	>=dev-python/twisted-18.9.0[${PYTHON_USEDEP}]
 	>=dev-python/treq-15.1[${PYTHON_USEDEP}]
 	>=dev-python/pyopenssl-16.0.0[${PYTHON_USEDEP}]
-	>=dev-python/pyyaml-3.11[${PYTHON_USEDEP}]
+	>=dev-python/pyyaml-3.13[${PYTHON_USEDEP}]
 	>=dev-python/pyasn1-0.1.9[${PYTHON_USEDEP}]
 	>=dev-python/pyasn1-modules-0.0.7[${PYTHON_USEDEP}]
 	>=dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
