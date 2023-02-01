@@ -39,7 +39,7 @@ CRATES="
 	pythonize-0.17.0
 	quote-1.0.21
 	redox_syscall-0.2.16
-	regex-1.7.0
+	regex-1.7.1
 	regex-syntax-0.6.27
 	ryu-1.0.11
 	scopeguard-1.1.0
