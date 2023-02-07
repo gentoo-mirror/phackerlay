@@ -4,6 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_9 python3_10 python3_11 )
+DISTUTILS_USE_PEP517=flit
 
 inherit distutils-r1
 
@@ -17,4 +18,5 @@ KEYWORDS="~amd64"
 
 IUSE=""
 RDEPEND=">=dev-python/pexpect-4.0"
+
 distutils_enable_tests pytest
