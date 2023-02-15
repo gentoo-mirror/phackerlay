@@ -21,10 +21,10 @@ KEYWORDS="~amd64"
 RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/cffi[${PYTHON_USEDEP}]
-	>=dev-python/fenics-basix-0.5.0[${PYTHON_USEDEP}]
-	<dev-python/fenics-basix-0.6.0[${PYTHON_USEDEP}]
-	>=dev-python/fenics-ufl-0.5.0[${PYTHON_USEDEP}]
-	<dev-python/fenics-ufl-0.6.0[${PYTHON_USEDEP}]
+	>=dev-python/fenics-basix-0.6.0[${PYTHON_USEDEP}]
+	<dev-python/fenics-basix-0.7.0[${PYTHON_USEDEP}]
+	>=dev-python/fenics-ufl-2023.1.0[${PYTHON_USEDEP}]
+	<dev-python/fenics-ufl-2023.2.0[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	dev-util/ninja
