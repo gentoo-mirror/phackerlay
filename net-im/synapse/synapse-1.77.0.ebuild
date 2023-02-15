@@ -7,7 +7,7 @@ DISTUTILS_USE_PEP517=poetry
 PYTHON_COMPAT=( python3_{9,10,11} )
 CRATES="
 	aho-corasick-0.7.19
-	anyhow-1.0.68
+	anyhow-1.0.69
 	arc-swap-1.5.1
 	autocfg-1.1.0
 	bitflags-1.3.2
@@ -45,7 +45,7 @@ CRATES="
 	scopeguard-1.1.0
 	serde-1.0.152
 	serde_derive-1.0.152
-	serde_json-1.0.91
+	serde_json-1.0.92
 	smallvec-1.10.0
 	subtle-2.4.1
 	syn-1.0.104
@@ -116,6 +116,7 @@ RDEPEND="
 	>=dev-python/packaging-16.1.0[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.7.4[${PYTHON_USEDEP}]
 	>=dev-python/setuptools-rust-1.3.0[${PYTHON_USEDEP}]
+	<dev-python/setuptools-rust-1.5.2[${PYTHON_USEDEP}]
 	>=dev-python/lxml-3.5.0[${PYTHON_USEDEP}]
 	>=dev-python/sentry-sdk-0.7.2[${PYTHON_USEDEP}]
     >=dev-python/pyjwt-1.6.4[${PYTHON_USEDEP}]
