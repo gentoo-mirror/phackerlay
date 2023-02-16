@@ -37,7 +37,7 @@ dev-python/fenics-ffcx 0.6.0: Next generation FEniCS Form Compiler for finite el
 dev-python/fenics-ufl 2023.1.1: UFL - FEniCS project's Unified Form Language
 dev-python/frozendict 1.2: A simple immutable mapping for python
 dev-python/ipydatawidgets 4.3.2: A set of widgets to help facilitate reuse of large datasets across widgets
-dev-python/ipympl 0.9.2: Matplotlib Jupyter Extension
+dev-python/ipympl 0.9.3: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
 dev-python/jupyter-telemetry 0.1.0: Telemetry for Jupyter Applications and extensions
 dev-python/jupyter_server_terminals 0.4.4: A Jupyter Server Extension Providing Support for Terminals
