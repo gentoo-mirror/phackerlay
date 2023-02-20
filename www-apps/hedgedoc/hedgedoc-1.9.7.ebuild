@@ -1,7 +1,7 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 DESCRIPTION="Hedgedoc real-time collaborative markdown editor"
 HOMEPAGE="https://hedgedoc.org/"
@@ -12,15 +12,16 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
+BDEPEND="
+	=net-libs/nodejs-16*
+	=sys-apps/yarn-1*
+	!<sys-apps/yarn-1.22
+"
+
 RDEPEND="
 	acct-group/hedgedoc
 	acct-user/hedgedoc
-	>=net-libs/nodejs-12
-	<net-libs/nodejs-18
-	<sys-apps/yarn-2
-	>=sys-apps/yarn-1.22
 "
-DEPEND=""
 
 S=${WORKDIR}/${PN}
 
