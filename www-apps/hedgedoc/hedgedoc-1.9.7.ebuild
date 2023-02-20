@@ -16,7 +16,7 @@ BDEPEND="
 	=net-libs/nodejs-16*
 	=sys-apps/yarn-1*
 	!<sys-apps/yarn-1.22
-	|| ( <dev-libs/openssl-3 net-libs/nodejs[-system-ssl] )
+	|| ( <dev-libs/openssl-3 =net-libs/nodejs-16*[-system-ssl] )
 "
 
 RDEPEND="
