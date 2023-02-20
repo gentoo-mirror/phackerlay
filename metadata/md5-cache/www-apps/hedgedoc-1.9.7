@@ -1,4 +1,4 @@
-BDEPEND==net-libs/nodejs-16* =sys-apps/yarn-1* !<sys-apps/yarn-1.22
+BDEPEND==net-libs/nodejs-16* =sys-apps/yarn-1* !<sys-apps/yarn-1.22 || ( <dev-libs/openssl-3 =net-libs/nodejs-16*[-system-ssl] )
 DEFINED_PHASES=compile install postinst
 DESCRIPTION=Hedgedoc real-time collaborative markdown editor
 EAPI=8
@@ -9,4 +9,4 @@ RDEPEND=acct-group/hedgedoc acct-user/hedgedoc
 RESTRICT=network-sandbox
 SLOT=0
 SRC_URI=https://github.com/hedgedoc/hedgedoc/releases/download/1.9.7/hedgedoc-1.9.7.tar.gz
-_md5_=417ace2536da327e0dfa97b272a6b3c4
+_md5_=0731a2e9e4e39325a061d9b57dcdc484
