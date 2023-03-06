@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.75.0.23033 1.75.1.23040: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.75.1.23040 1.76.0.23062: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/xtensor 0.24.5: C++ tensors with broadcasting and lazy computing
 dev-cpp/xtl 0.7.5: The x template library
@@ -35,7 +35,7 @@ dev-python/cffi 1.14.6: Foreign Function Interface for Python calling C code
 dev-python/fenics-basix 0.6.0: FEniCS finite element basis evaluation library
 dev-python/fenics-ffcx 0.6.0: Next generation FEniCS Form Compiler for finite element forms
 dev-python/fenics-ufl 2023.1.1: UFL - FEniCS project's Unified Form Language
-dev-python/frozendict 1.2: A simple immutable mapping for python
+dev-python/frozendict 2.3.4 2.3.5: A simple immutable mapping for python
 dev-python/ipydatawidgets 4.3.3: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.9.3: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
@@ -63,7 +63,7 @@ media-gfx/cura-tronxytron 0.0.2: cura profiles for tronxytron printer
 media-sound/shortwave 3.2.0: Listen to internet radio
 net-im/jitsi-meet 2023.2.0: Desktop application for Jitsi Meet built with Electron
 net-im/sydent 2.5.2-r1: Reference Matrix Identity Verification and Lookup Server
-net-im/synapse 1.77.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.78.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 sci-astronomy/fs 9.12.13 9.13.2 10.1.0: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
