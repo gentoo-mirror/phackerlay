@@ -33,7 +33,7 @@ CRATES="
 	pyo3-0.17.3
 	pyo3-build-config-0.17.3
 	pyo3-ffi-0.17.3
-	pyo3-log-0.7.0
+	pyo3-log-0.8.1
 	pyo3-macros-0.17.3
 	pyo3-macros-backend-0.17.3
 	pythonize-0.17.0
@@ -45,7 +45,7 @@ CRATES="
 	scopeguard-1.1.0
 	serde-1.0.152
 	serde_derive-1.0.152
-	serde_json-1.0.92
+	serde_json-1.0.93
 	smallvec-1.10.0
 	subtle-2.4.1
 	syn-1.0.104
@@ -85,6 +85,7 @@ RDEPEND="
 	>=dev-python/jsonschema-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/frozendict-1[${PYTHON_USEDEP}]
 	!=dev-python/frozendict-2.1.2[${PYTHON_USEDEP}]
+	<dev-python/frozendict-2.3.5[${PYTHON_USEDEP}]
 	>=dev-python/unpaddedbase64-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/canonicaljson-1.5.0[${PYTHON_USEDEP}]
 	>=dev-python/signedjson-1.1.0[${PYTHON_USEDEP}]
