@@ -53,6 +53,7 @@ dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
 dev-python/pymacaroons 0.13.0: PyMacaroons is a Python implementation of Macaroons. They’re better than cookies!
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
+dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/signedjson 1.1.1 1.1.4: Signs JSON objects with ED25519 signatures.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
