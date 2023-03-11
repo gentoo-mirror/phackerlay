@@ -39,6 +39,7 @@ dev-python/frozendict 2.3.4 2.3.5: A simple immutable mapping for python
 dev-python/ipydatawidgets 4.3.3: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.9.3: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
+dev-python/jupyter-c-kernel 1.2.2: Minimal Jupyter C kernel
 dev-python/jupyter-telemetry 0.1.0: Telemetry for Jupyter Applications and extensions
 dev-python/jupyterhub 3.1.1: A multi-user server for Jupyter notebooks
 dev-python/jupyterhub-idle-culler 1.2.1: JupyterHub service to cull idle servers and users
