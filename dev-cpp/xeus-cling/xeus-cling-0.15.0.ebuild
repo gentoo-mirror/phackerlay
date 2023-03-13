@@ -27,3 +27,10 @@ DEPEND="
 
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+src_configure() {
+	mycmakeargs=(
+		-DCMAKE_PROGRAM_PATH=/opt/cling/bin
+	)
+	cmake_src_configure
+}
