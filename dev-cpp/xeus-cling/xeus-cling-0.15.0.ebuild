@@ -22,7 +22,7 @@ DEPEND="
 	dev-cpp/cling
 	>=dev-libs/pugixml-1.8.1
 	>=net-libs/cppzmq-4.3.0
-	>=dev-libs/cppargparse-2.9
+	>=dev-cpp/argparse-2.9
 	>=dev-cpp/nlohmann_json-3.6.1"
 
 RDEPEND="${DEPEND}"
