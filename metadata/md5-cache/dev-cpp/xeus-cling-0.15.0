@@ -1,14 +1,14 @@
 BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=>=dev-cpp/xeus-zmq-1.0.0 <dev-cpp/xeus-zmq-2.0.0 >=dev-cpp/xtl-0.7.0 <dev-cpp/xtl-0.8.0 dev-cpp/cling >=dev-libs/pugixml-1.8.1 >=net-libs/cppzmq-4.3.0 >=dev-libs/cxxopts-2.1.1 >=dev-cpp/nlohmann_json-3.6.1
+DEPEND=>=dev-cpp/xeus-zmq-1.0.0 <dev-cpp/xeus-zmq-2.0.0 >=dev-cpp/xtl-0.7.0 <dev-cpp/xtl-0.8.0 dev-cpp/cling >=dev-libs/pugixml-1.8.1 >=net-libs/cppzmq-4.3.0 >=dev-cpp/argparse-2.9 >=dev-cpp/nlohmann_json-3.6.1
 DESCRIPTION=Jupyter kernel for the C++ programming language
 EAPI=8
 HOMEPAGE=https://github.com/jupyter-xeus/xeus-cling
 INHERIT=cmake
 KEYWORDS=~amd64
 LICENSE=BSD
-RDEPEND=>=dev-cpp/xeus-zmq-1.0.0 <dev-cpp/xeus-zmq-2.0.0 >=dev-cpp/xtl-0.7.0 <dev-cpp/xtl-0.8.0 dev-cpp/cling >=dev-libs/pugixml-1.8.1 >=net-libs/cppzmq-4.3.0 >=dev-libs/cxxopts-2.1.1 >=dev-cpp/nlohmann_json-3.6.1
+RDEPEND=>=dev-cpp/xeus-zmq-1.0.0 <dev-cpp/xeus-zmq-2.0.0 >=dev-cpp/xtl-0.7.0 <dev-cpp/xtl-0.8.0 dev-cpp/cling >=dev-libs/pugixml-1.8.1 >=net-libs/cppzmq-4.3.0 >=dev-cpp/argparse-2.9 >=dev-cpp/nlohmann_json-3.6.1
 SLOT=0
 SRC_URI=https://github.com/jupyter-xeus/xeus-cling/archive/refs/tags/0.15.0.tar.gz -> xeus-cling-0.15.0.tar.gz
 _eclasses_=toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	38c85b725d0467e51954ea921b6c104b	xdg-utils	ac0e315a3688929e34ac75b139e7349a	cmake	b2e109b7341cd993b8bdfcc60652a14d
-_md5_=c5a183f43292f4cfae3f827f850a8d0f
+_md5_=7ebc062ad78cbe7bee2397f534fc95ad
