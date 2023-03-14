@@ -9,11 +9,11 @@ inherit cmake git-r3 flag-o-matic
 DESCRIPTION="Interactive C++ interpreter, built on the top of LLVM and Clang libraries"
 HOMEPAGE="https://root.cern/cling/"
 
-EGIT_OVERRIDE_REPO_LLVM_CLING="http://root.cern/git/llvm.git"
-EGIT_OVERRIDE_BRANCH_LLVM_CLING="cling-patches"
-EGIT_OVERRIDE_REPO_CLING="http://root.cern/git/cling.git"
-EGIT_OVERRIDE_REPO_CLANG_CLING="http://root.cern/git/clang.git"
-EGIT_OVERRIDE_BRANCH_CLANG_CLING="cling-patches"
+EGIT_OVERRIDE_REPO_LLVM_CLING="https://github.com/root-project/llvm-project.git"
+EGIT_OVERRIDE_BRANCH_LLVM_CLING="ROOT-llvm13"
+EGIT_OVERRIDE_REPO_CLING="https://github.com/root-project/cling.git"
+EGIT_OVERRIDE_REPO_CLANG_CLING="https://github.com/root-project/llvm-project.git"
+EGIT_OVERRIDE_BRANCH_CLANG_CLING="cling-llvm13"
 
 LICENSE="Apache-2.0" # more
 SLOT="0"
@@ -35,12 +35,13 @@ src_configure() {
 		-DCMAKE_INSTALL_PREFIX="/opt/cling"
 		-DCMAKE_BUILD_TYPE=Release
 		-DLLVM_BUILD_TOOLS=ON
-		-DLLVM_TARGETS_TO_BUILD="host;NVPTX"
+		-DLLVM_TARGETS_TO_BUILD="host"
 		-DLLVM_ENABLE_OCAMLDOC=OFF
 		-DLLVM_ENABLE_BINDINGS=OFF
 		-DLLVM_INCLUDE_DOCS=OFF
 	)
 	cmake_src_configure
+#		-DLLVM_TARGETS_TO_BUILD="host;NVPTX"
 }
 
 src_install() {
