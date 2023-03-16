@@ -45,7 +45,7 @@ CRATES="
 	scopeguard-1.1.0
 	serde-1.0.152
 	serde_derive-1.0.152
-	serde_json-1.0.93
+	serde_json-1.0.94
 	smallvec-1.10.0
 	subtle-2.4.1
 	syn-1.0.104
