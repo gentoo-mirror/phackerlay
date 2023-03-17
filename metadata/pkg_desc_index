@@ -46,7 +46,7 @@ dev-python/jupyter-telemetry 0.1.0: Telemetry for Jupyter Applications and exten
 dev-python/jupyterhub 3.1.1: A multi-user server for Jupyter notebooks
 dev-python/jupyterhub-idle-culler 1.2.1: JupyterHub service to cull idle servers and users
 dev-python/jupyterhub-ldapauthenticator 1.3.2: Simple LDAP Authenticator Plugin for JupyterHub
-dev-python/jupyterlab-link-share 0.2.5: JupyterLab Extension to share the URL to a running Jupyter Server
+dev-python/jupyterlab-link-share 0.3.0: JupyterLab Extension to share the URL to a running Jupyter Server
 dev-python/jupyterlab-slurm 3.0.2: A Jupyter Notebook server extension that implements common Slurm commands
 dev-python/jupyterlab-widgets 3.0.5: Jupyter interactive widgets for JupyterLab
 dev-python/khirolib 9999: Python library for Kawasaki Robotics
