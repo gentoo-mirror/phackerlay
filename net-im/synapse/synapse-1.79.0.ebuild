@@ -88,6 +88,7 @@ RDEPEND="
 	<dev-python/frozendict-2.3.5[${PYTHON_USEDEP}]
 	>=dev-python/unpaddedbase64-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/canonicaljson-1.5.0[${PYTHON_USEDEP}]
+	<dev-python/canonicaljson-2[${PYTHON_USEDEP}]
 	>=dev-python/signedjson-1.1.0[${PYTHON_USEDEP}]
 	>=dev-python/idna-2.5[${PYTHON_USEDEP}]
 	>=dev-python/service_identity-18.1.0[${PYTHON_USEDEP}]
