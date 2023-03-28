@@ -49,6 +49,7 @@ CRATES="
 	smallvec-1.10.0
 	subtle-2.4.1
 	syn-2.0.2
+	syn-1.0.104
 	target-lexicon-0.12.4
 	typenum-1.15.0
 	unicode-ident-1.0.5
