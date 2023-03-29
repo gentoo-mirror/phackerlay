@@ -70,6 +70,7 @@ src_configure() {
 			echo "elpa = True" >> ${S}/siteconfig.py
 			echo "libraries += ['elpa']" >> ${S}/siteconfig.py
 		fi
+		echo "include_dirs += ['/usr/include/elpa_openmp-2022.11.001']" >> ${S}/siteconfig.py
 	fi
 }
 
