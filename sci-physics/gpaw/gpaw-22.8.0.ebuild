@@ -65,7 +65,7 @@ src_configure() {
 	if use elpa; then
 		echo "elpa = True" >> ${S}/siteconfig.py
 		if use openmp; then
-			echo "libraries += ['elpa-openmp']" >> ${S}/siteconfig.py
+			echo "libraries += ['elpa_openmp']" >> ${S}/siteconfig.py
 		else
 			echo "libraries += ['elpa']" >> ${S}/siteconfig.py
 		fi
