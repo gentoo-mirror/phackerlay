@@ -8,8 +8,7 @@ inherit autotools
 DESCRIPTION="The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices"
 HOMEPAGE="https://elpa.mpcdf.mpg.de/"
 
-SRC_URI="https://gitlab.mpcdf.mpg.de/elpa/elpa/-/archive/new_release_${PV}/elpa-new_release_${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/elpa-new_release_${PV}"
+SRC_URI="https://elpa.mpcdf.mpg.de/software/tarball-archive/Releases/${PV}/elpa-${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="~amd64"
 
 LICENSE="GPL-3"
@@ -32,7 +31,7 @@ src_prepare() {
 
 
 src_configure() {
-	econf CPP=g++ --prefix=/usr --libdir=/usr/lib64 \
+	econf --prefix=/usr --libdir=/usr/lib64 \
 		$(use_with mpi) \
 		$(use_enable openmp) \
 		$(use_enable cpu_flags_x86_sse sse) \
