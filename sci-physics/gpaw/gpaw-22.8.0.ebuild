@@ -62,6 +62,15 @@ src_configure() {
 		echo "extra_compile_args += ['-fopenmp']" >> ${S}/siteconfig.py
 		echo "extra_link_args += ['-fopenmp']" >> ${S}/siteconfig.py
 	fi
+	if use elpa; then
+		if use openmp; then
+			echo "elpa = True" >> ${S}/siteconfig.py
+			echo "libraries += ['elpa-openmp']" >> ${S}/siteconfig.py
+		else
+			echo "elpa = True" >> ${S}/siteconfig.py
+			echo "libraries += ['elpa']" >> ${S}/siteconfig.py
+		fi
+	fi
 }
 
 
