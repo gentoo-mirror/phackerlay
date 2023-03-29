@@ -9,7 +9,6 @@ DESCRIPTION="The publicly available ELPA library provides highly efficient and h
 HOMEPAGE="https://elpa.mpcdf.mpg.de/"
 
 SRC_URI="https://elpa.mpcdf.mpg.de/software/tarball-archive/Releases/${PV}/elpa-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/elpa-new_release_${PV}"
 KEYWORDS="~amd64"
 
 LICENSE="GPL-3"
