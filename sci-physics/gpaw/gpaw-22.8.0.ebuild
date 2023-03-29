@@ -29,8 +29,9 @@ RDEPEND="
 	fftw? ( sci-libs/fftw )
         mpi? ( virtual/mpi )
         scalapack? ( sci-libs/scalapack )
-        elpa? ( sci-libs/scalapack sci-libs/elpa )
+        elpa? ( sci-libs/scalapack =sci-libs/elpa-2022.05.001 )
 	"
+	# mind elpa version below
 
 distutils_enable_tests pytest
 
@@ -66,10 +67,11 @@ src_configure() {
 		echo "elpa = True" >> ${S}/siteconfig.py
 		if use openmp; then
 			echo "libraries += ['elpa_openmp']" >> ${S}/siteconfig.py
+			echo "include_dirs += ['/usr/include/elpa_openmp-2022.05.001']" >> ${S}/siteconfig.py
 		else
 			echo "libraries += ['elpa']" >> ${S}/siteconfig.py
-		fi
-		echo "include_dirs += ['/usr/include/elpa_openmp-2022.11.001']" >> ${S}/siteconfig.py
+			echo "include_dirs += ['/usr/include/elpa-2022.05.001']" >> ${S}/siteconfig.py
+	fi
 	fi
 }
 
