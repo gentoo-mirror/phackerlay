@@ -31,7 +31,7 @@ src_prepare() {
 
 
 src_configure() {
-	econf CPP=g++ --prefix=/usr --libdir=/usr/lib64 \
+	econf --prefix=/usr --libdir=/usr/lib64 \
 		$(use_with mpi) \
 		$(use_enable openmp) \
 		$(use_enable cpu_flags_x86_sse sse) \
