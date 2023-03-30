@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install prepare unpack
+DEPEND=sci-electronics/qucs-s
+DESCRIPTION=Russian components library for Qucs
+EAPI=8
+HOMEPAGE=https://github.com/ra3xdh/qucs-rus-complib
+INHERIT=git-r3
+LICENSE=GPL-2
+PROPERTIES=live live
+SLOT=0
+_eclasses_=git-r3	27e13c09a4c7e4c78ac812f74727e676
+_md5_=40c6178026fd9e0049c88051e6d00861
