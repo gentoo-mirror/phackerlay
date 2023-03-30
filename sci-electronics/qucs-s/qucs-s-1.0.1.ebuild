@@ -25,6 +25,14 @@ RDEPEND="
 	dev-qt/qtwidgets:5
 	dev-qt/qtprintsupport:5
 "
+src_prepare() {
+	default
+	mv ${S}/library/BJT_Extended.lib ${S}/library/BJT_Extended_.lib
+	mv ${S}/library/DiodesSchottky.lib ${S}/library/DiodesSchottky_.lib
+	mv ${S}/library/Tubes.lib ${S}/library/Tubes_.lib
+	mv ${S}/library/BF998.lib ${S}/library/BF998_.lib
+}
+
 
 pkg_postinst() {
 	xdg_icon_cache_update
