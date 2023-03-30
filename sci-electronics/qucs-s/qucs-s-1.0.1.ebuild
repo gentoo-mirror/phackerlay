@@ -27,12 +27,17 @@ RDEPEND="
 "
 src_prepare() {
 	cmake_src_prepare
-	mv ${S}/library/BJT_Extended.lib ${S}/library/BJT_Extended_.lib
-	mv ${S}/library/DiodesSchottky.lib ${S}/library/DiodesSchottky_.lib
-	mv ${S}/library/Tubes.lib ${S}/library/Tubes_.lib
-	mv ${S}/library/BF998.lib ${S}/library/BF998_.lib
 }
 
+
+src_install() {
+	cmake_src_install
+	cd ${D}/usr/share/qucs-s/library
+	mv BJT_Extended.lib BJT_Extended_.lib
+	mv DiodesSchottky.lib DiodesSchottky_.lib
+	mv Tubes.lib Tubes_.lib
+	mv BF998.lib BF998_.lib
+}
 
 pkg_postinst() {
 	xdg_icon_cache_update
