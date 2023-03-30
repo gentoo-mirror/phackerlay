@@ -25,8 +25,8 @@ RDEPEND="
 	dev-qt/qtwidgets:5
 	dev-qt/qtprintsupport:5
 "
-cmake_src_prepare() {
-	default
+src_prepare() {
+	cmake_src_prepare
 	mv ${S}/library/BJT_Extended.lib ${S}/library/BJT_Extended_.lib
 	mv ${S}/library/DiodesSchottky.lib ${S}/library/DiodesSchottky_.lib
 	mv ${S}/library/Tubes.lib ${S}/library/Tubes_.lib
