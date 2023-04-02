@@ -37,6 +37,10 @@ BDEPEND="
 	)
 "
 
+PATCHES=(
+	"${FILESDIR}/${P}-no-node-for-version.patch"
+)
+
 distutils_enable_tests pytest
 # Hangs for some reason
 #distutils_enable_sphinx docs/source dev-python/myst-parser dev-python/pydata-sphinx-theme
