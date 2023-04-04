@@ -31,6 +31,7 @@ BDEPEND=""
 src_configure() {
 	mycmakeargs=(
 		-DCMAKE_PROGRAM_PATH=/opt/cling/bin
+		-DCMAKE_PREFIX_PATH=/opt/cling
 	)
 	cmake_src_configure
 }
