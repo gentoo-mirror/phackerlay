@@ -17,7 +17,7 @@ EGIT_OVERRIDE_TAG_CLANG_CLING="cling-patches-rrelease_13"
 LICENSE="Apache-2.0" # more
 SLOT="0"
 KEYWORDS=""
-IUSE="llvm_targets_NVPTX"
+IUSE=""
 RESTRICT="mirror"
 
 src_unpack() {
@@ -34,7 +34,7 @@ src_configure() {
 		-DCMAKE_INSTALL_PREFIX="/opt/cling"
 		-DCMAKE_BUILD_TYPE=Release
 		-DLLVM_BUILD_TOOLS=ON
-		-DLLVM_TARGETS_TO_BUILD="host;${LLVM_TARGETS// /;}"
+		-DLLVM_TARGETS_TO_BUILD="host;NVPTX"
 		-DLLVM_ENABLE_OCAMLDOC=OFF
 		-DLLVM_ENABLE_BINDINGS=OFF
 		-DLLVM_INCLUDE_DOCS=OFF
