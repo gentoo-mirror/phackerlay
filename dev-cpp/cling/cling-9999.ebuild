@@ -38,6 +38,7 @@ src_configure() {
 		-DLLVM_ENABLE_OCAMLDOC=OFF
 		-DLLVM_ENABLE_BINDINGS=OFF
 		-DLLVM_INCLUDE_DOCS=OFF
+		-DLLVM_CONFIG=${BUILD_DIR}/bin/llvm-config
 	)
 	cmake_src_configure
 }
