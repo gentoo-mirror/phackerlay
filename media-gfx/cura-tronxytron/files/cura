@@ -1,0 +1,20 @@
+#!/bin/bash
+
+TRONXY_DIR=/usr/share/tronxytron
+
+if [ -d ~/.config/cura ]; then
+	if [[ `ls ~/.config/cura | wc -l` -ne 0 ]]; then
+		for dir in `ls ~/.config/cura | sort -r -V`; do
+			CONFIG_DIR=~/.config/cura/$dir
+			if [ ! -f $CONFIG_DIR/definitions/tronxytron.def.json ]; then
+				mkdir -p $CONFIG_DIR/definitions
+				mkdir -p $CONFIG_DIR/extruders
+				ln -s $TRONXY_DIR/definitions/tronxytron.def.json $CONFIG_DIR/definitions/
+				ln -s $TRONXY_DIR/extruders/tronxytron-extruder-1.def.json $CONFIG_DIR/extruders/
+			fi
+			break
+		done
+	fi
+fi
+
+/usr/bin/cura
