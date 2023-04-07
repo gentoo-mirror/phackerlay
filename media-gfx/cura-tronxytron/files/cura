@@ -17,4 +17,4 @@ if [ -d ~/.config/cura ]; then
 	fi
 fi
 
-/usr/bin/cura
+/usr/bin/cura "$@";
