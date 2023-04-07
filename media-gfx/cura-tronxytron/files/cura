@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TRONXY_DIR=/usr/share/tronxy
+TRONXY_DIR=/usr/share/tronxytron
 
 if [ -d ~/.config/cura ]; then
 	if [[ `ls ~/.config/cura | wc -l` -ne 0 ]]; then
