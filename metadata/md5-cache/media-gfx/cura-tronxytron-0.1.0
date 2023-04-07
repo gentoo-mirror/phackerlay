@@ -6,5 +6,5 @@ HOMEPAGE=https://gitlab.phys-el.ru/404/cura-tronxytron
 KEYWORDS=~amd64 ~x86
 LICENSE=Artistic
 SLOT=0
-SRC_URI=https://gitlab.phys-el.ru/404/cura-tronxytron/-/archive/v0.0.2/unattended_emerges-v0.0.2.tar.gz -> cura-tronxytron-0.0.2.tar.gz
-_md5_=e148cbe00c6a8bebe34f70978934652d
+SRC_URI=https://gitlab.phys-el.ru/404/cura-tronxytron/-/archive/v0.1.0/unattended_emerges-v0.1.0.tar.gz -> cura-tronxytron-0.1.0.tar.gz
+_md5_=2e5de478217d37b3ab819aea2288c976
