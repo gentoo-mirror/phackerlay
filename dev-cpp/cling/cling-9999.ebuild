@@ -3,6 +3,8 @@
 
 EAPI=8
 
+CMAKE_MAKEFILE_GENERATOR="emake"
+
 inherit cmake git-r3 flag-o-matic
 
 DESCRIPTION="Interactive C++ interpreter, built on the top of LLVM and Clang libraries"
@@ -33,14 +35,17 @@ src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX="/opt/cling"
 		-DCMAKE_BUILD_TYPE=Release
-		-DLLVM_BUILD_TOOLS=ON
+		-DLLVM_TOOL_CLING_BUILD=ON
 		-DLLVM_TARGETS_TO_BUILD="host;NVPTX"
 		-DLLVM_ENABLE_OCAMLDOC=OFF
 		-DLLVM_ENABLE_BINDINGS=OFF
 		-DLLVM_INCLUDE_DOCS=OFF
-		-DLLVM_CONFIG=${BUILD_DIR}/bin/llvm-config
 	)
 	cmake_src_configure
+}
+
+src_compile() {
+	cmake_src_compile clang cling
 }
 
 src_install() {
