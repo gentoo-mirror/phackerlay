@@ -25,7 +25,7 @@ RDEPEND="${PYTHON_DEPS}
 	dev-python/lxml[${PYTHON_USEDEP}]
 	dev-python/django-pylibmc[${PYTHON_USEDEP}]
 	dev-python/ldap3[${PYTHON_USEDEP}]
-	=dev-python/pycryptodome-3.16*[${PYTHON_USEDEP}]
+	=dev-python/pycryptodome-3.17*[${PYTHON_USEDEP}]
 	=dev-python/cffi-1.15.1[${PYTHON_USEDEP}]
 	=dev-python/django-3.2*[${PYTHON_USEDEP}]
 	')
