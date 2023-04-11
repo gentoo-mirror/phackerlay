@@ -19,9 +19,7 @@ RDEPEND="${PYTHON_DEPS}
 	acct-group/seafile
 	$(python_gen_cond_dep '
 	=dev-python/future-0.18*[${PYTHON_USEDEP}]
-	=dev-python/pillow-9.3*[${PYTHON_USEDEP}]
-	=dev-python/captcha-0.4*[${PYTHON_USEDEP}]
-	=dev-python/django-simple-captcha-0.5*[${PYTHON_USEDEP}]
+	dev-python/pillow[${PYTHON_USEDEP}]
 
 	dev-python/jinja[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]
@@ -37,6 +35,8 @@ RDEPEND="${PYTHON_DEPS}
 	!mysql? (  $(python_gen_cond_dep '=dev-python/sqlalchemy-1.4.3[sqlite,${PYTHON_USEDEP}]') )
 	mysql? (  $(python_gen_cond_dep '=dev-python/mysqlclient-2.1*[${PYTHON_USEDEP}] dev-python/pymysql[${PYTHON_USEDEP}]') )
 	"
+	#=dev-python/captcha-0.4*[${PYTHON_USEDEP}]
+	#=dev-python/django-simple-captcha-0.5*[${PYTHON_USEDEP}]
 	# see deletes from bundled below
 
 DEPEND="${RDEPEND}"
