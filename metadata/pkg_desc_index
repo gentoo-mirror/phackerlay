@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.77.0.23095 1.77.1.23095: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.77.1.23095 1.77.2.23101: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/cling 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.0: Jupyter kernel for the C++ programming language
@@ -69,7 +69,7 @@ mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-sound/shortwave 3.2.0: Listen to internet radio
 net-im/jitsi-meet 2023.2.0: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.80.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.81.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
