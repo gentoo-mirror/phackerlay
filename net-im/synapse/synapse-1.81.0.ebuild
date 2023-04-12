@@ -39,16 +39,16 @@ CRATES="
 	pythonize-0.17.0
 	quote-1.0.26
 	redox_syscall-0.2.16
-	regex-1.7.1
-	regex-syntax-0.6.27
+	regex-1.7.3
+	regex-syntax-0.6.29
 	ryu-1.0.11
 	scopeguard-1.1.0
-	serde-1.0.157
-	serde_derive-1.0.157
-	serde_json-1.0.94
+	serde-1.0.159
+	serde_derive-1.0.159
+	serde_json-1.0.95
 	smallvec-1.10.0
 	subtle-2.4.1
-	syn-2.0.2
+	syn-2.0.10
 	syn-1.0.104
 	target-lexicon-0.12.4
 	typenum-1.15.0
