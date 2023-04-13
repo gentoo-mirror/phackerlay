@@ -1,13 +1,16 @@
-BDEPEND=sys-devel/make >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=python_targets_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) python_targets_python3_11? ( >=dev-lang/python-3.11.1-r1:3.11 ) >=dev-python/gpep517-13[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/setuptools-67.2.0[python_targets_python3_10(-)?,python_targets_python3_11(-)?] >=dev-python/wheel-0.38.4[python_targets_python3_10(-)?,python_targets_python3_11(-)?] sys-devel/make >=dev-util/cmake-3.20.5 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=cpp11? ( dev-python/ipykernel[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/traitlets[python_targets_python3_10(-)?,python_targets_python3_11(-)?] ) cpp14? ( dev-python/ipykernel[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/traitlets[python_targets_python3_10(-)?,python_targets_python3_11(-)?] ) cpp17? ( dev-python/ipykernel[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/traitlets[python_targets_python3_10(-)?,python_targets_python3_11(-)?] ) cpp1z? ( dev-python/ipykernel[python_targets_python3_10(-)?,python_targets_python3_11(-)?] dev-python/traitlets[python_targets_python3_10(-)?,python_targets_python3_11(-)?] )
 DESCRIPTION=Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 EAPI=8
 HOMEPAGE=https://root.cern/cling/
-INHERIT=cmake git-r3 flag-o-matic
-IUSE=-llvm-tools
+INHERIT=distutils-r1 cmake git-r3 flag-o-matic
+IUSE=-llvm-tools -cpp11 -cpp14 cpp17 -cpp1z python_targets_python3_10 python_targets_python3_11
 LICENSE=Apache-2.0
 PROPERTIES=live
+RDEPEND=python_targets_python3_10? ( >=dev-lang/python-3.10.9-r1:3.10 ) python_targets_python3_11? ( >=dev-lang/python-3.11.1-r1:3.11 )
+REQUIRED_USE=|| ( python_targets_python3_10 python_targets_python3_11 )
 RESTRICT=mirror
 SLOT=0
-_eclasses_=toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	d1408425c7c4a7669b9b17735404b693	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	76050953ad5b70d7e09a6ca55558db92	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	7fb5980de96325cbab639f5b2187357c	git-r3	27e13c09a4c7e4c78ac812f74727e676
-_md5_=226a4a3d737f56a4b98b2e9da755692f
+_eclasses_=out-of-source-utils	1a9007554652a6e627edbccb3c25a439	multibuild	bddcb51b74f4a76724ff7cf8e7388869	multilib	d1408425c7c4a7669b9b17735404b693	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	76050953ad5b70d7e09a6ca55558db92	python-utils-r1	429bfd4e8d8e39db5385ba5744f30788	python-r1	3c6cd0f418ba702c186a9865b85e704d	distutils-r1	05bcfd9823be251f6e9f211ca285094e	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	7fb5980de96325cbab639f5b2187357c	git-r3	27e13c09a4c7e4c78ac812f74727e676
+_md5_=1ac9590aba0ed4ff277647702cd97392
