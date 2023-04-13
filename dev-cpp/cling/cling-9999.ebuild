@@ -19,7 +19,7 @@ EGIT_TAG_CLANG_CLING="cling-patches-rrelease_13"
 LICENSE="Apache-2.0" # more
 SLOT="0"
 KEYWORDS=""
-IUSE=""
+IUSE="-llvm-tools"
 RESTRICT="mirror"
 
 src_unpack() {
@@ -40,12 +40,16 @@ src_configure() {
 		-DLLVM_ENABLE_OCAMLDOC=OFF
 		-DLLVM_ENABLE_BINDINGS=OFF
 		-DLLVM_INCLUDE_DOCS=OFF
+		-DBUILD_SHARED_LIBS=OFF
+		-DLLVM_BUILD_TOOLS=$(usex llvm-tools ON OFF)
+		-DLLVM_CONFIG=${BUILD_DIR}/bin/llvm-config
+		-DLLVM_BINARY_DIR=${BUILD_DIR}
+		-DLLVM_LIBRARY_DIR=${BUILD_DIR}/lib
+		-DLLVM_MAIN_INCLUDE_DIR=${BUILD_DIR}/include
+		-DLLVM_TABLEGEN_EXE=${BUILD_DIR}/bin/llvm-tablegen
+		-DLLVM_TOOLS_BINARY_DIR=${BUILD_DIR}/bin
 	)
 	cmake_src_configure
-}
-
-src_compile() {
-	cmake_src_compile clang cling
 }
 
 src_install() {
