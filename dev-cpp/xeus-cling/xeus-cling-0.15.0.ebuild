@@ -30,6 +30,7 @@ BDEPEND=""
 
 src_configure() {
 	mycmakeargs=(
+		-DLLVM_CONFIG=/opt/cling/bin/llvm-config
 		-DCMAKE_PROGRAM_PATH=/opt/cling/bin
 		-DCMAKE_PREFIX_PATH=/opt/cling
 	)
