@@ -7,7 +7,7 @@ DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{10..11} )
 CMAKE_MAKEFILE_GENERATOR="emake"
 
-inherit cmake git-r3 flag-o-matic distutils-r1
+inherit distutils-r1 cmake git-r3 flag-o-matic
 
 DESCRIPTION="Interactive C++ interpreter, built on the top of LLVM and Clang libraries"
 HOMEPAGE="https://root.cern/cling/"
