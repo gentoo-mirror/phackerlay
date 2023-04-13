@@ -3,8 +3,8 @@
 # untested yet
 
 EAPI=8
-#inherit eutils
-#check-reqs
+
+inherit check-reqs desktop
 
 DESCRIPTION="Xilinx ISE WebPack"
 HOMEPAGE="https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive-ise.html"
@@ -14,7 +14,10 @@ LICENSE="XILINX-EULA XILINX-THIRD-PARTY-EULAS"
 SLOT="14"
 #KEYWORDS="~amd64 ~x86"
 
-RDEPEND=""
+RDEPEND="
+	sys-libs/ncurses-compat
+	virtual/libcrypt
+"
 DEPEND="${RDEPEND}"
 
 RESTRICT="fetch"
@@ -22,8 +25,8 @@ IUSE="abi_x86_64 abi_x86_32"
 
 MYVER="14.7"
 
-#CHECKREQS_DISK_BUILD="24128M"
-#CHECKREQS_DISK_USR="18216M"
+CHECKREQS_DISK_BUILD="7G"
+CHECKREQS_DISK_USR="21G"
 
 S="${WORKDIR}/Xilinx_ISE_DS_Lin_${MYVER}_1015_1"
 
@@ -39,6 +42,7 @@ src_unpack() {
 }
 
 src_prepare() {
+	default
 	if use abi_x86_64; then
 		cd "${S}"/bin/lin64
 	elif use abi_x86_32; then
