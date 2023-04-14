@@ -24,6 +24,7 @@ app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
 app-editors/vscodium-reh 1.77.1.23095 1.77.3.23102: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/cling 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
+dev-cpp/xeus-cling 0.15.1: Jupyter kernel for the C++ programming language
 dev-cpp/xtensor 0.24.6: C++ tensors with broadcasting and lazy computing
 dev-cpp/xtl 0.7.5: The x template library
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
