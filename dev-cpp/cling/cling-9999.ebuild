@@ -62,6 +62,13 @@ src_configure() {
 	cmake_src_configure
 }
 
+src_compile() {
+	cmake_src_compile
+	if use cpp11 || use cpp14 || use cpp17 || use cpp1z ; then
+		distutils-r1_python_compile
+	fi
+}
+
 src_install() {
 	cmake_src_install
 	dosym ../cling/bin/cling "/opt/bin/cling"
@@ -69,6 +76,7 @@ src_install() {
 	if use cpp11 || use cpp14 || use cpp17 || use cpp1z ; then
 		OLD_S=${S}
 		S=${WORKDIR}/${P}/tools/cling/tools/Jupyter/kernel
+		distutils-r1_python_install
 		distutils-r1_python_install_all
 		if use cpp11 ; then
 			insinto /usr/share/jupyter/kernels/cpp11
