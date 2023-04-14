@@ -11,7 +11,6 @@ inherit distutils-r1 git-r3
 DESCRIPTION="Interactive C++ interpreter, built on the top of LLVM and Clang libraries"
 HOMEPAGE="https://root.cern/cling/"
 
-EGIT_TAG_LLVM_CLING="cling-patches-rrelease_13"
 EGIT_OVERRIDE_REPO_CLING="http://root.cern/git/cling.git"
 
 LICENSE="Apache-2.0" # more
@@ -21,7 +20,7 @@ IUSE="-cpp11 -cpp14 cpp17 -cpp1z"
 RESTRICT="mirror"
 
 DEPEND="
-	=dev-cpp/cling-9999
+	dev-cpp/cling
 	dev-python/ipykernel[${PYTHON_USEDEP}]
 	dev-python/traitlets[${PYTHON_USEDEP}]
 "
