@@ -21,16 +21,15 @@ IUSE="-cpp11 -cpp14 cpp17 -cpp1z"
 RESTRICT="mirror"
 
 DEPEND="
-	cpp11? ( dev-python/ipykernel[${PYTHON_USEDEP}] dev-python/traitlets[${PYTHON_USEDEP}] )
-	cpp14? ( dev-python/ipykernel[${PYTHON_USEDEP}] dev-python/traitlets[${PYTHON_USEDEP}] )
-	cpp17? ( dev-python/ipykernel[${PYTHON_USEDEP}] dev-python/traitlets[${PYTHON_USEDEP}] )
-	cpp1z? ( dev-python/ipykernel[${PYTHON_USEDEP}] dev-python/traitlets[${PYTHON_USEDEP}] )
+	=dev-cpp/cling-9999
+	dev-python/ipykernel[${PYTHON_USEDEP}]
+	dev-python/traitlets[${PYTHON_USEDEP}]
 "
 
 S=${WORKDIR}/${P}/tools/Jupyter/kernel
 
 src_unpack() {
-	git-r3_fetch cling $EGIT_TAG_LLVM_CLING
+	git-r3_fetch cling
 	git-r3_checkout cling "${WORKDIR}/${P}"
 }
 
