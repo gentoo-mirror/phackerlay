@@ -20,6 +20,7 @@ RDEPEND="${PYTHON_DEPS}
 	$(python_gen_cond_dep '
 	=dev-python/future-0.18*[${PYTHON_USEDEP}]
 	dev-python/pillow[${PYTHON_USEDEP}]
+	dev-python/django-simple-captcha[${PYTHON_USEDEP}]
 
 	dev-python/jinja[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]
