@@ -11,7 +11,7 @@ DESCRIPTION="Interactive C++ interpreter, built on the top of LLVM and Clang lib
 HOMEPAGE="https://root.cern/cling/"
 
 EGIT_OVERRIDE_REPO_LLVM_CLING="http://root.cern/git/llvm.git"
-EGIT_TAG_LLVM_CLING="cling-v${PV}"
+EGIT_TAG_LLVM_CLING="cling-v0.6"
 EGIT_OVERRIDE_REPO_CLING="http://root.cern/git/cling.git"
 EGIT_TAG_CLING="v${PV}"
 EGIT_OVERRIDE_REPO_CLANG_CLING="http://root.cern/git/clang.git"
