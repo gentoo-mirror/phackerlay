@@ -35,7 +35,9 @@ src_unpack() {
 src_prepare() {
 	# https://github.com/root-project/cling/issues/297
 	cd ${WORKDIR}/${P}/tools/cling
-	git cherry-pick --strategy=ours --no-commit 2c92b57
+	git cherry-pick 2c92b57
+        git rm tools/packaging/cpt.py
+	git -c core.editor=true cherry-pick --continue
         cd ${WORKDIR}/${P}
 	cmake_src_prepare
 }
