@@ -37,6 +37,7 @@ src_prepare() {
 	cd ${WORKDIR}/${P}/tools/cling
 	git cherry-pick 2c92b57
 	git cherry-pick --skip
+        cd ${WORKDIR}/${P}
 	cmake_src_prepare
 }
 
