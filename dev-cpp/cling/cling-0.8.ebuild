@@ -32,6 +32,14 @@ src_unpack() {
 	git-r3_checkout clang-cling "${WORKDIR}/${P}/tools/clang"
 }
 
+src_prepare() {
+	# https://github.com/root-project/cling/issues/297
+	cd ${WORKDIR}/${P}/tools/cling
+	git cherry-pick 2c92b57
+	git cherry-pick --skip
+	cmake_src_prepare
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX="/opt/cling"
