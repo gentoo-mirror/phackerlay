@@ -18,7 +18,7 @@ EGIT_OVERRIDE_REPO_CLANG_CLING="http://root.cern/git/clang.git"
 EGIT_TAG_CLANG_CLING="cling-v${PV}"
 
 PATCHES="
-	cling-0.8-no-tools.patch
+	${FILESDIR}/cling-0.8-no-tools.patch
 "
 
 LICENSE="Apache-2.0" # more
