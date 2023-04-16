@@ -1,0 +1,11 @@
+--- a/cling-0.8/tools/cling/CMakeLists.txt	2023-04-16 21:39:03.922530557 +0300
++++ b/cling-0.8/tools/cling/CMakeLists.txt	2023-04-16 21:32:11.932745271 +0300
+@@ -556,7 +556,7 @@
+   endif()
+ endif()
+
+-add_subdirectory(tools)
++# add_subdirectory(tools)
+
+ option(CLING_INCLUDE_DOCS "Generate build targets for the Cling docs."
+   ${LLVM_INCLUDE_DOCS})
