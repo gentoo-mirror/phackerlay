@@ -17,6 +17,10 @@ EGIT_TAG_CLING="v${PV}"
 EGIT_OVERRIDE_REPO_CLANG_CLING="http://root.cern/git/clang.git"
 EGIT_TAG_CLANG_CLING="cling-v${PV}"
 
+PATCHES="
+	cling-0.8-no-tools.patch
+"
+
 LICENSE="Apache-2.0" # more
 SLOT="0"
 KEYWORDS="~amd64"
@@ -32,15 +36,15 @@ src_unpack() {
 	git-r3_checkout clang-cling "${WORKDIR}/${P}/tools/clang"
 }
 
-src_prepare() {
+#src_prepare() {
 	# https://github.com/root-project/cling/issues/297
-	cd ${WORKDIR}/${P}/tools/cling
-	git cherry-pick 2c92b57
-        git rm tools/packaging/cpt.py
-	git -c core.editor=true cherry-pick --continue
-        cd ${WORKDIR}/${P}
-	cmake_src_prepare
-}
+#	cd ${WORKDIR}/${P}/tools/cling
+#	git cherry-pick 2c92b57
+#        git rm tools/packaging/cpt.py
+#	git -c core.editor=true cherry-pick --continue
+#        cd ${WORKDIR}/${P}
+#	cmake_src_prepare
+#}
 
 src_configure() {
 	local mycmakeargs=(
