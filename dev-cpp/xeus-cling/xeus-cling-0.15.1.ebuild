@@ -30,15 +30,9 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_configure() {
-	CLING_CLANG_ROOT=/opt/cling/bin
-	AR=${CLING_CLANG_ROOT}/llvm-ar
-	CC=${CLING_CLANG_ROOT}/clang
-	CXX=${CLING_CLANG_ROOT}/clang++
-	NM=${CLING_CLANG_ROOT}/llvm-nm
-	RANLIB=${CLING_CLANG_ROOT}/llvm-ranlib
 	mycmakeargs=(
-		-DLLVM_CONFIG=${CLING_CLANG_ROOT}/llvm-config
-		-DCMAKE_PROGRAM_PATH=${CLING_CLANG_ROOT}
+		-DLLVM_CONFIG=/opt/cling/bin/llvm-config
+		-DCMAKE_PROGRAM_PATH=/opt/cling/bin
 		-DCMAKE_PREFIX_PATH=/opt/cling
 	)
 	cmake_src_configure
