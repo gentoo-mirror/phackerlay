@@ -31,7 +31,7 @@ src_unpack() {
 	if [[ ${PV} -eq 9999 ]]; then
 		git-r3_fetch cling
 	else
-		git-r3_fetch cling ${PV}
+		git-r3_fetch cling v${PV}
 	fi
 	git-r3_checkout cling "${WORKDIR}/${P}"
 }
