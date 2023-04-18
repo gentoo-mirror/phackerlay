@@ -31,7 +31,7 @@ RDEPEND="${DEPEND}"
 BDEPEND=""
 
 src_prepare() {
-	default
+	cmake_src_prepare
 	cd ${S}
 	git revert 06ebeff --no-commit
 }
