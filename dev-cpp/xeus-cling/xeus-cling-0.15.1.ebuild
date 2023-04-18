@@ -8,7 +8,7 @@ inherit cmake git-r3
 DESCRIPTION="Jupyter kernel for the C++ programming language"
 HOMEPAGE="https://github.com/jupyter-xeus/xeus-cling"
 EGIT_REPO_URI="https://github.com/jupyter-xeus/xeus-cling.git"
-EGIT_COMMIT="v${PV}"
+EGIT_COMMIT="${PV}"
 
 LICENSE="BSD"
 SLOT="0"
