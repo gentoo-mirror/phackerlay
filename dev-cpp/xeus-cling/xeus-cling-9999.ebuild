@@ -8,11 +8,10 @@ inherit cmake git-r3
 DESCRIPTION="Jupyter kernel for the C++ programming language"
 HOMEPAGE="https://github.com/jupyter-xeus/xeus-cling"
 EGIT_REPO_URI="https://github.com/jupyter-xeus/xeus-cling.git"
-EGIT_COMMIT="${PV}"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE=""
 
 DEPEND="
@@ -20,7 +19,7 @@ DEPEND="
 	<dev-cpp/xeus-zmq-2.0.0
 	>=dev-cpp/xtl-0.7.0
 	<dev-cpp/xtl-0.8.0
-	=dev-cpp/cling-0.9[llvm-tools]
+	=dev-cpp/cling-9999[llvm-tools]
 	>=dev-libs/pugixml-1.8.1
 	>=net-libs/cppzmq-4.3.0
 	>=dev-cpp/argparse-2.9
