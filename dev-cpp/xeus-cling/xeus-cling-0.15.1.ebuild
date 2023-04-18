@@ -3,11 +3,12 @@
 
 EAPI=8
 
-inherit cmake
+inherit cmake git-r3
 
 DESCRIPTION="Jupyter kernel for the C++ programming language"
 HOMEPAGE="https://github.com/jupyter-xeus/xeus-cling"
-SRC_URI="https://github.com/jupyter-xeus/xeus-cling/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+EGIT_REPO_URI="https://github.com/jupyter-xeus/xeus-cling.git"
+EGIT_COMMIT="${PV}"
 
 LICENSE="BSD"
 SLOT="0"
@@ -29,11 +30,18 @@ DEPEND="
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+src_prepare() {
+	cmake_src_prepare
+	cd ${S}
+	git revert 06ebeff --no-commit
+}
+
 src_configure() {
 	mycmakeargs=(
 		-DLLVM_CONFIG=/opt/cling/bin/llvm-config
 		-DCMAKE_PROGRAM_PATH=/opt/cling/bin
 		-DCMAKE_PREFIX_PATH=/opt/cling
+		-DBUILD_SHARED_LIBS=OFF
 	)
 	cmake_src_configure
 }
