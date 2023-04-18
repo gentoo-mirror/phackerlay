@@ -10,6 +10,11 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="Interactive C++ interpreter, built on the top of LLVM and Clang libraries"
 HOMEPAGE="https://root.cern/cling/"
+EGIT_REPO_URI="http://root.cern/git/cling.git"
+if [[ ${PV} -ne 9999 ]]; then
+	EGIT_COMMIT="cling-v${PV}"
+fi
+
 
 EGIT_OVERRIDE_REPO_CLING="http://root.cern/git/cling.git"
 
@@ -26,15 +31,6 @@ DEPEND="
 "
 
 S=${WORKDIR}/${P}/tools/Jupyter/kernel
-
-src_unpack() {
-	if [[ ${PV} -eq 9999 ]]; then
-		git-r3_fetch cling
-	else
-		git-r3_fetch cling-v${PV}
-	fi
-	git-r3_checkout cling "${WORKDIR}/${P}"
-}
 
 python_install_all() {
         distutils-r1_python_install_all
