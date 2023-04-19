@@ -20,7 +20,7 @@ DEPEND="
 	<dev-cpp/xeus-zmq-2.0.0
 	>=dev-cpp/xtl-0.7.0
 	<dev-cpp/xtl-0.8.0
-	=dev-cpp/cling-0.9[llvm-tools]
+	=dev-cpp/cling-0.8[llvm-tools]
 	>=dev-libs/pugixml-1.8.1
 	>=net-libs/cppzmq-4.3.0
 	>=dev-cpp/argparse-2.9
