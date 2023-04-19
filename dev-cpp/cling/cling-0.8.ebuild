@@ -24,7 +24,7 @@ PATCHES="
 LICENSE="Apache-2.0" # more
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="-llvm-tools"
+IUSE="-llvm-tools -rtti"
 RESTRICT="mirror"
 
 src_unpack() {
@@ -46,6 +46,7 @@ src_configure() {
 		-DLLVM_ENABLE_BINDINGS=OFF
 		-DLLVM_INCLUDE_DOCS=OFF
 		-DBUILD_SHARED_LIBS=OFF
+		-DCMAKE_CXX_FLAGS=$(usex rtti "${CMAKE_CXX_FLAGS} -frtti" "${CMAKE_CXX_FLAGS}")
 		-DLLVM_BUILD_TOOLS=$(usex llvm-tools ON OFF)
 		-DLLVM_CONFIG=${BUILD_DIR}/bin/llvm-config
 		-DLLVM_BINARY_DIR=${BUILD_DIR}
