@@ -37,7 +37,7 @@ src_unpack() {
 }
 
 src_configure() {
-	use rtti && append-flags "-frtti"
+	use rtti && append-flags "-frtti -fno-lto"
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX="/opt/cling"
 		-DCMAKE_BUILD_TYPE=Release
