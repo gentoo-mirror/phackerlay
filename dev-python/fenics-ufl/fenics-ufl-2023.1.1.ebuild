@@ -18,6 +18,8 @@ LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
+S=${WORKDIR}/ufl-${PV}
+
 RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
 "
