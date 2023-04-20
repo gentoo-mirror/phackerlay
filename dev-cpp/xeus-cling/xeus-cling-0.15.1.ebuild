@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake git-r3
+inherit cmake git-r3 flag-o-matic
 
 DESCRIPTION="Jupyter kernel for the C++ programming language"
 HOMEPAGE="https://github.com/jupyter-xeus/xeus-cling"
@@ -36,6 +36,7 @@ src_prepare() {
 }
 
 src_configure() {
+	append-flags "-frtti"
 	mycmakeargs=(
 		-DLLVM_CONFIG=/opt/cling/bin/llvm-config
 		-DCMAKE_PROGRAM_PATH=/opt/cling/bin
