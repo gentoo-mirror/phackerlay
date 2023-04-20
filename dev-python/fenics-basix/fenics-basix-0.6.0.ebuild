@@ -24,10 +24,6 @@ RDEPEND="
 	dev-python/pybind11[${PYTHON_USEDEP}]
 "
 BDEPEND="
-	dev-util/ninja
-	>=dev-util/cmake-3.16
-	>=dev-python/setuptools-42[${PYTHON_USEDEP}]
-	dev-python/wheel[${PYTHON_USEDEP}]
 	>=dev-python/scikit-build-0.12[${PYTHON_USEDEP}]
 	>=dev-python/pybind11-2.6.4[${PYTHON_USEDEP}]
 "
