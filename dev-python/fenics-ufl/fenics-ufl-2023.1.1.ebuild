@@ -19,7 +19,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dedv-python/numpy[${PYTHON_USEDEP}]
+	dev-python/numpy[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	>=dev-python/setuptools-58[${PYTHON_USEDEP}]
