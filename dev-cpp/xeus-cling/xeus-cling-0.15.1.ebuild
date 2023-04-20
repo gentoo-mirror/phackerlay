@@ -20,7 +20,7 @@ DEPEND="
 	<dev-cpp/xeus-zmq-2.0.0
 	>=dev-cpp/xtl-0.7.0
 	<dev-cpp/xtl-0.8.0
-	=dev-cpp/cling-0.8[llvm-tools,rtti]
+	=dev-cpp/cling-0.8[llvm-tools,llvm-rtti]
 	>=dev-libs/pugixml-1.8.1
 	>=net-libs/cppzmq-4.3.0
 	>=dev-cpp/argparse-2.9
@@ -36,7 +36,6 @@ src_prepare() {
 }
 
 src_configure() {
-	append-flags "-frtti"
 	mycmakeargs=(
 		-DLLVM_CONFIG=/opt/cling/bin/llvm-config
 		-DCMAKE_PROGRAM_PATH=/opt/cling/bin
