@@ -18,8 +18,10 @@ LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
+S=${WORKDIR}/ufl-${PV}
+
 RDEPEND="
-	dedv-python/numpy[${PYTHON_USEDEP}]
+	dev-python/numpy[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	>=dev-python/setuptools-58[${PYTHON_USEDEP}]
