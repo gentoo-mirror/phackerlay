@@ -18,6 +18,8 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
+S=${WORKDIR}/basix-${PV}
+
 RDEPEND="
 	dev-python/pybind11[${PYTHON_USEDEP}]
 "
