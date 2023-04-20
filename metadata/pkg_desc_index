@@ -57,7 +57,7 @@ dev-python/jupyterlab-widgets 3.0.6: Jupyter interactive widgets for JupyterLab
 dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
-dev-python/petsc4py 3.19.0: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
+dev-python/petsc4py 3.18.2 3.19.0: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
@@ -79,11 +79,12 @@ sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
 sci-electronics/qucs-s 1.0.1: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-geosciences/mkgmap-bin 4907: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
+sci-libs/dolfinx 0.6.0: Next generation FEniCS problem solving environment
 sci-libs/elpa 2021.11.001 2022.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000-r4: Setup collection for sci-physics/gpaw
 sci-libs/libxc 5.2.3 6.1.0: A library of exchange-correlation functionals for use in DFT
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
-sci-mathematics/dolphinx 0.6.0: Next generation FEniCS problem solving environment
+sci-mathematics/dolfinx 0.6.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.0.1-r5: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 22.8.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
