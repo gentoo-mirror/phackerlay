@@ -24,7 +24,7 @@ PATCHES="
 LICENSE="Apache-2.0" # more
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="-llvm-tools -rtti"
+IUSE="-llvm-tools -llvm-rtti"
 RESTRICT="mirror"
 
 src_unpack() {
@@ -37,7 +37,6 @@ src_unpack() {
 }
 
 src_configure() {
-	use rtti && append-flags "-frtti -fPIC"
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX="/opt/cling"
 		-DCMAKE_BUILD_TYPE=Release
@@ -46,6 +45,7 @@ src_configure() {
 		-DLLVM_ENABLE_OCAMLDOC=OFF
 		-DLLVM_ENABLE_BINDINGS=OFF
 		-DLLVM_INCLUDE_DOCS=OFF
+		-DLLVM_ENABLE_RTTI=$(usex llvm-rtti ON OFF)
 		-DLLVM_BUILD_TOOLS=$(usex llvm-tools ON OFF)
 		-DLLVM_CONFIG=${BUILD_DIR}/bin/llvm-config
 		-DLLVM_BINARY_DIR=${BUILD_DIR}
