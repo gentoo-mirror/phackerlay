@@ -37,7 +37,7 @@ src_unpack() {
 }
 
 src_configure() {
-	use rtti && append-flags "-frtti -fno-lto"
+	use rtti && append-flags "-frtti"
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX="/opt/cling"
 		-DCMAKE_BUILD_TYPE=Release
@@ -47,6 +47,7 @@ src_configure() {
 		-DLLVM_ENABLE_BINDINGS=OFF
 		-DLLVM_INCLUDE_DOCS=OFF
 		-DBUILD_SHARED_LIBS=OFF
+		-DLLVM_ENABLE_LTO=OFF
 		-DLLVM_BUILD_TOOLS=$(usex llvm-tools ON OFF)
 		-DLLVM_CONFIG=${BUILD_DIR}/bin/llvm-config
 		-DLLVM_BINARY_DIR=${BUILD_DIR}
