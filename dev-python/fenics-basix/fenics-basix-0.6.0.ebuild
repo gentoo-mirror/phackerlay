@@ -6,7 +6,7 @@ EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{9..11} )
 
-inherit distutils-r1 cmake
+inherit distutils-r1
 
 DESCRIPTION="FEniCS finite element basis evaluation library"
 HOMEPAGE="
