@@ -1,0 +1,11 @@
+--- a/include/xplot/xboxed_container.hpp	2023-04-21 13:23:14.020015552 +0300
++++ a/include/xplot/xboxed_container.hpp	2023-04-21 13:23:00.843696579 +0300
+@@ -16,7 +16,7 @@
+ 
+ #include "nlohmann/json.hpp"
+ 
+-#include "xeus/xjson.hpp"
++#include "xproperty/xjson.hpp"
+ 
+ namespace nl = nlohmann;
+ 
