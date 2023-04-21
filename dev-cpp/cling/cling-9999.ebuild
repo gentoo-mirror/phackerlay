@@ -19,7 +19,7 @@ EGIT_TAG_CLANG_CLING="cling-patches-rrelease_13"
 LICENSE="Apache-2.0" # more
 SLOT="0"
 KEYWORDS=""
-IUSE="-llvm-tools -rtti"
+IUSE="-llvm-tools -llvm-rtti"
 RESTRICT="mirror"
 
 src_unpack() {
@@ -32,7 +32,6 @@ src_unpack() {
 }
 
 src_configure() {
-	use rtti && append-flags "-frtti"
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX="/opt/cling"
 		-DCMAKE_BUILD_TYPE=Release
@@ -42,6 +41,7 @@ src_configure() {
 		-DLLVM_ENABLE_BINDINGS=OFF
 		-DLLVM_INCLUDE_DOCS=OFF
 		-DBUILD_SHARED_LIBS=OFF
+		-DLLVM_ENABLE_RTTI=$(usex llvm-rtti ON OFF)
 		-DLLVM_BUILD_TOOLS=$(usex llvm-tools ON OFF)
 		-DLLVM_CONFIG=${BUILD_DIR}/bin/llvm-config
 		-DLLVM_BINARY_DIR=${BUILD_DIR}
@@ -53,6 +53,10 @@ src_configure() {
 	cmake_src_configure
 }
 
+src_compile() {
+      cmake_src_compile -j4
+}
+
 src_install() {
 	cmake_src_install
 	dosym ../cling/bin/cling "/opt/bin/cling"
@@ -62,7 +66,7 @@ pkg_postinst() {
 	if ! has_version dev-python/cling-kernels ;
 	then
               elog
-              elog "	See dev-python/cling-kernels for jupyter kernels"
+              elog "	See dev-python/cling-kernels or dev-cpp/xeus-cling for jupyter kernels"
               elog
         fi
 }

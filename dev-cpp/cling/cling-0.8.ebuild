@@ -70,7 +70,7 @@ pkg_postinst() {
 	if ! has_version dev-python/cling-kernels ;
 	then
               elog
-              elog "	See dev-python/cling-kernels for jupyter kernels"
+              elog "	See dev-python/cling-kernels or dev-cpp/xeus-cling for jupyter kernels"
               elog
         fi
 }
