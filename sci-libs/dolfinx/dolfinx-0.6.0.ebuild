@@ -21,6 +21,7 @@ BDEPEND="
         dev-libs/pugixml
         dev-python/fenics-ffcx
         dev-python/fenics-basix
+	sci-libs/hdf5
 "
 
 src_unpack() {
