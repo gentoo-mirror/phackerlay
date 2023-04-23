@@ -81,7 +81,7 @@ sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.2.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
-sci-electronics/qucs-s 1.0.1: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
+sci-electronics/qucs-s 1.0.2: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-geosciences/mkgmap-bin 4907: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/elpa 2021.11.001 2022.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
