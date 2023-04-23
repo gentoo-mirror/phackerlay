@@ -6,7 +6,7 @@ EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{9..11} )
 
-inherit distutils-r1 cmake
+inherit distutils-r1
 
 DESCRIPTION="Next generation FEniCS problem solving environment"
 HOMEPAGE="
@@ -24,6 +24,7 @@ RDEPEND="
 "
 
 BDEPEND="
+	=sci-libs/dolfinx-${PV}
 	dev-python/pybind11[${PYTHON_USEDEP}]
         dev-python/fenics-ufl[${PYTHON_USEDEP}]
         dev-python/numpy[${PYTHON_USEDEP}]
@@ -31,32 +32,7 @@ BDEPEND="
         dev-python/petsc4py[${PYTHON_USEDEP}]
 "
 
-PYTHON_S=${WORKDIR}/${P}/python
-CPP_S=${WORKDIR}/${P}/cpp
-
-src_prepare() {
-	S=$CPP_S
-	cd ${S}
-        cmake_src_prepare
-	S=$PYTHON_S
-	cd ${S}
-        distutils-r1_src_prepare
-}
-
-src_compile() {
-        cmake_src_compile
-        distutils-r1_src_compile
-}
-
-src_install() {
-#        cmake_src_install
-        distutils-r1_src_install
-}
-
-python_install() {
-        distutils-r1_python_install --skip-build
-}
-
-python_install_all() {
-        distutils-r1_python_install_all
+src_unpack() {
+	default
+	S=${WORKDIR}/${P}/python
 }
