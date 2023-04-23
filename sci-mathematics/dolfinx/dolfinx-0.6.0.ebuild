@@ -18,6 +18,11 @@ LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
+RDEPEND="
+        dev-python/fenics-basix[${PYTHON_USEDEP}]
+        dev-python/fenics-ffcx[${PYTHON_USEDEP}]
+"
+
 BDEPEND="
 	dev-python/pybind11[${PYTHON_USEDEP}]
         dev-python/fenics-ufl[${PYTHON_USEDEP}]
