@@ -81,6 +81,7 @@ sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
 sci-electronics/qucs-s 1.0.2: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-geosciences/mkgmap-bin 4907: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
+sci-libs/dolfinx 0.6.0: Next generation FEniCS problem solving environment
 sci-libs/elpa 2021.11.001 2022.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000-r4: Setup collection for sci-physics/gpaw
 sci-libs/libxc 5.2.3 6.1.0: A library of exchange-correlation functionals for use in DFT
