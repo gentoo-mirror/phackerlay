@@ -1,0 +1,33 @@
+diff --git a/share/jupyter/kernels/xcpp11/kernel.json.in b/share/jupyter/kernels/xcpp11/kernel.json.in
+index 5d365c1..d9dddd0 100644
+--- a/share/jupyter/kernels/xcpp11/kernel.json.in
++++ b/share/jupyter/kernels/xcpp11/kernel.json.in
+@@ -1,5 +1,5 @@
+ {
+-  "display_name": "C++11",
++  "display_name": "C++11 (xeus)",
+   "argv": [
+       "@XEUS_CLING_KERNELSPEC_PATH@/xcpp",
+       "-f",
+diff --git a/share/jupyter/kernels/xcpp114kernel.json.in b/share/jupyter/kernels/xcpp14/kernel.json.in
+index 5d365c1..d9dddd0 100644
+--- a/share/jupyter/kernels/xcpp14/kernel.json.in
++++ b/share/jupyter/kernels/xcpp14/kernel.json.in
+@@ -1,5 +1,5 @@
+ {
+-  "display_name": "C++14",
++  "display_name": "C++14 (xeus)",
+   "argv": [
+       "@XEUS_CLING_KERNELSPEC_PATH@/xcpp",
+       "-f",
+diff --git a/share/jupyter/kernels/xcpp17/kernel.json.in b/share/jupyter/kernels/xcpp17/kernel.json.in
+index 5d365c1..d9dddd0 100644
+--- a/share/jupyter/kernels/xcpp17/kernel.json.in
++++ b/share/jupyter/kernels/xcpp17/kernel.json.in
+@@ -1,5 +1,5 @@
+ {
+-  "display_name": "C++17",
++  "display_name": "C++17 (xeus)",
+   "argv": [
+       "@XEUS_CLING_KERNELSPEC_PATH@/xcpp",
+       "-f",

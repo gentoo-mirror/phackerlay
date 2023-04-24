@@ -13,7 +13,7 @@ EGIT_COMMIT="${PV}"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="-cpp11 -cpp14 cpp17"
 
 DEPEND="
 	>=dev-cpp/xeus-zmq-1.0.0
@@ -29,6 +29,10 @@ DEPEND="
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+PATCHES=(
+	"${FILESDIR}/kernel-names.patch"
+)
+
 src_prepare() {
 	cmake_src_prepare
 	cd ${S}
@@ -42,4 +46,12 @@ src_configure() {
 		-DCMAKE_PREFIX_PATH=/opt/cling
 	)
 	cmake_src_configure
+}
+
+src_install() {
+	cmake_src_install
+	use cpp11 || rm -r ${D}/usr/share/jupyter/kernels/xcpp11
+	use cpp14 || rm -r ${D}/usr/share/jupyter/kernels/xcpp14
+	use cpp17 || rm -r ${D}/usr/share/jupyter/kernels/xcpp17
+
 }
