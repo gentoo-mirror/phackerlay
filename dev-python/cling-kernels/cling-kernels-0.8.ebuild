@@ -15,7 +15,7 @@ EGIT_OVERRIDE_REPO_CLING="http://root.cern/git/cling.git"
 
 LICENSE="Apache-2.0" # more
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE="-cpp11 -cpp14 cpp17 -cpp1z"
 RESTRICT="mirror"
 
