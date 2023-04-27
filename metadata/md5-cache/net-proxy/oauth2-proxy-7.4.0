@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.19 >=dev-lang/go-1.18 app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
+EAPI=8
+HOMEPAGE=https://github.com/oauth2-proxy/oauth2-proxy
+INHERIT=go-module
+KEYWORDS=~amd64
+LICENSE=MIT BSD BSD-2 Apache-2.0 ISC
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/oauth2-proxy/oauth2-proxy/archive/refs/tags/v7.4.0.tar.gz -> oauth2-proxy-7.4.0.tar.gz https://gitlab.phys-el.ru/gentoo/phackerlay/-/raw/master/distfiles/oauth2-proxy-7.4.0-deps.tar.xz
+_eclasses_=multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	toolchain-funcs	14a8ae365191b518fad51caad7a08f3e	multilib	d1408425c7c4a7669b9b17735404b693	go-module	9c75e51a48520b2f01471c1f91762882
+_md5_=6ddd22d4f0527a9d29900c48ecbf77cf
