@@ -10,7 +10,7 @@ DESCRIPTION="A reverse proxy that provides authentication with Google, Azure, Op
 HOMEPAGE="https://github.com/oauth2-proxy/oauth2-proxy"
 SRC_URI="
 	https://github.com/oauth2-proxy/oauth2-proxy/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-	https://gitlab.phys-el.ru/gentoo/phackerlay/-/raw/master/net-proxy/oauth2-proxy/${P}-deps.tar.xz
+	https://gitlab.phys-el.ru/gentoo/phackerlay/-/raw/master/net-proxy/oauth2-proxy/files/${P}-deps.tar.xz
 "
 
 BDEPEND="
