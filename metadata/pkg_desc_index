@@ -61,6 +61,7 @@ dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.2: nginx config file formatter/beautifier written in Python with no additional dependencies
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/petsc4py 3.18.2 3.19.0: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
+dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
