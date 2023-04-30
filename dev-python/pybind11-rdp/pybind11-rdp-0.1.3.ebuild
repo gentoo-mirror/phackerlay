@@ -19,7 +19,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dev-python/pybind
+	dev-python/pybind[${PYTHON_USEDEP}]
 "
 
 S=${WORKDIR}/pybind11_rdp-${PV}
