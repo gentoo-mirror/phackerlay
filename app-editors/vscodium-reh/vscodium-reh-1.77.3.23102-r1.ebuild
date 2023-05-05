@@ -52,6 +52,7 @@ src_install() {
 	doins -r *
 	fperms +x /opt/${PN}/bin/codium-server
 	fperms +x /opt/${PN}/node_modules/@vscode/ripgrep/bin/rg
+	fperms +x /opt/${PN}/node_modules/node-pty/build/Release/spawn-helper
 	dosym "../../opt/${PN}/bin/codium-server" "usr/bin/codium-server"
 	dosym "../../opt/${PN}/bin/codium-server" "usr/bin/vscodium-server"
 }
