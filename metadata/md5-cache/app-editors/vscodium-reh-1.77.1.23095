@@ -7,4 +7,4 @@ LICENSE=Apache-2.0 BSD BSD-1 BSD-2 BSD-4 CC-BY-4.0 ISC LGPL-2.1+ MIT MPL-2.0 ope
 RDEPEND=<net-libs/nodejs-18
 SLOT=0
 SRC_URI=amd64? ( https://github.com/VSCodium/vscodium/releases/download/1.77.1.23095/vscodium-reh-linux-x64-1.77.1.23095.tar.gz -> vscodium-reh-1.77.1.23095-amd64.tar.gz ) arm? ( https://github.com/VSCodium/vscodium/releases/download/1.77.1.23095/vscodium-reh-linux-armhf-1.77.1.23095.tar.gz -> vscodium-reh-1.77.1.23095-arm.tar.gz ) arm64? ( https://github.com/VSCodium/vscodium/releases/download/1.77.1.23095/vscodium-reh-linux-arm64-1.77.1.23095.tar.gz -> vscodium-reh-1.77.1.23095-arm64.tar.gz )
-_md5_=814f174453647a6cbb7c1d97280fadba
+_md5_=67c6675116e869c21d96e58b9a0a5c59
