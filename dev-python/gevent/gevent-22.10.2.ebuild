@@ -1,10 +1,11 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
 DISTUTILS_USE_SETUPTOOLS=rdepend
-PYTHON_COMPAT=( python3_{8..10} )
+DISTUTILS_EXT=1
+PYTHON_COMPAT=( python3_{10..11} )
 PYTHON_REQ_USE="ssl(+),threads(+)"
 
 inherit distutils-r1 flag-o-matic
