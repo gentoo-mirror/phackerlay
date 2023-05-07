@@ -19,7 +19,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	<dev-python/jupyterlab-4.0.0[${PYTHON_USEDEP}]
 	>=dev-python/jupyterlab-3.0.0[${PYTHON_USEDEP}]
-	dev-python/jupyterlab-markup-ext[${PYTHON_USEDEP}]
+	dev-python/jupyterlab-markup-expr[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	net-libs/nodejs[npm]
