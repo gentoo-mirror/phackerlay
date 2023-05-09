@@ -7,7 +7,7 @@ DISTUTILS_USE_PEP517=poetry
 PYTHON_COMPAT=( python3_{9,10,11} )
 CRATES="
 	aho-corasick-0.7.19
-	anyhow-1.0.70
+	anyhow-1.0.71
 	arc-swap-1.5.1
 	autocfg-1.1.0
 	bitflags-1.3.2
