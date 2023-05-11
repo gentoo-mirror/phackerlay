@@ -74,7 +74,6 @@ dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
-dev-python/trame 2.4.0: Trame lets you weave various components and technologies into a Web Application solely written in Python
 dev-python/trame-rca 0.3.1: Remote Controlled Area widget for trame
 dev-python/txredisapi 1.4.9: non-blocking redis client for python twisted
 dev-util/fatrace 0.17.0: report system wide file access events
@@ -103,6 +102,7 @@ sci-mathematics/octave-jsonlab 2.0.1-r5: JSONLab: compact, portable, robust JSON
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 22.8.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 7.2: Suite for first-principles electronic-structure calculations and materials modeling
+sci-visualization/trame 2.4.1: Trame lets you weave various components and technologies into a Web Application solely written in Python
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
