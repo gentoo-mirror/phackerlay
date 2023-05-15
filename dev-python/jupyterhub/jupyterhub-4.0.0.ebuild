@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10,11} )
 
-inherit distutils-r1
+inherit python-single-r1
 
 DESCRIPTION="A multi-user server for Jupyter notebooks"
 HOMEPAGE="https://github.com/jupyterhub/jupyterhub"
@@ -21,11 +21,10 @@ RESTRICT=network-sandbox
 
 #dev-libs/kpathsea no mpl plots
 
-distutils_enable_tests pytest
-
 RDEPEND="
 	acct-user/jupyterhub
 	acct-group/jupyterhub
+	$(python_gen_cond_dep '
 	>=dev-python/alembic-1.4[${PYTHON_USEDEP}]
 	>=dev-python/async_generator-1.9[${PYTHON_USEDEP}]
 	>=dev-python/certipy-0.1.2[${PYTHON_USEDEP}]
@@ -44,6 +43,7 @@ RDEPEND="
 	postgres? ( <dev-python/psycopg-3[${PYTHON_USEDEP}] )
 	ldapauthenticator? ( dev-python/jupyterhub-ldapauthenticator[${PYTHON_USEDEP}] )
 	sudospawner? ( dev-python/sudospawner[${PYTHON_USEDEP}] )
+	')
 "
 
 src_prepare() {
@@ -51,20 +51,20 @@ src_prepare() {
         einfo 'Note, allowing network access from the sandbox via RESTRICT=network-sandbox'
         einfo '(needed for building jupyterhub assets via npm)'
         einfo
-	distutils-r1_src_prepare
+	python-single-r1_src_prepare
 }
 
 python_compile() {
-	distutils-r1_python_compile
+	python-single-r1_compile
 }
 
 python_install() {
 	cd ${S} && python -m jupyterhub --generate-config
-        distutils-r1_python_install --skip-build
+	python-single-r1_install --skip-build
 }
 
 python_install_all() {
-	distutils-r1_python_install_all
+	python-single-r1_install_all
 	newinitd "${FILESDIR}"/jupyterhub.initd jupyterhub
 	insinto /etc/jupyterhub
 	newins ${S}/jupyterhub_config.py config.example.py
