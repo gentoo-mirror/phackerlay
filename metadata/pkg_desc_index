@@ -49,7 +49,7 @@ dev-python/ipympl 0.9.3: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
 dev-python/jupyter-c-kernel 1.2.2: Minimal Jupyter C kernel
 dev-python/jupyter-telemetry 0.1.0: Telemetry for Jupyter Applications and extensions
-dev-python/jupyterhub 3.1.1 4.0.0: A multi-user server for Jupyter notebooks
+dev-python/jupyterhub 4.0.0: A multi-user server for Jupyter notebooks
 dev-python/jupyterhub-idle-culler 1.2.1: JupyterHub service to cull idle servers and users
 dev-python/jupyterhub-ldapauthenticator 1.3.2: Simple LDAP Authenticator Plugin for JupyterHub
 dev-python/jupyterhub_moss 6.0.0: Jupyterhub MOdular Slurm Spawner
@@ -64,6 +64,7 @@ dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.2: nginx config file formatter/beautifier written in Python with no additional dependencies
 dev-python/osmium 3.6.0: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
+dev-python/param 1.13.0: Make Python code clearer and more reliable by declaring Parameters
 dev-python/petsc4py 3.19.1: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.3: C++ implementation of the Ramer-Douglas-Peucker algorithm
