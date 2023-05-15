@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -29,6 +29,7 @@ RDEPEND="
 	>=dev-python/alembic-1.4[${PYTHON_USEDEP}]
 	>=dev-python/async_generator-1.9[${PYTHON_USEDEP}]
 	>=dev-python/certipy-0.1.2[${PYTHON_USEDEP}]
+	dev-python/entrypoints[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.11.0[${PYTHON_USEDEP}]
 	>=dev-python/jupyter-telemetry-0.1.0[${PYTHON_USEDEP}]
 	>=dev-python/oauthlib-3.0[${PYTHON_USEDEP}]
@@ -37,7 +38,7 @@ RDEPEND="
 	>=dev-python/prometheus_client-0.4.0[${PYTHON_USEDEP}]
 	dev-python/python-dateutil[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
-	>=dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
+	>=dev-python/sqlalchemy-1.1[${PYTHON_USEDEP}]
 	>=dev-python/tornado-5.1[${PYTHON_USEDEP}]
 	>=dev-python/traitlets-4.3.2[${PYTHON_USEDEP}]
 	|| ( dev-python/jupyterlab[${PYTHON_USEDEP}] dev-python/jupyter[${PYTHON_USEDEP}] )
