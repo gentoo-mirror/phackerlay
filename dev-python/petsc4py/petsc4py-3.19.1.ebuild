@@ -20,4 +20,7 @@ RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/mpi4py[${PYTHON_USEDEP}]
 	~sci-mathematics/petsc-${PV}
+	!~dev-python/cython-0.29.34[${PYTHON_USEDEP}]
 "
+# cython
+# https://fenicsproject.discourse.group/t/error-during-python-installation-of-dolfinx/10993
