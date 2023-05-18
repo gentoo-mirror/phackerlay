@@ -19,9 +19,6 @@ IUSE="dist-kernel"
 BDEPEND="
 	virtual/linux-sources
 "
-RDEPEND="
-	virtual/udev
-"
 
 BUILD_PARAMS="CC=$(tc-getCC) V=1 KSRC=${KERNEL_DIR}"
 MODULE_NAMES="gasket(drivers/pci/pcie:${S}/src) apex(drivers/pci/pcie:${S}/src)"
