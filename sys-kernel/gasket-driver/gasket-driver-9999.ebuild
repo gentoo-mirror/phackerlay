@@ -12,7 +12,7 @@ inherit git-r3
 EGIT_REPO_URI="https://github.com/google/gasket-driver.git"
 KEYWORDS="~amd64"
 
-LICENSE="GPL-2.0"
+LICENSE="GPL-2"
 SLOT="0"
 IUSE="dist-kernel"
 

@@ -1,3 +1,3 @@
-```shell-script
-layman -a phackerlay
+```shell
+eselect repository enable phackerlay
 ```
