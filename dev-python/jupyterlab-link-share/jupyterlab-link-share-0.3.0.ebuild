@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9,10,11} )
+PYTHON_COMPAT=( python3_{10,11} )
 
 inherit distutils-r1
 
@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-    >=dev-python/jupyter_packaging-0.10.0[${PYTHON_USEDEP}]
+    >=dev-python/jupyter-packaging-0.10.0[${PYTHON_USEDEP}]
     >=dev-python/jupyterlab-3.0.0[${PYTHON_USEDEP}]
 "
 
