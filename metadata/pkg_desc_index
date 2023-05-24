@@ -58,7 +58,7 @@ dev-python/jupyterlab-link-share 0.3.0: JupyterLab Extension to share the URL to
 dev-python/jupyterlab-markup 2.0.0: JupyterLab extension to enable markdown-it rendering, with support for markdown-it plugins
 dev-python/jupyterlab-markup-expr 0.1.1: A JupyterLab extension to add expression node tokens to jupyterlab-markup
 dev-python/jupyterlab-slurm 3.0.2: A Jupyter Notebook server extension that implements common Slurm commands
-dev-python/jupyterlab-widgets 3.0.6: Jupyter interactive widgets for JupyterLab
+dev-python/jupyterlab-widgets 3.0.7: Jupyter interactive widgets for JupyterLab
 dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.2: nginx config file formatter/beautifier written in Python with no additional dependencies
