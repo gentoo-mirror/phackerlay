@@ -4,9 +4,9 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=jupyter
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..11} )
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Jupyter interactive widgets for JupyterLab"
 HOMEPAGE="
@@ -14,7 +14,7 @@ HOMEPAGE="
 	https://github.com/jupyter-widgets/ipywidgets/
 	https://pypi.org/project/jupyterlab-widgets
 "
-SRC_URI="mirror://pypi/${PN:0:1}/jupyterlab_widgets/jupyterlab_widgets-${PV}.tar.gz"
+#SRC_URI="mirror://pypi/${PN:0:1}/jupyterlab_widgets/jupyterlab_widgets-${PV}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
