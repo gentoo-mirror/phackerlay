@@ -77,6 +77,7 @@ dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to insp
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
 dev-python/trame-rca 0.3.1: Remote Controlled Area widget for trame
+dev-python/trame-simput 2.3.2: Simput implementation for trame
 dev-python/txredisapi 1.4.9: non-blocking redis client for python twisted
 dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to r4d4 api
