@@ -4,6 +4,7 @@
 EAPI="8"
 
 DISTUTILS_USE_PEP517=poetry
+DISTUTILS_EXT=1
 PYTHON_COMPAT=( python3_{9,10,11} )
 CRATES="
 	aho-corasick-0.7.19
