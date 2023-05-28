@@ -8,11 +8,10 @@ DISTUTILS_EXT=1
 PYTHON_COMPAT=( python3_{10..11} )
 PYTHON_REQ_USE="ssl(+),threads(+)"
 
-inherit distutils-r1 flag-o-matic
+inherit distutils-r1 flag-o-matic pypi
 
 DESCRIPTION="Coroutine-based network library"
 HOMEPAGE="https://www.gevent.org/ https://pypi.org/project/gevent/"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

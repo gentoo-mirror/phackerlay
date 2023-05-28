@@ -6,11 +6,10 @@ EAPI=8
 PYTHON_COMPAT=( python3_{10,11} )
 DISTUTILS_USE_PEP517=jupyter
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="JupyterLab extension to enable markdown-it rendering, with support for markdown-it plugins"
 HOMEPAGE="https://github.com/agoose77/jupyterlab-markup"
-SRC_URI="mirror://pypi/${PN:0:1}/jupyterlab_markup/jupyterlab_markup-${PV}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"

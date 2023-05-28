@@ -5,12 +5,11 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8,9,10,11} )
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 MY_PN="remote_ikernel"
 DESCRIPTION="Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook"
 HOMEPAGE="https://github.com/tdaff/remote_ikernel"
-SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_PN}-${PV}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
