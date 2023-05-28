@@ -15,6 +15,7 @@ HOMEPAGE="https://docs.pyvista.org"
 LICENSE="MIT"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
+RESTRICT="mirror"
 
 RDEPEND="
 	sci-libs/vtk[python,imaging,rendering,views,${PYTHON_SINGLE_USEDEP}]
