@@ -4,12 +4,12 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{9,10,11} )
+PYPI_NO_NORMALIZE=1
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Extends Selenium to give you the ability to inspect requests made by the browser."
 HOMEPAGE="https://github.com/wkeeling/selenium-wire"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"

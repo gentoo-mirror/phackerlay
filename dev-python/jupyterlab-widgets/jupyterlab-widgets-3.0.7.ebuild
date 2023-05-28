@@ -14,7 +14,6 @@ HOMEPAGE="
 	https://github.com/jupyter-widgets/ipywidgets/
 	https://pypi.org/project/jupyterlab-widgets
 "
-#SRC_URI="mirror://pypi/${PN:0:1}/jupyterlab_widgets/jupyterlab_widgets-${PV}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"

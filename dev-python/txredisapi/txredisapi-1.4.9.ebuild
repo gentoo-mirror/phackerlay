@@ -5,11 +5,10 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8,9,10,11} )
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="non-blocking redis client for python twisted"
 HOMEPAGE="https://github.com/IlyaSkriblovsky/txredisapi"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"

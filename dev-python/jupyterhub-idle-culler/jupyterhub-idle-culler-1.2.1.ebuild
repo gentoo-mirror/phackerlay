@@ -3,13 +3,13 @@
 
 EAPI=8
 
+PYPI_NO_NORMALIZE=1
 PYTHON_COMPAT=( python3_{8,9,10,11} )
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="JupyterHub service to cull idle servers and users"
 HOMEPAGE="https://github.com/jupyterhub/jupyterhub-idle-culler"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
