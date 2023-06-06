@@ -24,7 +24,7 @@ CRATES="
 	lazy_static-1.4.0
 	libc-0.2.135
 	lock_api-0.4.9
-	log-0.4.17
+	log-0.4.18
 	memchr-2.5.0
 	memoffset-0.6.5
 	once_cell-1.15.0
