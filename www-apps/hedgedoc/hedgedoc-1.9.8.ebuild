@@ -13,10 +13,10 @@ KEYWORDS="~amd64"
 IUSE=""
 
 BDEPEND="
-	=net-libs/nodejs-16*
-	=sys-apps/yarn-1*
-	!<sys-apps/yarn-1.22
-	|| ( <dev-libs/openssl-3 =net-libs/nodejs-16*[-system-ssl] )
+	<net-libs/nodejs-20
+	>net-libs/nodejs-14
+	=sys-apps/yarn-3*
+	|| ( <dev-libs/openssl-3 net-libs/nodejs[-system-ssl] )
 "
 
 RDEPEND="
