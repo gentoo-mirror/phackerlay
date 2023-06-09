@@ -103,7 +103,7 @@ sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code w
 sci-mathematics/dolfinx 0.6.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.0.1-r5: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
-sci-physics/gpaw 22.8.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
+sci-physics/gpaw 23.6.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 7.2: Suite for first-principles electronic-structure calculations and materials modeling
 sci-visualization/trame 2.5.0: Trame lets you weave various components and technologies into a Web Application solely written in Python
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
