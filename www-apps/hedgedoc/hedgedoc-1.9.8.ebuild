@@ -13,10 +13,9 @@ KEYWORDS="~amd64"
 IUSE=""
 
 BDEPEND="
-	=net-libs/nodejs-16*
-	=sys-apps/yarn-1*
-	!<sys-apps/yarn-1.22
-	|| ( <dev-libs/openssl-3 =net-libs/nodejs-16*[-system-ssl] )
+	<net-libs/nodejs-20
+	>net-libs/nodejs-14
+	|| ( <dev-libs/openssl-3 net-libs/nodejs[-system-ssl] )
 "
 
 RDEPEND="
@@ -29,20 +28,19 @@ S=${WORKDIR}/${PN}
 RESTRICT="network-sandbox"
 
 src_compile() {
+	corepack prepare yarn@stable --activate
 	einfo
 	einfo Fetching npm packages with yarn
 	einfo
-	yarn install --production=false --pure-lockfile
+	yarn install || die
 	einfo
 	einfo Building hedgedoc
 	einfo
-	eapply ${FILESDIR}/allow_any_file_upload.patch
-	yarn run build
+	eapply ${FILESDIR}/allow_any_file_upload.patch || die
+	yarn run build || die
 	einfo
 	einfo Removing leftovers
 	einfo
-	rm node_modules -rf
-	yarn install --production=true --pure-lockfile
 	find node_modules -type f \
           \( \
          -iname '*Makefile*' -o \
@@ -132,7 +130,7 @@ src_install() {
 
 pkg_postinst() {
 	elog
-	elog Feel free to copy /etc/hedgedoc/config.json.sample
+	elog Feel free to copy /etc/hedgedoc/config.json.example
 	elog over /etc/hedgedoc/config.json and tune it to suite your needs.
 	elog Afterwards run
 	elog rc-service hedgedoc start
