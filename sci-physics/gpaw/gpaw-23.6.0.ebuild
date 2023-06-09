@@ -22,7 +22,7 @@ RESTRICT="libvdwxc elpa"
 
 RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
-	>=sci-physics/ase-3.20.1[${PYTHON_USEDEP}]
+	>=sci-physics/ase-3.22.1[${PYTHON_USEDEP}]
 	>=sci-libs/libxc-3
 	virtual/blas
 	setups? ( sci-libs/gpaw-setups )
