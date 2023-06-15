@@ -32,6 +32,7 @@ dev-cpp/xwidgets 0.28.0: C++ backend for Jupyter interactive widgets
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
 dev-embedded/xilinx-ise-webpack 14.7: Xilinx ISE WebPack
 dev-lang/fort77 1.18: Utility is the interface to the FORTRAN compilation system
+dev-libs/jansson 2.14-r1: C library for encoding, decoding and manipulating JSON data
 dev-libs/libf2c 20130927-r1 20160102: Library that converts FORTRAN to C source
 dev-libs/nng 1.3.2 1.5.2: High-performance messaging interface for distributed applications
 dev-python/batchspawner 1.2.0: Custom Spawner for Jupyterhub to start servers in batch scheduled systems
