@@ -23,7 +23,7 @@ PATCHES=(
 	)
 
 BDEPEND="
-	sys-devel/gcc:9.5.0
+	=sys-devel/gcc-9*
 	dev-lang/fort77
         sys-devel/bison
         sys-devel/flex
