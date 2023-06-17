@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.79.1.23164 1.79.2.23166: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.79.0.23159 1.79.1.23164: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.1: Jupyter kernel for the C++ programming language
@@ -32,7 +32,6 @@ dev-cpp/xwidgets 0.28.0: C++ backend for Jupyter interactive widgets
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
 dev-embedded/xilinx-ise-webpack 14.7: Xilinx ISE WebPack
 dev-lang/fort77 1.18: Utility is the interface to the FORTRAN compilation system
-dev-libs/jansson 2.14-r1: C library for encoding, decoding and manipulating JSON data
 dev-libs/libf2c 20130927-r1 20160102: Library that converts FORTRAN to C source
 dev-libs/nng 1.3.2 1.5.2: High-performance messaging interface for distributed applications
 dev-python/batchspawner 1.2.0: Custom Spawner for Jupyterhub to start servers in batch scheduled systems
@@ -44,7 +43,7 @@ dev-python/fenics-basix 0.6.0: FEniCS finite element basis evaluation library
 dev-python/fenics-ffcx 0.6.0: Next generation FEniCS Form Compiler for finite element forms
 dev-python/fenics-ufl 2023.1.1: UFL - FEniCS project's Unified Form Language
 dev-python/gevent 22.10.2: Coroutine-based network library
-dev-python/ipydatawidgets 4.3.5: A set of widgets to help facilitate reuse of large datasets across widgets
+dev-python/ipydatawidgets 4.3.4: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.9.3: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
 dev-python/jupyter-c-kernel 1.2.2: Minimal Jupyter C kernel
@@ -98,7 +97,7 @@ sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.6.0: Next generation FEniCS problem solving environment
 sci-libs/elpa 2021.11.001 2022.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000-r4: Setup collection for sci-physics/gpaw
-sci-libs/libxc 5.2.3 6.2.2: A library of exchange-correlation functionals for use in DFT
+sci-libs/libxc 5.2.3 6.2.1: A library of exchange-correlation functionals for use in DFT
 sci-libs/osmium 2.19.0: Fast and flexible C++ library for working with OpenStreetMap data
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
 sci-mathematics/dolfinx 0.6.0: Next generation FEniCS problem solving environment
