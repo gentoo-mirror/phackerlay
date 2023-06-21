@@ -7,7 +7,7 @@ DISTUTILS_USE_PEP517=poetry
 DISTUTILS_EXT=1
 PYTHON_COMPAT=( python3_{9,10,11} )
 CRATES="
-	aho-corasick-0.7.19
+	aho-corasick-1.0.2
 	anyhow-1.0.71
 	arc-swap-1.5.1
 	autocfg-1.1.0
@@ -24,7 +24,7 @@ CRATES="
 	lazy_static-1.4.0
 	libc-0.2.135
 	lock_api-0.4.9
-	log-0.4.18
+	log-0.4.19
 	memchr-2.5.0
 	memoffset-0.6.5
 	once_cell-1.15.0
@@ -34,18 +34,18 @@ CRATES="
 	pyo3-0.17.3
 	pyo3-build-config-0.17.3
 	pyo3-ffi-0.17.3
-	pyo3-log-0.8.1
+	pyo3-log-0.8.2
 	pyo3-macros-0.17.3
 	pyo3-macros-backend-0.17.3
 	pythonize-0.17.0
 	quote-1.0.26
 	redox_syscall-0.2.16
-	regex-1.7.3
-	regex-syntax-0.6.29
+	regex-1.8.4
+	regex-syntax-0.7.2
 	ryu-1.0.11
 	scopeguard-1.1.0
-	serde-1.0.163
-	serde_derive-1.0.163
+	serde-1.0.164
+	serde_derive-1.0.164
 	serde_json-1.0.96
 	smallvec-1.10.0
 	subtle-2.4.1
