@@ -19,7 +19,7 @@ KEYWORDS="~amd64"
 RDEPEND="
     >=dev-python/twisted-15.1.0[${PYTHON_USEDEP}]
     >=dev-python/ldap3-2.8[${PYTHON_USEDEP}]
-    dev-python/service_identity[${PYTHON_USEDEP}]
+    dev-python/service-identity[${PYTHON_USEDEP}]
 "
 
 src_prepare() {
