@@ -17,9 +17,10 @@ SLOT="0"
 IUSE="dist-kernel"
 
 BDEPEND="
-	<virtual/linux-sources-6.0
+	virtual/linux-sources
 "
 
+MODULES_KERNEL_MAX=6.0.0
 BUILD_PARAMS="CC=$(tc-getCC) V=1 KSRC=${KERNEL_DIR}"
 MODULE_NAMES="gasket(drivers/pci/pcie:${S}/src) apex(drivers/pci/pcie:${S}/src)"
 BUILD_TARGETS="all"
