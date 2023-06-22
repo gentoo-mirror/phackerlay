@@ -1,15 +1,16 @@
-BDEPEND=<virtual/linux-sources-6.0 virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install postinst postrm preinst setup unpack
-DEPEND=kernel_linux? ( sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= ) ) kernel_linux? ( virtual/linux-sources virtual/libelf )
+BDEPEND=virtual/linux-sources sys-apps/kmod[tools] modules-sign? ( dev-libs/openssl virtual/pkgconfig ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=virtual/linux-sources
 DESCRIPTION=The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems
 EAPI=8
 HOMEPAGE=https://github.com/google/gasket-driver
-INHERIT=linux-mod toolchain-funcs udev git-r3
-IUSE=dist-kernel dist-kernel
+IDEPEND=sys-apps/kmod[tools]
+INHERIT=linux-mod-r1 toolchain-funcs udev git-r3
+IUSE=dist-kernel dist-kernel modules-sign +strip
 KEYWORDS=~amd64
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=kernel_linux? ( sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= ) )
+RDEPEND=sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= )
 SLOT=0
-_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	linux-mod	65030ccb60b8a236bc29c8caa76e3815	udev	eec0bbab06977f1cfc5597269c1fa152	git-r3	27e13c09a4c7e4c78ac812f74727e676
-_md5_=a609caeb198f25138878d96a4dbd8f10
+_eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	linux-mod-r1	3adf4125a2c5f60764f8d3bba0d4111b	udev	eec0bbab06977f1cfc5597269c1fa152	git-r3	27e13c09a4c7e4c78ac812f74727e676
+_md5_=abc3a5c855ced51b0d25d57283bc69ab
