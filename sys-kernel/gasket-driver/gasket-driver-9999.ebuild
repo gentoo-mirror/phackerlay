@@ -14,13 +14,26 @@ KEYWORDS="~amd64"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="dist-kernel"
+IUSE=""
 
 BDEPEND="
 	virtual/linux-sources
+	|| (
+		<sys-kernel/gentoo-sources-6
+		<sys-kernel/vanilla-sources-6
+		<sys-kernel/git-sources-6
+		<sys-kernel/mips-sources-6
+		<sys-kernel/pf-sources-6
+		<sys-kernel/rt-sources-6
+		<sys-kernel/zen-sources-6
+		<sys-kernel/raspberrypi-sources-6
+		<sys-kernel/gentoo-kernel-6
+		<sys-kernel/gentoo-kernel-bin-6
+		<sys-kernel/vanilla-kernel-6
+	)
 "
+# kernel list may be dropped after 6 branch support
 
-MODULES_KERNEL_MAX=6.0.0
 BUILD_PARAMS="CC=$(tc-getCC) V=1 KSRC=${KERNEL_DIR}"
 MODULE_NAMES="gasket(drivers/pci/pcie:${S}/src) apex(drivers/pci/pcie:${S}/src)"
 BUILD_TARGETS="all"
