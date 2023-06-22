@@ -17,7 +17,7 @@ SLOT="0"
 IUSE="dist-kernel"
 
 BDEPEND="
-	virtual/linux-sources
+	<virtual/linux-sources-6.0
 "
 
 BUILD_PARAMS="CC=$(tc-getCC) V=1 KSRC=${KERNEL_DIR}"
