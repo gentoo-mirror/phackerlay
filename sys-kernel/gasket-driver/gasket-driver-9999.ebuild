@@ -18,6 +18,9 @@ IUSE=""
 
 BDEPEND="
 	virtual/linux-sources
+"
+
+DEPEND="
 	|| (
 		<sys-kernel/gentoo-sources-6
 		<sys-kernel/vanilla-sources-6
@@ -34,22 +37,26 @@ BDEPEND="
 "
 # kernel list may be dropped after 6 branch support
 
-BUILD_PARAMS="CC=$(tc-getCC) V=1 KSRC=${KERNEL_DIR}"
-MODULE_NAMES="gasket(drivers/pci/pcie:${S}/src) apex(drivers/pci/pcie:${S}/src)"
-BUILD_TARGETS="all"
+#BUILD_PARAMS="CC=$(tc-getCC) V=1 KSRC=${KERNEL_DIR}"
+#MODULE_NAMES="gasket(drivers/pci/pcie:${S}/src) apex(drivers/pci/pcie:${S}/src)"
+#BUILD_TARGETS="all"
+
+#local modargs=( KSRC=${KERNEL_DIR} )
+
+src_compile() {
+	local modlist=( gasket=drivers/pci/pcie:${S}/src:apex/obj apex=drivers/pci/pcie:${S}/src:apex/obj )
+
+	linux-mod-r1_src_compile
+}
 
 src_install() {
-	linux-mod_src_install
+	linux-mod-r1_src_install
 	insinto /lib/udev/rules.d
 	newins ${S}/debian/gasket-dkms.udev 60-gasket.rules
 }
 
 pkg_postinst() {
-	linux-mod_pkg_postinst
+	linux-mod-r1_pkg_postinst
 	udev_reload
 }
 
-pkg_postrm() {
-	linux-mod_pkg_postrm
-	udev_reload
-}
