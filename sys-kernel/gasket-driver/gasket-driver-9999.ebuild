@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit linux-mod toolchain-funcs udev
+inherit linux-mod-r1 toolchain-funcs udev
 
 DESCRIPTION="The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems"
 HOMEPAGE="https://github.com/google/gasket-driver"
