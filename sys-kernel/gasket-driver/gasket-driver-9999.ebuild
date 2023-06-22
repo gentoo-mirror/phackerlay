@@ -44,7 +44,7 @@ DEPEND="
 #local modargs=( KSRC=${KERNEL_DIR} )
 
 src_compile() {
-	local modlist=( gasket=drivers/pci/pcie:${S}/src:apex/obj apex=drivers/pci/pcie:${S}/src:apex/obj )
+	local modlist=( gasket=drivers/pci/pcie:${S}/src apex=drivers/pci/pcie:${S}/src )
 
 	linux-mod-r1_src_compile
 }
