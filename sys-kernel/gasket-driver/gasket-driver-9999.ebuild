@@ -31,6 +31,11 @@ BDEPEND="
 	!!>=sys-kernel/gentoo-kernel-bin-6
 	!!>=sys-kernel/vanilla-kernel-6
 "
+RDEPEND="
+	dist-kernel? ( || ( <virtual/dist-kernel-6 <sys-kernel/vanilla-kernel-6 ) )
+"
+
+
 # kernel list may be dropped after 6 branch support
 
 #BUILD_PARAMS="CC=$(tc-getCC) V=1 KSRC=${KERNEL_DIR}"
