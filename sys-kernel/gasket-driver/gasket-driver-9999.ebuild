@@ -39,9 +39,9 @@ RDEPEND="
 #MODULE_NAMES="gasket(drivers/pci/pcie:${S}/src) apex(drivers/pci/pcie:${S}/src)"
 #BUILD_TARGETS="all"
 
-#local modargs=( KSRC=${KERNEL_DIR} )
 
 src_compile() {
+	local modargs=( KSRC=${KERNEL_DIR} )
 	local modlist=( gasket=drivers/pci/pcie:${S}/src apex=drivers/pci/pcie:${S}/src )
 
 	linux-mod-r1_src_compile
