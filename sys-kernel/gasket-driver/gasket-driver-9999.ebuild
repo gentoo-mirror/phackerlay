@@ -18,7 +18,6 @@ IUSE=""
 
 BDEPEND="
 	virtual/linux-sources
-	dist-kernel? ( <virtual/dist-kernel-6 )
 "
 
 MODULES_KERNEL_MAX=6.0.0
