@@ -18,9 +18,6 @@ IUSE=""
 
 BDEPEND="
 	virtual/linux-sources
-"
-
-RDEPEND="
 	!!>=sys-kernel/gentoo-sources-6
 	!!>=sys-kernel/vanilla-sources-6
 	!!>=sys-kernel/git-sources-6
