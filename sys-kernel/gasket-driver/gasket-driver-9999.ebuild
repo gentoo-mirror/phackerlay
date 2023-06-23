@@ -18,30 +18,10 @@ IUSE=""
 
 BDEPEND="
 	virtual/linux-sources
-	!!>=virtual/dist-kernel-6
-	!!>=sys-kernel/gentoo-sources-6
-	!!>=sys-kernel/vanilla-sources-6
-	!!>=sys-kernel/git-sources-6
-	!!>=sys-kernel/mips-sources-6
-	!!>=sys-kernel/pf-sources-6
-	!!>=sys-kernel/rt-sources-6
-	!!>=sys-kernel/zen-sources-6
-	!!>=sys-kernel/raspberrypi-sources-6
-	!!>=sys-kernel/gentoo-kernel-6
-	!!>=sys-kernel/gentoo-kernel-bin-6
-	!!>=sys-kernel/vanilla-kernel-6
-"
-RDEPEND="
-	dist-kernel? ( || ( <virtual/dist-kernel-6 <sys-kernel/vanilla-kernel-6 ) )
+	dist-kernel? ( <virtual/dist-kernel-6 )
 "
 
-
-# kernel list may be dropped after 6 branch support
-
-#BUILD_PARAMS="CC=$(tc-getCC) V=1 KSRC=${KERNEL_DIR}"
-#MODULE_NAMES="gasket(drivers/pci/pcie:${S}/src) apex(drivers/pci/pcie:${S}/src)"
-#BUILD_TARGETS="all"
-
+MODULES_KERNEL_MAX=6.0.0
 
 src_compile() {
 	local modargs=( KSRC=${KERNEL_DIR} )
