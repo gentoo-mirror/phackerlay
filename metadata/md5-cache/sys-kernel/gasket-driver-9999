@@ -1,4 +1,4 @@
-BDEPEND=virtual/linux-sources !!>=virtual/dist-kernel-6 !!>=sys-kernel/gentoo-sources-6 !!>=sys-kernel/vanilla-sources-6 !!>=sys-kernel/git-sources-6 !!>=sys-kernel/mips-sources-6 !!>=sys-kernel/pf-sources-6 !!>=sys-kernel/rt-sources-6 !!>=sys-kernel/zen-sources-6 !!>=sys-kernel/raspberrypi-sources-6 !!>=sys-kernel/gentoo-kernel-6 !!>=sys-kernel/gentoo-kernel-bin-6 !!>=sys-kernel/vanilla-kernel-6 sys-apps/kmod[tools] modules-sign? ( dev-libs/openssl virtual/pkgconfig ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=virtual/linux-sources dist-kernel? ( <virtual/dist-kernel-6 ) sys-apps/kmod[tools] modules-sign? ( dev-libs/openssl virtual/pkgconfig ) virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install postinst setup unpack
 DEPEND=virtual/linux-sources
 DESCRIPTION=The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems
@@ -10,7 +10,7 @@ IUSE=dist-kernel modules-sign +strip
 KEYWORDS=~amd64
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=dist-kernel? ( || ( <virtual/dist-kernel-6 <sys-kernel/vanilla-kernel-6 ) ) sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= )
+RDEPEND=sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= )
 SLOT=0
 _eclasses_=edo	c0eb9cbe6b0bd01fcb4918f12598a4d3	toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	linux-mod-r1	3adf4125a2c5f60764f8d3bba0d4111b	udev	eec0bbab06977f1cfc5597269c1fa152	git-r3	27e13c09a4c7e4c78ac812f74727e676
-_md5_=bf0ea9f9decc67cbfe0ddd4503fc2e89
+_md5_=e9c8a38f076453200f14274ecd3f1862
