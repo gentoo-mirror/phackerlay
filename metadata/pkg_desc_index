@@ -66,7 +66,7 @@ dev-python/npyosmium 3.6.1: Python bindings for libosmium
 dev-python/osmium 3.6.0: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/param 1.13.0: Make Python code clearer and more reliable by declaring Parameters
-dev-python/petsc4py 3.19.1: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
+dev-python/petsc4py 3.19.2 3.19.3: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.3: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
@@ -79,7 +79,7 @@ dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
 dev-python/trame-rca 0.3.1: Remote Controlled Area widget for trame
 dev-python/trame-simput 2.3.2: Simput implementation for trame
-dev-python/trame-vtk 2.5.3: VTK/ParaView widgets for trame
+dev-python/trame-vtk 2.5.4: VTK/ParaView widgets for trame
 dev-python/txredisapi 1.4.9: non-blocking redis client for python twisted
 dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to r4d4 api
