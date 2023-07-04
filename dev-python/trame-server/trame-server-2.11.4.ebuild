@@ -9,15 +9,14 @@ PYPI_NO_NORMALIZE=1
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Remote Controlled Area widget for trame"
-HOMEPAGE="https://github.com/Kitware/trame-rca"
+DESCRIPTION="Internal server side implementation of trame"
+HOMEPAGE="https://github.com/Kitware/trame-server"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-    dev-python/wslink[${PYTHON_USEDEP}]
-    dev-python/trame-client[${PYTHON_USEDEP}]
+    >=dev-python/wslink-1.9.0[${PYTHON_USEDEP}]
 "
 

@@ -9,15 +9,13 @@ PYPI_NO_NORMALIZE=1
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Remote Controlled Area widget for trame"
-HOMEPAGE="https://github.com/Kitware/trame-rca"
+DESCRIPTION="trame-router brings Vue Router capabilities into trame widgets and ui"
+HOMEPAGE="https://github.com/Kitware/trame-router"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-    dev-python/wslink[${PYTHON_USEDEP}]
-    dev-python/trame-client[${PYTHON_USEDEP}]
+	dev-python/trame-client[${PYTHON_USEDEP}]
 "
-
