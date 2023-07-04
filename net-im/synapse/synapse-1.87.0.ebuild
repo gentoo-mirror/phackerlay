@@ -46,7 +46,7 @@ CRATES="
 	scopeguard-1.1.0
 	serde-1.0.164
 	serde_derive-1.0.164
-	serde_json-1.0.96
+	serde_json-1.0.99
 	smallvec-1.10.0
 	subtle-2.4.1
 	syn-2.0.10
@@ -116,6 +116,7 @@ RDEPEND="
 	<dev-python/matrix-common-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/packaging-16.1.0[${PYTHON_USEDEP}]
 	>=dev-python/pydantic-1.7.4[${PYTHON_USEDEP}]
+	<dev-python/pydantic-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/setuptools-rust-1.3.0[${PYTHON_USEDEP}]
 	<=dev-python/setuptools-rust-1.6.0[${PYTHON_USEDEP}]
 	>=dev-python/lxml-3.5.0[${PYTHON_USEDEP}]
