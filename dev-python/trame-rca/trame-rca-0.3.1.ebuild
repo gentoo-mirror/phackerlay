@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-    dev-python/wlink[${PYTHON_USEDEP}]
+    dev-python/wslink[${PYTHON_USEDEP}]
     dev-python/trame-client[${PYTHON_USEDEP}]
 "
 
