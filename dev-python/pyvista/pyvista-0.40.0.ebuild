@@ -16,6 +16,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
 RESTRICT="mirror"
+IUSE="trame jupyter"
 
 RDEPEND="
 	sci-libs/vtk[python,imaging,rendering,views,${PYTHON_SINGLE_USEDEP}]
@@ -26,6 +27,21 @@ RDEPEND="
 		>=dev-python/scooby-0.5.1[${PYTHON_USEDEP}]
 		<dev-python/scooby-0.8.0[${PYTHON_USEDEP}]
 	')
+	jupyter? $(python_gen_cond_dep '
+	    dev-python/ipyvtklink[${PYTHON_USEDEP}]
+	    dev-python/pythreejs[${PYTHON_USEDEP}]
+	    dev-python/jupyterlab-ipywidgets[${PYTHON_USEDEP}]
+	    dev-python/jupyter-server-proxy[${PYTHON_USEDEP}]
+	    dev-python/nest_asyncio[${PYTHON_USEDEP}]
+	    dev-python/panel[${PYTHON_USEDEP}]
+	')
+	trame? $(python_gen_cond_dep '
+	    >=dev-python/trame-server-2.11.4[${PYTHON_USEDEP}]
+	    >=dev-python/trame-client-2.9.4[${PYTHON_USEDEP}]
+	    >=dev-python/trame-vtk-2.5.3[${PYTHON_USEDEP}]
+	    >=dev-python/trame-2.5.0[${PYTHON_USEDEP}]
+	')
+
 "
 DEPEND="${RDEPEND}"
 
