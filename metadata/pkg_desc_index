@@ -58,7 +58,7 @@ dev-python/jupyterlab-link-share 0.3.0: JupyterLab Extension to share the URL to
 dev-python/jupyterlab-markup 2.0.0: JupyterLab extension to enable markdown-it rendering, with support for markdown-it plugins
 dev-python/jupyterlab-markup-expr 0.1.1: A JupyterLab extension to add expression node tokens to jupyterlab-markup
 dev-python/jupyterlab-slurm 3.0.2: A Jupyter Notebook server extension that implements common Slurm commands
-dev-python/jupyterlab-widgets 3.0.7: Jupyter interactive widgets for JupyterLab
+dev-python/jupyterlab-widgets 3.0.8: Jupyter interactive widgets for JupyterLab
 dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.2: nginx config file formatter/beautifier written in Python with no additional dependencies
@@ -114,7 +114,7 @@ sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.3.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.34: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.35: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/grocy 3.3.2: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.8: Hedgedoc real-time collaborative markdown editor
