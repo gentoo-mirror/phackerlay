@@ -16,7 +16,9 @@ LICENSE="MIT"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"
 RESTRICT="mirror"
-IUSE="trame jupyter"
+
+# ipyvtkwidgets has ipywidgets pinned to 7.7, which is inconsistent with jupyterlab-widgets
+IUSE="trame -jupyter"
 
 RDEPEND="
 	sci-libs/vtk[python,imaging,rendering,views,${PYTHON_SINGLE_USEDEP}]
