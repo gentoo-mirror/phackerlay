@@ -22,6 +22,8 @@ RESTRICT="libvdwxc elpa"
 
 RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
+	dev-python/pyyaml[${PYTHON_USEDEP}]
+	>=dev-python/scipy-1.6.0[${PYTHON_USEDEP}]
 	>=sci-physics/ase-3.22.1[${PYTHON_USEDEP}]
 	>=sci-libs/libxc-3
 	virtual/blas
