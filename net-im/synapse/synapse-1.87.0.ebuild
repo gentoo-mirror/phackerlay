@@ -99,6 +99,7 @@ RDEPEND="
 	>=dev-python/pyasn1-modules-0.0.7[${PYTHON_USEDEP}]
 	>=dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
 	>=dev-python/pillow-4.3.0[jpeg,webp,${PYTHON_USEDEP}]
+	<dev-python/pillow-10[jpeg,webp,${PYTHON_USEDEP}]
 	>=dev-python/sortedcontainers-1.4.4[${PYTHON_USEDEP}]
 	>=dev-python/pymacaroons-0.13.0[${PYTHON_USEDEP}]
 	>=dev-python/msgpack-0.5.2[${PYTHON_USEDEP}]
