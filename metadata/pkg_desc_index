@@ -24,7 +24,7 @@ app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
 app-editors/vscodium-reh 1.79.2.23166 1.80.1.23194: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
-dev-cpp/xeus-cling 0.15.1: Jupyter kernel for the C++ programming language
+dev-cpp/xeus-cling 0.15.2: Jupyter kernel for the C++ programming language
 dev-cpp/xproperty 0.11.0: Traitlets-like C++ properties and implementation of the observer pattern
 dev-cpp/xtensor 0.24.6: C++ tensors with broadcasting and lazy computing
 dev-cpp/xtl 0.7.5: The x template library
@@ -43,7 +43,7 @@ dev-python/cling-kernels 0.8 9999: Interactive C++ interpreter, built on the top
 dev-python/fenics-basix 0.6.0: FEniCS finite element basis evaluation library
 dev-python/fenics-ffcx 0.6.0: Next generation FEniCS Form Compiler for finite element forms
 dev-python/fenics-ufl 2023.1.1: UFL - FEniCS project's Unified Form Language
-dev-python/gevent 22.10.2: Coroutine-based network library
+dev-python/gevent 22.10.2 23.7.0: Coroutine-based network library
 dev-python/ipydatawidgets 4.3.5: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.9.3: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
@@ -78,6 +78,7 @@ dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to insp
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
 dev-python/trame-client 2.9.4: Internal client side implementation of trame
+dev-python/trame-components 2.1.1: Core widgets for trame
 dev-python/trame-deckgl 2.0.2: Deck.gl widget for trame
 dev-python/trame-markdown 2.0.2: Markdown widget for trame
 dev-python/trame-matplotlib 2.0.2: Trame widget for Matplotlib
@@ -95,7 +96,7 @@ dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-sound/shortwave 3.2.0: Listen to internet radio
-net-im/jitsi-meet 2023.7.0: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2023.7.1: Desktop application for Jitsi Meet built with Electron
 net-im/synapse 1.87.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.4.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
