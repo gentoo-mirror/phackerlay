@@ -1,5 +1,5 @@
 #!/sbin/openrc-run
-command=/usr/bin/yarn
+command=/usr/bin/npm
 command_args="start"
 pidfile=/var/run/hedgedoc.pid
 name="Hedgedoc real-time collaborative markdown editor"

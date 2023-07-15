@@ -14,7 +14,7 @@ IUSE=""
 
 BDEPEND="
 	<net-libs/nodejs-20
-	>net-libs/nodejs-14
+	>net-libs/nodejs-14[npm]
 	|| ( <dev-libs/openssl-3 net-libs/nodejs[-system-ssl] )
 "
 
