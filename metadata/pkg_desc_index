@@ -85,7 +85,7 @@ dev-python/trame-matplotlib 2.0.2: Trame widget for Matplotlib
 dev-python/trame-plotly 2.1.1: Plotly figure widget for trame
 dev-python/trame-rca 0.3.1: Remote Controlled Area widget for trame
 dev-python/trame-router 2.0.2: trame-router brings Vue Router capabilities into trame widgets and ui
-dev-python/trame-server 2.11.4: Internal server side implementation of trame
+dev-python/trame-server 2.11.5: Internal server side implementation of trame
 dev-python/trame-simput 2.3.2: Simput implementation for trame
 dev-python/trame-vega 2.0.3: Vega widget for trame
 dev-python/trame-vtk 2.5.4: VTK/ParaView widgets for trame
