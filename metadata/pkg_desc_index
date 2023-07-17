@@ -96,7 +96,7 @@ dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-sound/shortwave 3.2.0: Listen to internet radio
-net-im/jitsi-meet 2023.7.1: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2023.7.2: Desktop application for Jitsi Meet built with Electron
 net-im/synapse 1.87.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.4.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
@@ -105,7 +105,7 @@ sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.2.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
 sci-electronics/qucs-s 1.1.0: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
-sci-geosciences/mkgmap-bin 4909: Tool to create garmin maps
+sci-geosciences/mkgmap-bin 4910: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.6.0: Next generation FEniCS problem solving environment
 sci-libs/elpa 2021.11.001 2023.05.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
