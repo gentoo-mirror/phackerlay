@@ -42,6 +42,7 @@ CRATES="
 	redox_syscall-0.2.16
 	regex-1.9.1
 	regex-syntax-0.7.3
+	regex-automata-0.3.2
 	ryu-1.0.11
 	scopeguard-1.1.0
 	serde-1.0.171
