@@ -30,7 +30,7 @@ CRATES="
 	once_cell-1.15.0
 	parking_lot-0.12.1
 	parking_lot_core-0.9.3
-	proc-macro2-1.0.52
+	proc-macro2-1.0.64
 	pyo3-0.17.3
 	pyo3-build-config-0.17.3
 	pyo3-ffi-0.17.3
@@ -38,18 +38,18 @@ CRATES="
 	pyo3-macros-0.17.3
 	pyo3-macros-backend-0.17.3
 	pythonize-0.17.0
-	quote-1.0.26
+	quote-1.0.29
 	redox_syscall-0.2.16
-	regex-1.8.4
-	regex-syntax-0.7.2
+	regex-1.9.1
+	regex-syntax-0.7.3
 	ryu-1.0.11
 	scopeguard-1.1.0
-	serde-1.0.164
-	serde_derive-1.0.164
-	serde_json-1.0.99
+	serde-1.0.171
+	serde_derive-1.0.171
+	serde_json-1.0.100
 	smallvec-1.10.0
 	subtle-2.4.1
-	syn-2.0.10
+	syn-2.0.25
 	syn-1.0.104
 	target-lexicon-0.12.4
 	typenum-1.15.0
