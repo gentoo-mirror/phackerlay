@@ -88,7 +88,7 @@ dev-python/trame-router 2.0.2: trame-router brings Vue Router capabilities into 
 dev-python/trame-server 2.11.7: Internal server side implementation of trame
 dev-python/trame-simput 2.3.2: Simput implementation for trame
 dev-python/trame-vega 2.0.3: Vega widget for trame
-dev-python/trame-vtk 2.5.7: VTK/ParaView widgets for trame
+dev-python/trame-vtk 2.5.8: VTK/ParaView widgets for trame
 dev-python/trame-vuetify 2.3.1: trame-vuetify brings Vuetify UI Material Components into trame
 dev-python/txredisapi 1.4.9: non-blocking redis client for python twisted
 dev-python/wslink 1.11.1: Python/JavaScript library for communicating over WebSocket
@@ -118,7 +118,7 @@ sci-mathematics/octave-jsonlab 2.0.1-r5: JSONLab: compact, portable, robust JSON
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 23.6.1: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 7.2: Suite for first-principles electronic-structure calculations and materials modeling
-sci-visualization/trame 2.5.2: Trame lets you weave various components and technologies into a Web Application solely written in Python
+sci-visualization/trame 3.0.2: Trame lets you weave various components and technologies into a Web Application solely written in Python
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems
