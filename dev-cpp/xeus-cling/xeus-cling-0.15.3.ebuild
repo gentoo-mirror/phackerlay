@@ -16,7 +16,7 @@ KEYWORDS="~amd64"
 IUSE="-cpp11 -cpp14 cpp17"
 
 DEPEND="
-	>=dev-cpp/xeus-zmq-1.0.0
+	>=dev-cpp/xeus-zmq-1.1.0
 	<dev-cpp/xeus-zmq-2.0.0
 	>=dev-cpp/xtl-0.7.0
 	<dev-cpp/xtl-0.8.0
