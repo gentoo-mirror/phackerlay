@@ -1,1 +1,3 @@
-
+# Stopped using, removal on 2023-08-31.
+# Note version 4 available upstream
+www-apps/grocy
