@@ -78,7 +78,7 @@ dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
-dev-python/trame-client 2.11.0: Internal client side implementation of trame
+dev-python/trame-client 2.11.1: Internal client side implementation of trame
 dev-python/trame-components 2.1.1: Core widgets for trame
 dev-python/trame-deckgl 2.0.2: Deck.gl widget for trame
 dev-python/trame-markdown 2.0.2: Markdown widget for trame
