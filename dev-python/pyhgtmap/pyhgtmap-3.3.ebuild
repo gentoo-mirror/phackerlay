@@ -19,6 +19,7 @@ RDEPEND="
 	dev-python/beautifulsoup4[${PYTHON_USEDEP}]
 	>=dev-python/colorlog-6.7.0[${PYTHON_USEDEP}]
 	>=dev-python/contourpy-1.0.7[${PYTHON_USEDEP}]
+	>=dev-python/lxml-4.9.2[${PYTHON_USEDEP}]
 	>=dev-python/matplotlib-3.4.3[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.24.2[${PYTHON_USEDEP}]
 	>=dev-python/npyosmium-3.6.1[${PYTHON_USEDEP}]
