@@ -71,14 +71,14 @@ dev-python/petsc4py 3.19.2 3.19.4: A suite of data structures and routines for t
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
-dev-python/pyhgtmap 3.0 3.2: Little program which lets you easily generate OSM contour lines
+dev-python/pyhgtmap 3.0 3.3: Little program which lets you easily generate OSM contour lines
 dev-python/pyvista 0.40.0: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
-dev-python/trame-client 2.11.1: Internal client side implementation of trame
+dev-python/trame-client 2.11.2: Internal client side implementation of trame
 dev-python/trame-components 2.1.1: Core widgets for trame
 dev-python/trame-deckgl 2.0.2: Deck.gl widget for trame
 dev-python/trame-markdown 2.0.2: Markdown widget for trame
@@ -98,12 +98,12 @@ mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-sound/shortwave 3.2.0: Listen to internet radio
 net-im/jitsi-meet 2023.7.2: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.89.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.90.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.4.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
-sci-electronics/openhantek6022 3.3.2.2: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
+sci-electronics/openhantek6022 3.3.3: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
 sci-electronics/qucs-s 1.1.0: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-geosciences/mkgmap-bin 4910: Tool to create garmin maps
@@ -126,7 +126,7 @@ sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.3.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.38: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.39: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/grocy 3.3.2: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
