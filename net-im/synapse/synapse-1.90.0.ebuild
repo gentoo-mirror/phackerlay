@@ -128,7 +128,7 @@ RDEPEND="
 	ldap? ( >=dev-python/matrix-synapse-ldap3-0.1[${PYTHON_USEDEP}] )
 	postgres? ( >=dev-python/psycopg-2.8[${PYTHON_USEDEP}] <dev-python/psycopg-3[${PYTHON_USEDEP}] )
 	saml? ( >=dev-python/pysaml2-4.5.0[${PYTHON_USEDEP}] )
-	oidc? ( >=dev-python/authlib-0.15.1[${PYTHON_USEDEP}] )
+	oidc? ( || ( >=dev-python/authlib-0.15.1[${PYTHON_USEDEP}] >=dev-python/Authlib-0.15.1[${PYTHON_USEDEP}] ) )
 	redis? ( dev-python/hiredis[${PYTHON_USEDEP}] >=dev-python/txredisapi-1.4.7[${PYTHON_USEDEP}] )
 "
 DEPEND="${RDEPEND}"
