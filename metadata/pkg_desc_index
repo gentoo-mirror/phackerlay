@@ -71,7 +71,7 @@ dev-python/petsc4py 3.19.2 3.19.4: A suite of data structures and routines for t
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
-dev-python/pyhgtmap 3.0 3.3: Little program which lets you easily generate OSM contour lines
+dev-python/pyhgtmap 3.0 3.4: Little program which lets you easily generate OSM contour lines
 dev-python/pyvista 0.40.0: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
@@ -105,7 +105,7 @@ sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.3: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
-sci-electronics/qucs-s 1.1.0: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
+sci-electronics/qucs-s 2.0.0: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-geosciences/mkgmap-bin 4910: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.6.0: Next generation FEniCS problem solving environment
