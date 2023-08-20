@@ -16,26 +16,14 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="qt6"
-
 RDEPEND="
 	sci-electronics/ngspice
-	!qt6? (
-	dev-qt/qtcore:5
-	dev-qt/qtgui:5
-	dev-qt/qtsvg:5
-	dev-qt/qtscript:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtprintsupport:5
-	)
-	!qt6? (
 	dev-qt/qtcore:6
 	dev-qt/qtgui:6
 	dev-qt/qtsvg:6
 	dev-qt/qtscript:6
 	dev-qt/qtwidgets:6
 	dev-qt/qtprintsupport:6
-	)
 "
 src_prepare() {
 	cmake_src_prepare
