@@ -20,8 +20,6 @@ BDEPEND="
 	virtual/linux-sources
 "
 
-MODULES_KERNEL_MAX=6.0.0
-
 src_compile() {
 	local modargs=( KSRC=${KERNEL_DIR} )
 	local modlist=( gasket=drivers/pci/pcie:${S}/src apex=drivers/pci/pcie:${S}/src )
