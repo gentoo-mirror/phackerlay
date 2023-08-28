@@ -19,7 +19,8 @@ RDEPEND="${PYTHON_DEPS}
 	acct-group/seafile
 	$(python_gen_cond_dep '
 	=dev-python/future-0.18*[${PYTHON_USEDEP}]
-	dev-python/pillow[${PYTHON_USEDEP}]
+        # AttributeError: module 'PIL.Image' has no attribute 'ANTIALIAS'
+	<dev-python/pillow-10[${PYTHON_USEDEP}]
 	dev-python/django-simple-captcha[${PYTHON_USEDEP}]
 
 	dev-python/jinja[${PYTHON_USEDEP}]
