@@ -24,7 +24,7 @@ CRATES="
 	lazy_static-1.4.0
 	libc-0.2.135
 	lock_api-0.4.9
-	log-0.4.19
+	log-0.4.20
 	memchr-2.5.0
 	memoffset-0.6.5
 	once_cell-1.15.0
@@ -45,8 +45,8 @@ CRATES="
 	regex-automata-0.3.6
 	ryu-1.0.11
 	scopeguard-1.1.0
-	serde-1.0.183
-	serde_derive-1.0.183
+	serde-1.0.184
+	serde_derive-1.0.184
 	serde_json-1.0.104
 	smallvec-1.10.0
 	subtle-2.4.1
