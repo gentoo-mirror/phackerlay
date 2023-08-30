@@ -14,12 +14,13 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE="mysql oauth memcached"
 
+# AttributeError: module 'PIL.Image' has no attribute 'ANTIALIAS'
+# <dev-python/pillow-10[${PYTHON_USEDEP}]
 RDEPEND="${PYTHON_DEPS}
 	acct-user/seafile
 	acct-group/seafile
 	$(python_gen_cond_dep '
 	=dev-python/future-0.18*[${PYTHON_USEDEP}]
-        # AttributeError: module 'PIL.Image' has no attribute 'ANTIALIAS'
 	<dev-python/pillow-10[${PYTHON_USEDEP}]
 	dev-python/django-simple-captcha[${PYTHON_USEDEP}]
 
