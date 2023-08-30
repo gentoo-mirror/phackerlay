@@ -80,7 +80,7 @@ fi
 DEPEND="${DEPEND}
 	virtual/libintl"
 
-:	${EAPI:=5}
+:	${EAPI:=8}
 [[ ${EAPI} -lt 4 ]] && die "EAPI=\"${EAPI}\" is not supported"
 
 EXPORT_FUNCTIONS pkg_setup src_unpack src_prepare src_configure src_compile src_install pkg_postinst
