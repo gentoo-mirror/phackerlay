@@ -18,33 +18,33 @@ SLOT="0"
 RESTRICT="mirror"
 
 # ipyvtkwidgets has ipywidgets pinned to 7.7, which is inconsistent with jupyterlab-widgets
-IUSE="trame -jupyter"
+#	jupyter? (
+#		$(python_gen_cond_dep '
+#			dev-python/ipyvtklink[${PYTHON_USEDEP}]
+#			dev-python/pythreejs[${PYTHON_USEDEP}]
+#			dev-python/jupyterlab-ipywidgets[${PYTHON_USEDEP}]
+#			dev-python/jupyter-server-proxy[${PYTHON_USEDEP}]
+#			dev-python/nest_asyncio[${PYTHON_USEDEP}]
+#			dev-python/panel[${PYTHON_USEDEP}]
+#		')
+IUSE="trame"
 
 RDEPEND="
 	sci-libs/vtk[python,imaging,rendering,views,${PYTHON_SINGLE_USEDEP}]
 	$(python_gen_cond_dep '
-		<dev-python/numpy-1.25.0[${PYTHON_USEDEP}]
-		<dev-python/matplotlib-3.7.2[${PYTHON_USEDEP}]
-		<dev-python/pillow-9.6.0[${PYTHON_USEDEP}]
+		dev-python/numpy[${PYTHON_USEDEP}]
+		>=dev-python/matplotlib-3.0.1[${PYTHON_USEDEP}]
+		dev-python/pillow[${PYTHON_USEDEP}]
 		>=dev-python/scooby-0.5.1[${PYTHON_USEDEP}]
-		<dev-python/scooby-0.8.0[${PYTHON_USEDEP}]
 	')
-	jupyter? (
-		$(python_gen_cond_dep '
-			dev-python/ipyvtklink[${PYTHON_USEDEP}]
-			dev-python/pythreejs[${PYTHON_USEDEP}]
-			dev-python/jupyterlab-ipywidgets[${PYTHON_USEDEP}]
-			dev-python/jupyter-server-proxy[${PYTHON_USEDEP}]
-			dev-python/nest_asyncio[${PYTHON_USEDEP}]
-			dev-python/panel[${PYTHON_USEDEP}]
-		')
 	)
 	trame? (
 		$(python_gen_cond_dep '
-			>=dev-python/trame-server-2.11.4[${PYTHON_USEDEP}]
-			>=dev-python/trame-client-2.9.4[${PYTHON_USEDEP}]
-			>=dev-python/trame-vtk-2.5.3[${PYTHON_USEDEP}]
-			>=dev-python/trame-2.5.0[${PYTHON_USEDEP}]
+			>=dev-python/trame-server-2.11.7[${PYTHON_USEDEP}]
+			>=dev-python/trame-client-2.10.0[${PYTHON_USEDEP}]
+			>=dev-python/trame-vtk-2.5.8[${PYTHON_USEDEP}]
+			>=dev-python/trame-2.5.2[${PYTHON_USEDEP}]
+			>=dev-python/trame-vuetify-2.3.1[${PYTHON_USEDEP}]
 		')
 	)
 
