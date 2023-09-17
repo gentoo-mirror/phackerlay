@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.80.2.23209 1.81.1.23222: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.81.1.23222 1.82.1.23255: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
@@ -59,7 +59,7 @@ dev-python/jupyterlab-link-share 0.3.0: JupyterLab Extension to share the URL to
 dev-python/jupyterlab-markup 2.0.0: JupyterLab extension to enable markdown-it rendering, with support for markdown-it plugins
 dev-python/jupyterlab-markup-expr 0.1.1: A JupyterLab extension to add expression node tokens to jupyterlab-markup
 dev-python/jupyterlab-slurm 3.0.2: A Jupyter Notebook server extension that implements common Slurm commands
-dev-python/jupyterlab-widgets 3.0.8: Jupyter interactive widgets for JupyterLab
+dev-python/jupyterlab-widgets 3.0.9: Jupyter interactive widgets for JupyterLab
 dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.2: nginx config file formatter/beautifier written in Python with no additional dependencies
@@ -79,21 +79,21 @@ dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
-dev-python/trame-client 2.11.2: Internal client side implementation of trame
-dev-python/trame-components 2.1.1: Core widgets for trame
+dev-python/trame-client 2.11.3: Internal client side implementation of trame
+dev-python/trame-components 2.2.0: Core widgets for trame
 dev-python/trame-deckgl 2.0.2: Deck.gl widget for trame
 dev-python/trame-markdown 2.0.2: Markdown widget for trame
 dev-python/trame-matplotlib 2.0.2: Trame widget for Matplotlib
 dev-python/trame-plotly 3.0.2: Plotly figure widget for trame
 dev-python/trame-rca 0.3.1: Remote Controlled Area widget for trame
-dev-python/trame-router 2.0.2: trame-router brings Vue Router capabilities into trame widgets and ui
+dev-python/trame-router 2.1.0: trame-router brings Vue Router capabilities into trame widgets and ui
 dev-python/trame-server 2.11.7: Internal server side implementation of trame
 dev-python/trame-simput 2.3.3: Simput implementation for trame
 dev-python/trame-vega 2.0.3: Vega widget for trame
 dev-python/trame-vtk 2.5.8: VTK/ParaView widgets for trame
 dev-python/trame-vuetify 2.3.1: trame-vuetify brings Vuetify UI Material Components into trame
 dev-python/txredisapi 1.4.9: non-blocking redis client for python twisted
-dev-python/wslink 1.11.1: Python/JavaScript library for communicating over WebSocket
+dev-python/wslink 1.11.4: Python/JavaScript library for communicating over WebSocket
 dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
@@ -118,9 +118,9 @@ sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code w
 sci-mathematics/dolfinx 0.6.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.0.1-r5: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
-sci-physics/gpaw 23.6.1: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
+sci-physics/gpaw 23.9.1: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 7.2: Suite for first-principles electronic-structure calculations and materials modeling
-sci-visualization/trame 3.2.4: Trame lets you weave various components and technologies into a Web Application solely written in Python
+sci-visualization/trame 3.2.5: Trame lets you weave various components and technologies into a Web Application solely written in Python
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems
@@ -132,7 +132,7 @@ www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like dia
 www-apps/grocy 3.3.2: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
-www-apps/privatebin 1.5.2: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
+www-apps/privatebin 1.6.0: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-apps/seafile-ce-server 10.0.1: Meta package for Seafile Community Edition, file sync share solution
 www-servers/uwsgi 2.0.22: uWSGI server for Python web applications
 x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
