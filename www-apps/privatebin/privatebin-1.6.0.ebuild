@@ -15,7 +15,7 @@ KEYWORDS="~amd64"
 IUSE=""
 
 RDEPEND="
-	>=dev-lang/php-7[fpm,zlib,gd]
+	>=dev-lang/php-7.3[fpm,zlib,gd]
 "
 DEPEND="
 	app-admin/webapp-config
