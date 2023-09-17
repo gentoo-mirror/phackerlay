@@ -73,7 +73,7 @@ dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, j
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
 dev-python/pyhgtmap 3.0 3.4: Little program which lets you easily generate OSM contour lines
-dev-python/pyvista 0.40.0: Easier Pythonic interface to VTK
+dev-python/pyvista 0.42.2: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
@@ -84,7 +84,7 @@ dev-python/trame-components 2.1.1: Core widgets for trame
 dev-python/trame-deckgl 2.0.2: Deck.gl widget for trame
 dev-python/trame-markdown 2.0.2: Markdown widget for trame
 dev-python/trame-matplotlib 2.0.2: Trame widget for Matplotlib
-dev-python/trame-plotly 3.0.1: Plotly figure widget for trame
+dev-python/trame-plotly 3.0.2: Plotly figure widget for trame
 dev-python/trame-rca 0.3.1: Remote Controlled Area widget for trame
 dev-python/trame-router 2.0.2: trame-router brings Vue Router capabilities into trame widgets and ui
 dev-python/trame-server 2.11.7: Internal server side implementation of trame
@@ -98,8 +98,8 @@ dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-sound/shortwave 3.2.0: Listen to internet radio
-net-im/jitsi-meet 2023.8.0: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.91.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/jitsi-meet 2023.9.1: Desktop application for Jitsi Meet built with Electron
+net-im/synapse 1.92.2: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.4.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
@@ -127,7 +127,7 @@ sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.3.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.40: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.43: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/grocy 3.3.2: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
