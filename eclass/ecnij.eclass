@@ -22,7 +22,8 @@
 if [[ -z "${_ECNIJ_ECLASS}" ]]; then
 _ECNIJ_ECLASS=1
 
-inherit autotools eutils flag-o-matic multilib-build
+inherit autotools flag-o-matic multilib-build
+#eutils
 
 # @ECLASS-VARIABLE: PRINTER_MODEL
 # @DESCRIPTION:
@@ -103,9 +104,15 @@ dir_src_command()
 			[[ -d po ]] && echo "no" | glib-gettextize --force --copy
 			[[ ! -e configure.in ]] && [[ -e configures/configure.in.new ]] &&
 				mv -f configures/configure.in.new configure.in
+#blaster /home/ustinov # cd /var/tmp/portage/net-print/cnijfilter-4.10/work/cnijfilter-4.10/ix6800/bscc2sts/
+#blaster /var/tmp/portage/net-print/cnijfilter-4.10/work/cnijfilter-4.10/ix6800/bscc2sts # mv configure.ac configure.in
+#blaster /var/tmp/portage/net-print/cnijfilter-4.10/work/cnijfilter-4.10/ix6800/bscc2sts # cd ../cnijfilter/
+#blaster /var/tmp/portage/net-print/cnijfilter-4.10/work/cnijfilter-4.10/ix6800/cnijfilter # mv configure.ac configure.in
 			"${@}"
 			;;
 			(econf)
+			[[ ! -e configure.in ]] && [[ -e configure.ac ]] &&
+				mv -f configure.ac configure.in
 			case ${dir} in
 				(backendnet|lgmon2)
 					myeconfargs=(
@@ -139,6 +146,7 @@ dir_src_command()
 # Default exported pkg_setup() function
 ecnij_pkg_setup()
 {
+
 	debug-print-function ${FUNCNAME} "${@}"
 
 	[[ "${LINGUAS}" ]] || export LINGUAS="en"
