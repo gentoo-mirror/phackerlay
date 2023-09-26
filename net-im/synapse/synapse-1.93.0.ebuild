@@ -25,7 +25,7 @@ CRATES="
 	libc-0.2.135
 	lock_api-0.4.9
 	log-0.4.20
-	memchr-2.5.0
+	memchr-2.6.3
 	memoffset-0.6.5
 	once_cell-1.15.0
 	parking_lot-0.12.1
@@ -40,14 +40,14 @@ CRATES="
 	pythonize-0.17.0
 	quote-1.0.29
 	redox_syscall-0.2.16
-	regex-1.9.4
+	regex-1.9.5
 	regex-syntax-0.7.5
-	regex-automata-0.3.7
+	regex-automata-0.3.8
 	ryu-1.0.11
 	scopeguard-1.1.0
 	serde-1.0.188
 	serde_derive-1.0.188
-	serde_json-1.0.105
+	serde_json-1.0.107
 	smallvec-1.10.0
 	subtle-2.4.1
 	syn-2.0.28
@@ -99,8 +99,7 @@ RDEPEND="
 	>=dev-python/pyasn1-0.1.9[${PYTHON_USEDEP}]
 	>=dev-python/pyasn1-modules-0.0.7[${PYTHON_USEDEP}]
 	>=dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
-	>=dev-python/pillow-4.3.0[jpeg,webp,${PYTHON_USEDEP}]
-	<dev-python/pillow-10[jpeg,webp,${PYTHON_USEDEP}]
+	>=dev-python/pillow-10.0.1[jpeg,webp,${PYTHON_USEDEP}]
 	>=dev-python/sortedcontainers-1.4.4[${PYTHON_USEDEP}]
 	>=dev-python/pymacaroons-0.13.0[${PYTHON_USEDEP}]
 	>=dev-python/msgpack-0.5.2[${PYTHON_USEDEP}]
