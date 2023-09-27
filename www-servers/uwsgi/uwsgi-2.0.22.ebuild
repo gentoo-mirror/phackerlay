@@ -8,12 +8,12 @@ PYTHON_COMPAT=( python3_{10..11} )
 PYTHON_REQ_USE="threads(+)"
 
 RUBY_OPTIONAL="yes"
-USE_RUBY="ruby25 ruby26 ruby27 ruby30"
+USE_RUBY="ruby27 ruby30 ruby31 ruby32"
 
 PHP_EXT_INI="no"
 PHP_EXT_NAME="dummy"
 PHP_EXT_OPTIONAL_USE="php"
-USE_PHP="php7-3 php7-4" # deps must be registered separately below
+USE_PHP="php8-0 php8-1 php8-2" # deps must be registered separately below
 
 MY_P="${P/_/-}"
 
@@ -27,7 +27,8 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 arm ~arm64 x86 ~amd64-linux"
 
-UWSGI_PLUGINS_STD=( ping cache carbon nagios rpc rrdtool
+UWSGI_PLUGINS_STD=(
+	ping cache carbon nagios rpc rrdtool
 	http ugreen signal syslog rsyslog
 	router_{uwsgi,redirect,basicauth,rewrite,http,cache,static,memcached,redis,hash,expires,metrics}
 	{core,fast,raw,ssl}router
@@ -115,8 +116,9 @@ CDEPEND="
 	mono? ( dev-lang/mono:= )
 	perl? ( dev-lang/perl:= )
 	php? (
-		php_targets_php7-3? ( dev-lang/php:7.3[embed] )
-		php_targets_php7-4? ( dev-lang/php:7.4[embed] )
+		php_targets_php8-0? ( dev-lang/php:8.0[embed] )
+		php_targets_php8-1? ( dev-lang/php:8.1[embed] )
+		php_targets_php8-2? ( dev-lang/php:8.2[embed] )
 	)
 	python? ( ${PYTHON_DEPS} )
 	python-asyncio? ( virtual/python-greenlet[${PYTHON_USEDEP}] )
@@ -125,7 +127,8 @@ CDEPEND="
 DEPEND="${CDEPEND}"
 RDEPEND="${CDEPEND}
 	selinux? ( sec-policy/selinux-uwsgi )
-	uwsgi_plugins_rrdtool? ( net-analyzer/rrdtool )"
+	uwsgi_plugins_rrdtool? ( net-analyzer/rrdtool )
+"
 BDEPEND="virtual/pkgconfig"
 
 #PATCHES=(
