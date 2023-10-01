@@ -10,5 +10,5 @@ LICENSE=GPL-3
 RDEPEND=sys-devel/gcc[fortran] app-editors/vim-core mpi? ( virtual/mpi[fortran,threads] ) openmp? ( sys-devel/gcc[openmp] )
 SLOT=0
 SRC_URI=https://elpa.mpcdf.mpg.de/software/tarball-archive/Releases/2023.05.001/elpa-2023.05.001.tar.gz -> elpa-2023.05.001.tar.gz
-_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	fbbbc99d10168de2926e06da7169b8dc	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde
 _md5_=d036e215d671d6482aa10e8e47d5c0d6
