@@ -24,11 +24,11 @@ distutils_enable_tests pytest
 S=${WORKDIR}/basix-${PV}
 
 RDEPEND="
-	dev-python/pybind11[${PYTHON_USEDEP}]
+	>=dev-python/numpy-1.21[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	>=dev-python/scikit-build-0.12[${PYTHON_USEDEP}]
-	>=dev-python/pybind11-2.6.4[${PYTHON_USEDEP}]
+	>=dev-python/pybind11-2.9.1[${PYTHON_USEDEP}]
 "
 
 src_prepare() {
