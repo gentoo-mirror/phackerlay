@@ -40,9 +40,9 @@ CRATES="
 	pythonize-0.17.0
 	quote-1.0.29
 	redox_syscall-0.2.16
-	regex-1.9.5
+	regex-1.9.6
 	regex-syntax-0.7.5
-	regex-automata-0.3.8
+	regex-automata-0.3.9
 	ryu-1.0.11
 	scopeguard-1.1.0
 	serde-1.0.188
