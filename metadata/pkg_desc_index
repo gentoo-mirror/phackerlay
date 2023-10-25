@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.83.0.23277 1.83.0.23283: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.83.0.23283 1.83.1.23285: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
@@ -99,7 +99,7 @@ mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-sound/shortwave 3.2.0: Listen to internet radio
 net-im/jitsi-meet 2023.10.0: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.94.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.95.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.5.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
@@ -127,7 +127,7 @@ sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.3.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.46: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.47: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/grocy 3.3.2: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
