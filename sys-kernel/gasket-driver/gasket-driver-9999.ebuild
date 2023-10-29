@@ -3,12 +3,10 @@
 
 EAPI=8
 
-inherit linux-mod-r1 toolchain-funcs udev
+inherit linux-mod-r1 udev git-r3
 
 DESCRIPTION="The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems"
 HOMEPAGE="https://github.com/google/gasket-driver"
-
-inherit git-r3
 EGIT_REPO_URI="https://github.com/google/gasket-driver.git"
 KEYWORDS="~amd64"
 
@@ -21,7 +19,7 @@ BDEPEND="
 "
 
 src_compile() {
-	local modargs=( KSRC=${KERNEL_DIR} )
+	local modargs=( KVERSION="${KV_FULL}" )
 	local modlist=( gasket=drivers/pci/pcie:${S}/src apex=drivers/pci/pcie:${S}/src )
 
 	linux-mod-r1_src_compile
