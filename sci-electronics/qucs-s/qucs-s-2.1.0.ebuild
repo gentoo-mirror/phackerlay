@@ -18,7 +18,7 @@ KEYWORDS="~amd64"
 
 RDEPEND="
 	sci-electronics/ngspice
-	dev-qt/qtcore:6
+	dev-qt/qtbase:6
 	dev-qt/qtgui:6
 	dev-qt/qtsvg:6
 	dev-qt/qtscript:6
