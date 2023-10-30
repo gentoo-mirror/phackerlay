@@ -1,4 +1,4 @@
-BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7 >=dev-util/meson-0.62.2 >=dev-util/ninja-1.8.2 dev-util/meson-format-array app-arch/xz-utils
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71-r5 >=sys-devel/libtool-2.4.7 >=dev-util/meson-1.2.1 >=dev-util/ninja-1.8.2 dev-util/meson-format-array app-arch/xz-utils
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
 DEPEND=>=dev-db/sqlite-3 >=dev-libs/openssl-1 >=sys-apps/dbus-1 >=sys-libs/glibc-2 >=dev-libs/glib-2 >=gui-libs/gtk-4 >=x11-libs/gdk-pixbuf-2 >=media-libs/gstreamer-1.16 >=media-plugins/gst-plugins-meta-1.16[mp3,http,aac,opus] >=media-libs/gst-plugins-base-1.16 >=media-libs/gst-plugins-bad-1.16 >=media-libs/gst-plugins-good-1.16 >=gui-libs/libadwaita-1.0.0 >=media-libs/libshumate-1.0.0
 DESCRIPTION=Listen to internet radio
@@ -12,5 +12,5 @@ RDEPEND=>=dev-db/sqlite-3 >=dev-libs/openssl-1 >=sys-apps/dbus-1 >=sys-libs/glib
 RESTRICT=network-sandbox
 SLOT=0
 SRC_URI=https://gitlab.gnome.org/World/Shortwave/-/archive/3.2.0/shortwave-3.2.0.tar.gz -> shortwave-3.2.0.tar.gz
-_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	70ec42843fec87d20fd94c67e77cdbff	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	python-utils-r1	f6221c2f55e5e832be9919fe1711f33b	meson	af1ca7ad21fdd31fcc4fa91d8abca977	gnome.org	6b39404f1491c60a2d32e3c693a683fe	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	b0183db3b2e07b18f3b77bffec72e116	xdg	4a14c5c24f121e7da66e5aab4a168c6e	gnome2	9bd787a54d31405e742ae7537eed650b
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	70ec42843fec87d20fd94c67e77cdbff	multilib	c19072c3cd7ac5cb21de013f7e9832e0	libtool	9d3a9a889a6fa62ae794f817c156491b	autotools	6ae9a4347149b19a112caa1182d03bde	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	python-utils-r1	f6221c2f55e5e832be9919fe1711f33b	meson	1be925a1f585b2f19a8e45737f09016c	gnome.org	6b39404f1491c60a2d32e3c693a683fe	xdg-utils	baea6080dd821f5562d715887954c9d3	gnome2-utils	b0183db3b2e07b18f3b77bffec72e116	xdg	4a14c5c24f121e7da66e5aab4a168c6e	gnome2	9bd787a54d31405e742ae7537eed650b
 _md5_=4faa070044597ffb477b04c52fb60d75
