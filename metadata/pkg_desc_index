@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.83.0.23283 1.83.1.23285: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.83.1.23285 1.84.0.23306: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
@@ -64,7 +64,7 @@ dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.2: nginx config file formatter/beautifier written in Python with no additional dependencies
 dev-python/npyosmium 3.6.1: Python bindings for libosmium
-dev-python/oauthenticator 16.1.0: OAuth + JupyterHub Authenticator = OAuthenticator
+dev-python/oauthenticator 16.1.1: OAuth + JupyterHub Authenticator = OAuthenticator
 dev-python/osmium 3.6.0: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/param 1.13.0: Make Python code clearer and more reliable by declaring Parameters
@@ -107,9 +107,9 @@ sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.3: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
 sci-electronics/qucs-s 2.1.0: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
-sci-geosciences/mkgmap-bin 4913: Tool to create garmin maps
+sci-geosciences/mkgmap-bin 4916: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
-sci-libs/dolfinx 0.7.0: Next generation FEniCS problem solving environment
+sci-libs/dolfinx 0.7.1: Next generation FEniCS problem solving environment
 sci-libs/elpa 2021.11.001 2023.05.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000-r4: Setup collection for sci-physics/gpaw
 sci-libs/libxc 5.2.3 6.2.2: A library of exchange-correlation functionals for use in DFT
