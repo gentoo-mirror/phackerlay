@@ -18,12 +18,8 @@ KEYWORDS="~amd64"
 
 RDEPEND="
 	sci-electronics/ngspice
-	dev-qt/qtbase:6
-	dev-qt/qtgui:6
+	dev-qt/qtbase:6[gui,widgets]
 	dev-qt/qtsvg:6
-	dev-qt/qtscript:6
-	dev-qt/qtwidgets:6
-	dev-qt/qtprintsupport:6
 "
 src_prepare() {
 	cmake_src_prepare
