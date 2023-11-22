@@ -16,8 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	>=sci-libs/osmium-2.16.0
-	>=dev-python/pybind11-2.2[${PYTHON_USEDEP}]
+	>=sci-libs/osmium-2.20.0
+	>=dev-python/pybind11-2.11.1[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 "
 
