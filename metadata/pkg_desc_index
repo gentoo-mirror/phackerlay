@@ -65,7 +65,7 @@ dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.2: nginx config file formatter/beautifier written in Python with no additional dependencies
 dev-python/npyosmium 3.6.3: Python bindings for libosmium
 dev-python/oauthenticator 16.1.1: OAuth + JupyterHub Authenticator = OAuthenticator
-dev-python/osmium 3.6.0: Python bindings for libosmium
+dev-python/osmium 3.7.0: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/param 1.13.0: Make Python code clearer and more reliable by declaring Parameters
 dev-python/petsc4py 3.19.2 3.19.4: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
