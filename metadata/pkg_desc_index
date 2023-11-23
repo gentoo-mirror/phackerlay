@@ -64,7 +64,7 @@ dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.2: nginx config file formatter/beautifier written in Python with no additional dependencies
 dev-python/npyosmium 3.6.3: Python bindings for libosmium
-dev-python/oauthenticator 16.1.1: OAuth + JupyterHub Authenticator = OAuthenticator
+dev-python/oauthenticator 16.2.0: OAuth + JupyterHub Authenticator = OAuthenticator
 dev-python/osmium 3.7.0: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/param 1.13.0: Make Python code clearer and more reliable by declaring Parameters
@@ -98,7 +98,7 @@ dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.5: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-sound/shortwave 3.2.0: Listen to internet radio
-net-im/jitsi-meet 2023.11.0: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2023.11.2: Desktop application for Jitsi Meet built with Electron
 net-im/synapse 1.96.1: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.5.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
