@@ -95,7 +95,7 @@ dev-python/trame-vuetify 2.3.1: trame-vuetify brings Vuetify UI Material Compone
 dev-python/txredisapi 1.4.9: non-blocking redis client for python twisted
 dev-python/wslink 1.11.4: Python/JavaScript library for communicating over WebSocket
 dev-util/fatrace 0.17.0: report system wide file access events
-mail-mta/sendr4d4 0.0.6: drop in sendmail replacement to redirect system mail to r4d4 api
+mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-sound/shortwave 3.2.0: Listen to internet radio
 net-im/jitsi-meet 2023.11.3: Desktop application for Jitsi Meet built with Electron
