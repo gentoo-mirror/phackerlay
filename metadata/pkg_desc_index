@@ -28,7 +28,7 @@ dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
 dev-cpp/xeus-zmq 1.1.1: ZeroMQ-based middleware for xeus
 dev-cpp/xproperty 0.11.0: Traitlets-like C++ properties and implementation of the observer pattern
 dev-cpp/xtensor 0.24.6: C++ tensors with broadcasting and lazy computing
-dev-cpp/xtl 0.7.5: The x template library
+dev-cpp/xtl 0.7.6: The x template library
 dev-cpp/xwidgets 0.28.0: C++ backend for Jupyter interactive widgets
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
 dev-embedded/xilinx-ise-webpack 14.7: Xilinx ISE WebPack
@@ -134,6 +134,6 @@ www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
 www-apps/privatebin 1.6.2: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-apps/seafile-ce-server 10.0.1: Meta package for Seafile Community Edition, file sync share solution
-www-servers/uwsgi 2.0.22: uWSGI server for Python web applications
+www-servers/uwsgi 2.0.22-r1: uWSGI server for Python web applications
 x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
 x11-themes/chicago95 3.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
