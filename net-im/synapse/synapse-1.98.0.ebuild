@@ -19,7 +19,7 @@ CRATES="
 	digest-0.10.5
 	generic-array-0.14.6
 	hex-0.4.3
-	indoc-1.0.7
+	indoc-2.0.4
 	itoa-1.0.4
 	lazy_static-1.4.0
 	libc-0.2.135
@@ -32,11 +32,11 @@ CRATES="
 	parking_lot_core-0.9.3
 	proc-macro2-1.0.64
 	pyo3-0.20.0
-	pyo3-build-config-0.19.2
-	pyo3-ffi-0.19.2
+	pyo3-build-config-0.20.0
+	pyo3-ffi-0.20.0
 	pyo3-log-0.9.0
-	pyo3-macros-0.19.2
-	pyo3-macros-backend-0.19.2
+	pyo3-macros-0.20.0
+	pyo3-macros-backend-0.20.0
 	pythonize-0.20.0
 	quote-1.0.29
 	redox_syscall-0.2.16
@@ -51,11 +51,10 @@ CRATES="
 	smallvec-1.10.0
 	subtle-2.4.1
 	syn-2.0.28
-	syn-1.0.104
 	target-lexicon-0.12.4
 	typenum-1.15.0
 	unicode-ident-1.0.5
-	unindent-0.1.10
+	unindent-0.2.3
 	version_check-0.9.4
 	windows-sys-0.36.1
 	windows_aarch64_msvc-0.36.1
