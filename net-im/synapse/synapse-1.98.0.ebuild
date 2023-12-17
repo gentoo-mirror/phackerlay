@@ -31,7 +31,7 @@ CRATES="
 	parking_lot-0.12.1
 	parking_lot_core-0.9.3
 	proc-macro2-1.0.64
-	pyo3-0.19.2
+	pyo3-0.20.0
 	pyo3-build-config-0.19.2
 	pyo3-ffi-0.19.2
 	pyo3-log-0.9.0
