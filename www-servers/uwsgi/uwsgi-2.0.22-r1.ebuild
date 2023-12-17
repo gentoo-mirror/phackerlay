@@ -121,7 +121,7 @@ CDEPEND="
 		php_targets_php8-2? ( dev-lang/php:8.2[embed] )
 	)
 	python? ( ${PYTHON_DEPS} )
-	python-asyncio? ( virtual/python-greenlet[${PYTHON_USEDEP}] )
+	python-asyncio? ( dev-python/greenlet[${PYTHON_USEDEP}] )
 	python-gevent? ( >=dev-python/gevent-1.3.5[${PYTHON_USEDEP}] )
 	ruby? ( $(ruby_implementations_depend) )"
 DEPEND="${CDEPEND}"
