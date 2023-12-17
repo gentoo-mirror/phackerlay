@@ -27,28 +27,31 @@ RESTRICT="mirror"
 #			dev-python/nest_asyncio[${PYTHON_USEDEP}]
 #			dev-python/panel[${PYTHON_USEDEP}]
 #		')
-IUSE="trame"
+#	trame? (
+#		$(python_gen_cond_dep '
+#			>=dev-python/trame-server-2.11.7[${PYTHON_USEDEP}]
+#			>=dev-python/trame-client-2.10.0[${PYTHON_USEDEP}]
+#			>=dev-python/trame-vtk-2.5.8[${PYTHON_USEDEP}]
+#			>=dev-python/trame-2.5.2[${PYTHON_USEDEP}]
+#			>=dev-python/trame-vuetify-2.3.1[${PYTHON_USEDEP}]
+#		')
+#	)
+
+IUSE="jupyter"
 
 RDEPEND="
 	sci-libs/vtk[python,imaging,rendering,views,${PYTHON_SINGLE_USEDEP}]
 	$(python_gen_cond_dep '
 		dev-python/numpy[${PYTHON_USEDEP}]
-		>=dev-python/matplotlib-3.0.1[${PYTHON_USEDEP}]
+		>dev-python/matplotlib-3.0.1[${PYTHON_USEDEP}]
 		dev-python/pillow[${PYTHON_USEDEP}]
+		dev-python/pooch[${PYTHON_USEDEP}]
 		>=dev-python/scooby-0.5.1[${PYTHON_USEDEP}]
 	')
-	)
-	trame? (
-		$(python_gen_cond_dep '
-			>=dev-python/trame-server-2.11.7[${PYTHON_USEDEP}]
-			>=dev-python/trame-client-2.10.0[${PYTHON_USEDEP}]
-			>=dev-python/trame-vtk-2.5.8[${PYTHON_USEDEP}]
-			>=dev-python/trame-2.5.2[${PYTHON_USEDEP}]
-			>=dev-python/trame-vuetify-2.3.1[${PYTHON_USEDEP}]
-		')
 	)
 
 "
 DEPEND="${RDEPEND}"
 
 distutils_enable_tests pytest
+
