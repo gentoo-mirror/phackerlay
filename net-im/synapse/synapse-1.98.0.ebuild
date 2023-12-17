@@ -18,6 +18,7 @@ CRATES="
 	crypto-common-0.1.6
 	digest-0.10.5
 	generic-array-0.14.6
+        heck-0.4.1
 	hex-0.4.3
 	indoc-2.0.4
 	itoa-1.0.4
