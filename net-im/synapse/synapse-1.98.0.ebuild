@@ -34,10 +34,10 @@ CRATES="
 	pyo3-0.19.2
 	pyo3-build-config-0.19.2
 	pyo3-ffi-0.19.2
-	pyo3-log-0.8.4
+	pyo3-log-0.9.0
 	pyo3-macros-0.19.2
 	pyo3-macros-backend-0.19.2
-	pythonize-0.19.0
+	pythonize-0.20.0
 	quote-1.0.29
 	redox_syscall-0.2.16
 	regex-1.9.6
@@ -45,8 +45,8 @@ CRATES="
 	regex-automata-0.3.9
 	ryu-1.0.11
 	scopeguard-1.1.0
-	serde-1.0.192
-	serde_derive-1.0.192
+	serde-1.0.193
+	serde_derive-1.0.193
 	serde_json-1.0.108
 	smallvec-1.10.0
 	subtle-2.4.1
