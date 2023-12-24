@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,7 +9,6 @@ SRC_URI="
 	amd64? ( https://github.com/VSCodium/vscodium/releases/download/${PV}/vscodium-reh-linux-x64-${PV}.tar.gz -> ${P}-amd64.tar.gz )
 	arm64? ( https://github.com/VSCodium/vscodium/releases/download/${PV}/vscodium-reh-linux-arm64-${PV}.tar.gz -> ${P}-arm64.tar.gz )
 "
-#	arm? ( https://github.com/VSCodium/vscodium/releases/download/${PV}/vscodium-reh-linux-armhf-${PV}.tar.gz -> ${P}-arm.tar.gz )
 
 LICENSE="
 	Apache-2.0
@@ -34,7 +33,7 @@ KEYWORDS="-* ~amd64 ~arm64"
 IUSE=""
 
 RDEPEND="
-	<net-libs/nodejs-18
+	=net-libs/nodejs-18.*
 "
 
 
