@@ -28,7 +28,7 @@ dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
 dev-cpp/xeus-zmq 1.1.1: ZeroMQ-based middleware for xeus
 dev-cpp/xproperty 0.11.0: Traitlets-like C++ properties and implementation of the observer pattern
 dev-cpp/xtensor 0.24.6: C++ tensors with broadcasting and lazy computing
-dev-cpp/xtl 0.7.6: The x template library
+dev-cpp/xtl 0.7.7: The x template library
 dev-cpp/xwidgets 0.28.0: C++ backend for Jupyter interactive widgets
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
 dev-embedded/xilinx-ise-webpack 14.7: Xilinx ISE WebPack
@@ -110,7 +110,7 @@ sci-electronics/qucs-s 2.1.0: Quite Universal Circuit Simulator with ability to 
 sci-geosciences/mkgmap-bin 4916: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.7.2: Next generation FEniCS problem solving environment
-sci-libs/elpa 2021.11.001 2023.05.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
+sci-libs/elpa 2021.11.001 2023.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 0.9.20000-r4: Setup collection for sci-physics/gpaw
 sci-libs/libxc 5.2.3 6.2.2: A library of exchange-correlation functionals for use in DFT
 sci-libs/osmium 2.20.0: Fast and flexible C++ library for working with OpenStreetMap data
