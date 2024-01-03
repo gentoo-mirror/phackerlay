@@ -27,4 +27,6 @@ RDEPEND="
 	>=dev-python/scipy-1.8.0[${PYTHON_USEDEP}]
 	>=dev-python/shapely-2.0.1[${PYTHON_USEDEP}]
 "
+#  "phx-class-registry>=4.0.6",
+#  "PyDrive2>=1.17.0",
 
