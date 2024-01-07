@@ -23,11 +23,12 @@ RESTRICT=network-sandbox
 
 distutils_enable_tests pytest
 
+# only needed for <python-3.8
+#>=dev-python/async_generator-1.9[${PYTHON_USEDEP}]
 RDEPEND="
 	acct-user/jupyterhub
 	acct-group/jupyterhub
 	>=dev-python/alembic-1.4[${PYTHON_USEDEP}]
-	>=dev-python/async_generator-1.9[${PYTHON_USEDEP}]
 	>=dev-python/certipy-0.1.2[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.11.0[${PYTHON_USEDEP}]
 	>=dev-python/jupyter-telemetry-0.1.0[${PYTHON_USEDEP}]
