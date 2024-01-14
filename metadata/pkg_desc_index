@@ -68,8 +68,8 @@ dev-python/petsc4py 3.19.2 3.19.5: A suite of data structures and routines for t
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
-dev-python/pyhgtmap 3.0 3.6: Little program which lets you easily generate OSM contour lines
-dev-python/pyvista 0.43.1: Easier Pythonic interface to VTK
+dev-python/pyhgtmap 3.0 3.7: Little program which lets you easily generate OSM contour lines
+dev-python/pyvista 0.43.2: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
@@ -94,7 +94,7 @@ dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-sound/shortwave 3.2.0: Listen to internet radio
-net-im/jitsi-meet 2023.11.3: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2024.1.0: Desktop application for Jitsi Meet built with Electron
 net-im/synapse 1.98.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.5.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
