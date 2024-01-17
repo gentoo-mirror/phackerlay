@@ -76,7 +76,7 @@ SRC_URI="
 "
 KEYWORDS="~amd64"
 
-LICENSE="AGPL-3.0-or-later"
+LICENSE="AGPL-3+"
 SLOT="0"
 IUSE="postgres saml oidc ldap +redis"
 
