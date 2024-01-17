@@ -7,7 +7,7 @@ inherit webapp
 
 DESCRIPTION="Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK"
 HOMEPAGE="https://element.io"
-SRC_URI="https://github.com/vector-im/element-web/releases/download/v${PV}/element-v${PV}.tar.gz"
+SRC_URI="https://github.com/element-hq/element-web/releases/download/v${PV}/element-v${PV}.tar.gz"
 LICENSE="Apache-2.0"
 
 KEYWORDS="~amd64"
