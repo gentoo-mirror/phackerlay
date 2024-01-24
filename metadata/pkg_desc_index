@@ -93,6 +93,7 @@ dev-python/wslink 1.11.4: Python/JavaScript library for communicating over WebSo
 dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
+media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanner devices
 media-sound/shortwave 3.2.0: Listen to internet radio
 net-im/jitsi-meet 2024.1.0: Desktop application for Jitsi Meet built with Electron
 net-im/synapse 1.99.0: Reference homeserver for the Matrix decentralised comms protocol
