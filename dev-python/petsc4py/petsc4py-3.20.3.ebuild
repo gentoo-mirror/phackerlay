@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations"
 HOMEPAGE="https://gitlab.com/petsc/petsc"
-SRC_URI="https://ftp.mcs.anl.gov/pub/petsc/release-snapshots/${P}.tar.gz"
+SRC_URI="https://web.cels.anl.gov/projects/petsc/download/release-snapshots/${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
