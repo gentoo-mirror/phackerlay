@@ -17,8 +17,9 @@ RESTRICT="mirror"
 
 DEPEND="
 	>=dev-cpp/xeus-3.0.0
-	>=dev-cpp/nlohmann_json-3.2.0"
+	>=dev-cpp/nlohmann_json-3.2.0
 	>=net-libs/cppzmq-4.8.1
 	>=net-libs/zeromq-4.3.2
+"
 RDEPEND="${DEPEND}"
 BDEPEND=""
