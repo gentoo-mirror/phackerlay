@@ -34,7 +34,7 @@ KEYWORDS="-* ~amd64 ~arm64"
 IUSE=""
 
 RDEPEND="
-	<net-libs/nodejs-18
+	=net-libs/nodejs-18*
 "
 
 
