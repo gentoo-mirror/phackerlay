@@ -44,6 +44,7 @@ dev-python/fenics-basix 0.7.0: FEniCS finite element basis evaluation library
 dev-python/fenics-ffcx 0.7.0: Next generation FEniCS Form Compiler for finite element forms
 dev-python/fenics-ufl 2023.2.0: UFL - FEniCS project's Unified Form Language
 dev-python/gevent 22.10.2 23.7.0: Coroutine-based network library
+dev-python/hatch-nodejs-version 0.3.2: Hatch plugin to read pyproject.toml metadata from package.json
 dev-python/ipydatawidgets 4.3.5: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.9.3: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
@@ -54,6 +55,7 @@ dev-python/jupyterhub-idle-culler 1.2.1: JupyterHub service to cull idle servers
 dev-python/jupyterhub-ldapauthenticator 1.3.2: Simple LDAP Authenticator Plugin for JupyterHub
 dev-python/jupyterhub_moss 6.0.0: Jupyterhub MOdular Slurm Spawner
 dev-python/jupyterlab-link-share 0.3.0: JupyterLab Extension to share the URL to a running Jupyter Server
+dev-python/jupyterlab-myst 2.1.0: Use MyST Markdown directly in Jupyter Lab
 dev-python/jupyterlab-slurm 3.0.2: A Jupyter Notebook server extension that implements common Slurm commands
 dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
