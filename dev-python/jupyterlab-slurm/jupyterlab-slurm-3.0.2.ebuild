@@ -21,6 +21,7 @@ RESTRICT="network-sandbox"
 RDEPEND="\
 	>=dev-python/jupyter-packaging-0.10.0[${PYTHON_USEDEP}]
 	>=dev-python/jupyterlab-3.0.0[${PYTHON_USEDEP}]
+	<dev-python/jupyterlab-4.0.0[${PYTHON_USEDEP}]
 	sys-cluster/slurm
 "
 
