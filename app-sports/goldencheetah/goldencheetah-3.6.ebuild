@@ -1,13 +1,13 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit xdg qmake-utils
+inherit qmake-utils
 
-DESCRIPTION="(sorry, broken ATM, as needs patching to build on gcc10, will wait for upstream) Performance Software for Cyclists, Runners, Triathletes and Coaches"
+DESCRIPTION="Performance Software for Cyclists, Runners, Triathletes and Coaches"
 HOMEPAGE="https://github.com/GoldenCheetah/GoldenCheetah"
-SRC_URI="https://github.com/GoldenCheetah/GoldenCheetah/archive/refs/tags/V${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/GoldenCheetah/GoldenCheetah/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -26,16 +26,19 @@ RDEPEND="
 	dev-qt/qtmultimedia:5
 	dev-qt/qtserialport:5
 	dev-qt/qtconcurrent:5
+	x11-libs/qwt:6[qt5]
 	sci-lib/gsl
 "
 
 DEPEND="${RDEPEND}"
 BDEPEND="
-	sys-devel/bison
+	>=sys-devel/bison-3.7
 	sys-devel/flex
 "
 
 S="${WORKDIR}"/GoldenCheetah-${PV}
+
+export INSTALL_ROOT=${D}
 
 src_prepare() {
 	default
@@ -45,19 +48,13 @@ src_prepare() {
 	echo 'GSL_LIBS = -lgsl -lgslcblas -lm' >> ${S}/src/gcconfig.pri
 	echo 'CONFIG += release'  >> ${S}/src/gcconfig.pri
 	echo 'DEFINES += NOWEBKIT'  >> ${S}/src/gcconfig.pri
-	#cmake_src_prepare
-	xdg_src_prepare
-}
+	echo 'QMAKE_MOVE = cp' >> ${S}/src/gcconfig.pri
+	echo 'LIBZ_LIBS    = -lz' >> ${S}/src/gcconfig.pri
 
-src_compile() {
-	cd ${S}
-	qmake -recursive
-	default
+	eqmake5 build.pro || die
 }
 
 src_install() {
-#	docompress -x /usr/share/doc/${PF}/html
 	default
-	cmake_src_install
-#	mv "${D}"/usr/share/doc/HTML "${D}"/usr/share/doc/${PF}/html || die "mv Qt help failed"
+	dobin ${S}/src/GoldenCheetah
 }
