@@ -67,7 +67,7 @@ dev-python/oauthenticator 16.2.1: OAuth + JupyterHub Authenticator = OAuthentica
 dev-python/osmium 3.7.0: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/param 1.13.0: Make Python code clearer and more reliable by declaring Parameters
-dev-python/petsc4py 3.19.2 3.20.3: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
+dev-python/petsc4py 3.19.2 3.20.4: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
