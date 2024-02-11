@@ -1,7 +1,7 @@
-# Copyright 1998-2021 Gentoo Authors
+# Copyright 1998-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 DESCRIPTION="DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL"
 HOMEPAGE="https://github.com/OpenHantek/OpenHantek6022"
@@ -25,7 +25,6 @@ RDEPEND="
 
 DEPEND="
 	${RDEPEND}
-	>=dev-util/cmake-3.5
 "
 
 BDEPEND=""
