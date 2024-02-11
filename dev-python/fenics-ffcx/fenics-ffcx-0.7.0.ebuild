@@ -12,7 +12,7 @@ DESCRIPTION="Next generation FEniCS Form Compiler for finite element forms"
 HOMEPAGE="
 	https://github.com/FEniCS/ffcx
 "
-SRC_URI="https://github.com/FEniCS/ffcx/archive/refs/tags/v${PV}.tar.gz"
+SRC_URI="https://github.com/FEniCS/ffcx/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="LGPL-3 public-domain"
 SLOT="0"
@@ -28,7 +28,6 @@ RDEPEND="
 "
 BDEPEND="
 	dev-util/ninja
-	>=dev-util/cmake-3.16
 	>=dev-python/setuptools-58[${PYTHON_USEDEP}]
 	dev-python/wheel[${PYTHON_USEDEP}]
 "
