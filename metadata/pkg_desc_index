@@ -45,7 +45,7 @@ dev-python/cling-kernels 0.8 9999: Interactive C++ interpreter, built on the top
 dev-python/fenics-basix 0.7.0: FEniCS finite element basis evaluation library
 dev-python/fenics-ffcx 0.7.0: Next generation FEniCS Form Compiler for finite element forms
 dev-python/fenics-ufl 2023.2.0: UFL - FEniCS project's Unified Form Language
-dev-python/gevent 22.10.2 23.7.0: Coroutine-based network library
+dev-python/gevent 22.10.2 24.2.1: Coroutine-based network library
 dev-python/hatch-nodejs-version 0.3.2: Hatch plugin to read pyproject.toml metadata from package.json
 dev-python/ipydatawidgets 4.3.5: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.9.3: Matplotlib Jupyter Extension
@@ -101,7 +101,7 @@ media-sound/shortwave 3.2.0: Listen to internet radio
 net-im/jitsi-meet 2024.1.0: Desktop application for Jitsi Meet built with Electron
 net-im/synapse 1.101.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
-net-proxy/oauth2-proxy 7.5.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
+net-proxy/oauth2-proxy 7.6.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.3-r1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
