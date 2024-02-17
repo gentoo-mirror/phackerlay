@@ -16,33 +16,20 @@ HOMEPAGE="https://www.gevent.org/ https://pypi.org/project/gevent/"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~alpha amd64 arm arm64 ~mips ppc ppc64 ~riscv ~s390 ~sparc x86 ~amd64-linux ~x86-linux ~x64-macos"
-IUSE="doc examples test"
-RESTRICT="!test? ( test )"
+IUSE="doc examples"
+RESTRICT="test"
 
 DEPEND="
 	>=dev-libs/libev-4.31:=
 	dev-libs/libuv:=
-	>=dev-python/greenlet-2[${PYTHON_USEDEP}]
 	>=net-dns/c-ares-1.12:=
+	>=dev-python/greenlet-3[${PYTHON_USEDEP}]
+	>=dev-python/cython-3.0.8[${PYTHON_USEDEP}]
+	>=dev-python/cffi-1.12.3[${PYTHON_USEDEP}]
 "
-RDEPEND="
-	${DEPEND}
-	dev-python/zope-event[${PYTHON_USEDEP}]
-	dev-python/zope-interface[${PYTHON_USEDEP}]
-"
-BDEPEND="
-	test? (
-		${RDEPEND}
-		dev-python/dnspython[${PYTHON_USEDEP}]
-		dev-python/psutil[${PYTHON_USEDEP}]
-		dev-python/requests[${PYTHON_USEDEP}]
-	)"
 
 distutils_enable_sphinx doc
 
-# Tests take long and fail terribly a few times.
-# It also seems that they require network access.
-#RESTRICT="test"
 
 python_prepare_all() {
 	export GEVENTSETUP_EMBED="false"
