@@ -99,14 +99,14 @@ media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanner devices
 media-sound/shortwave 3.2.0: Listen to internet radio
 net-im/jitsi-meet 2024.1.0: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.100.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.101.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.5.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.3-r1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
-sci-electronics/qucs-s 2.1.0: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
+sci-electronics/qucs-s 24.1.0: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-geosciences/mkgmap-bin 4916: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.7.2: Next generation FEniCS problem solving environment
@@ -127,7 +127,7 @@ sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.3.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.57: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.58: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/grocy 3.3.2: Web-based self-hosted groceries & household management solution for your home
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
