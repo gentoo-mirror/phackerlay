@@ -46,9 +46,9 @@ CRATES="
 	regex-automata-0.4.4
 	ryu-1.0.11
 	scopeguard-1.1.0
-	serde-1.0.195
-	serde_derive-1.0.195
-	serde_json-1.0.111
+	serde-1.0.196
+	serde_derive-1.0.196
+	serde_json-1.0.113
 	smallvec-1.10.0
 	subtle-2.4.1
 	syn-2.0.48
