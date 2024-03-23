@@ -8,7 +8,7 @@ DISTUTILS_EXT=1
 PYTHON_COMPAT=( python3_{9,10,11} )
 CRATES="
 	aho-corasick-1.0.2
-	anyhow-1.0.79
+	anyhow-1.0.80
 	arc-swap-1.5.1
 	autocfg-1.1.0
 	bitflags-1.3.2
