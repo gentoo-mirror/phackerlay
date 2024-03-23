@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,7 +9,6 @@ SRC_URI="
 	amd64? ( https://github.com/VSCodium/vscodium/releases/download/${PV}/vscodium-reh-linux-x64-${PV}.tar.gz -> ${P}-amd64.tar.gz )
 	arm64? ( https://github.com/VSCodium/vscodium/releases/download/${PV}/vscodium-reh-linux-arm64-${PV}.tar.gz -> ${P}-arm64.tar.gz )
 "
-#	arm? ( https://github.com/VSCodium/vscodium/releases/download/${PV}/vscodium-reh-linux-armhf-${PV}.tar.gz -> ${P}-arm.tar.gz )
 
 LICENSE="
 	Apache-2.0
@@ -29,7 +28,7 @@ LICENSE="
 	UoI-NCSA
 	W3C
 "
-SLOT="0"
+SLOT="${PV}"
 KEYWORDS="-* ~amd64 ~arm64"
 IUSE=""
 
@@ -42,7 +41,7 @@ S="${WORKDIR}"
 
 src_install() {
 	rm node
-	insinto "/opt/${PN}"
+	insinto "/opt/${PN}/${P}"
 	sed -i 's:$ROOT/node:node:g' bin/codium-server
 	sed -i 's:$ROOT/out:'"/opt/${PN}/out:g" bin/codium-server
 	sed -i 's:"$@":--telemetry-level off "$@":g' bin/codium-server
@@ -51,11 +50,10 @@ src_install() {
 	# "$ROOT/node" ${INSPECT:-} "$ROOT/out/server-main.js" "$@"
 
 	doins -r *
-	fperms +x /opt/${PN}/bin/codium-server
-#	fperms +x /opt/${PN}/node_modules/node-pty/build/Release/spawn-helper
-	fperms +x /opt/${PN}/node_modules/@vscode/ripgrep/bin/rg
-	dosym "../../opt/${PN}/bin/codium-server" "usr/bin/codium-server"
-	dosym "../../opt/${PN}/bin/codium-server" "usr/bin/vscodium-server"
+	fperms +x /opt/${PN}/${P}/bin/codium-server
+	fperms +x /opt/${PN}/${P}/node_modules/@vscode/ripgrep/bin/rg
+	dosym "../../../opt/${PN}/${P}/bin/codium-server" "usr/bin/${P}"
+	dosym "../../../opt/${PN}/${P}/bin/codium-server" "usr/bin/${P}"
 }
 
 pkg_postinst() {

@@ -28,7 +28,7 @@ LICENSE="
 	UoI-NCSA
 	W3C
 "
-SLOT="0"
+SLOT="${PV}"
 KEYWORDS="-* ~amd64 ~arm64"
 IUSE=""
 
@@ -41,7 +41,7 @@ S="${WORKDIR}"
 
 src_install() {
 	rm node
-	insinto "/opt/${PN}"
+	insinto "/opt/${PN}/${P}"
 	sed -i 's:$ROOT/node:node:g' bin/codium-server
 	sed -i 's:$ROOT/out:'"/opt/${PN}/out:g" bin/codium-server
 	sed -i 's:"$@":--telemetry-level off "$@":g' bin/codium-server
@@ -50,11 +50,10 @@ src_install() {
 	# "$ROOT/node" ${INSPECT:-} "$ROOT/out/server-main.js" "$@"
 
 	doins -r *
-	fperms +x /opt/${PN}/bin/codium-server
-#	fperms +x /opt/${PN}/node_modules/node-pty/build/Release/spawn-helper
-	fperms +x /opt/${PN}/node_modules/@vscode/ripgrep/bin/rg
-	dosym "../../opt/${PN}/bin/codium-server" "usr/bin/codium-server"
-	dosym "../../opt/${PN}/bin/codium-server" "usr/bin/vscodium-server"
+	fperms +x /opt/${PN}/${P}/bin/codium-server
+	fperms +x /opt/${PN}/${P}/node_modules/@vscode/ripgrep/bin/rg
+	dosym "../../../opt/${PN}/${P}/bin/codium-server" "usr/bin/${P}"
+	dosym "../../../opt/${PN}/${P}/bin/codium-server" "usr/bin/${P}"
 }
 
 pkg_postinst() {
