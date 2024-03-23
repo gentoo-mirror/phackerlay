@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10,11} )
+PYTHON_COMPAT=( python3_{10,11,12} )
 
 inherit distutils-r1 pypi
 
@@ -17,5 +17,5 @@ KEYWORDS="~amd64"
 RDEPEND="
 	>=dev-python/async_generator-1.8[${PYTHON_USEDEP}]
 	dev-python/jinja2[${PYTHON_USEDEP}]
-	>=dev-python/jupyterhub-0.9[${PYTHON_USEDEP}]
+	>=dev-python/jupyterhub-1.5.1[${PYTHON_USEDEP}]
 "
