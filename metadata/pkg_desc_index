@@ -127,7 +127,7 @@ sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.3.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.62: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.63: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
