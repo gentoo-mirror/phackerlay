@@ -25,6 +25,7 @@ RDEPEND="
         # what for openmpi
 
 src_configure() {
+	use mpi && export FC=mpif90
 	econf \
 		$(use_with mpi) \
 		$(use_enable openmp) \
