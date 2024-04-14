@@ -18,20 +18,13 @@ SLOT="0"
 RDEPEND="
 	sys-devel/gcc[fortran]
 	app-editors/vim-core
+	virual/lapack
 	mpi? ( virtual/mpi[fortran,threads] )
         openmp? ( sys-devel/gcc[openmp] )
 	"
 
-CFLAGS="${CFLAGS} -march=native"
-
-src_prepare() {
-	default
-	${S}/autogen.sh
-}
-
-
 src_configure() {
-	econf FC=mpif90 CC=mpicc CXX=mpicxx --prefix=/usr --libdir=/usr/lib64 \
+	econf \
 		$(use_with mpi) \
 		$(use_enable openmp) \
 		$(use_enable cpu_flags_x86_sse sse) \
