@@ -31,7 +31,7 @@ RDEPEND="
 	fftw? ( sci-libs/fftw )
         mpi? ( virtual/mpi )
         scalapack? ( sci-libs/scalapack )
-        elpa? ( sci-libs/scalapack =sci-libs/elpa-2021.11.001 )
+        elpa? ( || ( =sci-libs/elpa-2021.11.001 =sci-libs/elpa-2019.11.001 ) )
 	"
 	# mind elpa version below
 
@@ -69,11 +69,23 @@ src_configure() {
 		echo "elpa = True" >> ${S}/siteconfig.py
 		if use openmp; then
 			echo "libraries += ['elpa_openmp']" >> ${S}/siteconfig.py
-			echo "include_dirs += ['/usr/include/elpa_openmp-2021.11.001']" >> ${S}/siteconfig.py
+			if [ -d /usr/include/elpa_openmp-2021.11.001 ]; then
+				echo "include_dirs += ['/usr/include/elpa_openmp-2021.11.001']" >> ${S}/siteconfig.py
+			elif [ -d /usr/include/elpa_openmp-2019.11.001 ]; then
+				echo "include_dirs += ['/usr/include/elpa_openmp-2019.11.001']" >> ${S}/siteconfig.py
+			else
+				die elpa problem
+			fi
 		else
 			echo "libraries += ['elpa']" >> ${S}/siteconfig.py
-			echo "include_dirs += ['/usr/include/elpa-2021.11.001']" >> ${S}/siteconfig.py
-	fi
+			if [ -d /usr/include/elpa_openmp-2021.11.001 ]; then
+				echo "include_dirs += ['/usr/include/elpa-2021.11.001']" >> ${S}/siteconfig.py
+			elif [ -d /usr/include/elpa_openmp-2019.11.001 ]; then
+				echo "include_dirs += ['/usr/include/elpa-2019.11.001']" >> ${S}/siteconfig.py
+			else
+				die elpa problem
+			fi
+		fi
 	fi
 }
 
