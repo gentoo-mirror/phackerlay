@@ -19,9 +19,11 @@ RDEPEND="
 	sys-devel/gcc[fortran]
 	app-editors/vim-core
 	virual/lapack
-	mpi? ( virtual/mpi[fortran,threads] )
+	mpi? ( virtual/mpi[fortran,threads] sci-libs/scalapack )
         openmp? ( sys-devel/gcc[openmp] )
 	"
+	# mpich[mpi-threads] when openmp
+        # what for openmpi
 
 src_configure() {
 	econf \
