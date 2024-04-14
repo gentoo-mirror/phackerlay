@@ -38,7 +38,7 @@ RDEPEND="
 distutils_enable_tests pytest
 
 pkg_pretend() {
-	use openmp && tc-check-openmp || die
+	use openmp && ( tc-check-openmp || die )
 }
 
 src_configure() {

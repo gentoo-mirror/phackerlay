@@ -23,7 +23,7 @@ PYTHON_REQ_USE="visualize? (tk)"
 RDEPEND="
 	>=dev-python/scipy-0.18.1[${PYTHON_USEDEP}]
 	>=dev-python/numpy-1.11.3[${PYTHON_USEDEP}]
-	>=dev-python/matplotlib-3.1[${PYTHON_USEDEP}]
+	visualize? ( >=dev-python/matplotlib-3.1[${PYTHON_USEDEP}] )
 	"
 
 distutils_enable_tests pytest
