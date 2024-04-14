@@ -3,7 +3,8 @@
 
 EAPI=8
 
-DISTUTILS_USE_SETUPTOOLS=rdepend
+DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_EXT=1
 PYTHON_COMPAT=( python3_{9,10,11} )
 
 inherit distutils-r1
@@ -69,19 +70,19 @@ src_configure() {
 		echo "elpa = True" >> ${S}/siteconfig.py
 		if use openmp; then
 			echo "libraries += ['elpa_openmp']" >> ${S}/siteconfig.py
-			if [ -d /usr/include/elpa_openmp-2021.11.001 ]; then
-				echo "include_dirs += ['/usr/include/elpa_openmp-2021.11.001']" >> ${S}/siteconfig.py
-			elif [ -d /usr/include/elpa_openmp-2019.11.001 ]; then
-				echo "include_dirs += ['/usr/include/elpa_openmp-2019.11.001']" >> ${S}/siteconfig.py
+			if [ -d ${EPREFIX}/usr/include/elpa_openmp-2021.11.001 ]; then
+				echo "include_dirs += ['${EPREFIX}/usr/include/elpa_openmp-2021.11.001']" >> ${S}/siteconfig.py
+			elif [ -d ${EPREFIX}/usr/include/elpa_openmp-2019.11.001 ]; then
+				echo "include_dirs += ['${EPREFIX}/usr/include/elpa_openmp-2019.11.001']" >> ${S}/siteconfig.py
 			else
-				die elpa problem
+				die elpa problem ${EPREFIX}usr/include/elpa_openmp-2019.11.001
 			fi
 		else
 			echo "libraries += ['elpa']" >> ${S}/siteconfig.py
-			if [ -d /usr/include/elpa_openmp-2021.11.001 ]; then
-				echo "include_dirs += ['/usr/include/elpa-2021.11.001']" >> ${S}/siteconfig.py
-			elif [ -d /usr/include/elpa_openmp-2019.11.001 ]; then
-				echo "include_dirs += ['/usr/include/elpa-2019.11.001']" >> ${S}/siteconfig.py
+			if [ -d ${EPREFIX}/usr/include/elpa_openmp-2021.11.001 ]; then
+				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2021.11.001']" >> ${S}/siteconfig.py
+			elif [ -d ${EPREFIX}/usr/include/elpa_openmp-2019.11.001 ]; then
+				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2019.11.001']" >> ${S}/siteconfig.py
 			else
 				die elpa problem
 			fi
