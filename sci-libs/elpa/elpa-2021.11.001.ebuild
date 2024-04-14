@@ -18,7 +18,6 @@ SLOT="0"
 RDEPEND="
 	sys-devel/gcc[fortran]
 	app-editors/vim-core
-	virual/lapack
 	mpi? ( virtual/mpi[fortran,threads] sci-libs/scalapack )
         openmp? ( sys-devel/gcc[openmp] )
 	"
