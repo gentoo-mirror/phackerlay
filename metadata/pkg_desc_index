@@ -110,7 +110,7 @@ sci-electronics/qucs-s 24.2.1: Quite Universal Circuit Simulator with ability to
 sci-geosciences/mkgmap-bin 4918: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.7.2: Next generation FEniCS problem solving environment
-sci-libs/elpa 2021.11.001 2023.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
+sci-libs/elpa 2019.11.001 2021.11.001 2023.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 24.1.0: Setup collection for sci-physics/gpaw
 sci-libs/libxc 5.2.3 6.2.2: A library of exchange-correlation functionals for use in DFT
 sci-libs/osmium 2.20.0: Fast and flexible C++ library for working with OpenStreetMap data
