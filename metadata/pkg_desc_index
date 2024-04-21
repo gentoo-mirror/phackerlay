@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.86.2.24054 1.87.1.24068 1.87.2.24072: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.88.1.24102 1.88.1.24104: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 app-sports/goldencheetah 3.6: Performance Software for Cyclists, Runners, Triathletes and Coaches
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
@@ -72,7 +72,7 @@ dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, j
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
 dev-python/pyhgtmap 3.0 3.7: Little program which lets you easily generate OSM contour lines
-dev-python/pyvista 0.43.4: Easier Pythonic interface to VTK
+dev-python/pyvista 0.43.5: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
@@ -99,7 +99,7 @@ media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanner devices
 media-sound/shortwave 3.2.0: Listen to internet radio
 net-im/jitsi-meet 2024.3.0: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.103.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.105.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.6.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
