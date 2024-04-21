@@ -34,8 +34,9 @@ src_configure() {
 	${S}/config/scripts/make-cppopts-dumper || die
         local mycmakeargs=(
 		-DCMAKE_DISABLE_FIND_PACKAGE_MPI="$(usex mpi NO YES)"
-		-DCMAKE_DISABLE_FIND_PACKAGE_OPENMP="$(usex openmp NO YES)"
-		-DCMAKE_DISABLE_FIND_PACKAGE_FFTW="$(usex fftw NO YES)"
+		-DCMAKE_DISABLE_FIND_PACKAGE_OpenMP="$(usex openmp NO YES)"
+		-DCMAKE_DISABLE_FIND_PACKAGE_fftw3="$(usex fftw NO YES)"
+		-DCMAKE_DISABLE_FIND_PACKAGE_fftw3f="$(usex fftw NO YES)"
                 -DABINIT_SCALAPACK_ENABLED="$(usex scalapack)"
                 -DABINIT_ELPA_ENABLED="$(usex elpa)"
         )
