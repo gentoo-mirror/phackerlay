@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{9,10,11} )
-
+DISTUTILS_USE_PEP517="hatchling"
 inherit distutils-r1
 
 DESCRIPTION="Matplotlib Jupyter Extension"
@@ -29,23 +29,11 @@ RDEPEND="
 	sys-apps/yarn
 "
 
-src_unpack() {
-	default
-        mv * ${P}
-}
+S="${WORKDIR}/${PN}-tags-${PV}"
 
-src_prepare() {
-	distutils-r1_src_prepare
-}
-
-python_compile() {
-	distutils-r1_python_compile
-}
-
-python_install() {
-	distutils-r1_python_install --skip-build
-}
+addpredict /usr/etc
 
 python_install_all() {
 	distutils-r1_python_install_all
+	mv "${ED}/usr/etc" "${ED}/etc" || die
 }
