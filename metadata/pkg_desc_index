@@ -117,6 +117,7 @@ sci-libs/osmium 2.20.0: Fast and flexible C++ library for working with OpenStree
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
 sci-mathematics/dolfinx 0.6.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
+sci-physics/abinit 10.0.3: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 24.1.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 7.3.1: Suite for first-principles electronic-structure calculations and materials modeling
@@ -127,7 +128,7 @@ sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.3.0: Prometheus exporter that exposes metrics from apcupsd's NIS
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.63: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.64: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
