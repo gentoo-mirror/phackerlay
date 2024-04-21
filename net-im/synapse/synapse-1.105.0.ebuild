@@ -8,7 +8,7 @@ DISTUTILS_EXT=1
 PYTHON_COMPAT=( python3_{9,10,11} )
 CRATES="
 	aho-corasick-1.0.2
-	anyhow-1.0.80
+	anyhow-1.0.81
 	arc-swap-1.5.1
 	autocfg-1.1.0
 	bitflags-1.3.2
@@ -25,30 +25,31 @@ CRATES="
 	lazy_static-1.4.0
 	libc-0.2.135
 	lock_api-0.4.9
-	log-0.4.20
+	log-0.4.21
 	memchr-2.6.3
 	memoffset-0.9.0
 	once_cell-1.15.0
 	parking_lot-0.12.1
 	parking_lot_core-0.9.3
+        portable-atomic-1.6.0
 	proc-macro2-1.0.76
-	pyo3-0.20.2
-	pyo3-build-config-0.20.2
-	pyo3-ffi-0.20.2
+	pyo3-0.20.3
+	pyo3-build-config-0.20.3
+	pyo3-ffi-0.20.3
 	pyo3-log-0.9.0
-	pyo3-macros-0.20.2
-	pyo3-macros-backend-0.20.2
+	pyo3-macros-0.20.3
+	pyo3-macros-backend-0.20.3
 	pythonize-0.20.0
 	quote-1.0.35
 	redox_syscall-0.2.16
-	regex-1.10.3
+	regex-1.10.4
 	regex-syntax-0.8.2
 	regex-automata-0.4.4
 	ryu-1.0.11
 	scopeguard-1.1.0
-	serde-1.0.196
-	serde_derive-1.0.196
-	serde_json-1.0.113
+	serde-1.0.197
+	serde_derive-1.0.197
+	serde_json-1.0.115
 	smallvec-1.10.0
 	subtle-2.4.1
 	syn-2.0.48
