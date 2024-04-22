@@ -1,0 +1,11 @@
+--- a/config/m4/compiler_.m4	2024-04-22 23:35:23.000000000 +0300
++++ b/config/m4/compiler.m4	2024-04-22 23:36:02.000000000 +0300
+@@ -9,7 +9,7 @@
+ #
+ # Initialize CFLAGS
+ #
+-BASE_CFLAGS="-g -Wall -Werror"
++BASE_CFLAGS=""
+
+
+ #

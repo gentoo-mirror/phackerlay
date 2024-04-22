@@ -1,0 +1,15 @@
+--- a/src/ucs/debug/debug_.c	2024-04-22 23:18:05.000000000 +0300
++++ b/src/ucs/debug/debug.c	2024-04-22 23:18:39.000000000 +0300
+@@ -272,10 +272,10 @@
+         goto err_close;
+     }
+
+-    symcount = bfd_read_minisymbols(file->abfd, 0, (PTR)&file->syms, &size);
++    symcount = bfd_read_minisymbols(file->abfd, 0, (void *)&file->syms, &size);
+     if (symcount == 0) {
+         free(file->syms);
+-        symcount = bfd_read_minisymbols(file->abfd, 1, (PTR)&file->syms, &size);
++        symcount = bfd_read_minisymbols(file->abfd, 1, (void *)&file->syms, &size);
+     }
+     if (symcount < 0) {
+         goto err_close;
