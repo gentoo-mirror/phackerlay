@@ -126,7 +126,7 @@ sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot g
 sys-block/libfabric 1.21.0: The Open Fabrics Interfaces (OFI) framework
 sys-cluster/mpich 4.1.2: A high performance and portable MPI implementation
 sys-cluster/rdma-core 41.6: Userspace components for the Linux Kernel's drivers/infiniband subsystem
-sys-cluster/ucx 1.11.2: Unified Communication X
+sys-cluster/ucx 1.8.1: Unified Communication X
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
