@@ -1,0 +1,11 @@
+--- a/test/apps/sockaddr/sa_util.h	2024-04-22 23:46:17.000000000 +0300
++++ b/test/apps/sockaddr/sa_util.h	2024-04-22 23:46:28.000000000 +0300
+@@ -11,7 +11,7 @@
+ #include <sstream>
+ #include <string>
+ #include <vector>
+-
++#include <cstdint>
+
+ /* runtime error exception */
+ class error : public std::exception {
