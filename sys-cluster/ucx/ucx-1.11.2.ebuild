@@ -25,6 +25,7 @@ DEPEND="${RDEPEND}"
 PATCHES=(
 	${FILESDIR}/01-binutils-2.39-compat.patch
 	${FILESDIR}/02-drop-development-flags.patch
+	${FILESDIR}/03-cstdint.patch
 )
 
 src_prepare() {
