@@ -57,7 +57,7 @@ dev-python/jupyterhub-idle-culler 1.3.1: JupyterHub service to cull idle servers
 dev-python/jupyterhub-ldapauthenticator 1.3.2: Simple LDAP Authenticator Plugin for JupyterHub
 dev-python/jupyterhub_moss 6.0.0: Jupyterhub MOdular Slurm Spawner
 dev-python/jupyterlab-link-share 0.3.0: JupyterLab Extension to share the URL to a running Jupyter Server
-dev-python/jupyterlab-myst 2.3.2: Use MyST Markdown directly in Jupyter Lab
+dev-python/jupyterlab-myst 2.4.2: Use MyST Markdown directly in Jupyter Lab
 dev-python/jupyterlab-slurm 3.0.2: A Jupyter Notebook server extension that implements common Slurm commands
 dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
@@ -72,7 +72,7 @@ dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, j
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
 dev-python/pyhgtmap 3.0 3.7: Little program which lets you easily generate OSM contour lines
-dev-python/pyvista 0.43.5: Easier Pythonic interface to VTK
+dev-python/pyvista 0.43.6: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
