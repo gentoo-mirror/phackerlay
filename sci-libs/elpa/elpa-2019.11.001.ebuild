@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit autotools
+inherit autotools flag-o-matic
 
 DESCRIPTION="The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices"
 HOMEPAGE="https://elpa.mpcdf.mpg.de/"
@@ -25,6 +25,7 @@ RDEPEND="
         # what for openmpi
 
 src_configure() {
+	append-flags -fallow-argument-mismatch
 	use mpi && export FC=mpif90
 	econf \
 		$(use_with mpi) \
