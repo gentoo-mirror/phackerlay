@@ -19,8 +19,8 @@ src_compile() {
 }
 
 src_install(){
-	GPAW_SETUP_PATH=/usr/share/gpaw/setups
-	insinto $GPAW_SETUP_PATH
+	GPAW_SETUP_PATH=usr/share/gpaw/setups
+	insinto /$GPAW_SETUP_PATH
 	doins "${S}"/*
 	echo "export GPAW_SETUP_PATH=${EPREFIX}${GPAW_SETUP_PATH}" > gpaw-setups.sh
 	insinto /etc/bash/bashrc.d
