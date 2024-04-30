@@ -50,13 +50,12 @@ src_configure() {
 	echo "extra_link_args = []" >> ${GPAW_CONFIG}
 	echo "include_dirs = []" >> ${GPAW_CONFIG}
 
-	if use fftw; then
-		echo "libraries += ['fftw3', 'blas']" >> ${GPAW_CONFIG}
-	fi
 	if use scalapack; then
+		echo "scalapack = True" >> ${GPAW_CONFIG}
 		echo "libraries += ['scalapack']" >> ${GPAW_CONFIG}
 	fi
 	if use mpi; then
+		echo "mpi = True" >> ${GPAW_CONFIG}
 		echo "libraries += ['mpi']" >> ${GPAW_CONFIG}
 		echo "compiler = 'mpicc'" >> ${GPAW_CONFIG}
 		if use fftw; then
@@ -71,6 +70,7 @@ src_configure() {
 		fi
 	fi
 	if use elpa; then
+		echo "elpa = True" >> ${GPAW_CONFIG}
 		if use openmp; then
 			echo "libraries += ['elpa_openmp']" >> ${GPAW_CONFIG}
 			if [ -d ${EPREFIX}/usr/include/elpa_openmp-2021.11.001 ]; then
@@ -86,11 +86,15 @@ src_configure() {
 			if [ -d ${EPREFIX}/usr/include/elpa-2021.11.001 ]; then
 				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2021.11.001']" >> ${GPAW_CONFIG}
 			elif [ -d ${EPREFIX}/usr/include/elpa-2019.11.001 ]; then
-				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2019.11.001/elpa']" >> ${GPAW_CONFIG}
+				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2019.11.001']" >> ${GPAW_CONFIG}
 			else
 				die elpa problem
 			fi
 		fi
+	fi
+	if use fftw; then
+		echo "libraries += ['fftw3', 'blas']" >> ${GPAW_CONFIG}
+		echo "fftw = True" >> ${GPAW_CONFIG}
 	fi
 }
 
