@@ -43,46 +43,50 @@ pkg_pretend() {
 }
 
 src_configure() {
-	cp ${S}/siteconfig_example.py ${S}/siteconfig.py
 	GPAW_CONFIG=${S}/siteconfig.py
+	touch ${GPAW_CONFIG}
+	echo "libraries = []" >> ${GPAW_CONFIG}
+	echo "extra_compile_args = []" >> ${GPAW_CONFIG}
+	echo "extra_link_args = []" >> ${GPAW_CONFIG}
+	echo "libraries = []" >> ${GPAW_CONFIG}
+	echo "include_dirs = []" >> ${GPAW_CONFIG}
+
 	if use fftw; then
-		sed -e "s:fftw = False:fftw = True:g" -i ${S}/siteconfig.py || die
-		sed -e "s:'fftw3':'fftw3','blas':g" -i ${S}/siteconfig.py || die
-	else
-		sed -e "s:fftw = True:fftw = False:g" -i ${S}/siteconfig.py || die
+		echo "libraries += ['fftw3', 'blas']" >> ${GPAW_CONFIG}
 	fi
 	if use scalapack; then
-		sed -e "s:scalapack = False:scalapack = True:g" -i ${S}/siteconfig.py || die
-		sed -e "s:'scalapack-openmpi':'scalapack':g" -i ${S}/siteconfig.py || die
-	else
-		sed -e "s:scalapack = True:scalapack = False:g" -i ${S}/siteconfig.py || die
+		echo "libraries += ['scalapack']" >> ${GPAW_CONFIG}
 	fi
 	if use mpi; then
-		echo "libraries += ['mpi']" >> ${S}/siteconfig.py || die
-	else
-		sed -e "s:os.name != 'nt':False:g" -i ${S}/setup.py || die
+		echo "libraries += ['mpi']" >> ${GPAW_CONFIG}
+		echo "compiler = 'mpicc'" >> ${GPAW_CONFIG}
+		if use fftw; then
+			echo "libraries += ['fftw3_mpi']" >> ${GPAW_CONFIG}
+		fi
 	fi
 	if use openmp; then
-		echo "extra_compile_args += ['-fopenmp']" >> ${S}/siteconfig.py
-		echo "extra_link_args += ['-fopenmp']" >> ${S}/siteconfig.py
+		echo "extra_compile_args += ['-fopenmp']" >> ${GPAW_CONFIG}
+		echo "extra_link_args += ['-fopenmp']" >> ${GPAW_CONFIG}
+		if use fftw; then
+			echo "libraries += ['fftw3_omp']" >> ${GPAW_CONFIG}
+		fi
 	fi
 	if use elpa; then
-		echo "elpa = True" >> ${S}/siteconfig.py
 		if use openmp; then
-			echo "libraries += ['elpa_openmp']" >> ${S}/siteconfig.py
+			echo "libraries += ['elpa_openmp']" >> ${GPAW_CONFIG}
 			if [ -d ${EPREFIX}/usr/include/elpa_openmp-2021.11.001 ]; then
-				echo "include_dirs += ['${EPREFIX}/usr/include/elpa_openmp-2021.11.001']" >> ${S}/siteconfig.py
+				echo "include_dirs += ['${EPREFIX}/usr/include/elpa_openmp-2021.11.001']" >> ${GPAW_CONFIG}
 			elif [ -d ${EPREFIX}/usr/include/elpa_openmp-2019.11.001 ]; then
-				echo "include_dirs += ['${EPREFIX}/usr/include/elpa_openmp-2019.11.001']" >> ${S}/siteconfig.py
+				echo "include_dirs += ['${EPREFIX}/usr/include/elpa_openmp-2019.11.001']" >> ${GPAW_CONFIG}
 			else
 				die elpa problem ${EPREFIX}usr/include/elpa_openmp-2019.11.001
 			fi
 		else
-			echo "libraries += ['elpa']" >> ${S}/siteconfig.py
+			echo "libraries += ['elpa']" >> ${GPAW_CONFIG}
 			if [ -d ${EPREFIX}/usr/include/elpa_openmp-2021.11.001 ]; then
-				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2021.11.001']" >> ${S}/siteconfig.py
+				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2021.11.001']" >> ${GPAW_CONFIG}
 			elif [ -d ${EPREFIX}/usr/include/elpa_openmp-2019.11.001 ]; then
-				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2019.11.001']" >> ${S}/siteconfig.py
+				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2019.11.001']" >> ${GPAW_CONFIG}
 			else
 				die elpa problem
 			fi
