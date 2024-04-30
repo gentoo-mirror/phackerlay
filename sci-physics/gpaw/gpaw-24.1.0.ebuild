@@ -27,10 +27,10 @@ RDEPEND="
 	>=dev-python/scipy-1.6.0[${PYTHON_USEDEP}]
 	>=sci-physics/ase-3.22.1[${PYTHON_USEDEP}]
 	>=sci-libs/libxc-3
-	virtual/blas
+	sci-libs/openblas
 	setups? ( sci-libs/gpaw-setups )
 	fftw? ( sci-libs/fftw )
-        mpi? ( virtual/mpi )
+        mpi? ( virtual/mpi sci-libs/fftw[mpi] )
         scalapack? ( sci-libs/scalapack )
         elpa? ( || ( =sci-libs/elpa-2021.11.001 =sci-libs/elpa-2019.11.001 ) )
 	"
@@ -65,13 +65,10 @@ src_configure() {
 	if use openmp; then
 		echo "extra_compile_args += ['-fopenmp']" >> ${GPAW_CONFIG}
 		echo "extra_link_args += ['-fopenmp']" >> ${GPAW_CONFIG}
-		if use fftw; then
-			echo "libraries += ['fftw3_omp']" >> ${GPAW_CONFIG}
-		fi
 	fi
 	if use elpa; then
 		echo "elpa = True" >> ${GPAW_CONFIG}
-		if use openmp; then
+		if has_version sci-libs/elpa[openmp]; then
 			echo "libraries += ['elpa_openmp']" >> ${GPAW_CONFIG}
 			if [ -d ${EPREFIX}/usr/include/elpa_openmp-2021.11.001 ]; then
 				echo "include_dirs += ['${EPREFIX}/usr/include/elpa_openmp-2021.11.001']" >> ${GPAW_CONFIG}
@@ -93,7 +90,10 @@ src_configure() {
 		fi
 	fi
 	if use fftw; then
-		echo "libraries += ['fftw3', 'blas']" >> ${GPAW_CONFIG}
+		if has_version sci-libs/fftw[openmp]; then
+			echo "libraries += ['fftw3_omp']" >> ${GPAW_CONFIG}
+		fi
+		echo "libraries += ['fftw3', 'openblas']" >> ${GPAW_CONFIG}
 		echo "fftw = True" >> ${GPAW_CONFIG}
 	fi
 }
@@ -115,11 +115,6 @@ python_install() {
 
 python_install_all() {
         unset CC
-#	if use examples ; then
-#		docinto examples
-#		dodoc -r examples/.
-#	fi
-
 	distutils-r1_python_install_all
 }
 
