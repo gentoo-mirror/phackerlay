@@ -81,11 +81,12 @@ src_configure() {
 				die elpa problem ${EPREFIX}usr/include/elpa_openmp-2019.11.001
 			fi
 		else
+
 			echo "libraries += ['elpa']" >> ${GPAW_CONFIG}
-			if [ -d ${EPREFIX}/usr/include/elpa_openmp-2021.11.001 ]; then
+			if [ -d ${EPREFIX}/usr/include/elpa-2021.11.001 ]; then
 				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2021.11.001']" >> ${GPAW_CONFIG}
-			elif [ -d ${EPREFIX}/usr/include/elpa_openmp-2019.11.001 ]; then
-				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2019.11.001']" >> ${GPAW_CONFIG}
+			elif [ -d ${EPREFIX}/usr/include/elpa-2019.11.001 ]; then
+				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2019.11.001/elpa']" >> ${GPAW_CONFIG}
 			else
 				die elpa problem
 			fi
