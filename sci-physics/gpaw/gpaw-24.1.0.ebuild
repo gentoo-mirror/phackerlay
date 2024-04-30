@@ -48,7 +48,6 @@ src_configure() {
 	echo "libraries = ['xc']" >> ${GPAW_CONFIG}
 	echo "extra_compile_args = []" >> ${GPAW_CONFIG}
 	echo "extra_link_args = []" >> ${GPAW_CONFIG}
-	echo "libraries = []" >> ${GPAW_CONFIG}
 	echo "include_dirs = []" >> ${GPAW_CONFIG}
 
 	if use fftw; then
