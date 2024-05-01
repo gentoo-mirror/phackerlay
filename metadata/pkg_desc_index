@@ -52,7 +52,7 @@ dev-python/ipympl 0.9.4: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
 dev-python/jupyter-c-kernel 1.2.2: Minimal Jupyter C kernel
 dev-python/jupyter-telemetry 0.1.0: Telemetry for Jupyter Applications and extensions
-dev-python/jupyterhub 4.1.4: A multi-user server for Jupyter notebooks
+dev-python/jupyterhub 4.1.5: A multi-user server for Jupyter notebooks
 dev-python/jupyterhub-idle-culler 1.3.1: JupyterHub service to cull idle servers and users
 dev-python/jupyterhub-ldapauthenticator 1.3.2: Simple LDAP Authenticator Plugin for JupyterHub
 dev-python/jupyterhub_moss 6.0.0: Jupyterhub MOdular Slurm Spawner
@@ -67,7 +67,7 @@ dev-python/oauthenticator 16.3.0: OAuth + JupyterHub Authenticator = OAuthentica
 dev-python/osmium 3.7.0: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/param 1.13.0: Make Python code clearer and more reliable by declaring Parameters
-dev-python/petsc4py 3.19.2 3.20.6 3.21.0: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
+dev-python/petsc4py 3.19.2 3.20.6 3.21.1: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
@@ -140,6 +140,6 @@ www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
 www-apps/privatebin 1.6.2: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-apps/seafile-ce-server 10.0.1: Meta package for Seafile Community Edition, file sync share solution
-www-servers/uwsgi 2.0.22-r1 2.0.24: uWSGI server for Python web applications
+www-servers/uwsgi 2.0.22-r1 2.0.25.1: uWSGI server for Python web applications
 x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
 x11-themes/chicago95 3.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
