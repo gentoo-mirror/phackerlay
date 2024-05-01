@@ -26,7 +26,7 @@ app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var
 app-sports/goldencheetah 3.6: Performance Software for Cyclists, Runners, Triathletes and Coaches
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
-dev-cpp/xeus-zmq 1.3.0: ZeroMQ-based middleware for xeus
+dev-cpp/xeus-zmq 1.3.0 2.0.0: ZeroMQ-based middleware for xeus
 dev-cpp/xproperty 0.11.0: Traitlets-like C++ properties and implementation of the observer pattern
 dev-cpp/xtl 0.7.7: The x template library
 dev-cpp/xwidgets 0.28.1: C++ backend for Jupyter interactive widgets
@@ -42,9 +42,9 @@ dev-python/bjdata 0.4.1: Binary JSON (BJData/UBJSON) Support for Python
 dev-python/certipy 0.1.3: A simple python tool for creating certificate authorities and certificates on the fly.
 dev-python/cffi 1.14.6: Foreign Function Interface for Python calling C code
 dev-python/cling-kernels 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
-dev-python/fenics-basix 0.7.0: FEniCS finite element basis evaluation library
-dev-python/fenics-ffcx 0.7.0: Next generation FEniCS Form Compiler for finite element forms
-dev-python/fenics-ufl 2023.2.0: UFL - FEniCS project's Unified Form Language
+dev-python/fenics-basix 0.8.0: FEniCS finite element basis evaluation library
+dev-python/fenics-ffcx 0.8.0: Next generation FEniCS Form Compiler for finite element forms
+dev-python/fenics-ufl 2024.1.0: UFL - FEniCS project's Unified Form Language
 dev-python/gevent 22.10.2 24.2.1: Coroutine-based network library
 dev-python/hatch-nodejs-version 0.3.2: Hatch plugin to read pyproject.toml metadata from package.json
 dev-python/ipydatawidgets 4.3.5: A set of widgets to help facilitate reuse of large datasets across widgets
@@ -107,15 +107,15 @@ sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.3-r1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
 sci-electronics/qucs-s 24.2.1: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
-sci-geosciences/mkgmap-bin 4918: Tool to create garmin maps
+sci-geosciences/mkgmap-bin 4919: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
-sci-libs/dolfinx 0.7.2: Next generation FEniCS problem solving environment
+sci-libs/dolfinx 0.8.0: Next generation FEniCS problem solving environment
 sci-libs/elpa 2019.11.001 2021.11.001 2023.11.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 24.1.0: Setup collection for sci-physics/gpaw
 sci-libs/libxc 5.2.3 6.2.2: A library of exchange-correlation functionals for use in DFT
 sci-libs/osmium 2.20.0: Fast and flexible C++ library for working with OpenStreetMap data
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
-sci-mathematics/dolfinx 0.6.0: Next generation FEniCS problem solving environment
+sci-mathematics/dolfinx 0.8.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/abinit 10.0.5: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
