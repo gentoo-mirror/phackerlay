@@ -27,7 +27,7 @@ RDEPEND="
 	>=dev-python/scipy-1.6.0[${PYTHON_USEDEP}]
 	>=sci-physics/ase-3.22.1[${PYTHON_USEDEP}]
 	>=sci-libs/libxc-3
-	sci-libs/openblas
+	virtual/blas
 	setups? ( sci-libs/gpaw-setups )
 	fftw? ( sci-libs/fftw )
         mpi? ( virtual/mpi sci-libs/fftw[mpi] )
@@ -93,7 +93,7 @@ src_configure() {
 		if has_version sci-libs/fftw[openmp]; then
 			echo "libraries += ['fftw3_omp']" >> ${GPAW_CONFIG}
 		fi
-		echo "libraries += ['fftw3', 'openblas']" >> ${GPAW_CONFIG}
+		echo "libraries += ['fftw3', 'blas']" >> ${GPAW_CONFIG}
 		echo "fftw = True" >> ${GPAW_CONFIG}
 	fi
 }
