@@ -93,7 +93,7 @@ src_configure() {
 		if has_version sci-libs/fftw[openmp]; then
 			echo "libraries += ['fftw3_omp']" >> ${GPAW_CONFIG}
 		fi
-		echo "libraries += ['fftw3', 'openblas']" >> ${GPAW_CONFIG}
+		echo "libraries += ['fftw3', 'blas']" >> ${GPAW_CONFIG}
 		echo "fftw = True" >> ${GPAW_CONFIG}
 	fi
 }
