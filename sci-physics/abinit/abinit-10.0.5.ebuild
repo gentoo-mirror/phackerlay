@@ -38,6 +38,7 @@ src_configure() {
 		-DABINIT_FFT_FLAVOR="$(usex fftw FFTW3 GOEDECKER)"
                 -DABINIT_SCALAPACK_ENABLED="$(usex scalapack)"
                 -DABINIT_ELPA_ENABLED="$(usex elpa)"
+		-DABINIT_ENABLE_MPI_IO=YES
         )
         cmake_src_configure
 }
