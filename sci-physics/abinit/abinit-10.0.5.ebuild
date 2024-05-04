@@ -30,6 +30,11 @@ pkg_pretend() {
         use openmp && ( tc-check-openmp || die )
 }
 
+src_prepare() {
+	sed -e "s:9.11.0:${PV}:g" -i ${WORKDIR}/${P}/CMakeLists.txt || die
+	cmake_src_prepare
+}
+
 src_configure() {
 	${S}/config/scripts/make-cppopts-dumper || die
         local mycmakeargs=(
