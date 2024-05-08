@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.88.1.24102 1.88.1.24104: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.88.1.24102 1.88.1.24104 1.89.0.24126 1.89.0.24127: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 app-sports/goldencheetah 3.6: Performance Software for Cyclists, Runners, Triathletes and Coaches
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
@@ -134,11 +134,11 @@ virtual/blas 3.9: Virtual for FORTRAN 77 BLAS implementation
 virtual/cblas 3.9: Virtual for BLAS C implementation
 virtual/lapack 3.11: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.65: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.66: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
-www-apps/privatebin 1.6.2: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
+www-apps/privatebin 1.7.2: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-apps/seafile-ce-server 10.0.1: Meta package for Seafile Community Edition, file sync share solution
 www-servers/uwsgi 2.0.22-r1 2.0.25.1: uWSGI server for Python web applications
 x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
