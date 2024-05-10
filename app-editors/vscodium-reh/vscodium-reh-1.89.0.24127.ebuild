@@ -46,8 +46,7 @@ src_install() {
 	sed -i 's:$ROOT/out:'"/opt/${PN}/out:g" bin/codium-server
 	sed -i 's:"$@":--telemetry-level off "$@":g' bin/codium-server
 
-	# ROOT="$(dirname "$(dirname "$(readlink -f "$0")")")"
-	# "$ROOT/node" ${INSPECT:-} "$ROOT/out/server-main.js" "$@"
+	find ${S} -name '*.js' -exec chmod +x '{}' \;
 
 	doins -r *
 	fperms +x /opt/${PN}/${P}/bin/codium-server
