@@ -6,10 +6,14 @@ EAPI=8
 inherit cmake flag-o-matic fortran-2 toolchain-funcs
 
 DESCRIPTION="Subset of LAPACK routines redesigned for heterogenous (MPI) computing"
-HOMEPAGE="https://www.netlib.org/scalapack/"
+HOMEPAGE="
+	https://www.netlib.org/scalapack/
+	https://github.com/scivision/scalapack
+"
 SRC_URI="
-        https://github.com/Reference-ScaLAPACK/scalapack/archive/refs/tags/v${PV}.tar.gz
+        https://github.com/scivision/scalapack/archive/refs/tags/v${PV}.tar.gz
 	"
+#        https://github.com/Reference-ScaLAPACK/scalapack/archive/refs/tags/v${PV}.tar.gz
 
 LICENSE="BSD"
 SLOT="0"
