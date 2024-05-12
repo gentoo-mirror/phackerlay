@@ -1,0 +1,10 @@
+--- a/cmake/scalapack_setup.cmake	2024-05-12 16:02:21.324048621 +0300
++++ b/cmake/scalapack_setup.cmake	2024-05-12 16:02:43.210739419 +0300
+@@ -51,6 +51,7 @@
+     if(scalapack_FOUND)
+       message("scalapack/netlib found via cmake config")
+       set(scalapack_found_using_cmake_target TRUE)
++      add_library(abinit::scalapack ALIAS scalapack)
+     else()
+       message("scalapack/netlib not found. Please adjust variable scalapack_DIR / scalapack_ROOT")
+     endif()
