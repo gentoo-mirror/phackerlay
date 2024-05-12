@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9,10,11} )
+PYTHON_COMPAT=( python3_{11,12} )
 DISTUTILS_USE_PEP517=setuptools
 EGIT_REPO_URI="https://github.com/IgorMIV/RoboArt.git"
 
