@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake
+inherit cmake flag-o-matic
 
 DESCRIPTION="A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials"
 HOMEPAGE="
@@ -41,6 +41,9 @@ src_prepare() {
 }
 
 src_configure() {
+	append-fflags -fallow-argument-mismatch
+	filter-lto
+
 	${S}/config/scripts/make-cppopts-dumper || die
         local mycmakeargs=(
 		-DCMAKE_DISABLE_FIND_PACKAGE_MPI="$(usex mpi NO YES)"
