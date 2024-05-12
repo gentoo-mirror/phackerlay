@@ -98,6 +98,7 @@ sci-libs/gpaw-setups 24.1.0: Setup collection for sci-physics/gpaw
 sci-libs/libxc 5.2.3 6.2.2: A library of exchange-correlation functionals for use in DFT
 sci-libs/osmium 2.20.0: Fast and flexible C++ library for working with OpenStreetMap data
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
+sci-libs/scalapack 2.2.1.7: Subset of LAPACK routines redesigned for heterogenous (MPI) computing
 sci-mathematics/dolfinx 0.8.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/abinit 10.0.5: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
@@ -111,6 +112,9 @@ sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 sc
 sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
 sys-power/apcupsd_exporter 0.3.0: Prometheus exporter that exposes metrics from apcupsd's NIS
+virtual/blas 3.9: Virtual for FORTRAN 77 BLAS implementation
+virtual/cblas 3.9: Virtual for BLAS C implementation
+virtual/lapack 3.11: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
 virtual/mta 1-r3: Virtual for Message Transfer Agents
 www-apps/element 1.11.66: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
