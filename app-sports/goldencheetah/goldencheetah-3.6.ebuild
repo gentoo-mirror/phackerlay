@@ -27,7 +27,7 @@ RDEPEND="
 	dev-qt/qtserialport:5
 	dev-qt/qtconcurrent:5
 	x11-libs/qwt:6[qt5]
-	sci-lib/gsl
+	sci-libs/gsl
 "
 
 DEPEND="${RDEPEND}"
