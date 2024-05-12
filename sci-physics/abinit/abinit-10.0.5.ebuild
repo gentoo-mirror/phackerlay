@@ -15,16 +15,21 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="mpi openmp fftw scalapack elpa"
+IUSE="blas_openblas mpi openmp fftw scalapack elpa"
 
 DEPEND="
 	sci-libs/netcdf-cxx
 	sci-libs/netcdf-fortran
+        blas_openblas? ( sci-libs/openblas )
         fftw? ( sci-libs/fftw )
         mpi? ( virtual/mpi[romio] )
         scalapack? ( sci-libs/scalapack )
         elpa? ( || ( =sci-libs/elpa-2019.11.001 ) )
 "
+
+PATCHES=(
+	${FILESDIR}/v10-scalapack-miss.patch
+)
 
 pkg_pretend() {
         use openmp && ( tc-check-openmp || die )
@@ -42,9 +47,10 @@ src_configure() {
 		-DCMAKE_DISABLE_FIND_PACKAGE_OpenMP="$(usex openmp NO YES)"
 		-DABINIT_FFT_FLAVOR="$(usex fftw FFTW3 GOEDECKER)"
                 -DABINIT_SCALAPACK_ENABLED="$(usex scalapack)"
-                -DABINIT_ELPA_ENABLED="$(usex elpa)"
+                -DABINIT_ELPA_ENABLED="$(usesx elpa)"
 		-DCMAKE_DISABLE_FIND_PACKAGE_MPI="$(usex mpi NO YES)"
 		-DABINIT_ENABLE_MPI_IO="$(usex mpi YES NO)"
+		-DBLA_VENDOR=openblas
         )
         cmake_src_configure
 }

@@ -17,7 +17,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="+setups +fftw +openmp mpi scalapack vdwxc elpa"
+IUSE="+setups +fftw +blas_openblas +openmp mpi scalapack vdwxc elpa"
 
 RESTRICT="libvdwxc elpa"
 
@@ -27,7 +27,7 @@ RDEPEND="
 	>=dev-python/scipy-1.6.0[${PYTHON_USEDEP}]
 	>=sci-physics/ase-3.22.1[${PYTHON_USEDEP}]
 	>=sci-libs/libxc-3
-	virtual/blas
+	blas_openblas? ( sci-libs/openblas )
 	setups? ( sci-libs/gpaw-setups )
 	fftw? ( sci-libs/fftw )
         mpi? ( virtual/mpi sci-libs/fftw[mpi] )
@@ -93,7 +93,7 @@ src_configure() {
 		if has_version sci-libs/fftw[openmp]; then
 			echo "libraries += ['fftw3_omp']" >> ${GPAW_CONFIG}
 		fi
-		echo "libraries += ['fftw3', 'blas']" >> ${GPAW_CONFIG}
+		echo "libraries += ['fftw3', 'openblas']" >> ${GPAW_CONFIG}
 		echo "fftw = True" >> ${GPAW_CONFIG}
 	fi
 }
