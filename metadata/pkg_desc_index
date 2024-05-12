@@ -78,21 +78,7 @@ dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
-dev-python/trame-client 2.11.3: Internal client side implementation of trame
-dev-python/trame-components 2.2.0: Core widgets for trame
-dev-python/trame-deckgl 2.0.2: Deck.gl widget for trame
-dev-python/trame-markdown 2.0.2: Markdown widget for trame
-dev-python/trame-matplotlib 2.0.2: Trame widget for Matplotlib
-dev-python/trame-plotly 3.0.2: Plotly figure widget for trame
-dev-python/trame-rca 0.3.1: Remote Controlled Area widget for trame
-dev-python/trame-router 2.1.0: trame-router brings Vue Router capabilities into trame widgets and ui
-dev-python/trame-server 2.11.7: Internal server side implementation of trame
-dev-python/trame-simput 2.3.3: Simput implementation for trame
-dev-python/trame-vega 2.0.3: Vega widget for trame
-dev-python/trame-vtk 2.5.8: VTK/ParaView widgets for trame
-dev-python/trame-vuetify 2.3.1: trame-vuetify brings Vuetify UI Material Components into trame
 dev-python/txredisapi 1.4.9: non-blocking redis client for python twisted
-dev-python/wslink 1.11.4: Python/JavaScript library for communicating over WebSocket
 dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
@@ -139,7 +125,6 @@ www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like dia
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
 www-apps/privatebin 1.7.2: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
-www-apps/seafile-ce-server 10.0.1: Meta package for Seafile Community Edition, file sync share solution
 www-servers/uwsgi 2.0.22-r1 2.0.25.1: uWSGI server for Python web applications
 x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
 x11-themes/chicago95 3.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
