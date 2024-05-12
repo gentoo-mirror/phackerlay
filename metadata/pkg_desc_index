@@ -22,7 +22,6 @@ acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
 app-editors/vscodium-reh 1.89.0.24127 1.89.1.24130: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
-app-portage/remerge 0.2.2: Continue unsuccessfull merge of last ebuild from /var/log/emerge.log
 app-sports/goldencheetah 3.6: Performance Software for Cyclists, Runners, Triathletes and Coaches
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
@@ -40,7 +39,6 @@ dev-python/async_generator 1.10: Making it easy to write async iterators in Pyth
 dev-python/batchspawner 1.3.0: Custom Spawner for Jupyterhub to start servers in batch scheduled systems
 dev-python/bjdata 0.4.1: Binary JSON (BJData/UBJSON) Support for Python
 dev-python/certipy 0.1.3: A simple python tool for creating certificate authorities and certificates on the fly.
-dev-python/cffi 1.14.6: Foreign Function Interface for Python calling C code
 dev-python/cling-kernels 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-python/fenics-basix 0.8.0: FEniCS finite element basis evaluation library
 dev-python/fenics-ffcx 0.8.0: Next generation FEniCS Form Compiler for finite element forms
@@ -66,7 +64,6 @@ dev-python/npyosmium 3.6.3: Python bindings for libosmium
 dev-python/oauthenticator 16.3.0: OAuth + JupyterHub Authenticator = OAuthenticator
 dev-python/osmium 3.7.0: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
-dev-python/param 1.13.0: Make Python code clearer and more reliable by declaring Parameters
 dev-python/petsc4py 3.19.2 3.20.6 3.21.1: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
@@ -107,7 +104,6 @@ sci-physics/abinit 10.0.5: A software suite to calculate the optical, mechanical
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 24.1.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 7.3.1: Suite for first-principles electronic-structure calculations and materials modeling
-sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
 sys-block/libfabric 1.21.0: The Open Fabrics Interfaces (OFI) framework
 sys-cluster/mpich 4.1.2: A high performance and portable MPI implementation
 sys-cluster/rdma-core 41.6: Userspace components for the Linux Kernel's drivers/infiniband subsystem
