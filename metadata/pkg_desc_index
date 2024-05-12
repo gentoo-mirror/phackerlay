@@ -107,7 +107,6 @@ sci-physics/abinit 10.0.5: A software suite to calculate the optical, mechanical
 sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 24.1.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 7.3.1: Suite for first-principles electronic-structure calculations and materials modeling
-sci-visualization/trame 3.2.5: Trame lets you weave various components and technologies into a Web Application solely written in Python
 sys-apps/kexec-reboot-gentoo 0.2.3: Simple initrd-aware script to kexec-reboot gentoo-running system into grub.cfg first mentioned kernel
 sys-block/libfabric 1.21.0: The Open Fabrics Interfaces (OFI) framework
 sys-cluster/mpich 4.1.2: A high performance and portable MPI implementation
