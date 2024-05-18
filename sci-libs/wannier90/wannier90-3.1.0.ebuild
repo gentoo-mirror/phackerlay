@@ -1,0 +1,40 @@
+# Copyright 2024 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=8
+
+DESCRIPTION="Package for generating maximally-localized Wannier functions"
+HOMEPAGE="https://wannier.org"
+
+SRC_URI="https://github.com/wannier-developers/wannier90/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+KEYWORDS="~amd64"
+
+LICENSE="GPL-2"
+IUSE="+blas_openblas mpi"
+#IUSE="openmp mpi cpu_flags_x86_sse cpu_flags_x86_avx cpu_flags_x86_avx2 cpu_flags_x86_avx512 cpu_flags_x86_sve128 cpu_flags_x86_sve256 cpu_flags_x86_sve512"
+SLOT="0"
+
+DEPEND="
+	blas_openblas? ( sci-libs/openblas )
+"
+
+BDEPEND="
+        mpi? ( virtual/mpi )
+"
+
+src_configure() {
+	echo "F90 = gfortran" >> ${S}/make.inc
+	if use mpi; then
+		echo "COMMS = mpi" >> ${S}/make.inc
+		echo "MPIF90 = mpif90" >> ${S}/make.inc
+	fi
+	use blas_openblas && echo "LIBS = -lopenblas" >> ${S}/make.inc
+}
+
+src_compile() {
+	emake default lib
+}
+
+src_install() {
+	emake DESTDIR="${D}" install
+}
