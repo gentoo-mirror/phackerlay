@@ -2,6 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
+inherit flag-o-matic
 
 DESCRIPTION="Package for generating maximally-localized Wannier functions"
 HOMEPAGE="https://wannier.org"
@@ -11,7 +12,6 @@ KEYWORDS="~amd64"
 
 LICENSE="GPL-2"
 IUSE="+blas_openblas mpi"
-#IUSE="openmp mpi cpu_flags_x86_sse cpu_flags_x86_avx cpu_flags_x86_avx2 cpu_flags_x86_avx512 cpu_flags_x86_sve128 cpu_flags_x86_sve256 cpu_flags_x86_sve512"
 SLOT="0"
 
 DEPEND="
@@ -20,9 +20,13 @@ DEPEND="
 
 BDEPEND="
         mpi? ( virtual/mpi )
+	!mpi? ( sys-devel/gcc[fortran] )
 "
 
 src_configure() {
+        append-fflags -fallow-argument-mismatch
+        filter-lto
+
 	echo "F90 = gfortran" >> ${S}/make.inc
 	if use mpi; then
 		echo "COMMS = mpi" >> ${S}/make.inc
