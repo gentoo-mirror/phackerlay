@@ -15,7 +15,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="blas_openblas mpi openmp fftw scalapack elpa"
+IUSE="blas_openblas mpi openmp fftw scalapack elpa wannier90"
 
 DEPEND="
 	sci-libs/netcdf-cxx
@@ -25,6 +25,7 @@ DEPEND="
         mpi? ( virtual/mpi[romio] )
         scalapack? ( sci-libs/scalapack )
         elpa? ( || ( =sci-libs/elpa-2019.11.001 ) )
+	wannier90? ( sci-libs/wannier90 )
 "
 
 PATCHES=(
@@ -54,6 +55,8 @@ src_configure() {
 		-DCMAKE_DISABLE_FIND_PACKAGE_MPI="$(usex mpi NO YES)"
 		-DABINIT_ENABLE_MPI_IO="$(usex mpi YES NO)"
 		-DBLA_VENDOR=openblas
+		-DWANNIER90_WANTED="$(usex wannier90 YES NO)"
+		-DABINIT_WANNIER90_BUILD=NO
         )
         cmake_src_configure
 }
