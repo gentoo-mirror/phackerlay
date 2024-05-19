@@ -15,7 +15,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="blas_openblas mpi openmp fftw scalapack elpa wannier90"
+IUSE="+blas_openblas mpi openmp fftw scalapack elpa wannier90"
 
 DEPEND="
 	sci-libs/netcdf-cxx
@@ -26,6 +26,10 @@ DEPEND="
         scalapack? ( sci-libs/scalapack )
         elpa? ( || ( =sci-libs/elpa-2019.11.001 ) )
 	wannier90? ( sci-libs/wannier90 )
+"
+
+REQUIRED_USE="
+	^^ ( blas_openblas )
 "
 
 PATCHES=(

@@ -2,7 +2,6 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit flag-o-matic
 
 DESCRIPTION="Package for generating maximally-localized Wannier functions"
 HOMEPAGE="https://wannier.org"
@@ -23,6 +22,10 @@ BDEPEND="
 	!mpi? ( sys-devel/gcc[fortran] )
 "
 
+REQUIRED_USE="
+	^^ ( blas_openblas )
+"
+
 src_configure() {
         filter-lto
 
@@ -31,9 +34,6 @@ src_configure() {
 		echo "COMMS = mpi" >> ${S}/make.inc
 		echo "MPIF90 = mpif90" >> ${S}/make.inc
 		echo "FCOPTS = -fallow-argument-mismatch" >> ${S}/make.inc
-	else
-		# does not work without mpi
-		append-fflags $(test-flags-FC -fallow-argument-mismatch)
 	fi
 	use blas_openblas && echo "LIBS = -lopenblas" >> ${S}/make.inc
 }

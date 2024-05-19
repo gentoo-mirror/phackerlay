@@ -36,6 +36,10 @@ RDEPEND="
 	"
 	# mind elpa version below
 
+REQUIRED_USE="
+	^^ ( blas_openblas )
+"
+
 distutils_enable_tests pytest
 
 pkg_pretend() {
