@@ -1,0 +1,26 @@
+diff --git a/Makefile b/Makefile
+index a9af3577..5cf1e623 100644
+--- a/Makefile
++++ b/Makefile
+@@ -50,6 +50,22 @@ w90vdw:
+
+ libs: lib
+
++PKGCONFIG_FILENAME = wannier.pc
++pkgconfig:
++	$(file > $(PKGCONFIG_FILENAME),prefix=$(DESTDIR)$(PREFIX))
++	$(file >> $(PKGCONFIG_FILENAME),exec_prefix=$(DESTDIR)$(PREFIX)/bin)
++	$(file >> $(PKGCONFIG_FILENAME),libdir=$(DESTDIR)$(PREFIX)/lib)
++	$(file >> $(PKGCONFIG_FILENAME),includedir=$(DESTDIR)$(PREFIX)/include)
++	$(file >> $(PKGCONFIG_FILENAME),)
++	$(file >> $(PKGCONFIG_FILENAME),Name: wannier)
++	$(file >> $(PKGCONFIG_FILENAME),Description: Compute maximally-localised Wannier functions.)
++	$(file >> $(PKGCONFIG_FILENAME),Requires: )
++	$(file >> $(PKGCONFIG_FILENAME),Version: $(VERSION))
++	$(file >> $(PKGCONFIG_FILENAME),Libs: -L$${libdir} -lwannier)
++	$(file >> $(PKGCONFIG_FILENAME),Cflags: -I$${includedir})
++	install -D -m644 "$(PKGCONFIG_FILENAME)" "$(DESTDIR)$(PREFIX)/lib/pkgconfig/$(PKGCONFIG_FILENAME)"
++	cd $(ROOTDIR) && rm -f $(PKGCONFIG_FILENAME)
++
+ post: objdirp
+        (cd $(ROOTDIR)/src/objp && $(MAKE) -f $(REALMAKEFILE) post)

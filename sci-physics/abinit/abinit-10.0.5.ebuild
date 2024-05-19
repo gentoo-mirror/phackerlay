@@ -58,8 +58,9 @@ src_configure() {
                 -DABINIT_ELPA_ENABLED="$(usesx elpa)"
 		-DCMAKE_DISABLE_FIND_PACKAGE_MPI="$(usex mpi NO YES)"
 		-DABINIT_ENABLE_MPI_IO="$(usex mpi YES NO)"
-		-DBLA_VENDOR=openblas
-		-DWANNIER90_WANTED="$(usex wannier90 YES NO)"
+		-DBLA_VENDOR=OpenBLAS
+		-DABINIT_WANNIER90_WANTED="$(usex wannier90 YES NO)"
+		-DWANNIER_ROOT="${EPREFIX}/usr"
 		-DABINIT_WANNIER90_BUILD=NO
         )
         cmake_src_configure
