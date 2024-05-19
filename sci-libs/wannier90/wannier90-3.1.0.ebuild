@@ -24,13 +24,16 @@ BDEPEND="
 "
 
 src_configure() {
-        append-fflags -fallow-argument-mismatch
         filter-lto
 
 	echo "F90 = gfortran" >> ${S}/make.inc
 	if use mpi; then
 		echo "COMMS = mpi" >> ${S}/make.inc
 		echo "MPIF90 = mpif90" >> ${S}/make.inc
+		echo "FCOPTS = -fallow-argument-mismatch" >> ${S}/make.inc
+	else
+		# does not work without mpi
+		append-fflags $(test-flags-FC -fallow-argument-mismatch)
 	fi
 	use blas_openblas && echo "LIBS = -lopenblas" >> ${S}/make.inc
 }
@@ -40,5 +43,5 @@ src_compile() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" install
+	emake PREFIX="${EPREFIX}/usr" DESTDIR="${D}" install
 }
