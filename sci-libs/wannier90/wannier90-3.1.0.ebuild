@@ -26,9 +26,11 @@ REQUIRED_USE="
 	^^ ( blas_openblas )
 "
 
-src_configure() {
-        filter-lto
+PATCHES=(
+	${FILESDIR}/01-add-pkgconfig.patch
+)
 
+src_configure() {
 	echo "F90 = gfortran" >> ${S}/make.inc
 	if use mpi; then
 		echo "COMMS = mpi" >> ${S}/make.inc
@@ -43,5 +45,25 @@ src_compile() {
 }
 
 src_install() {
-	emake PREFIX="${EPREFIX}/usr" DESTDIR="${D}" install
+	emake PREFIX="${EPREFIX}/usr" DESTDIR="${D}" install pkgconfig
+	insinto /usr/include
+	for FILE in comms \
+		constants \
+		disentangle \
+		hamiltonian \
+		io \
+		kmesh \
+		overlap \
+		parameters \
+		plot \
+		sitesym \
+		transport \
+		utility \
+		w90chk2chk \
+		w90spn2spn \
+		wannierise \
+		ws_distance; do
+		newins src/${FILE}.F90 w90_${FILE}.mod
+	done
+
 }
