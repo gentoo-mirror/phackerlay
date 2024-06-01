@@ -1,0 +1,14 @@
+--- a/Makefile	2024-06-01 11:51:19.000000000 +0300
++++ b/Makefile	2024-06-01 11:51:46.000000000 +0300
+@@ -10,10 +10,9 @@
+
+ all:
+ 	cd src ; $(MAKE) all
+-	./set_path
+-	cd tests/data ; ./TEST.sh
+
+ test:
++	./set_path
+ 	cd tests/data ; ./TEST.sh
+
+ clean:

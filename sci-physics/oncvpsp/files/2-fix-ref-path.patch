@@ -1,0 +1,10 @@
+--- a/scritps/compare.sh	2024-06-01 11:44:39.000000000 +0300
++++ b/scripts/compare.sh	2024-06-01 11:43:52.000000000 +0300
+@@ -10,7 +10,7 @@
+
+ PREFIX=/home/ipnthsep1/ustinov/gentoo/var/tmp/portage/sci-physics/oncvpsp-4.0.1/work/oncvpsp-4.0.1
+
+-OUTFILE1=$PREFIX/tests/refs/$1.out
++OUTFILE1=$PREFIX/tests/data/$1.dat
+
+ OUTFILE2=$PREFIX/tests/data/$1.out
