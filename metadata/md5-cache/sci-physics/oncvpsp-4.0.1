@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install test
+DEPEND=sys-devel/gcc[fortran] blas_openblas? ( sci-libs/openblas )
+EAPI=8
+HOMEPAGE=https://github.com/oncvpsp/oncvpsp
+INHERIT=flag-o-matic
+IUSE=+blas_openblas test
+KEYWORDS=~amd64
+LICENSE=GPL-3
+REQUIRED_USE=^^ ( blas_openblas )
+SLOT=0
+SRC_URI=https://github.com/oncvpsp/oncvpsp/archive/refs/tags/4.0.1.tar.gz -> oncvpsp-4.0.1.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	d309b9713dfc18e754cba88d3ba69653
+_md5_=cb1be116837fbe35ea836a608eb5bf57
