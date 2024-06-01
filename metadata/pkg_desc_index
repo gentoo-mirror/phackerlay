@@ -102,7 +102,7 @@ sci-libs/wannier90 3.1.0: Package for generating maximally-localized Wannier fun
 sci-mathematics/dolfinx 0.8.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/abinit 10.0.5: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
-sci-physics/ase 3.22.1-r1: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
+sci-physics/ase 3.23.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 24.1.0-r1: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/quantum-espresso 7.3.1: Suite for first-principles electronic-structure calculations and materials modeling
 sys-block/libfabric 1.21.0: The Open Fabrics Interfaces (OFI) framework
