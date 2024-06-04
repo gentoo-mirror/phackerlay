@@ -103,7 +103,7 @@ sci-mathematics/dolfinx 0.8.0: Next generation FEniCS problem solving environmen
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/abinit 10.0.5: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
 sci-physics/ase 3.23.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
-sci-physics/gpaw 24.1.0-r1: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
+sci-physics/gpaw 24.6.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/oncvpsp 4.0.1: 
 sci-physics/quantum-espresso 7.3.1: Suite for first-principles electronic-structure calculations and materials modeling
 sys-block/libfabric 1.21.0: The Open Fabrics Interfaces (OFI) framework
@@ -117,7 +117,7 @@ virtual/blas 3.9: Virtual for FORTRAN 77 BLAS implementation
 virtual/cblas 3.9: Virtual for BLAS C implementation
 virtual/lapack 3.11: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.67: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.68: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
