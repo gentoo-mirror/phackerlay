@@ -1,8 +1,8 @@
 DEFINED_PHASES=-
-DEPEND=!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] ) eselect-ldso? ( || ( >=sci-libs/lapack-3.10.0[eselect-ldso,phackerlay] sci-libs/openblas[eselect-ldso] sci-libs/blis[eselect-ldso] ) ) eselect-ldso? ( >=app-eselect/eselect-blas-0.2 )
+DEPEND=!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] !!sci-libs/lapack-headers ) eselect-ldso? ( || ( >=sci-libs/lapack-3.10.0[eselect-ldso,phackerlay] sci-libs/openblas[eselect-ldso] sci-libs/blis[eselect-ldso] ) sci-libs/lapack-headers ) eselect-ldso? ( >=app-eselect/eselect-blas-0.2 )
 DESCRIPTION=Virtual for FORTRAN 77 BLAS implementation
 EAPI=8
 IUSE=eselect-ldso
-RDEPEND=!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] ) eselect-ldso? ( || ( >=sci-libs/lapack-3.10.0[eselect-ldso,phackerlay] sci-libs/openblas[eselect-ldso] sci-libs/blis[eselect-ldso] ) ) eselect-ldso? ( >=app-eselect/eselect-blas-0.2 )
+RDEPEND=!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] !!sci-libs/lapack-headers ) eselect-ldso? ( || ( >=sci-libs/lapack-3.10.0[eselect-ldso,phackerlay] sci-libs/openblas[eselect-ldso] sci-libs/blis[eselect-ldso] ) sci-libs/lapack-headers ) eselect-ldso? ( >=app-eselect/eselect-blas-0.2 )
 SLOT=0
-_md5_=e955be466e113fae36d34784c9981307
+_md5_=84394fe5358277e5843655a7d9af4ff1
