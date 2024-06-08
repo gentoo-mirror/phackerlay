@@ -10,11 +10,13 @@ IUSE="eselect-ldso"
 
 # sci-libs/lapack is really slow, shouldn't be default
 RDEPEND="
-	!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] )
+	!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] !!sci-libs/lapack-headers )
 	eselect-ldso? ( || (
 		>=sci-libs/lapack-3.10.0[eselect-ldso,phackerlay]
 		sci-libs/openblas[eselect-ldso]
-		sci-libs/blis[eselect-ldso] ) )
+		sci-libs/blis[eselect-ldso] )
+		sci-libs/lapack-headers
+	)
 	eselect-ldso? ( >=app-eselect/eselect-blas-0.2 )
 "
 DEPEND="${RDEPEND}"
