@@ -82,7 +82,7 @@ media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanner devices
 media-sound/shortwave 3.2.0: Listen to internet radio
 net-im/jitsi-meet 2024.5.0: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.105.1: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.108.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.6.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
