@@ -49,12 +49,12 @@ CRATES="
 	pyo3-build-config-0.21.2
 	pyo3-ffi-0.21.2
 	pyo3-log-0.10.0
-	pyo3-macros-0.21.1
+	pyo3-macros-0.21.2
 	pyo3-macros-backend-0.21.2
 	pythonize-0.21.1
 	ppv-lite86-0.2.17
 	quote-1.0.36
-	redox_syscall-0.2.16
+	redox_syscall-0.5.1
 	regex-1.10.4
 	regex-syntax-0.8.3
 	regex-automata-0.4.6
@@ -86,6 +86,7 @@ CRATES="
 	web-time-1.1.0
 	windows-sys-0.52.0
 	windows_aarch64_msvc-0.52.5
+	windows-targets-0.52.5
 	windows_i686_gnu-0.52.5
 	windows_i686_msvc-0.52.5
 	windows_x86_64_gnu-0.52.5
