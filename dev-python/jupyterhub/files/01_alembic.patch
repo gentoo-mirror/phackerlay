@@ -1,0 +1,11 @@
+diff --git a/setup.py_ b/setup.py
+index 611b822..098f926 100755
+--- a/setup.py_
++++ b/setup.py
+@@ -266,7 +266,7 @@ cmdclass = {
+ def main():
+     setup(
+         cmdclass=cmdclass,
+-        data_files=get_data_files(),
++        data_files=["jupyterhub/alembic.ini"] + get_data_files(),
+     )
