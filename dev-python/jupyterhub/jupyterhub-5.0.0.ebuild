@@ -30,16 +30,16 @@ RDEPEND="
 	>=dev-python/alembic-1.4[${PYTHON_USEDEP}]
 	>=dev-python/certipy-0.1.2[${PYTHON_USEDEP}]
 	dev-python/idna[${PYTHON_USEDEP}]
-	>=dev-python/async_generator-1.9[${PYTHON_USEDEP}]
 	>=dev-python/jinja-2.11.0[${PYTHON_USEDEP}]
-	>=dev-python/jupyter-telemetry-0.1.0[${PYTHON_USEDEP}]
+	dev-python/jupyter-events[${PYTHON_USEDEP}]
 	>=dev-python/oauthlib-3.0[${PYTHON_USEDEP}]
 	dev-python/pamela[${PYTHON_USEDEP}]
 	dev-python/packaging[${PYTHON_USEDEP}]
 	>=dev-python/prometheus-client-0.4.0[${PYTHON_USEDEP}]
+	>=dev-python/pydantic-2.0.0[${PYTHON_USEDEP}]
 	dev-python/python-dateutil[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
-	>=dev-python/sqlalchemy-1.4[${PYTHON_USEDEP}]
+	>=dev-python/sqlalchemy-1.4.1[${PYTHON_USEDEP}]
 	>=dev-python/tornado-5.1[${PYTHON_USEDEP}]
 	>=dev-python/traitlets-4.3.2[${PYTHON_USEDEP}]
 	|| ( dev-python/jupyterlab[${PYTHON_USEDEP}] dev-python/jupyter[${PYTHON_USEDEP}] )
@@ -61,7 +61,7 @@ python_compile() {
 }
 
 python_install() {
-	cd ${S} && python -m jupyterhub --generate-config
+	cd ${S} && python -m jupyterhub --generate-config || die
         distutils-r1_python_install --skip-build
 }
 
