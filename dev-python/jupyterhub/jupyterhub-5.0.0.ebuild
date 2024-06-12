@@ -19,11 +19,12 @@ IUSE="ldapauthenticator postgres sudospawner"
 
 RESTRICT=network-sandbox
 
-#dev-libs/kpathsea no mpl plots
+PATCHES=(
+	${FILESDIR}/01_alembic.patch
+)
 
 distutils_enable_tests pytest
 
-# only needed for <python-3.8
 RDEPEND="
 	acct-user/jupyterhub
 	acct-group/jupyterhub
