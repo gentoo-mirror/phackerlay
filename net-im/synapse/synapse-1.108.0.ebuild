@@ -54,7 +54,7 @@ CRATES="
 	pythonize-0.21.1
 	ppv-lite86-0.2.17
 	quote-1.0.36
-	redox_syscall-0.2.16
+	redox_syscall-0.5.1
 	regex-1.10.4
 	regex-syntax-0.8.3
 	regex-automata-0.4.6
