@@ -49,7 +49,7 @@ CRATES="
 	pyo3-build-config-0.21.2
 	pyo3-ffi-0.21.2
 	pyo3-log-0.10.0
-	pyo3-macros-0.21.1
+	pyo3-macros-0.21.2
 	pyo3-macros-backend-0.21.2
 	pythonize-0.21.1
 	ppv-lite86-0.2.17
