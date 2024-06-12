@@ -86,6 +86,7 @@ CRATES="
 	web-time-1.1.0
 	windows-sys-0.52.0
 	windows_aarch64_msvc-0.52.5
+	windows-targets-0.52.5
 	windows_i686_gnu-0.52.5
 	windows_i686_msvc-0.52.5
 	windows_x86_64_gnu-0.52.5
