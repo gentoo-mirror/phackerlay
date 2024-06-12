@@ -61,15 +61,15 @@ python_compile() {
 }
 
 python_install() {
-	cd ${S} && python -m jupyterhub --generate-config || die
         distutils-r1_python_install --skip-build
 }
 
 python_install_all() {
-	distutils-r1_python_install_all
+	cd ${S} && python -m jupyterhub --generate-config || die
+	newins ${S}/jupyterhub_config.py config.example.py
 	newinitd "${FILESDIR}"/jupyterhub.initd jupyterhub
 	insinto /etc/jupyterhub
-	newins ${S}/jupyterhub_config.py config.example.py
+	distutils-r1_python_install_all
 }
 
 pkg_preinst() {
