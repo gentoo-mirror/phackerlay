@@ -5,6 +5,6 @@ HOMEPAGE=https://vscodium.com/
 KEYWORDS=-* ~amd64 ~arm64
 LICENSE=Apache-2.0 BSD BSD-1 BSD-2 BSD-4 CC-BY-4.0 ISC LGPL-2.1+ MIT MPL-2.0 openssl PYTHON TextMate-bundle Unlicense UoI-NCSA W3C
 RDEPEND==net-libs/nodejs-18*
-SLOT=1.89.1.24130
-SRC_URI=amd64? ( https://github.com/VSCodium/vscodium/releases/download/1.89.1.24130/vscodium-reh-linux-x64-1.89.1.24130.tar.gz -> vscodium-reh-1.89.1.24130-amd64.tar.gz ) arm64? ( https://github.com/VSCodium/vscodium/releases/download/1.89.1.24130/vscodium-reh-linux-arm64-1.89.1.24130.tar.gz -> vscodium-reh-1.89.1.24130-arm64.tar.gz )
+SLOT=1.90.2.24171
+SRC_URI=amd64? ( https://github.com/VSCodium/vscodium/releases/download/1.90.2.24171/vscodium-reh-linux-x64-1.90.2.24171.tar.gz -> vscodium-reh-1.90.2.24171-amd64.tar.gz ) arm64? ( https://github.com/VSCodium/vscodium/releases/download/1.90.2.24171/vscodium-reh-linux-arm64-1.90.2.24171.tar.gz -> vscodium-reh-1.90.2.24171-arm64.tar.gz )
 _md5_=81482bc0def9b57becae29959f14df9b

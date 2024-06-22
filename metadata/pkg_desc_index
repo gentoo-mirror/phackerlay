@@ -21,7 +21,7 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.89.1.24130 1.90.0.24158: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.90.0.24158 1.90.2.24171: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-sports/goldencheetah 3.6: Performance Software for Cyclists, Runners, Triathletes and Coaches
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
@@ -80,8 +80,8 @@ mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanner devices
 media-sound/shortwave 3.2.0: Listen to internet radio
-net-im/jitsi-meet 2024.5.0: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.108.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/jitsi-meet 2024.6.0: Desktop application for Jitsi Meet built with Electron
+net-im/synapse 1.109.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.6.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
@@ -101,7 +101,7 @@ sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code w
 sci-libs/wannier90 3.1.0: Package for generating maximally-localized Wannier functions
 sci-mathematics/dolfinx 0.8.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
-sci-physics/abinit 10.0.5: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
+sci-physics/abinit 10.0.7: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
 sci-physics/ase 3.22.1-r2 3.23.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 24.6.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/oncvpsp 4.0.1: 
@@ -117,7 +117,7 @@ virtual/blas 3.9: Virtual for FORTRAN 77 BLAS implementation
 virtual/cblas 3.9: Virtual for BLAS C implementation
 virtual/lapack 3.11: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.68: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.69: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
