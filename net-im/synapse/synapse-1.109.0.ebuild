@@ -8,7 +8,7 @@ DISTUTILS_EXT=1
 PYTHON_COMPAT=( python3_{11,12} )
 CRATES="
 	aho-corasick-1.1.3
-	anyhow-1.0.83
+	anyhow-1.0.86
 	arc-swap-1.7.1
 	autocfg-1.3.0
         base64-0.21.7
@@ -63,8 +63,8 @@ CRATES="
 	rand_core-0.6.4
 	ryu-1.0.18
 	scopeguard-1.2.0
-	serde-1.0.201
-	serde_derive-1.0.201
+	serde-1.0.203
+	serde_derive-1.0.203
 	serde_json-1.0.117
 	smallvec-1.13.2
 	subtle-2.5.0
