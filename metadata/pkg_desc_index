@@ -98,7 +98,6 @@ sci-libs/lapack-headers 0.1: Lapack headers substitute
 sci-libs/libxc 5.2.3 6.2.2: A library of exchange-correlation functionals for use in DFT
 sci-libs/osmium 2.20.0: Fast and flexible C++ library for working with OpenStreetMap data
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
-sci-libs/scalapack 2.2.1.7: Subset of LAPACK routines redesigned for heterogenous (MPI) computing
 sci-libs/wannier90 3.1.0: Package for generating maximally-localized Wannier functions
 sci-mathematics/dolfinx 0.8.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
