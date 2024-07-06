@@ -33,7 +33,7 @@ CRATES="
 	indoc-2.0.5
 	itoa-1.0.11
 	js-sys-0.3.69
-	lazy_static-1.4.0
+	lazy_static-1.5.0
 	libc-0.2.154
 	lock_api-0.4.12
 	log-0.4.21
@@ -55,7 +55,7 @@ CRATES="
 	ppv-lite86-0.2.17
 	quote-1.0.36
 	redox_syscall-0.5.1
-	regex-1.10.4
+	regex-1.10.5
 	regex-syntax-0.8.3
 	regex-automata-0.4.6
 	rand-0.8.5
