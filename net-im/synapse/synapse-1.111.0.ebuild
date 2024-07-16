@@ -36,7 +36,7 @@ CRATES="
 	lazy_static-1.5.0
 	libc-0.2.154
 	lock_api-0.4.12
-	log-0.4.21
+	log-0.4.22
 	memchr-2.7.2
 	memoffset-0.9.1
 	mime-0.3.17
@@ -63,9 +63,9 @@ CRATES="
 	rand_core-0.6.4
 	ryu-1.0.18
 	scopeguard-1.2.0
-	serde-1.0.203
-	serde_derive-1.0.203
-	serde_json-1.0.117
+	serde-1.0.204
+	serde_derive-1.0.204
+	serde_json-1.0.120
 	smallvec-1.13.2
 	subtle-2.5.0
 	syn-2.0.61
