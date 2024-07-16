@@ -21,11 +21,11 @@ acct-user/seafile 0: User for www-apps/seafile
 acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.90.0.24158 1.90.2.24171: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.90.2.24171 1.91.1.24193: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-sports/goldencheetah 3.6: Performance Software for Cyclists, Runners, Triathletes and Coaches
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
-dev-cpp/xeus-zmq 1.3.0 3.0.0: ZeroMQ-based middleware for xeus
+dev-cpp/xeus-zmq 1.3.0 3.1.0: ZeroMQ-based middleware for xeus
 dev-cpp/xproperty 0.12.0: Traitlets-like C++ properties and implementation of the observer pattern
 dev-cpp/xtl 0.7.7: The x template library
 dev-cpp/xwidgets 0.28.1: C++ backend for Jupyter interactive widgets
@@ -60,7 +60,7 @@ dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.2: nginx config file formatter/beautifier written in Python with no additional dependencies
 dev-python/npyosmium 3.6.3: Python bindings for libosmium
-dev-python/oauthenticator 16.3.0: OAuth + JupyterHub Authenticator = OAuthenticator
+dev-python/oauthenticator 16.3.1: OAuth + JupyterHub Authenticator = OAuthenticator
 dev-python/osmium 3.7.0: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/petsc4py 3.19.4 3.20.6 3.21.3: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
@@ -68,7 +68,7 @@ dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, j
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
 dev-python/pyhgtmap 3.0 3.7: Little program which lets you easily generate OSM contour lines
-dev-python/pyvista 0.43.9: Easier Pythonic interface to VTK
+dev-python/pyvista 0.44.0: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
@@ -121,7 +121,7 @@ www-apps/element 1.11.70: Element (formerly known as Vector and Riot) is a Matri
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/hedgedoc 1.9.9: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
-www-apps/privatebin 1.7.3: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
+www-apps/privatebin 1.7.4: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-servers/uwsgi 2.0.22-r1 2.0.26: uWSGI server for Python web applications
 x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
 x11-themes/chicago95 3.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
