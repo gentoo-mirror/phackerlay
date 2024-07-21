@@ -32,23 +32,19 @@ SLOT="${PV}"
 KEYWORDS="-* ~amd64 ~arm64"
 IUSE=""
 
-RDEPEND="
-	=net-libs/nodejs-18*
-"
-
-
 S="${WORKDIR}"
 
 src_install() {
-	# rm node
+	# rm node # 20240721 still is built with node-16 and started failing with 18
 	insinto "/opt/${PN}/${P}"
-	sed -i 's:$ROOT/node:/opt/${PN}/${P}/node:g' bin/codium-server
+	sed -i 's:$ROOT/node:'"/opt/${PN}/${P}/node:g" bin/codium-server
 	sed -i 's:$ROOT/out:'"/opt/${PN}/${P}/out:g" bin/codium-server
 	sed -i 's:"$@":--telemetry-level off --host 127.0.0.1 "$@":g' bin/codium-server
 
 	find ${S} -name '*.js' -exec chmod +x '{}' \;
 
 	doins -r *
+	fperms +x /opt/${PN}/${P}/node
 	fperms +x /opt/${PN}/${P}/bin/codium-server
 	fperms +x /opt/${PN}/${P}/node_modules/@vscode/ripgrep/bin/rg
 	dosym "../../../opt/${PN}/${P}/bin/codium-server" "usr/bin/${P}"
