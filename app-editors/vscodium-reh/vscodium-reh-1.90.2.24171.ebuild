@@ -40,11 +40,11 @@ RDEPEND="
 S="${WORKDIR}"
 
 src_install() {
-	rm node
+	# rm node
 	insinto "/opt/${PN}/${P}"
-	sed -i 's:$ROOT/node:node:g' bin/codium-server
-	sed -i 's:$ROOT/out:'"/opt/${PN}/out:g" bin/codium-server
-	sed -i 's:"$@":--telemetry-level off "$@":g' bin/codium-server
+	sed -i 's:$ROOT/node:/opt/${PN}/${P}/node:g' bin/codium-server
+	sed -i 's:$ROOT/out:'"/opt/${PN}/${P}/out:g" bin/codium-server
+	sed -i 's:"$@":--telemetry-level off --host 127.0.0.1 "$@":g' bin/codium-server
 
 	find ${S} -name '*.js' -exec chmod +x '{}' \;
 
