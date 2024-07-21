@@ -32,6 +32,9 @@ SLOT="${PV}"
 KEYWORDS="-* ~amd64 ~arm64"
 IUSE=""
 
+RESTRICT="strip"
+QA_PREBUILT="opt/${PN}/${P}/*"
+
 S="${WORKDIR}"
 
 src_install() {
