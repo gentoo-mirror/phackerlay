@@ -15,7 +15,7 @@ CRATES="
 	bitflags-2.5.0
 	blake2-0.10.6
 	block-buffer-0.10.4
-	bytes-1.6.0
+	bytes-1.6.1
 	bumpalo-3.16.0
 	cfg-if-1.0.0
 	fnv-1.0.7
@@ -75,7 +75,7 @@ CRATES="
 	typenum-1.17.0
 	unicode-ident-1.0.12
 	unindent-0.2.3
-	ulid-1.1.2
+	ulid-1.1.3
 	version_check-0.9.4
 	wasi-0.11.0+wasi-snapshot-preview1
 	wasm-bindgen-0.2.92
