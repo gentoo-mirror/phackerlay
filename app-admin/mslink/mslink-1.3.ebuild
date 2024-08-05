@@ -5,20 +5,16 @@ EAPI=8
 
 DESCRIPTION="This application allow you to create Windows Shortcut files (extension .LNK) without needing a Windows OS"
 HOMEPAGE="https://www.mamachine.org"
-SRC_URI="http://web.archive.org/web/20230313034545/http://www.mamachine.org/mslink/mslink_v${PV}.tar.gz"
+SRC_URI="http://web.archive.org/web/20230313034545/http://www.mamachine.org/mslink/mslink_v${PV}.sh"
 
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-S=${WORKDIR}/mslink_v${PV}
-
-src_prepare() {
-	rm -f ${S}/mslink
-	default
-}
+S=${WORKDIR}
 
 src_install() {
-	dobin ${S}/mslink
+	mv ${DISTDIR}/mslink_v${PV}.sh ${WORKDIR}/mslink.sh
+	dobin mslink.sh
 }
