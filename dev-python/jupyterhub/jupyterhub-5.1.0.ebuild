@@ -67,10 +67,11 @@ python_install() {
 
 python_install_all() {
 	cd ${S} && python -m jupyterhub --generate-config || die
+	insinto /etc/jupyterhub
 	newins ${S}/jupyterhub_config.py config.example.py
 	newinitd "${FILESDIR}"/jupyterhub.initd jupyterhub
-	insinto /etc/jupyterhub
 	distutils-r1_python_install_all
+	rm ${D}/usr/alembic.ini
 }
 
 pkg_preinst() {
