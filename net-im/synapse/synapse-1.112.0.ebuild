@@ -154,6 +154,7 @@ RDEPEND="
 	>=dev-python/sentry-sdk-0.7.2[${PYTHON_USEDEP}]
     >=dev-python/pyjwt-1.6.4[${PYTHON_USEDEP}]
 	>=dev-python/pyicu-2.10.2[${PYTHON_USEDEP}]
+	>=dev-python/python-multipart-0.0.9[${PYTHON_USEDEP}]
 	ldap? ( >=dev-python/matrix-synapse-ldap3-0.1[${PYTHON_USEDEP}] )
 	postgres? ( >=dev-python/psycopg-2.8[${PYTHON_USEDEP}] <dev-python/psycopg-3[${PYTHON_USEDEP}] )
 	saml? ( >=dev-python/pysaml2-4.5.0[${PYTHON_USEDEP}] )
