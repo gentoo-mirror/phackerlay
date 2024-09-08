@@ -1,4 +1,4 @@
-BDEPEND=<net-libs/nodejs-20 >net-libs/nodejs-14[npm] || ( <dev-libs/openssl-3 net-libs/nodejs[-system-ssl] )
+BDEPEND=>=net-libs/nodejs-18[npm]
 DEFINED_PHASES=compile install postinst
 DESCRIPTION=Hedgedoc real-time collaborative markdown editor
 EAPI=8
@@ -8,5 +8,5 @@ LICENSE=AGPL-3
 RDEPEND=acct-group/hedgedoc acct-user/hedgedoc
 RESTRICT=network-sandbox
 SLOT=0
-SRC_URI=https://github.com/hedgedoc/hedgedoc/releases/download/1.9.9/hedgedoc-1.9.9.tar.gz
-_md5_=220693dc1cfeca586defd9ca10db23b1
+SRC_URI=https://github.com/hedgedoc/hedgedoc/releases/download/1.10.0/hedgedoc-1.10.0.tar.gz
+_md5_=d85795cb9f31b0986da519ad985d85ab
