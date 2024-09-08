@@ -15,7 +15,7 @@ CRATES="
 	bitflags-2.5.0
 	blake2-0.10.6
 	block-buffer-0.10.4
-	bytes-1.6.1
+	bytes-1.7.1
 	bumpalo-3.16.0
 	cfg-if-1.0.0
 	fnv-1.0.7
@@ -55,7 +55,7 @@ CRATES="
 	ppv-lite86-0.2.17
 	quote-1.0.36
 	redox_syscall-0.5.1
-	regex-1.10.5
+	regex-1.10.6
 	regex-syntax-0.8.3
 	regex-automata-0.4.6
 	rand-0.8.5
