@@ -1,4 +1,4 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -16,7 +16,8 @@ KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-python/jsonschema[${PYTHON_USEDEP}]
-	>=dev-python/jupyterhub-1.2[${PYTHON_USEDEP}]
+	>=dev-python/jupyterhub-2.2[${PYTHON_USEDEP}]
+	>=dev-python/pyjwt-2[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/ruamel-yaml[${PYTHON_USEDEP}]
 	dev-python/tornado[${PYTHON_USEDEP}]

@@ -63,9 +63,9 @@ CRATES="
 	rand_core-0.6.4
 	ryu-1.0.18
 	scopeguard-1.2.0
-	serde-1.0.204
-	serde_derive-1.0.204
-	serde_json-1.0.122
+	serde-1.0.209
+	serde_derive-1.0.209
+	serde_json-1.0.127
 	smallvec-1.13.2
 	subtle-2.5.0
 	syn-2.0.61
