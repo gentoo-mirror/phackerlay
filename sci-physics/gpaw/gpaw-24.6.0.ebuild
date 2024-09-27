@@ -22,7 +22,7 @@ IUSE="+setups +fftw +blas_openblas +openmp mpi scalapack vdwxc elpa"
 RESTRICT="libvdwxc elpa"
 
 RDEPEND="
-	dev-python/numpy[${PYTHON_USEDEP}]
+	<dev-python/numpy-2[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	>=dev-python/scipy-1.6.0[${PYTHON_USEDEP}]
 	>=sci-physics/ase-3.22.1[${PYTHON_USEDEP}]
