@@ -1,6 +1,6 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare pretend test
-DEPEND=sci-libs/netcdf-cxx sci-libs/netcdf-fortran blas_openblas? ( sci-libs/openblas ) fftw? ( sci-libs/fftw ) mpi? ( virtual/mpi[romio] ) scalapack? ( sci-libs/scalapack ) elpa? ( || ( =sci-libs/elpa-2019.11.001 ) ) wannier90? ( sci-libs/wannier90 )
+DEPEND=sci-libs/netcdf-cxx sci-libs/netcdf-fortran blas_openblas? ( sci-libs/openblas ) fftw? ( sci-libs/fftw[fortran] ) mpi? ( virtual/mpi[romio] ) scalapack? ( sci-libs/scalapack ) elpa? ( || ( =sci-libs/elpa-2019.11.001 ) ) wannier90? ( sci-libs/wannier90 )
 DESCRIPTION=A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
 EAPI=8
 HOMEPAGE=https://www.abinit.org
@@ -12,4 +12,4 @@ REQUIRED_USE=^^ ( blas_openblas )
 SLOT=0
 SRC_URI=https://github.com/abinit/abinit/archive/refs/tags/10.0.9.tar.gz -> abinit-10.0.9.tar.gz
 _eclasses_=toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	flag-o-matic	fa33e3696fe4689dda7e9affe92e2c94	multiprocessing	e644caa6eb7ce7e5ab0864383ac13ad9	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	5465aed08f1dfc2a75f14cbea4272961	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=ba97501443b2d24ae0f8d83f4c3458e8
+_md5_=7bdad2c253399d6ee31bb2a8d18c1046
