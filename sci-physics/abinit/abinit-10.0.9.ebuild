@@ -21,7 +21,7 @@ DEPEND="
 	sci-libs/netcdf-cxx
 	sci-libs/netcdf-fortran
         blas_openblas? ( sci-libs/openblas )
-        fftw? ( sci-libs/fftw )
+        fftw? ( sci-libs/fftw[fortran] )
         mpi? ( virtual/mpi[romio] )
         scalapack? ( sci-libs/scalapack )
         elpa? ( || ( =sci-libs/elpa-2019.11.001 ) )
@@ -55,7 +55,7 @@ src_configure() {
 		-DCMAKE_DISABLE_FIND_PACKAGE_OpenMP="$(usex openmp NO YES)"
 		-DABINIT_FFT_FLAVOR="$(usex fftw FFTW3 GOEDECKER)"
                 -DABINIT_SCALAPACK_ENABLED="$(usex scalapack)"
-                -DABINIT_ELPA_ENABLED="$(usesx elpa)"
+                -DABINIT_ELPA_ENABLED="$(usex elpa)"
 		-DCMAKE_DISABLE_FIND_PACKAGE_MPI="$(usex mpi NO YES)"
 		-DABINIT_ENABLE_MPI_IO="$(usex mpi YES NO)"
 		-DBLA_VENDOR=OpenBLAS
