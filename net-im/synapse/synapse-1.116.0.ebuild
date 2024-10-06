@@ -8,14 +8,14 @@ DISTUTILS_EXT=1
 PYTHON_COMPAT=( python3_{11,12} )
 CRATES="
 	aho-corasick-1.1.3
-	anyhow-1.0.86
+	anyhow-1.0.89
 	arc-swap-1.7.1
 	autocfg-1.3.0
         base64-0.21.7
 	bitflags-2.5.0
 	blake2-0.10.6
 	block-buffer-0.10.4
-	bytes-1.7.1
+	bytes-1.7.2
 	bumpalo-3.16.0
 	cfg-if-1.0.0
 	fnv-1.0.7
@@ -63,9 +63,9 @@ CRATES="
 	rand_core-0.6.4
 	ryu-1.0.18
 	scopeguard-1.2.0
-	serde-1.0.209
-	serde_derive-1.0.209
-	serde_json-1.0.127
+	serde-1.0.210
+	serde_derive-1.0.210
+	serde_json-1.0.128
 	smallvec-1.13.2
 	subtle-2.5.0
 	syn-2.0.61
@@ -142,7 +142,7 @@ RDEPEND="
 	>=dev-python/jinja-3.0[${PYTHON_USEDEP}]
 	>=dev-python/bleach-1.4.3[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.0.0[${PYTHON_USEDEP}]
-	>=dev-python/cryptography-3.4.7[${PYTHON_USEDEP}]
+	>=dev-python/cryptography-43.0.1[${PYTHON_USEDEP}]
 	>=dev-python/ijson-3.1.4[${PYTHON_USEDEP}]
 	>=dev-python/matrix-common-1.3.0[${PYTHON_USEDEP}]
 	<dev-python/matrix-common-2.0.0[${PYTHON_USEDEP}]
