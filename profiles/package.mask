@@ -1,3 +1,0 @@
-# breaks abinit calculator
->=sci-physics/ase-3.23.0
-
