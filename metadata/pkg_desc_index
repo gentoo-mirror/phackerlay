@@ -44,15 +44,15 @@ dev-python/cling-kernels 0.8 9999: Interactive C++ interpreter, built on the top
 dev-python/fenics-basix 0.9.0: FEniCS finite element basis evaluation library
 dev-python/fenics-ffcx 0.9.0: Next generation FEniCS Form Compiler for finite element forms
 dev-python/fenics-ufl 2024.2.0: UFL - FEniCS project's Unified Form Language
-dev-python/gevent 22.10.2 24.10.2: Coroutine-based network library
+dev-python/gevent 22.10.2 24.10.3: Coroutine-based network library
 dev-python/hatch-nodejs-version 0.3.2: Hatch plugin to read pyproject.toml metadata from package.json
 dev-python/ipydatawidgets 4.3.5: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.9.4: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
 dev-python/jupyter-c-kernel 1.2.2: Minimal Jupyter C kernel
-dev-python/jupyterhub 5.2.0: A multi-user server for Jupyter notebooks
+dev-python/jupyterhub 5.2.1: A multi-user server for Jupyter notebooks
 dev-python/jupyterhub-idle-culler 1.4.0: JupyterHub service to cull idle servers and users
-dev-python/jupyterhub-ldapauthenticator 1.3.2: Simple LDAP Authenticator Plugin for JupyterHub
+dev-python/jupyterhub-ldapauthenticator 2.0.0: Simple LDAP Authenticator Plugin for JupyterHub
 dev-python/jupyterhub_moss 6.0.0: Jupyterhub MOdular Slurm Spawner
 dev-python/jupyterlab-link-share 0.3.0: JupyterLab Extension to share the URL to a running Jupyter Server
 dev-python/jupyterlab-myst 2.4.2: Use MyST Markdown directly in Jupyter Lab
@@ -62,7 +62,7 @@ dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.3: nginx config file formatter/beautifier written in Python with no additional dependencies
 dev-python/npyosmium 3.7.0: Python bindings for libosmium
 dev-python/oauthenticator 17.1.0: OAuth + JupyterHub Authenticator = OAuthenticator
-dev-python/osmium 4.0.1: Python bindings for libosmium
+dev-python/osmium 4.0.2: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/petsc4py 3.19.4 3.20.6 3.21.6 3.22.0: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
@@ -80,9 +80,9 @@ dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanner devices
-media-sound/shortwave 3.2.0: Listen to internet radio
+media-sound/shortwave 3.2.0 4.0.1: Listen to internet radio
 net-im/jitsi-meet 2024.10.0: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.116.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.117.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.6.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
@@ -106,7 +106,7 @@ sci-physics/abinit 10.0.5 10.0.9: A software suite to calculate the optical, mec
 sci-physics/ase 3.22.1-r2 3.23.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 24.1.0 24.6.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/oncvpsp 4.0.1: 
-sci-physics/quantum-espresso 7.3.1: Suite for first-principles electronic-structure calculations and materials modeling
+sci-physics/quantum-espresso 7.4: Suite for first-principles electronic-structure calculations and materials modeling
 sys-block/libfabric 1.22.0: The Open Fabrics Interfaces (OFI) framework
 sys-cluster/mpich 4.1.2: A high performance and portable MPI implementation
 sys-cluster/rdma-core 41.6: Userspace components for the Linux Kernel's drivers/infiniband subsystem
@@ -118,7 +118,7 @@ virtual/blas 3.9: Virtual for FORTRAN 77 BLAS implementation
 virtual/cblas 3.9: Virtual for BLAS C implementation
 virtual/lapack 3.11: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
 virtual/mta 1-r3: Virtual for Message Transfer Agents
-www-apps/element 1.11.81: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
+www-apps/element 1.11.82: Element (formerly known as Vector and Riot) is a Matrix web client built using the Matrix React SDK
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/hedgedoc 1.10.0: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
