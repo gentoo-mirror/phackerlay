@@ -12,10 +12,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-#	<net-libs/nodejs-20
-#	|| ( <dev-libs/openssl-3 net-libs/nodejs[-system-ssl] )
 BDEPEND="
-	>=net-libs/nodejs-18[npm]
+	>=net-libs/nodejs-18[npm,corepack]
 "
 
 RDEPEND="
@@ -28,7 +26,7 @@ S=${WORKDIR}/${PN}
 RESTRICT="network-sandbox"
 
 src_compile() {
-	corepack prepare yarn@stable --activate
+	corepack prepare yarn@stable --activate || die
 	einfo
 	einfo Fetching npm packages with yarn
 	einfo
