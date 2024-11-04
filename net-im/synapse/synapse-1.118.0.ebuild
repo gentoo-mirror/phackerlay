@@ -124,6 +124,7 @@ RDEPEND="
 	>=dev-python/idna-2.5[${PYTHON_USEDEP}]
 	>=dev-python/service-identity-18.1.0[${PYTHON_USEDEP}]
 	>=dev-python/twisted-18.9.0[${PYTHON_USEDEP}]
+	<dev-python/twisted-24.10.0[${PYTHON_USEDEP}]
 	>=dev-python/treq-15.1[${PYTHON_USEDEP}]
 	>=dev-python/pyopenssl-16.0.0[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-3.13[${PYTHON_USEDEP}]
