@@ -1,11 +1,11 @@
-# Copyright 1999-2022 Gentoo Foundation
+# Copyright 1999-2024 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="8"
 
 DISTUTILS_USE_PEP517=poetry
 DISTUTILS_EXT=1
-PYTHON_COMPAT=( python3_{11,12} )
+PYTHON_COMPAT=( python3_{11,12,13} )
 CRATES="
 	aho-corasick-1.1.3
 	anyhow-1.0.89
