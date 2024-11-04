@@ -22,7 +22,7 @@ acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/mslink 1.3: This application allow you to create Windows Shortcut files (extension .LNK) without needing a Windows OS
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.94.1.24283 1.94.2.24286: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.94.2.24286 1.95.1.24307: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-sports/goldencheetah 3.6: Performance Software for Cyclists, Runners, Triathletes and Coaches
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
@@ -52,7 +52,7 @@ dev-python/jdata 0.5.0: JData encoder and decoder for Python
 dev-python/jupyter-c-kernel 1.2.2: Minimal Jupyter C kernel
 dev-python/jupyterhub 5.2.1: A multi-user server for Jupyter notebooks
 dev-python/jupyterhub-idle-culler 1.4.0: JupyterHub service to cull idle servers and users
-dev-python/jupyterhub-ldapauthenticator 2.0.0: Simple LDAP Authenticator Plugin for JupyterHub
+dev-python/jupyterhub-ldapauthenticator 2.0.1: Simple LDAP Authenticator Plugin for JupyterHub
 dev-python/jupyterhub_moss 6.0.0: Jupyterhub MOdular Slurm Spawner
 dev-python/jupyterlab-link-share 0.3.0: JupyterLab Extension to share the URL to a running Jupyter Server
 dev-python/jupyterlab-myst 2.4.2: Use MyST Markdown directly in Jupyter Lab
@@ -64,7 +64,7 @@ dev-python/npyosmium 3.7.0: Python bindings for libosmium
 dev-python/oauthenticator 17.1.0: OAuth + JupyterHub Authenticator = OAuthenticator
 dev-python/osmium 4.0.2: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
-dev-python/petsc4py 3.19.4 3.20.6 3.21.6 3.22.0: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
+dev-python/petsc4py 3.19.4 3.20.6 3.21.6 3.22.1: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
@@ -82,14 +82,14 @@ media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanner devices
 media-sound/shortwave 3.2.0 4.0.1: Listen to internet radio
 net-im/jitsi-meet 2024.10.0: Desktop application for Jitsi Meet built with Electron
-net-im/synapse 1.117.0: Reference homeserver for the Matrix decentralised comms protocol
+net-im/synapse 1.118.0: Reference homeserver for the Matrix decentralised comms protocol
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.6.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.5.1: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.3-r1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
-sci-electronics/qucs-s 24.3.2: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
+sci-electronics/qucs-s 24.4.0: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-geosciences/mkgmap-bin 4922: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.9.0: Next generation FEniCS problem solving environment
@@ -102,7 +102,7 @@ sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code w
 sci-libs/wannier90 3.1.0: Package for generating maximally-localized Wannier functions
 sci-mathematics/dolfinx 0.8.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
-sci-physics/abinit 10.0.5 10.0.9: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
+sci-physics/abinit 10.0.5 10.2.3: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
 sci-physics/ase 3.22.1-r2 3.23.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 24.1.0 24.6.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/oncvpsp 4.0.1: 
@@ -123,6 +123,6 @@ www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like dia
 www-apps/hedgedoc 1.10.0: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
 www-apps/privatebin 1.7.4: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
-www-servers/uwsgi 2.0.22-r1 2.0.27: uWSGI server for Python web applications
+www-servers/uwsgi 2.0.22-r1 2.0.28: uWSGI server for Python web applications
 x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
 x11-themes/chicago95 3.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
