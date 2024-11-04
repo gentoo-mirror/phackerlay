@@ -56,8 +56,8 @@ CRATES="
 	quote-1.0.36
 	redox_syscall-0.5.1
 	regex-1.11.0
-	regex-syntax-0.8.3
-	regex-automata-0.4.6
+	regex-syntax-0.8.5
+	regex-automata-0.4.8
 	rand-0.8.5
 	rand_chacha-0.3.1
 	rand_core-0.6.4
