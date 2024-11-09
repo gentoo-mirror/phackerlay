@@ -1,15 +1,15 @@
-BDEPEND=dev-util/ninja >=dev-python/setuptools-58[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/wheel[python_targets_python3_11(-)?,python_targets_python3_12(-)?] app-alternatives/ninja >=dev-build/cmake-3.20.5 python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 ) >=dev-python/gpep517-15[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/setuptools-69.0.3[python_targets_python3_11(-)?,python_targets_python3_12(-)?]
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 ) >=dev-python/gpep517-15[python_targets_python3_12(-)?,python_targets_python3_13(-)?] >=dev-python/setuptools-69.0.3[python_targets_python3_12(-)?,python_targets_python3_13(-)?]
 DEFINED_PHASES=compile configure install prepare test
 DESCRIPTION=Next generation FEniCS Form Compiler for finite element forms
 EAPI=8
 HOMEPAGE=https://github.com/FEniCS/ffcx
 INHERIT=cmake distutils-r1
-IUSE=python_targets_python3_11 python_targets_python3_12
+IUSE=python_targets_python3_12 python_targets_python3_13
 KEYWORDS=~amd64
 LICENSE=LGPL-3 public-domain
-RDEPEND=dev-python/numpy[python_targets_python3_11(-)?,python_targets_python3_12(-)?] dev-python/cffi[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/fenics-basix-0.6.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?] <dev-python/fenics-basix-0.7.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?] >=dev-python/fenics-ufl-2023.1.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?] <dev-python/fenics-ufl-2023.2.0[python_targets_python3_11(-)?,python_targets_python3_12(-)?] python_targets_python3_11? ( dev-lang/python:3.11 ) python_targets_python3_12? ( dev-lang/python:3.12 )
-REQUIRED_USE=|| ( python_targets_python3_11 python_targets_python3_12 )
+RDEPEND=dev-python/numpy[python_targets_python3_12(-)?,python_targets_python3_13(-)?] dev-python/cffi[python_targets_python3_12(-)?,python_targets_python3_13(-)?] =dev-python/fenics-basix-0.9*[python_targets_python3_12(-)?,python_targets_python3_13(-)?] =dev-python/fenics-ufl-2024.2*[python_targets_python3_12(-)?,python_targets_python3_13(-)?] python_targets_python3_12? ( dev-lang/python:3.12 ) python_targets_python3_13? ( dev-lang/python:3.13 )
+REQUIRED_USE=|| ( python_targets_python3_12 python_targets_python3_13 )
 SLOT=0
 SRC_URI=https://github.com/FEniCS/ffcx/archive/refs/tags/v0.9.0.tar.gz -> fenics-ffcx-0.9.0.tar.gz
 _eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	python-utils-r1	2fee95c11e5f883024588d4837db6802	python-r1	2def7a4ce233dfa344f613025c619a23	distutils-r1	bcc61b7696f06db333c2f2db1606ed76
-_md5_=1f78c848f52122e926bc350a66663bc9
+_md5_=e1b5f879b1be9ecf8bb032ac781c1aa7
