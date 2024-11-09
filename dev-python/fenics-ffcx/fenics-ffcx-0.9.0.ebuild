@@ -25,11 +25,6 @@ RDEPEND="
 	=dev-python/fenics-basix-${PV::-2}*[${PYTHON_USEDEP}]
 	=dev-python/fenics-ufl-2024.2*[${PYTHON_USEDEP}]
 "
-BDEPEND="
-	dev-util/ninja
-	>=dev-python/setuptools-58[${PYTHON_USEDEP}]
-	dev-python/wheel[${PYTHON_USEDEP}]
-"
 
 S=${WORKDIR}/ffcx-${PV}
 CMAKE_USE_DIR="${S}/cmake"
