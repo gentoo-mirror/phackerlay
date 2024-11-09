@@ -3,7 +3,7 @@
 
 EAPI=8
 
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=scikit-build-core
 PYTHON_COMPAT=( python3_{12,13} )
 DISTUTILS_EXT=1
 
@@ -27,7 +27,6 @@ RDEPEND="
 	>=dev-python/numpy-1.21[${PYTHON_USEDEP}]
 "
 BDEPEND="
-	>=dev-python/scikit-build-0.12[${PYTHON_USEDEP}]
 	>=dev-python/nanobind-2.0.0[${PYTHON_USEDEP}]
 "
 
