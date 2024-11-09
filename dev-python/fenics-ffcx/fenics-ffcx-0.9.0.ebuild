@@ -5,6 +5,7 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{12,13} )
+DISTUTILS_EXT=1
 
 inherit cmake distutils-r1
 
@@ -25,6 +26,7 @@ RDEPEND="
 	=dev-python/fenics-basix-${PV::-2}*[${PYTHON_USEDEP}]
 	=dev-python/fenics-ufl-2024.2*[${PYTHON_USEDEP}]
 "
+distutils_enable_tests pytest
 
 S=${WORKDIR}/ffcx-${PV}
 CMAKE_USE_DIR="${S}/cmake"
