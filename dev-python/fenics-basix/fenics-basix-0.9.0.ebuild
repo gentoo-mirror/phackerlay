@@ -3,11 +3,11 @@
 
 EAPI=8
 
-DISTUTILS_USE_PEP517=setuptools
+DISTUTILS_USE_PEP517=scikit-build-core
 PYTHON_COMPAT=( python3_{12,13} )
 DISTUTILS_EXT=1
 
-inherit distutils-r1 cmake
+inherit distutils-r1
 
 DESCRIPTION="FEniCS finite element basis evaluation library"
 HOMEPAGE="
@@ -27,31 +27,7 @@ RDEPEND="
 	>=dev-python/numpy-1.21[${PYTHON_USEDEP}]
 "
 BDEPEND="
-	>=dev-python/scikit-build-0.12[${PYTHON_USEDEP}]
 	>=dev-python/nanobind-2.0.0[${PYTHON_USEDEP}]
 "
-
-src_prepare() {
-        cmake_src_prepare
-        distutils-r1_src_prepare
-}
-
-src_compile() {
-	cmake_src_compile
-	distutils-r1_src_compile
-}
-
-src_install() {
-	cmake_src_install
-	distutils-r1_src_install
-}
-
-python_install() {
-        distutils-r1_python_install --skip-build
-}
-
-python_install_all() {
-        distutils-r1_python_install_all
-}
 
 
