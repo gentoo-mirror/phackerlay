@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11,12} )
+PYTHON_COMPAT=( python3_{12,13} )
 
 inherit cmake distutils-r1
 
@@ -18,13 +18,12 @@ LICENSE="LGPL-3 public-domain"
 SLOT="0"
 KEYWORDS="~amd64"
 
+
 RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/cffi[${PYTHON_USEDEP}]
-	>=dev-python/fenics-basix-0.6.0[${PYTHON_USEDEP}]
-	<dev-python/fenics-basix-0.7.0[${PYTHON_USEDEP}]
-	>=dev-python/fenics-ufl-2023.1.0[${PYTHON_USEDEP}]
-	<dev-python/fenics-ufl-2023.2.0[${PYTHON_USEDEP}]
+	>=dev-python/fenics-basix-${PV::-2}*[${PYTHON_USEDEP}]
+	>=dev-python/fenics-ufl-2024.2*[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	dev-util/ninja
