@@ -28,7 +28,7 @@ RDEPEND="
 "
 BDEPEND="
 	>=dev-python/scikit-build-0.12[${PYTHON_USEDEP}]
-	>=dev-python/pybind11-2.9.1[${PYTHON_USEDEP}]
+	>=dev-python/nanobind-2.0.0[${PYTHON_USEDEP}]
 "
 
 src_prepare() {
