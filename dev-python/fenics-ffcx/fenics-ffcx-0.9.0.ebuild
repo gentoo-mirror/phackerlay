@@ -22,8 +22,8 @@ KEYWORDS="~amd64"
 RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/cffi[${PYTHON_USEDEP}]
-	>=dev-python/fenics-basix-${PV::-2}*[${PYTHON_USEDEP}]
-	>=dev-python/fenics-ufl-2024.2*[${PYTHON_USEDEP}]
+	=dev-python/fenics-basix-${PV::-2}*[${PYTHON_USEDEP}]
+	=dev-python/fenics-ufl-2024.2*[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	dev-util/ninja
