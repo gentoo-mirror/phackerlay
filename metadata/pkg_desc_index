@@ -100,7 +100,7 @@ sci-libs/libxc 5.2.3 6.2.2 7.0.0: A library of exchange-correlation functionals 
 sci-libs/osmium 2.20.0: Fast and flexible C++ library for working with OpenStreetMap data
 sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code which is distributed with the Quantum ESPRESSO package. It allows the generation of PAW data-sets or US pseudopotentials, scalar relativistic or fully relativistic, for several elements.
 sci-libs/wannier90 3.1.0: Package for generating maximally-localized Wannier functions
-sci-mathematics/dolfinx 0.8.0: Next generation FEniCS problem solving environment
+sci-mathematics/dolfinx 0.9.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/abinit 10.0.5 10.2.3: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
 sci-physics/ase 3.22.1-r2 3.23.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
