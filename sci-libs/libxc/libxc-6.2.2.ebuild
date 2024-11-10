@@ -18,7 +18,7 @@ RESTRICT="!test? ( test )"
 src_configure() {
         local mycmakeargs=(
 		-DBUILD_SHARED_LIBS=ON
-		-DENABLE_FORTRAN="$(usex fortran)"
+		-DENABLE_FORTRAN="$(usex fortran ON OFF)"
         )
         cmake_src_configure
 }
