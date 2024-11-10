@@ -28,7 +28,7 @@ RDEPEND="
 	scalapack? ( sci-libs/scalapack )
 	hdf5? ( sci-libs/hdf5[fortran] )
 	openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) )
-	libxc? ( >=sci-libs/libxc-5.1.2 )
+	libxc? ( >=sci-libs/libxc-5.1.2[fortran] )
 	elpa? ( sci-libs/elpa openmp? ( sci-libs/elpa[openmp] ) mpi? ( sci-libs/elpa[mpi] ) )
 "
 
