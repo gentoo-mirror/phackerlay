@@ -48,9 +48,8 @@ RDEPEND="
 		dev-python/pooch[${PYTHON_USEDEP}]
 		>=dev-python/scooby-0.5.1[${PYTHON_USEDEP}]
 	')
-	)
-
 "
+
 DEPEND="${RDEPEND}"
 
 distutils_enable_tests pytest
