@@ -1,8 +1,8 @@
 DEFINED_PHASES=-
-DEPEND=!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] !!sci-libs/lapack-headers ) eselect-ldso? ( || ( sci-libs/openblas[eselect-ldso] ) sci-libs/lapack-headers ) eselect-ldso? ( >=app-eselect/eselect-lapack-0.2 )
+DEPEND=!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] !!sci-libs/lapack-headers ) eselect-ldso? ( || ( >=sci-libs/lapack-3.10.0[eselect-ldso] sci-libs/openblas[eselect-ldso] ) sci-libs/lapack-headers ) eselect-ldso? ( >=app-eselect/eselect-lapack-0.2 )
 DESCRIPTION=Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
 EAPI=8
 IUSE=eselect-ldso
-RDEPEND=!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] !!sci-libs/lapack-headers ) eselect-ldso? ( || ( sci-libs/openblas[eselect-ldso] ) sci-libs/lapack-headers ) eselect-ldso? ( >=app-eselect/eselect-lapack-0.2 )
+RDEPEND=!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] !!sci-libs/lapack-headers ) eselect-ldso? ( || ( >=sci-libs/lapack-3.10.0[eselect-ldso] sci-libs/openblas[eselect-ldso] ) sci-libs/lapack-headers ) eselect-ldso? ( >=app-eselect/eselect-lapack-0.2 )
 SLOT=0
-_md5_=df7ea4f3993037fd3e916d99756a9d9c
+_md5_=ee26ccdb83ed0e29d20226e0dc547156
