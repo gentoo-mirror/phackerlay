@@ -12,6 +12,7 @@ IUSE="eselect-ldso"
 RDEPEND="
 	!eselect-ldso? ( >=sci-libs/lapack-3.10.0[-eselect-ldso] !!sci-libs/lapack-headers )
 	eselect-ldso? ( || (
+		>=sci-libs/lapack-3.10.0[eselect-ldso]
 		sci-libs/openblas[eselect-ldso] )
 		sci-libs/lapack-headers
 	)
