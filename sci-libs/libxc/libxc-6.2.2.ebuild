@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-inherit autotools fortran-2
+inherit cmake
 
 DESCRIPTION="A library of exchange-correlation functionals for use in DFT"
 HOMEPAGE="https://octopus-code.org/wiki/Libxc"
@@ -15,27 +15,10 @@ KEYWORDS="amd64 x86 ~amd64-linux"
 IUSE="fortran test"
 RESTRICT="!test? ( test )"
 
-pkg_setup() {
-	use fortran && fortran-2_pkg_setup
-}
-
-src_prepare() {
-	default
-
-	eautoreconf
-}
-
 src_configure() {
-	econf \
-		--enable-shared \
-		$(use_enable fortran)
-}
-
-src_install() {
-	default
-
-	dodoc ChangeLog.md
-
-	# no static archives
-	find "${ED}" -name '*.la' -type f -delete || die
+        local mycmakeargs=(
+		-DBUILD_SHARED_LIBS=ON
+		-DENABLE_FORTRAN="$(usex fortran ON OFF)"
+        )
+        cmake_src_configure
 }
