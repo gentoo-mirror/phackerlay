@@ -22,9 +22,13 @@ BDEPEND="
         dev-python/fenics-ffcx
         dev-python/fenics-basix
 	sci-libs/hdf5
+	dev-libs/spdlog
 "
+
+DEPEND=${BDEPEND}
 
 src_unpack() {
 	default
 	S=${WORKDIR}/${P}/cpp
 }
+
