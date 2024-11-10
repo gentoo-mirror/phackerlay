@@ -72,6 +72,7 @@ dev-python/pyhgtmap 3.0 3.7: Little program which lets you easily generate OSM c
 dev-python/pyvista 0.44.1: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
+dev-python/scooby 0.10.0: Easily report Python package versions and hardware resources
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
