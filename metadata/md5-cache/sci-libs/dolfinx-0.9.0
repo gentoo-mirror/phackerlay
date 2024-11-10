@@ -1,5 +1,6 @@
-BDEPEND=sci-mathematics/petsc[boost,hdf5,metis,scotch,mpi] dev-libs/pugixml dev-python/fenics-ffcx dev-python/fenics-basix sci-libs/hdf5 app-alternatives/ninja >=dev-build/cmake-3.20.5
+BDEPEND=sci-mathematics/petsc[boost,hdf5,metis,scotch,mpi] dev-libs/pugixml dev-python/fenics-ffcx dev-python/fenics-basix sci-libs/hdf5 dev-libs/spdlog app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=sci-mathematics/petsc[boost,hdf5,metis,scotch,mpi] dev-libs/pugixml dev-python/fenics-ffcx dev-python/fenics-basix sci-libs/hdf5 dev-libs/spdlog
 DESCRIPTION=Next generation FEniCS problem solving environment
 EAPI=8
 HOMEPAGE=https://github.com/FEniCS/dolfinx
@@ -9,4 +10,4 @@ LICENSE=LGPL-3
 SLOT=0
 SRC_URI=https://github.com/FEniCS/dolfinx/archive/refs/tags/v0.9.0.tar.gz -> dolfinx-0.9.0.tar.gz
 _eclasses_=toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=8a334f5adae79ec858b40acf28a2c4e4
+_md5_=5afe2438c729b75771025d291c6324ea
