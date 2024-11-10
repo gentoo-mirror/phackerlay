@@ -27,6 +27,7 @@ RDEPEND="
 	>=dev-python/scipy-1.6.0[${PYTHON_USEDEP}]
 	>=sci-physics/ase-3.22.1[${PYTHON_USEDEP}]
 	>=sci-libs/libxc-3
+	<sci-libs/libxc-7
 	blas_openblas? ( sci-libs/openblas )
 	setups? ( sci-libs/gpaw-setups )
 	fftw? ( sci-libs/fftw )
