@@ -8,14 +8,14 @@ DISTUTILS_EXT=1
 PYTHON_COMPAT=( python3_{11,12,13} )
 CRATES="
 	aho-corasick-1.1.3
-	anyhow-1.0.89
+	anyhow-1.0.92
 	arc-swap-1.7.1
 	autocfg-1.3.0
         base64-0.21.7
 	bitflags-2.5.0
 	blake2-0.10.6
 	block-buffer-0.10.4
-	bytes-1.7.2
+	bytes-1.8.0
 	bumpalo-3.16.0
 	cfg-if-1.0.0
 	fnv-1.0.7
@@ -44,7 +44,7 @@ CRATES="
 	parking_lot-0.12.2
 	parking_lot_core-0.9.10
         portable-atomic-1.6.0
-	proc-macro2-1.0.82
+	proc-macro2-1.0.89
 	pyo3-0.21.2
 	pyo3-build-config-0.21.2
 	pyo3-ffi-0.21.2
@@ -55,7 +55,7 @@ CRATES="
 	ppv-lite86-0.2.17
 	quote-1.0.36
 	redox_syscall-0.5.1
-	regex-1.11.0
+	regex-1.11.1
 	regex-syntax-0.8.5
 	regex-automata-0.4.8
 	rand-0.8.5
@@ -63,12 +63,12 @@ CRATES="
 	rand_core-0.6.4
 	ryu-1.0.18
 	scopeguard-1.2.0
-	serde-1.0.210
-	serde_derive-1.0.210
-	serde_json-1.0.128
+	serde-1.0.214
+	serde_derive-1.0.214
+	serde_json-1.0.132
 	smallvec-1.13.2
 	subtle-2.5.0
-	syn-2.0.61
+	syn-2.0.85
 	sha1-0.10.6
 	sha2-0.10.8
 	target-lexicon-0.12.14
@@ -127,7 +127,7 @@ RDEPEND="
 	<dev-python/twisted-24.10.0[${PYTHON_USEDEP}]
 	>=dev-python/treq-15.1[${PYTHON_USEDEP}]
 	>=dev-python/pyopenssl-16.0.0[${PYTHON_USEDEP}]
-	>=dev-python/pyyaml-3.13[${PYTHON_USEDEP}]
+	>=dev-python/pyyaml-5.3[${PYTHON_USEDEP}]
 	>=dev-python/pyasn1-0.1.9[${PYTHON_USEDEP}]
 	>=dev-python/pyasn1-modules-0.0.7[${PYTHON_USEDEP}]
 	>=dev-python/bcrypt-3.1.7[${PYTHON_USEDEP}]
@@ -151,7 +151,7 @@ RDEPEND="
 	>=dev-python/pydantic-1.7.4[${PYTHON_USEDEP}]
 	<dev-python/pydantic-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/setuptools-rust-1.3.0[${PYTHON_USEDEP}]
-	>=dev-python/lxml-3.5.0[${PYTHON_USEDEP}]
+	>=dev-python/lxml-4.5.2[${PYTHON_USEDEP}]
 	>=dev-python/sentry-sdk-0.7.2[${PYTHON_USEDEP}]
     >=dev-python/pyjwt-1.6.4[${PYTHON_USEDEP}]
 	>=dev-python/pyicu-2.10.2[${PYTHON_USEDEP}]
