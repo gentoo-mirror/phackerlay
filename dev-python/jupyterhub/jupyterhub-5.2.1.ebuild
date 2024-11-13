@@ -32,7 +32,7 @@ RDEPEND="
 	>=dev-python/alembic-1.4[${PYTHON_USEDEP}]
 	>=dev-python/certipy-0.1.2[${PYTHON_USEDEP}]
 	dev-python/idna[${PYTHON_USEDEP}]
-	>=dev-python/jinja-2.11.0[${PYTHON_USEDEP}]
+	>=dev-python/jinja2-2.11.0[${PYTHON_USEDEP}]
 	dev-python/jupyter-events[${PYTHON_USEDEP}]
 	>=dev-python/oauthlib-3.0[${PYTHON_USEDEP}]
 	dev-python/pamela[${PYTHON_USEDEP}]
