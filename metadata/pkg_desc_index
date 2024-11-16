@@ -22,7 +22,7 @@ acct-user/sydent 0: User for net-im/sydent
 acct-user/synapse 0: User for net-im/synapse
 app-admin/mslink 1.3: This application allow you to create Windows Shortcut files (extension .LNK) without needing a Windows OS
 app-admin/rsync-wrapper 0.1.0: rsync wrapper for running with rsnapshot
-app-editors/vscodium-reh 1.95.1.24307 1.95.2.24313: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium-reh 1.95.2.24313 1.95.3.24321: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-sports/goldencheetah 3.6: Performance Software for Cyclists, Runners, Triathletes and Coaches
 dev-cpp/cling 0.8 9999: Interactive C++ interpreter, built on the top of LLVM and Clang libraries
 dev-cpp/xeus-cling 0.15.3: Jupyter kernel for the C++ programming language
@@ -123,7 +123,7 @@ www-apps/element 1.11.85: Element (formerly known as Vector and Riot) is a Matri
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/hedgedoc 1.10.0: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
-www-apps/privatebin 1.7.4: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
+www-apps/privatebin 1.7.5: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-servers/uwsgi 2.0.22-r1 2.0.28: uWSGI server for Python web applications
 x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
 x11-themes/chicago95 3.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
