@@ -43,6 +43,7 @@ pkg_pretend() {
 src_prepare() {
 	sed -e "s:9.11.0:${PV}:g" -i ${WORKDIR}/${P}/CMakeLists.txt || die
 	cmake_src_prepare
+	cd ${S} && config/scripts/makemake 
 }
 
 src_configure() {
