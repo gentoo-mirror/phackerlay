@@ -62,6 +62,7 @@ src_configure() {
 		-DABINIT_WANNIER90_WANTED="$(usex wannier90 YES NO)"
 		-DWANNIER_ROOT="${EPREFIX}/usr"
 		-DABINIT_WANNIER90_BUILD=NO
+		-DABINIT_ENABLE_MPI_INTERFACES_BUGFIX=YES
         )
         cmake_src_configure
 }
