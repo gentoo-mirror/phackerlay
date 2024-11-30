@@ -43,7 +43,6 @@ pkg_pretend() {
 src_prepare() {
 	sed -e "s:9.11.0:${PV}:g" -i ${WORKDIR}/${P}/CMakeLists.txt || die
 	cmake_src_prepare
-	cd ${S} && config/scripts/makemake 
 }
 
 src_configure() {
@@ -63,8 +62,6 @@ src_configure() {
 		-DABINIT_WANNIER90_WANTED="$(usex wannier90 YES NO)"
 		-DWANNIER_ROOT="${EPREFIX}/usr"
 		-DABINIT_WANNIER90_BUILD=NO
-		-DABINIT_ENABLE_GPU_CUDA=NO
-		-DABINIT_ENABLE_GPU_HIP=NO
         )
         cmake_src_configure
 }
