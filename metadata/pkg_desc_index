@@ -61,7 +61,7 @@ dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
 dev-python/nginxfmt 1.2.3: nginx config file formatter/beautifier written in Python with no additional dependencies
 dev-python/npyosmium 3.7.0: Python bindings for libosmium
-dev-python/oauthenticator 17.1.0: OAuth + JupyterHub Authenticator = OAuthenticator
+dev-python/oauthenticator 17.3.0: OAuth + JupyterHub Authenticator = OAuthenticator
 dev-python/osmium 4.0.2: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/petsc4py 3.21.3 3.21.6 3.22.2: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
