@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Matplotlib Jupyter Extension"
 HOMEPAGE="https://github.com/matplotlib/ipympl"
-SRC_URI="https://github.com/matplotlib/ipympl/archive/tags/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/matplotlib/ipympl/archive/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
@@ -20,7 +20,6 @@ RESTRICT="network-sandbox"
 RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
 	<dev-python/ipython-9[${PYTHON_USEDEP}]
-	dev-python/ipython_genutils[${PYTHON_USEDEP}]
 	dev-python/pillow[${PYTHON_USEDEP}]
 	>=dev-python/ipywidgets-7.6.0[${PYTHON_USEDEP}]
 	<dev-python/ipywidgets-9.0.0[${PYTHON_USEDEP}]
