@@ -1,6 +1,6 @@
 BDEPEND=dev-build/make >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst prepare test
-DEPEND=system-blas? ( virtual/blas[eselect-ldso] ) system-lapack? ( virtual/lapack[eselect-ldso] ) system-fftw? ( sci-libs/fftw[fortran] ) mpi? ( virtual/mpi[fortran,threads] system-fftw? ( sci-libs/fftw[mpi] ) ) scalapack? ( sci-libs/scalapack ) hdf5? ( sci-libs/hdf5[fortran] ) openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) ) libxc? ( >=sci-libs/libxc-5.1.2[fortran] ) elpa? ( sci-libs/elpa openmp? ( sci-libs/elpa[openmp] ) mpi? ( sci-libs/elpa[mpi] ) ) sys-devel/gcc[fortran]
+DEPEND=system-blas? ( virtual/blas[eselect-ldso] ) system-lapack? ( virtual/lapack[eselect-ldso] ) system-fftw? ( sci-libs/fftw[fortran] ) mpi? ( virtual/mpi[fortran,threads] system-fftw? ( sci-libs/fftw[mpi] ) sci-libs/wannier90[mpi] ) scalapack? ( sci-libs/scalapack ) hdf5? ( sci-libs/hdf5[fortran] ) openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) ) libxc? ( >=sci-libs/libxc-5.1.2[fortran] ) elpa? ( sci-libs/elpa openmp? ( sci-libs/elpa[openmp] ) mpi? ( sci-libs/elpa[mpi] ) ) sci-libs/wannier90 sys-devel/gcc[fortran]
 DESCRIPTION=Suite for first-principles electronic-structure calculations and materials modeling
 EAPI=8
 HOMEPAGE=https://www.quantum-espresso.org/
@@ -8,9 +8,9 @@ INHERIT=cmake
 IUSE=+system-blas +system-fftw +system-lapack +libxc hdf5 openmp mpi elpa scalapack
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=system-blas? ( virtual/blas[eselect-ldso] ) system-lapack? ( virtual/lapack[eselect-ldso] ) system-fftw? ( sci-libs/fftw[fortran] ) mpi? ( virtual/mpi[fortran,threads] system-fftw? ( sci-libs/fftw[mpi] ) ) scalapack? ( sci-libs/scalapack ) hdf5? ( sci-libs/hdf5[fortran] ) openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) ) libxc? ( >=sci-libs/libxc-5.1.2[fortran] ) elpa? ( sci-libs/elpa openmp? ( sci-libs/elpa[openmp] ) mpi? ( sci-libs/elpa[mpi] ) )
+RDEPEND=system-blas? ( virtual/blas[eselect-ldso] ) system-lapack? ( virtual/lapack[eselect-ldso] ) system-fftw? ( sci-libs/fftw[fortran] ) mpi? ( virtual/mpi[fortran,threads] system-fftw? ( sci-libs/fftw[mpi] ) sci-libs/wannier90[mpi] ) scalapack? ( sci-libs/scalapack ) hdf5? ( sci-libs/hdf5[fortran] ) openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) ) libxc? ( >=sci-libs/libxc-5.1.2[fortran] ) elpa? ( sci-libs/elpa openmp? ( sci-libs/elpa[openmp] ) mpi? ( sci-libs/elpa[mpi] ) ) sci-libs/wannier90
 RESTRICT=network-sandbox
 SLOT=0
 SRC_URI=https://gitlab.com/QEF/q-e/-/archive/qe-7.4/q-e-qe-7.4.tar.gz -> quantum-espresso-7.4.tar.gz
 _eclasses_=toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	f14aba975c94ccaa9f357a27e3b17ffe	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056
-_md5_=9adde68175209365466201f151250e73
+_md5_=b97fa7f9ba8e7fb008f122e1bc6d7f44
