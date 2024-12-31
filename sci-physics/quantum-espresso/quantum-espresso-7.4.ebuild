@@ -20,16 +20,22 @@ IUSE="+system-blas +system-fftw +system-lapack +libxc hdf5 openmp mpi elpa scala
 
 RESTRICT="network-sandbox"
 
+PATCHES=(
+	${FILESDIR}/01-libxc-version.patch
+)
+
+
 RDEPEND="
 	system-blas? ( virtual/blas[eselect-ldso] )
 	system-lapack? ( virtual/lapack[eselect-ldso] )
 	system-fftw? ( sci-libs/fftw[fortran] )
-	mpi? ( virtual/mpi[fortran,threads] system-fftw? ( sci-libs/fftw[mpi] ) )
+	mpi? ( virtual/mpi[fortran,threads] system-fftw? ( sci-libs/fftw[mpi] ) sci-libs/wannier90[mpi] )
 	scalapack? ( sci-libs/scalapack )
 	hdf5? ( sci-libs/hdf5[fortran] )
 	openmp? ( sys-devel/gcc[openmp] system-fftw? ( sci-libs/fftw[openmp] ) )
 	libxc? ( >=sci-libs/libxc-5.1.2[fortran] )
 	elpa? ( sci-libs/elpa openmp? ( sci-libs/elpa[openmp] ) mpi? ( sci-libs/elpa[mpi] ) )
+	sci-libs/wannier90
 "
 
 DEPEND="${RDEPEND} \
@@ -45,6 +51,8 @@ src_configure() {
                 -DQE_ENABLE_HDF5="$(usex hdf5)"
                 -DQE_ENABLE_ELPA="$(usex elpa)"
                 -DQE_ENABLE_SCALAPACK="$(usex scalapack)"
+		-DQE_WANNIER90_INTERNAL="off"
+		-DQE_WANNIER90_ROOT=/usr
         )
 	# cmake -LA | awk '{if(f)print} /-- Cache values/{f=1}'
         cmake_src_configure
