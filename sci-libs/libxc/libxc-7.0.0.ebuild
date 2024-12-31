@@ -6,7 +6,7 @@ EAPI=8
 inherit cmake
 
 DESCRIPTION="A library of exchange-correlation functionals for use in DFT"
-HOMEPAGE="https://octopus-code.org/wiki/Libxc"
+HOMEPAGE="https://libxc.gitlab.io/"
 SRC_URI="https://gitlab.com/libxc/libxc/-/archive/${PV}/${P}.tar.gz"
 
 LICENSE="MPL-2.0"
