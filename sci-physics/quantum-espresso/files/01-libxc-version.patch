@@ -1,0 +1,15 @@
++++ a/CMakeLists.txt	2024-12-31 15:08:26.666095587 +0300
+--- b/CMakeLists.txt	2024-12-31 15:09:35.732977337 +0300
+@@ -573,10 +573,10 @@
+ if(QE_ENABLE_LIBXC)
+     target_compile_definitions(qe_external_libxc INTERFACE "__LIBXC")
+
+-    find_package(Libxc 5.1.2 COMPONENTS Fortran)
++    find_package(Libxc COMPONENTS Fortran)
+     if (NOT Libxc_FOUND)
+         message(STATUS "Libxc searching failed in CMake Module mode, trying Config mode")
+-        find_package(Libxc 5.1.2 COMPONENTS Fortran CONFIG)
++        find_package(Libxc COMPONENTS Fortran CONFIG)
+     endif()
+
+     if(${Libxc_FOUND})
