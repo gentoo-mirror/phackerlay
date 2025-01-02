@@ -47,7 +47,7 @@ dev-python/fenics-ufl 2024.2.0: UFL - FEniCS project's Unified Form Language
 dev-python/gevent 22.10.2 24.11.1: Coroutine-based network library
 dev-python/hatch-nodejs-version 0.3.2: Hatch plugin to read pyproject.toml metadata from package.json
 dev-python/ipydatawidgets 4.3.5: A set of widgets to help facilitate reuse of large datasets across widgets
-dev-python/ipympl 0.9.5: Matplotlib Jupyter Extension
+dev-python/ipympl 0.9.6: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
 dev-python/jupyter-c-kernel 1.2.2: Minimal Jupyter C kernel
 dev-python/jupyterhub 5.2.1: A multi-user server for Jupyter notebooks
