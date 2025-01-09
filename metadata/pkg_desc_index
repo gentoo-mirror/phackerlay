@@ -104,7 +104,7 @@ sci-mathematics/dolfinx 0.9.0: Next generation FEniCS problem solving environmen
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/abinit 10.0.5 10.2.5: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
 sci-physics/ase 3.22.1-r2 3.23.0 3.24.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
-sci-physics/gpaw 24.1.0 24.6.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
+sci-physics/gpaw 24.1.0 24.6.0 25.1.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/oncvpsp 4.0.1: 
 sci-physics/quantum-espresso 7.4: Suite for first-principles electronic-structure calculations and materials modeling
 sys-block/libfabric 1.22.0: The Open Fabrics Interfaces (OFI) framework
