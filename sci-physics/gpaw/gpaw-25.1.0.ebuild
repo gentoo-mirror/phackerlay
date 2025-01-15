@@ -32,7 +32,7 @@ RDEPEND="
 	fftw? ( sci-libs/fftw )
         mpi? ( virtual/mpi sci-libs/fftw[mpi] )
         scalapack? ( sci-libs/scalapack )
-        elpa? ( || ( =sci-libs/elpa-2021.11.001 =sci-libs/elpa-2019.11.001 ) )
+        elpa? ( =sci-libs/elpa-2024.05.001 )
 	"
 	# mind elpa version below
 
@@ -74,23 +74,11 @@ src_configure() {
 		echo "elpa = True" >> ${GPAW_CONFIG}
 		if has_version sci-libs/elpa[openmp]; then
 			echo "libraries += ['elpa_openmp']" >> ${GPAW_CONFIG}
-			if [ -d ${EPREFIX}/usr/include/elpa_openmp-2021.11.001 ]; then
-				echo "include_dirs += ['${EPREFIX}/usr/include/elpa_openmp-2021.11.001']" >> ${GPAW_CONFIG}
-			elif [ -d ${EPREFIX}/usr/include/elpa_openmp-2019.11.001 ]; then
-				echo "include_dirs += ['${EPREFIX}/usr/include/elpa_openmp-2019.11.001']" >> ${GPAW_CONFIG}
-			else
-				die elpa problem ${EPREFIX}usr/include/elpa_openmp-2019.11.001
-			fi
+			echo "include_dirs += ['${EPREFIX}/usr/include/elpa_openmp-2024.05.001']" >> ${GPAW_CONFIG}
 		else
 
 			echo "libraries += ['elpa']" >> ${GPAW_CONFIG}
-			if [ -d ${EPREFIX}/usr/include/elpa-2021.11.001 ]; then
-				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2021.11.001']" >> ${GPAW_CONFIG}
-			elif [ -d ${EPREFIX}/usr/include/elpa-2019.11.001 ]; then
-				echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2019.11.001']" >> ${GPAW_CONFIG}
-			else
-				die elpa problem
-			fi
+			echo "include_dirs += ['${EPREFIX}/usr/include/elpa-2024.05.001']" >> ${GPAW_CONFIG}
 		fi
 	fi
 	if use fftw; then
