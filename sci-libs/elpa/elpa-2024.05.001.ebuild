@@ -18,14 +18,14 @@ SLOT="0"
 RDEPEND="
 	sys-devel/gcc[fortran]
 	app-editors/vim-core
-	mpi? ( virtual/mpi[fortran,threads] sci-libs/scalapack )
+	mpi? ( virtual/mpi[fortran,threads,cxx] sci-libs/scalapack )
         openmp? ( sys-devel/gcc[openmp] )
 	"
 	# mpich[mpi-threads] when openmp
         # what for openmpi
 
 src_configure() {
-        use mpi && export FC=mpif90
+        use mpi && export FC=mpif90 CC=mpicc CXX=mpicxx
 	econf \
 		$(use_with mpi) \
 		$(use_enable openmp) \
