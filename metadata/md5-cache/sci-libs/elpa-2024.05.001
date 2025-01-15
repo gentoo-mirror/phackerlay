@@ -11,4 +11,4 @@ RDEPEND=sys-devel/gcc[fortran] app-editors/vim-core mpi? ( virtual/mpi[fortran,t
 SLOT=0
 SRC_URI=https://elpa.mpcdf.mpg.de/software/tarball-archive/Releases/2024.05.001/elpa-2024.05.001.tar.gz -> elpa-2024.05.001.tar.gz
 _eclasses_=gnuconfig	ddeb9f8caff1b5f71a09c75b7534df79	toolchain-funcs	14648d8795f7779e11e1bc7cf08b7536	multilib	b2a329026f2e404e9e371097dda47f96	libtool	6b28392a775f807c8be5fc7ec9a605b9	autotools	7d91cc798a8afd8f4e0c6e9587296ebe
-_md5_=a6dd390e787a3adec42ff6e9fe9394fb
+_md5_=c6726b2b94e57fd7dedbb2452bc19283
