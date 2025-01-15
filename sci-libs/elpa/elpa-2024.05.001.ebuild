@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -25,6 +25,7 @@ RDEPEND="
         # what for openmpi
 
 src_configure() {
+        use mpi && export FC=mpif90
 	econf \
 		$(use_with mpi) \
 		$(use_enable openmp) \
