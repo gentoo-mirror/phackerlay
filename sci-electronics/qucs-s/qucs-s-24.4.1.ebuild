@@ -20,9 +20,13 @@ RDEPEND="
 	sci-electronics/ngspice
 	dev-qt/qtbase:6[gui,widgets]
 	dev-qt/qtsvg:6
+	dev-qt/qtcharts:6
 "
-src_prepare() {
-	cmake_src_prepare
+src_configure() {
+        local mycmakeargs=(
+                -DWITH_QT6=ON
+        )
+	cmake_src_configure
 }
 
 
@@ -33,6 +37,7 @@ src_install() {
 	mv DiodesSchottky.lib DiodesSchottky_.lib
 	mv Tubes.lib Tubes_.lib
 	mv BF998.lib BF998_.lib
+	mv PhotovoltaicRelay.lib PhotovoltaicRelay_.lib
 }
 
 pkg_postinst() {
