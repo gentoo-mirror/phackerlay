@@ -3,9 +3,8 @@
 
 EAPI=8
 
-ACCESS_TOKEN="glpat-DwfHGpbqB-EVnzCinduG"
-EGIT_REPO_URI="https://user:${ACCESS_TOKEN}@gitlab.phys-el.ru/batteries-inc/hardware/simulation/tools/qucs-rus-complib.git"
-EGIT_BRANCH="ea_components"
+EGIT_REPO_URI="https://github.com/ra3xdh/qucs-rus-complib.git"
+EGIT_BRANCH="master"
 
 inherit git-r3
 
