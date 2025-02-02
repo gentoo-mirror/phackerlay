@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install prepare setup test
+DESCRIPTION=Files for using zulip with upstream postgresql
+EAPI=8
+HOMEPAGE=https://github.com/zulip/zulip
+INHERIT=postgres-multi
+IUSE=postgres_targets_postgres17 postgres_targets_postgres16
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+RDEPEND=postgres_targets_postgres17? ( dev-db/postgresql:17=[server] ) postgres_targets_postgres16? ( dev-db/postgresql:16=[server] ) app-dicts/myspell-en[l10n_en-US] dev-db/pgroonga
+REQUIRED_USE=|| ( postgres_targets_postgres17 postgres_targets_postgres16 )
+SLOT=0
+SRC_URI=https://github.com/zulip/zulip/releases/download/9.4/zulip-server-9.4.tar.gz -> zulip-tsearch_data-9.4.tar.gz
+_eclasses_=out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	postgres	2ad3e67607a9b24fe6973ddf464c5258	postgres-multi	ccad35d745ce66b41837db8a6ee94601
+_md5_=1d39b392572837f8d05bbbea43c9fe3a
