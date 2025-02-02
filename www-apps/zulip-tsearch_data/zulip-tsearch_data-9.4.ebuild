@@ -23,7 +23,7 @@ REQUIRED_USE="${POSTGRES_REQ_USE}"
 
 RDEPEND="
 	${POSTGRES_DEP}
-        app-dicts/myspell-en[L10N_en-US]
+        app-dicts/myspell-en[l10n_en-US]
 	dev-db/pgroonga
 "
 
