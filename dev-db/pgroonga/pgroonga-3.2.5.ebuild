@@ -17,14 +17,20 @@ SRC_URI="https://github.com/pgroonga/pgroonga/releases/download/${PV}/pgroonga-$
 
 LICENSE="POSTGRESQL"
 
-DEPEND="
-	${POSTGRES_DEP}
+BDEPEND="
 	app-text/groonga
 	dev-libs/msgpack
 "
 
+RDEPEND="
+	${POSTGRES_DEP}
+"
 
-DEPEND="${RDEPEND}"
+
+DEPEND="
+	${BDEPEND}
+	${RDEPEND}
+"
 
 SLOT="0"
 KEYWORDS="~amd64"
