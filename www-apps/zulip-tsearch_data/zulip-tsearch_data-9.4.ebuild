@@ -15,7 +15,7 @@ SRC_URI="https://github.com/zulip/zulip/releases/download/${PV}/zulip-server-${P
 S="${WORKDIR}/zulip-server-${PV}"
 KEYWORDS="~amd64"
 
-LICENSE="Apache 2.0"
+LICENSE="Apache-2.0"
 SLOT="0"
 IUSE=""
 
