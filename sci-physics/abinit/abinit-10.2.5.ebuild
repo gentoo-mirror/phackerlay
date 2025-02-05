@@ -22,7 +22,7 @@ DEPEND="
 	sci-libs/netcdf-fortran
         blas_openblas? ( sci-libs/openblas )
         fftw? ( sci-libs/fftw[fortran] )
-        mpi? ( virtual/mpi[romio] )
+        mpi? ( virtual/mpi[romio,fortran] )
         scalapack? ( sci-libs/scalapack )
         elpa? ( || ( =sci-libs/elpa-2019.11.001 ) )
 	wannier90? ( sci-libs/wannier90 )
