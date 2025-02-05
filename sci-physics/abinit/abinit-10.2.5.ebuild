@@ -17,7 +17,7 @@ KEYWORDS="~amd64"
 
 IUSE="+blas_openblas mpi openmp fftw scalapack elpa wannier90"
 
-DEPEND="
+BDEPEND="
 	sci-libs/netcdf-cxx
 	sci-libs/netcdf-fortran
         blas_openblas? ( sci-libs/openblas )
@@ -26,6 +26,10 @@ DEPEND="
         scalapack? ( sci-libs/scalapack )
         elpa? ( || ( =sci-libs/elpa-2019.11.001 ) )
 	wannier90? ( sci-libs/wannier90 )
+"
+
+DEPEND="
+	${BDEPEND}
 "
 
 REQUIRED_USE="
