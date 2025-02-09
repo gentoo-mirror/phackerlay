@@ -406,7 +406,7 @@ KEYWORDS="~amd64"
 LICENSE="GPL-3+"
 LICENSE+="
 	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD Boost-1.0 ISC
-	MIT MPL-2.0 Unicode-DFS-2016
+	MIT MPL-2.0 Unicode-3.0
 "
 SLOT="0"
 
