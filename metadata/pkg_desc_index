@@ -85,7 +85,7 @@ media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanne
 media-sound/shortwave 3.2.0 4.0.1 5.0.0: Listen to internet radio
 net-im/jitsi-meet 2025.1.1: Desktop application for Jitsi Meet built with Electron
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
-net-proxy/oauth2-proxy 7.6.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
+net-proxy/oauth2-proxy 7.8.1: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.7: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.3-r1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
