@@ -23,6 +23,7 @@ BDEPEND="
 
 DEPEND="
 	${BDEPEND}
+	virtual/cron
 "
 
 python_install_all() {
@@ -33,4 +34,6 @@ python_install_all() {
 	keepdir /var/{spool,log}/slurm-mail
 	fowners slurm:slurm /var/spool/slurm-mail
 	fowners slurm:slurm /var/log/slurm-mail
+	mkdir ${D}/etc/cron.d
+	echo "*    *    *    *    *    slurm    /usr/bin/slurm-send-mail" > ${D}/etc/cron.d/slurm-mail
 }
