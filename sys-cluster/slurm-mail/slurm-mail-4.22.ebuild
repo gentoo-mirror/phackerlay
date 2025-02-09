@@ -15,3 +15,9 @@ SRC_URI="https://github.com/neilmunday/slurm-mail/releases/download/v${PV}/${P}.
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
+
+python_install_all() {
+	# fix installing to in PEP517 /usr/lib/python3.12/site-packages/etc/slurm-mail
+        distutils-r1_python_install_all
+	mv ${D}/${PORTAGE_PYM_PATH}/etc ${D}/
+}
