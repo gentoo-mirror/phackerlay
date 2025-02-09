@@ -12,6 +12,6 @@ DESCRIPTION="A drop in replacement for Slurm's e-mails"
 HOMEPAGE="https://github.com/neilmunday/slurm-mail"
 SRC_URI="https://github.com/neilmunday/slurm-mail/releases/download/v${PV}/${P}.tar.gz"
 
-LICENSE="GPL3.0"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
