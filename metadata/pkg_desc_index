@@ -65,7 +65,7 @@ dev-python/npyosmium 3.7.0: Python bindings for libosmium
 dev-python/oauthenticator 17.3.0: OAuth + JupyterHub Authenticator = OAuthenticator
 dev-python/osmium 4.0.2: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
-dev-python/petsc4py 3.21.3 3.21.6 3.22.2: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
+dev-python/petsc4py 3.21.3 3.21.6 3.22.3: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pycryptodome 3.12.0: A self-contained cryptographic library for Python
@@ -82,7 +82,7 @@ dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanner devices
-media-sound/shortwave 3.2.0 4.0.1: Listen to internet radio
+media-sound/shortwave 3.2.0 4.0.1 5.0.0: Listen to internet radio
 net-im/jitsi-meet 2025.1.1: Desktop application for Jitsi Meet built with Electron
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.6.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
@@ -91,10 +91,10 @@ sci-electronics/koradctl 0.7: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.3-r1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
 sci-electronics/qucs-s 24.4.1: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
-sci-geosciences/mkgmap-bin 4922: Tool to create garmin maps
+sci-geosciences/mkgmap-bin 4923: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.9.0: Next generation FEniCS problem solving environment
-sci-libs/elpa 2019.11.001 2021.11.001 2024.05.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
+sci-libs/elpa 2019.11.001 2021.11.001 2024.05.001 2025.01.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 24.1.0-r1: Setup collection for sci-physics/gpaw
 sci-libs/lapack-headers 0.1: Lapack headers substitute
 sci-libs/libxc 5.2.3 6.2.2 7.0.0: A library of exchange-correlation functionals for use in DFT
