@@ -1,0 +1,21 @@
+diff --git a/src/meson.build b/src/meson.build
+index caf11a4..3cd20c1 100644
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -25,7 +25,6 @@ run_command(
+
+ # Setup cargo
+ cargo = find_program('cargo')
+-cargo_env = [ 'CARGO_HOME=' + meson.project_build_root() / 'cargo-home' ]
+ cargo_options = [ '--manifest-path', meson.project_source_root() / 'Cargo.toml' ]
+ cargo_options += [ '--target-dir', meson.project_build_root() / 'target' ]
+
+@@ -47,8 +46,6 @@ cargo_release = custom_target(
+   install: true,
+   install_dir: bindir,
+   command: [
+-    'env',
+-    cargo_env,
+     cargo, 'build',
+     cargo_options,
+     '&&',

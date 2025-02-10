@@ -399,14 +399,20 @@ inherit autotools cargo meson gnome2
 
 DESCRIPTION="Listen to internet radio"
 HOMEPAGE="https://gitlab.gnome.org/World/Shortwave"
-SRC_URI="https://gitlab.gnome.org/World/Shortwave/-/archive/${PV}/${P}.tar.gz -> ${P}.tar.gz"
+SRC_URI="
+	https://gitlab.gnome.org/World/Shortwave/-/archive/${PV}/${P}.tar.gz -> ${P}.tar.gz
+	${CARGO_CRATE_URIS}
+"
 KEYWORDS="~amd64"
 
+PATCHES=(
+	${FILESDIR}/meson_cargo.patch
+)
 
 LICENSE="GPL-3+"
 LICENSE+="
 	Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 BSD Boost-1.0 ISC
-	MIT MPL-2.0 Unicode-3.0
+	MIT MPL-2.0 Unicode-DFS-2016
 "
 SLOT="0"
 
@@ -418,7 +424,7 @@ RDEPEND="
 	>=dev-libs/glib-2.66
 	>=gui-libs/gtk-4.16
 	>=x11-libs/gdk-pixbuf-2
-	>=gui-libs/libadwaita-1.6.0
+	>=gui-libs/libadwaita-1.5.0
 	>=media-libs/libshumate-1.3.0
 	>=media-libs/lcms-2.12
 	>=sys-libs/libseccomp-2.5
@@ -431,6 +437,10 @@ RDEPEND="
 
 DEPEND="${RDEPEND}"
 BDEPEND=""
+
+pkg_setup() {
+	rust_pkg_setup
+}
 
 src_unpack() {
 	cargo_src_unpack
@@ -447,6 +457,7 @@ src_configure() {
 }
 
 src_compile() {
+	cargo_src_compile
 	meson_src_compile ${MAKEOPTS}
 }
 
