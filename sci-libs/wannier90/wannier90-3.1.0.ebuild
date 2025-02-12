@@ -47,23 +47,8 @@ src_compile() {
 src_install() {
 	emake PREFIX="${EPREFIX}/usr" DESTDIR="${D}" install pkgconfig
 	insinto /usr/include
-	for FILE in comms \
-		constants \
-		disentangle \
-		hamiltonian \
-		io \
-		kmesh \
-		overlap \
-		parameters \
-		plot \
-		sitesym \
-		transport \
-		utility \
-		w90chk2chk \
-		w90spn2spn \
-		wannierise \
-		ws_distance; do
-		doins src/obj/w90_${FILE}.mod
+	for FILE in src/obj/*.mod; do
+		doins $FILE
 	done
 
 }
