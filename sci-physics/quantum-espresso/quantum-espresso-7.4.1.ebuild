@@ -44,6 +44,7 @@ DEPEND="${RDEPEND} \
 BDEPEND=""
 
 src_configure() {
+	append-fflags -fallow-argument-mismatch
         local mycmakeargs=(
                 -DQE_ENABLE_LIBXC="$(usex libxc)"
                 -DQE_ENABLE_MPI="$(usex mpi)"
