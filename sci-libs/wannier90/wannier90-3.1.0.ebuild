@@ -35,7 +35,7 @@ src_configure() {
 	if use mpi; then
 		echo "COMMS = mpi" >> ${S}/make.inc
 		echo "MPIF90 = mpif90" >> ${S}/make.inc
-		echo "FCOPTS = -fallow-argument-mismatch" >> ${S}/make.inc
+		echo "FCOPTS = -fallow-argument-mismatch -fPIC" >> ${S}/make.inc
 	fi
 	use blas_openblas && echo "LIBS = -lopenblas" >> ${S}/make.inc
 }
