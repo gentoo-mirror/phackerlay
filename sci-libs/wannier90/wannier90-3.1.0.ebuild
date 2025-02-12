@@ -63,7 +63,7 @@ src_install() {
 		w90spn2spn \
 		wannierise \
 		ws_distance; do
-		newins src/${FILE}.F90 w90_${FILE}.mod
+		doins src/obj/w90_${FILE}.mod
 	done
 
 }
