@@ -38,7 +38,6 @@ REQUIRED_USE="
 
 PATCHES=(
 	${FILESDIR}/v10-scalapack-miss.patch
-	${FILESDIR}/10.2.5-lost-sources.patch
 )
 
 pkg_pretend() {
