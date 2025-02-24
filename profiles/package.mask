@@ -1,0 +1,3 @@
+# currently stands unupdated
+# and will be removed somewhen after 01.03.2025
+app-editors/vscodium-reh
