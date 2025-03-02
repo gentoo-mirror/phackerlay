@@ -30,7 +30,7 @@ dev-cpp/xeus-zmq 1.3.0 3.1.0: ZeroMQ-based middleware for xeus
 dev-cpp/xproperty 0.12.0: Traitlets-like C++ properties and implementation of the observer pattern
 dev-cpp/xtl 0.7.7: The x template library
 dev-cpp/xwidgets 0.28.1: C++ backend for Jupyter interactive widgets
-dev-db/pgroonga 3.2.5 4.0.0: PGroonga is a PostgreSQL extension to use Groonga as index
+dev-db/pgroonga 3.2.5 4.0.1: PGroonga is a PostgreSQL extension to use Groonga as index
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
 dev-embedded/xilinx-ise-webpack 14.7: Xilinx ISE WebPack
 dev-lang/fort77 1.18: Utility is the interface to the FORTRAN compilation system
@@ -83,14 +83,14 @@ mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanner devices
 media-sound/shortwave 3.2.0 4.0.1-r1 5.0.0-r1: Listen to internet radio
-net-im/jitsi-meet 2025.1.1: Desktop application for Jitsi Meet built with Electron
+net-im/jitsi-meet 2025.2.0: Desktop application for Jitsi Meet built with Electron
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
 net-proxy/oauth2-proxy 7.8.1: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.7: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.3.3-r1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
-sci-electronics/qucs-s 24.4.1: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
+sci-electronics/qucs-s 25.1.0: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-geosciences/mkgmap-bin 4923: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.9.0: Next generation FEniCS problem solving environment
@@ -121,7 +121,7 @@ virtual/cblas 3.9: Virtual for BLAS C implementation
 virtual/lapack 3.11: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
 virtual/mta 1-r3: Virtual for Message Transfer Agents
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
-www-apps/hedgedoc 1.10.1: Hedgedoc real-time collaborative markdown editor
+www-apps/hedgedoc 1.10.2: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
 www-apps/privatebin 1.7.6: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-apps/zulip-tsearch_data 9.4: Files for using zulip with upstream postgresql
