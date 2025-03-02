@@ -1,3 +1,7 @@
 # currently stands unupdated
 # and will be removed somewhen after 01.03.2025
 app-editors/vscodium-reh
+
+# currently stands unupdated
+# and will be removed somewhen after 01.04.2025
+www-apps/excalidraw
