@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Matplotlib Jupyter Extension"
 HOMEPAGE="https://github.com/matplotlib/ipympl"
-SRC_URI="https://github.com/matplotlib/ipympl/archive/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/matplotlib/ipympl/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
