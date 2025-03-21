@@ -1,6 +1,5 @@
-# Copyright 1999-2023 Gentoo Foundation
+# Copyright 1999-2025 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=8
 
@@ -8,13 +7,15 @@ inherit cmake xdg
 
 DESCRIPTION="Quite Universal Circuit Simulator with ability to use different circuit simulation kernels"
 HOMEPAGE="https://ra3xdh.github.io/"
-#fn="${PN}-$PV"
 SRC_URI="https://github.com/ra3xdh/qucs_s/releases/download/${PV}/${P}.tar.gz"
-#S="$WORKDIR/$fn"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
+
+BDEPEND="
+	app-text/dos2unix
+"
 
 RDEPEND="
 	sci-electronics/ngspice
