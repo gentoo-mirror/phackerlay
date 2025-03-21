@@ -1,4 +1,4 @@
-BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+BDEPEND=app-text/dos2unix app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
 DESCRIPTION=Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 EAPI=8
@@ -11,4 +11,4 @@ RDEPEND=sci-electronics/ngspice dev-qt/qtbase:6[gui,widgets] dev-qt/qtsvg:6 dev-
 SLOT=0
 SRC_URI=https://github.com/ra3xdh/qucs_s/releases/download/25.1.0/qucs-s-25.1.0.tar.gz
 _eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	flag-o-matic	357f1a896fbedcd06e5ce55419c49eb9	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	10a50dfaf728b802fcfd37f8d0da9056	xdg	3ef49a87c52c8b77c476351195dfe575
-_md5_=0b2a9c0541bf73218f52fdaab3f407eb
+_md5_=2bf161bf6631361af177a74f78f27938
