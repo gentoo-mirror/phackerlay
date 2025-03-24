@@ -10,5 +10,5 @@ RDEPEND=dev-libs/openssl-compat media-libs/tiff-compat media-gfx/sane-backends d
 RESTRICT=bindist mirror splitdebug test
 SLOT=0
 SRC_URI=https://www.kyoceradocumentsolutions.us/content/download-center-americas/us/drivers/drivers/KyoceraSANE_v2_0_1923_zip.download.zip -> sane-kyocera-2.0.1923.zip
-_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	unpacker	fb4b84181244b3b9990fa0bf40232dd2	udev	f3d9a4376ebd22131726a68e1a0a058f
+_eclasses_=multiprocessing	1e32df7deee68372153dca65f4a7c21f	toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96	unpacker	3b4ee72d1e2e0374fd8cd3eddfa00627	udev	f3d9a4376ebd22131726a68e1a0a058f
 _md5_=d5576225dbc2c1a45219e8bf9eb3a63d
