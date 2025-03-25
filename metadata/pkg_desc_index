@@ -88,7 +88,7 @@ net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Se
 net-proxy/oauth2-proxy 7.8.1: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.7: Control utility for Korad / Tenma power supplies
-sci-electronics/openhantek6022 3.3.3-r1: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
+sci-electronics/openhantek6022 3.4.0: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
 sci-electronics/qucs-rus-complib 9999: Russian components library for Qucs
 sci-electronics/qucs-s 25.1.1: Quite Universal Circuit Simulator with ability to use different circuit simulation kernels
 sci-geosciences/mkgmap-bin 4923: Tool to create garmin maps
