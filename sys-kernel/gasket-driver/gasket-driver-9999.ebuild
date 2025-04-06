@@ -1,9 +1,10 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit linux-mod-r1 udev git-r3
+# linux-info - kernel_is
 
 DESCRIPTION="The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems"
 HOMEPAGE="https://github.com/google/gasket-driver"
@@ -17,6 +18,12 @@ IUSE=""
 BDEPEND="
 	virtual/linux-sources
 "
+
+src_prepare() {
+	kernel_is ge 6.12.0 && PATCHES+=( "${FILESDIR}"/00-6.12-fix.patch )
+	kernel_is ge 6.13.0 && PATCHES+=( "${FILESDIR}"/01-6.13-fix.patch )
+	default
+}
 
 src_compile() {
 	local modargs=( KVERSION="${KV_FULL}" )
