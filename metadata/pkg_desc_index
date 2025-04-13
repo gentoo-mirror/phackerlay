@@ -105,7 +105,7 @@ sci-libs/wannier90 3.1.0: Package for generating maximally-localized Wannier fun
 sci-mathematics/dolfinx 0.9.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
 sci-physics/abinit 10.0.5 10.2.7: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
-sci-physics/ase 3.22.1-r2 3.23.0 3.24.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
+sci-physics/ase 3.22.1-r2 3.23.0 3.24.0 3.25.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 24.1.0 24.6.0 25.1.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
 sci-physics/oncvpsp 4.0.1: 
 sci-physics/quantum-espresso 7.4.1: Suite for first-principles electronic-structure calculations and materials modeling
@@ -122,10 +122,10 @@ virtual/cblas 3.9: Virtual for BLAS C implementation
 virtual/lapack 3.11: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
 virtual/mta 1-r3: Virtual for Message Transfer Agents
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
-www-apps/hedgedoc 1.10.2: Hedgedoc real-time collaborative markdown editor
+www-apps/hedgedoc 1.10.3: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
 www-apps/privatebin 1.7.6: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-apps/zulip-tsearch_data 9.4: Files for using zulip with upstream postgresql
-www-servers/uwsgi 2.0.22-r1 2.0.28: uWSGI server for Python web applications
+www-servers/uwsgi 2.0.22-r1 2.0.29: uWSGI server for Python web applications
 x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
 x11-themes/chicago95 3.0.1: A rendition of everyone's favorite 1995 Microsoft operating system for Linux
