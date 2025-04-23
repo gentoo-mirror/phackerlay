@@ -31,6 +31,7 @@ dev-cpp/xproperty 0.12.0: Traitlets-like C++ properties and implementation of th
 dev-cpp/xtl 0.7.7 0.8.0: The x template library
 dev-cpp/xwidgets 0.28.1: C++ backend for Jupyter interactive widgets
 dev-db/pgroonga 3.2.5 4.0.1: PGroonga is a PostgreSQL extension to use Groonga as index
+dev-embedded/stm32-openocd 9999: OpenOCD - Open On-Chip Debugger (STMicroelectronics customized version)
 dev-embedded/stm32cubemx 6.2.1: A graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors
 dev-embedded/xilinx-ise-webpack 14.7: Xilinx ISE WebPack
 dev-lang/fort77 1.18: Utility is the interface to the FORTRAN compilation system
