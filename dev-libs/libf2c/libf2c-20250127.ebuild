@@ -6,8 +6,8 @@ EAPI=7
 inherit flag-o-matic toolchain-funcs multilib-minimal
 
 DESCRIPTION="Library that converts FORTRAN to C source"
-HOMEPAGE="http://www.netlib.org/f2c/"
-SRC_URI="http://www.netlib.org/f2c/${PN}.zip -> ${P}.zip"
+HOMEPAGE="https://www.netlib.org/f2c/"
+SRC_URI="https://web.archive.org/web/20250127132313/https://www.netlib.org/f2c/${PN}.zip -> ${P}.zip"
 
 LICENSE="HPND"
 SLOT="0"

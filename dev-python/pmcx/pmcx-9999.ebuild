@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11,12} )
+PYTHON_COMPAT=( python3_{12,13} )
 DISTUTILS_USE_PEP517=setuptools
 EGIT_REPO_URI="https://group_54_bot_0f234aadd242861369f21b3999477282:glpat-yNsGs-ZYAiFGHwcjdUpe@gitlab.phys-el.ru/sugarshine/pmcx.git"
 
