@@ -45,7 +45,7 @@ dev-python/cling-kernels 0.8 9999: Interactive C++ interpreter, built on the top
 dev-python/fenics-basix 0.9.0: FEniCS finite element basis evaluation library
 dev-python/fenics-ffcx 0.9.0: Next generation FEniCS Form Compiler for finite element forms
 dev-python/fenics-ufl 2024.2.0: UFL - FEniCS project's Unified Form Language
-dev-python/gevent 22.10.2 25.4.1: Coroutine-based network library
+dev-python/gevent 22.10.2 25.4.2: Coroutine-based network library
 dev-python/hatch-nodejs-version 0.3.2: Hatch plugin to read pyproject.toml metadata from package.json
 dev-python/ipydatawidgets 4.3.5: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.9.7: Matplotlib Jupyter Extension
@@ -65,7 +65,7 @@ dev-python/npyosmium 3.7.0: Python bindings for libosmium
 dev-python/oauthenticator 17.3.0: OAuth + JupyterHub Authenticator = OAuthenticator
 dev-python/osmium 4.0.2: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
-dev-python/petsc4py 3.21.3 3.21.6 3.22.5 3.23.0: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
+dev-python/petsc4py 3.21.3 3.21.6 3.22.5 3.23.1: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pyhgtmap 3.0 3.7: Little program which lets you easily generate OSM contour lines
@@ -83,7 +83,7 @@ media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanne
 media-sound/shortwave 3.2.0 4.0.1-r1 5.0.0-r1: Listen to internet radio
 net-im/jitsi-meet 2025.4.0: Desktop application for Jitsi Meet built with Electron
 net-print/cnijfilter 4.10: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series)
-net-proxy/oauth2-proxy 7.8.2: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
+net-proxy/oauth2-proxy 7.9.0: A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers
 sci-astronomy/fs 9.12.13 9.13.2 10.1.1: MarkIV Field System
 sci-electronics/koradctl 0.7: Control utility for Korad / Tenma power supplies
 sci-electronics/openhantek6022 3.4.0: DSO software for Hantek USB digital signal oscilloscopes 6022BE/BL
