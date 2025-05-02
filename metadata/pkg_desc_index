@@ -76,7 +76,6 @@ dev-python/scooby 0.10.0: Easily report Python package versions and hardware res
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
-dev-python/txredisapi 1.4.9: non-blocking redis client for python twisted
 dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to r4d4 api
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
@@ -110,7 +109,7 @@ sci-physics/quantum-espresso 7.4.1: Suite for first-principles electronic-struct
 sys-block/libfabric 1.22.0: The Open Fabrics Interfaces (OFI) framework
 sys-cluster/mpich 4.1.2: A high performance and portable MPI implementation
 sys-cluster/rdma-core 41.6: Userspace components for the Linux Kernel's drivers/infiniband subsystem
-sys-cluster/slurm-mail 4.22: A drop in replacement for Slurm's e-mails
+sys-cluster/slurm-mail 4.23: A drop in replacement for Slurm's e-mails
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
