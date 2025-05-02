@@ -3,8 +3,8 @@
 
 EAPI=8
 
+DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{12,13} )
-#DISTUTILS_USE_PEP517=hatchling
 
 inherit distutils-r1 pypi
 
