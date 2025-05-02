@@ -30,11 +30,11 @@ src_install() {
 	dobin ${S}/oauth2-proxy
 }
 
-#PV=7.8.2
+#PV=7.9.1
 #wget https://github.com/oauth2-proxy/oauth2-proxy/archive/refs/tags/v$PV.tar.gz
 #tar -xf v$PV.tar.gz
 #rm v$PV.tar.gz
 #cd oauth2-proxy-$PV/
 #GOMODCACHE="${PWD}"/go-mod go mod download -modcacherw
 #XZ_OPT='-T0 -9' tar -acf oauth2-proxy-$PV-deps.tar.xz go-mod
-#mv oauth2-proxy-$PV-deps.tar.xz ../../distfiles/
+#mv oauth2-proxy-$PV-deps.tar.xz ../../../distfiles/
