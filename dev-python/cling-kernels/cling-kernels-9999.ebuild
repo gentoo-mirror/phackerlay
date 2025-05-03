@@ -1,4 +1,4 @@
-# Copyright 2022-2023 Gentoo Authors
+# Copyright 2022-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -10,13 +10,10 @@ inherit distutils-r1 git-r3
 
 DESCRIPTION="Interactive C++ interpreter, built on the top of LLVM and Clang libraries"
 HOMEPAGE="https://root.cern/cling/"
-EGIT_REPO_URI="http://root.cern/git/cling.git"
-if [[ ${PV} -ne 9999 ]]; then
-	EGIT_COMMIT="cling-v${PV}"
+EGIT_REPO_URI="https://github.com/root-project/cling.git"
+if [[ ! "${PV}"="9999" ]]; then
+	EGIT_REF="v${PV}"
 fi
-
-
-EGIT_OVERRIDE_REPO_CLING="http://root.cern/git/cling.git"
 
 LICENSE="Apache-2.0" # more
 SLOT="0"
