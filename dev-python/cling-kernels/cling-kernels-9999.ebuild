@@ -12,7 +12,7 @@ DESCRIPTION="Interactive C++ interpreter, built on the top of LLVM and Clang lib
 HOMEPAGE="https://root.cern/cling/"
 EGIT_REPO_URI="https://github.com/root-project/cling.git"
 if [[ ! "${PV}"="9999" ]]; then
-	EGIT_REF="cling-v${PV}"
+	EGIT_REF="v${PV}"
 fi
 
 LICENSE="Apache-2.0" # more
