@@ -22,7 +22,7 @@ fi
 
 LICENSE="Apache-2.0" # more
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE="-llvm-tools -llvm-rtti"
 RESTRICT="mirror"
 
