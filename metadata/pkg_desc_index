@@ -69,7 +69,7 @@ dev-python/petsc4py 3.22.2 3.22.5 3.23.1: A suite of data structures and routine
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pyhgtmap 3.0 3.7: Little program which lets you easily generate OSM contour lines
-dev-python/pyvista 0.45.0: Easier Pythonic interface to VTK
+dev-python/pyvista 0.45.1: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/scooby 0.10.0: Easily report Python package versions and hardware resources
