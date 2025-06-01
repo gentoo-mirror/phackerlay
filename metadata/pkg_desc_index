@@ -60,16 +60,16 @@ dev-python/jupyterlab-myst 2.4.2: Use MyST Markdown directly in Jupyter Lab
 dev-python/jupyterlab-slurm 3.0.2: A Jupyter Notebook server extension that implements common Slurm commands
 dev-python/khirolib 9999: Python library for Kawasaki Robotics
 dev-python/matrix-synapse-ldap3 0.2.2: An LDAP3 auth provider for Synapse
-dev-python/nginxfmt 1.2.3: nginx config file formatter/beautifier written in Python with no additional dependencies
+dev-python/nginxfmt 1.3.0: nginx config file formatter/beautifier written in Python with no additional dependencies
 dev-python/npyosmium 3.7.0: Python bindings for libosmium
 dev-python/oauthenticator 17.3.0: OAuth + JupyterHub Authenticator = OAuthenticator
 dev-python/osmium 4.0.2: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
-dev-python/petsc4py 3.22.2 3.22.5 3.23.1: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
+dev-python/petsc4py 3.22.2 3.22.5 3.23.2: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pyhgtmap 3.0 3.7: Little program which lets you easily generate OSM contour lines
-dev-python/pyvista 0.45.1: Easier Pythonic interface to VTK
+dev-python/pyvista 0.45.2: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/scooby 0.10.0: Easily report Python package versions and hardware resources
@@ -109,7 +109,7 @@ sci-physics/quantum-espresso 7.4.1: Suite for first-principles electronic-struct
 sys-block/libfabric 1.22.0: The Open Fabrics Interfaces (OFI) framework
 sys-cluster/mpich 4.1.2: A high performance and portable MPI implementation
 sys-cluster/rdma-core 41.6: Userspace components for the Linux Kernel's drivers/infiniband subsystem
-sys-cluster/slurm-mail 4.23: A drop in replacement for Slurm's e-mails
+sys-cluster/slurm-mail 4.26: A drop in replacement for Slurm's e-mails
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
