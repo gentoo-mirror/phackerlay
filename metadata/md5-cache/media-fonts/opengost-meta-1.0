@@ -1,0 +1,9 @@
+DEFINED_PHASES=-
+DESCRIPTION=Open-source version of the fonts by Russian standard GOST 2.304-81
+EAPI=8
+HOMEPAGE=https://fontstorage.com/font/nikita-volchenkov
+KEYWORDS=amd64 arm64 x86
+LICENSE=metapackage
+RDEPEND=media-fonts/opengost-a media-fonts/opengost-b
+SLOT=0
+_md5_=16610e01cd6769b8b78f8aa342b3bc85

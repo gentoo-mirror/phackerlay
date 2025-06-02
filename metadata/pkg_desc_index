@@ -78,6 +78,9 @@ dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
 dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to r4d4 api
+media-fonts/opengost-a 1.0: Open-source version of the fonts by Russian standard GOST 2.304-81
+media-fonts/opengost-b 1.0: Open-source version of the fonts by Russian standard GOST 2.304-81
+media-fonts/opengost-meta 1.0: Open-source version of the fonts by Russian standard GOST 2.304-81
 media-gfx/cura-tronxytron 0.1.0: cura profiles for tronxytron printer
 media-gfx/sane-kyocera 2.0.1923: Linux scanner driver for Kyocera MFP and Scanner devices
 media-sound/shortwave 3.2.0 4.0.1-r1 5.0.0-r1: Listen to internet radio
