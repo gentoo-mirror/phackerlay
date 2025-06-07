@@ -38,6 +38,7 @@ REQUIRED_USE="
 
 PATCHES=(
 	${FILESDIR}/v10-scalapack-miss.patch
+	${FILESDIR}/checkincludefile_miss.patch
 )
 
 pkg_pretend() {
