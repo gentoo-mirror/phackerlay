@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt	2025-06-07 15:51:31.329377186 +0300
++++ b/CMakeLists.txt	2025-06-07 15:59:51.874535098 +0300
+@@ -1,6 +1,8 @@
+ # using 3.18 to have nice lapack imported target
+ cmake_minimum_required(VERSION 3.18)
+
++include(CheckIncludeFile)
++
+ #
+ # User resources to help writing CMake for fortran projects:
+ # - book: CMake CookBook + https://github.com/dev-cafe/cmake-cookbook
