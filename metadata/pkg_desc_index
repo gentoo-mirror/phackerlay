@@ -65,7 +65,7 @@ dev-python/npyosmium 3.7.0: Python bindings for libosmium
 dev-python/oauthenticator 17.3.0: OAuth + JupyterHub Authenticator = OAuthenticator
 dev-python/osmium 4.0.2: Python bindings for libosmium
 dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
-dev-python/petsc4py 3.22.2 3.22.5 3.23.2: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
+dev-python/petsc4py 3.22.2 3.22.5 3.23.3: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
 dev-python/pyhgtmap 3.0 3.7: Little program which lets you easily generate OSM contour lines
@@ -95,7 +95,7 @@ sci-electronics/qucs-s 25.1.1: Quite Universal Circuit Simulator with ability to
 sci-geosciences/mkgmap-bin 4923: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.9.0: Next generation FEniCS problem solving environment
-sci-libs/elpa 2019.11.001 2021.11.001 2024.05.001 2025.01.001: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
+sci-libs/elpa 2019.11.001 2021.11.001 2024.05.001 2025.01.002: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
 sci-libs/gpaw-setups 24.1.0-r1: Setup collection for sci-physics/gpaw
 sci-libs/lapack-headers 0.1: Lapack headers substitute
 sci-libs/libxc 5.2.3 6.2.2 7.0.0: A library of exchange-correlation functionals for use in DFT
