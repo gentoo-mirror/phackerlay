@@ -11,5 +11,5 @@ LICENSE=GPL-3
 REQUIRED_USE=|| ( abi_x86_32 )
 SLOT=9.12
 SRC_URI=https://github.com/nvi-inc/fs/archive/refs/tags/9.12.13.tar.gz -> fs-9.12.13.tar.gz
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multilib	b2a329026f2e404e9e371097dda47f96	multilib-build	9ac26ea006828266d235e2f0135429b5	multilib-minimal	e9f54d75b074edc47d36994bbc1e2123
+_eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multilib	b2a329026f2e404e9e371097dda47f96	multilib-build	9ac26ea006828266d235e2f0135429b5	multilib-minimal	e9f54d75b074edc47d36994bbc1e2123
 _md5_=dda7207f3f9ea0cbd088c681e3c48312
