@@ -1,11 +1,11 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit flag-o-matic
 
-DESCRIPTION=""
+DESCRIPTION="The official repository of the oncvpsp code to generate optimized norm-conserving Vanderbilt pseudopotentials"
 HOMEPAGE="
 	https://github.com/oncvpsp/oncvpsp
 "
@@ -33,9 +33,10 @@ REQUIRED_USE="
 "
 
 src_configure() {
-	default
-
+	append-fflags -fdec-blank-format-item
 	filter-lto
+
+	default
 
 	MAKE_INC="${S}/make.inc"
 	echo "F77        = gfortran" > $MAKE_INC
