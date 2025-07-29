@@ -96,6 +96,7 @@ sci-geosciences/mkgmap-bin 4923: Tool to create garmin maps
 sci-geosciences/splitter-bin 653: Tile splitter for mkgmap
 sci-libs/dolfinx 0.9.0: Next generation FEniCS problem solving environment
 sci-libs/elpa 2019.11.001 2021.11.001 2024.05.001 2025.01.002: The publicly available ELPA library provides highly efficient and highly scalable direct eigensolvers for symmetric matrices
+sci-libs/gpaw-data 1.0.1: Data package for PAW files and other data files for the GPAW DFT code
 sci-libs/gpaw-setups 24.1.0-r1: Setup collection for sci-physics/gpaw
 sci-libs/lapack-headers 0.1: Lapack headers substitute
 sci-libs/libxc 5.2.3 6.2.2 7.0.0: A library of exchange-correlation functionals for use in DFT
