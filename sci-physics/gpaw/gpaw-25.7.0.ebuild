@@ -25,10 +25,10 @@ RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	>=dev-python/scipy-1.6.0[${PYTHON_USEDEP}]
-	>=sci-physics/ase-3.25.1[${PYTHON_USEDEP}]
+	>=sci-physics/ase-3.25.0[${PYTHON_USEDEP}]
 	>=sci-libs/libxc-3
 	blas_openblas? ( sci-libs/openblas )
-	setups? ( sci-libs/gpaw-setups )
+	setups? ( sci-libs/gpaw-data )
 	fftw? ( sci-libs/fftw )
         mpi? ( virtual/mpi sci-libs/fftw[mpi] )
         scalapack? ( sci-libs/scalapack )
