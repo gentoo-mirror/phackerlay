@@ -5,3 +5,6 @@ app-editors/vscodium-reh
 # currently stands unupdated
 # and will be removed somewhen after 01.04.2025
 www-apps/excalidraw
+
+# deprecated in favour of sci-libs/gpaw-data, please switch
+sci-libs/gpaw-setups
