@@ -36,7 +36,7 @@ dev-lang/fort77 1.18: Utility is the interface to the FORTRAN compilation system
 dev-libs/jansson 2.14-r1: C library for encoding, decoding and manipulating JSON data
 dev-libs/libf2c 20250127: Library that converts FORTRAN to C source
 dev-libs/nng 1.3.2 1.5.2: High-performance messaging interface for distributed applications
-dev-libs/protozero 1.8.0: Minimalistic protocol buffer decoder and encoder in C++
+dev-libs/protozero 1.8.1: Minimalistic protocol buffer decoder and encoder in C++
 dev-python/async_generator 1.10: Making it easy to write async iterators in Python 3.5
 dev-python/batchspawner 1.3.0: Custom Spawner for Jupyterhub to start servers in batch scheduled systems
 dev-python/bjdata 0.4.1: Binary JSON (BJData/UBJSON) Support for Python
@@ -46,7 +46,7 @@ dev-python/fenics-basix 0.9.0: FEniCS finite element basis evaluation library
 dev-python/fenics-ffcx 0.9.0: Next generation FEniCS Form Compiler for finite element forms
 dev-python/fenics-ufl 2024.2.0: UFL - FEniCS project's Unified Form Language
 dev-python/gevent 22.10.2 25.4.2: Coroutine-based network library
-dev-python/hatch-nodejs-version 0.3.2: Hatch plugin to read pyproject.toml metadata from package.json
+dev-python/hatch-nodejs-version 0.4.0: Hatch plugin to read pyproject.toml metadata from package.json
 dev-python/ipydatawidgets 4.3.5: A set of widgets to help facilitate reuse of large datasets across widgets
 dev-python/ipympl 0.9.7: Matplotlib Jupyter Extension
 dev-python/jdata 0.5.0: JData encoder and decoder for Python
@@ -68,8 +68,8 @@ dev-python/pamela 1.0.0: Yet another Python wrapper for PAM
 dev-python/petsc4py 3.22.2 3.22.5 3.23.3: A suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations
 dev-python/pmcx 9999: Python interface to MCX (this is original Fang's module, just with inverted inclusion policy)
 dev-python/pybind11-rdp 0.1.4: C++ implementation of the Ramer-Douglas-Peucker algorithm
-dev-python/pyhgtmap 3.0 3.7: Little program which lets you easily generate OSM contour lines
-dev-python/pyvista 0.45.2: Easier Pythonic interface to VTK
+dev-python/pyhgtmap 3.0 3.8: Little program which lets you easily generate OSM contour lines
+dev-python/pyvista 0.45.3: Easier Pythonic interface to VTK
 dev-python/remote-ikernel 0.4.6: Launch Jupyter kernels on remote systems and through batch queues so that they can be used within a local Jupyter noteboook
 dev-python/roboart 9999: Library for Kawaski Robots painting
 dev-python/scooby 0.10.0: Easily report Python package versions and hardware resources
@@ -113,7 +113,7 @@ sci-physics/quantum-espresso 7.4.1: Suite for first-principles electronic-struct
 sys-block/libfabric 1.22.0: The Open Fabrics Interfaces (OFI) framework
 sys-cluster/mpich 4.1.2: A high performance and portable MPI implementation
 sys-cluster/rdma-core 41.6: Userspace components for the Linux Kernel's drivers/infiniband subsystem
-sys-cluster/slurm-mail 4.26: A drop in replacement for Slurm's e-mails
+sys-cluster/slurm-mail 4.27: A drop in replacement for Slurm's e-mails
 sys-firmware/hantek 0.0.1: Wine driver and software installer for hantek 6082 scope
 sys-kernel/gasket-driver 9999: The Coral Gasket Driver allows usage of the Coral EdgeTPU on Linux systems
 sys-kernel/gentoo-sources-autobuild 0.0.7: autobuilding kernel with olddefconfig
@@ -125,7 +125,7 @@ virtual/mta 1-r3: Virtual for Message Transfer Agents
 www-apps/excalidraw 0.13.0: Virtual whiteboard for sketching hand-drawn like diagrams
 www-apps/hedgedoc 1.10.3: Hedgedoc real-time collaborative markdown editor
 www-apps/mastodon-openrc 0.0.4: a set of an OpenRC scripts to run mastodon services
-www-apps/privatebin 1.7.6: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
+www-apps/privatebin 1.7.7: A minimalist, open source online pastebin where the server has zero knowledge of pasted data
 www-apps/zulip-tsearch_data 9.4: Files for using zulip with upstream postgresql
 www-servers/uwsgi 2.0.22-r1 2.0.29: uWSGI server for Python web applications
 x11-misc/gxkb 0.9.3: X11 keyboard indicator and switcher
