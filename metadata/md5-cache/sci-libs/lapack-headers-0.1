@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DEPEND=blas_openblas? ( sci-libs/openblas )
+DEPEND=blas_openblas? ( sci-libs/openblas ) !!sci-libs/lapack-headers
 DESCRIPTION=Lapack headers substitute
 EAPI=8
 IUSE=+blas_openblas
@@ -7,4 +7,4 @@ KEYWORDS=~amd64
 LICENSE=Artistic
 REQUIRED_USE=^^ ( blas_openblas )
 SLOT=0
-_md5_=f1dad736f61149af64ee6ebf51e552ab
+_md5_=b81b7ab5605caeae20933b74100c51dc
