@@ -54,6 +54,7 @@ src_configure() {
                 -DQE_ENABLE_SCALAPACK="$(usex scalapack)"
 		-DQE_WANNIER90_INTERNAL="off"
 		-DQE_WANNIER90_ROOT=/usr
+		-DCMAKE_INSTALL_PREFIX=${T}/
         )
 	# cmake -LA | awk '{if(f)print} /-- Cache values/{f=1}'
         cmake_src_configure
