@@ -1,0 +1,11 @@
+--- a/c/xc/xc_gpaw.h	2025-09-14 16:07:01.131464084 +0300
++++ b/c/xc/xc_gpaw.h	2025-09-14 16:07:09.028472498 +0300
+@@ -32,8 +32,6 @@
+ #define THIRD  0.33333333333333333
+ #define NMIN   1.0E-10
+
+-typedef int bool;
+-
+ typedef struct
+ {
+   bool gga;

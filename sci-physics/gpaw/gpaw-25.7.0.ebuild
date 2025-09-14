@@ -21,6 +21,10 @@ IUSE="+setups +fftw +blas_openblas +openmp mpi scalapack vdwxc elpa"
 
 RESTRICT="libvdwxc elpa"
 
+PATCHES=(
+	${FILESDIR}/01-no_bool.patch
+)
+
 RDEPEND="
 	dev-python/numpy[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
