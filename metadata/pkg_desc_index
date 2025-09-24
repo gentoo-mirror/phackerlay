@@ -76,6 +76,7 @@ dev-python/scooby 0.10.0: Easily report Python package versions and hardware res
 dev-python/selenium-wire 5.1.0: Extends Selenium to give you the ability to inspect requests made by the browser.
 dev-python/sudospawner 0.5.2: The SudoSpawner enables JupyterHub to spawn single-user servers without being root
 dev-python/traittypes 0.2.1: Custom trait types for scientific computing
+dev-python/trampoline 0.1.2: Simple and tiny yield-based trampoline implementation for python
 dev-util/fatrace 0.17.0: report system wide file access events
 mail-mta/sendr4d4 0.0.7: drop in sendmail replacement to redirect system mail to r4d4 api
 media-fonts/opengost-a 1.0: Open-source version of the fonts by Russian standard GOST 2.304-81
@@ -105,6 +106,10 @@ sci-libs/pslibrary 9999: A collection of input files for the ld1.x atomic code w
 sci-libs/wannier90 3.1.0: Package for generating maximally-localized Wannier functions
 sci-mathematics/dolfinx 0.9.0: Next generation FEniCS problem solving environment
 sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/binary-JSON encoder/decoder for MATLAB/Octave
+sci-ml/comfyui-embedded-docs 0.2.6: ComfyUI help pages
+sci-ml/comfyui-frontend-package 1.28.1: Official front-end implementation of ComfyUI
+sci-ml/comfyui-workflow-templates 0.1.86: ComfyUI template workflows
+sci-ml/torchsde 0.2.6: Differentiable SDE solvers with GPU support and efficient sensitivity analysis
 sci-physics/abinit 10.0.5 10.2.7 10.4.7: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
 sci-physics/ase 3.26.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 24.1.0 24.6.0 25.1.0 25.7.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
