@@ -8,8 +8,8 @@ PYTHON_COMPAT=( python3_{12,13} )
 
 inherit distutils-r1 pypi
 
-DESCRIPTION="Pypi package structure for the comfyui frontend"
-HOMEPAGE="https://pypi.org/project/comfyui-frontend-package"
+DESCRIPTION="Official front-end implementation of ComfyUI"
+HOMEPAGE="https://github.com/Comfy-Org/ComfyUI_frontend"
 
 LICENSE="GPL-3"
 SLOT="0"
