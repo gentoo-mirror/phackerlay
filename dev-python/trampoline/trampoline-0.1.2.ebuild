@@ -17,3 +17,9 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
+src_unpack() {
+	default
+	S="$(ls -d ${WORKDIR}/${PN}*)"
+}
+
+distutils_enable_tests pytest
