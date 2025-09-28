@@ -60,6 +60,8 @@ DEPEND=""
 SRC_URI="https://github.com/comfyanonymous/ComfyUI/archive/refs/tags/v${PV}.tar.gz -> ${MY_P}.tar.gz"
 #KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 
+S="${WORKDIR}/ComfyUI-${PV}"
+
 src_install() {
 	default
 #    if use systemd; then
