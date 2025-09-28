@@ -1,0 +1,14 @@
+[Unit]
+Description=ComfyUI
+After=network-online.target
+
+[Service]
+EnvironmentFile=/etc/conf.d/comfyui
+ExecStart=/usr/bin/sh -c "/usr/bin/comfyui ${COMFYUI_ARGS}"
+User=genai
+Group=genai
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
