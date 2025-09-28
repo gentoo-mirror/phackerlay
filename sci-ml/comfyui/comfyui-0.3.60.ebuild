@@ -26,7 +26,7 @@ BDEPEND="
 		=sci-ml/comfyui-workflow-templates-0.1.86[${PYTHON_USEDEP}]
 		=sci-ml/comfyui-embedded-docs-0.2.6[${PYTHON_USEDEP}]
 		sci-ml/torchsde[${PYTHON_USEDEP}]
-		sci-ml/torchaudio[${PYTHON_USEDEP}]
+		sci-libs/torchaudio[${PYTHON_USEDEP}]
 		sci-ml/torchvision[${PYTHON_USEDEP}]
 		>=dev-python/numpy-1.25.0[${PYTHON_USEDEP}]
 		dev-python/einops[${PYTHON_USEDEP}]
