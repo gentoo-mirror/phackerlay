@@ -21,13 +21,13 @@ REQUIRED_USE=""
 # https://github.com/comfyanonymous/ComfyUI/blob/master/requirements.txt
 BDEPEND="
 	sci-ml/pytorch[${PYTHON_SINGLE_USEDEP}]
+	sci-libs/torchaudio[${PYTHON_SINGLE_USEDEP}]
+	sci-ml/torchvision[${PYTHON_SINGLE_USEDEP}]
+	sci-ml/torchsde[${PYTHON_SINGLE_USEDEP}]
 	$(python_gen_cond_dep '
 		=sci-ml/comfyui-frontend-package-1.26.13[${PYTHON_USEDEP}]
 		=sci-ml/comfyui-workflow-templates-0.1.86[${PYTHON_USEDEP}]
 		=sci-ml/comfyui-embedded-docs-0.2.6[${PYTHON_USEDEP}]
-		sci-ml/torchsde[${PYTHON_USEDEP}]
-		sci-libs/torchaudio[${PYTHON_USEDEP}]
-		sci-ml/torchvision[${PYTHON_USEDEP}]
 		>=dev-python/numpy-1.25.0[${PYTHON_USEDEP}]
 		dev-python/einops[${PYTHON_USEDEP}]
 		>=sci-ml/transformers-4.37.2[${PYTHON_USEDEP}]
