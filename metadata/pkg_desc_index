@@ -109,7 +109,11 @@ sci-mathematics/octave-jsonlab 2.9.8: JSONLab: compact, portable, robust JSON/bi
 sci-ml/comfyui-embedded-docs 0.2.6: ComfyUI help pages
 sci-ml/comfyui-frontend-package 1.28.1: Official front-end implementation of ComfyUI
 sci-ml/comfyui-workflow-templates 0.1.86: ComfyUI template workflows
+sci-ml/ggml 0.9.3: Tensor library for machine learning
+sci-ml/llama-cpp 9999: Port of Facebook's LLaMA model in C/C++
+sci-ml/ollama 0.12.3: Get up and running with Llama 3, Mistral, Gemma, and other language models
 sci-ml/torchsde 0.2.6: Differentiable SDE solvers with GPU support and efficient sensitivity analysis
+sci-ml/whisper-cpp 1.7.6: Port of OpenAI's Whisper model in C/C++
 sci-physics/abinit 10.0.5 10.2.7 10.4.7: A software suite to calculate the optical, mechanical, vibrational, and other observable properties of materials
 sci-physics/ase 3.26.0: A set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations
 sci-physics/gpaw 24.1.0 24.6.0 25.1.0 25.7.0: GPAW is a density-functional theory (DFT) Python code based on the projector-augmented wave (PAW) method and the atomic simulation environment (ASE)
