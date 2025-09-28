@@ -16,6 +16,8 @@ HOMEPAGE="https://ollama.com"
 EGIT_COMMIT="v${PV}"
 EGIT_REPO_URI="https://github.com/ollama/ollama.git"
 
+KEYWORDS="~amd64"
+
 LICENSE="MIT"
 SLOT="0"
 
