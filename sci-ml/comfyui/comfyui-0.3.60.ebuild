@@ -3,6 +3,7 @@
 
 EAPI=8
 
+DISTUTILS_SINGLE_IMPL=1
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{12..13} )
 
@@ -19,29 +20,31 @@ REQUIRED_USE=""
 
 # https://github.com/comfyanonymous/ComfyUI/blob/master/requirements.txt
 BDEPEND="
-	=sci-ml/comfyui-frontend-package-1.26.13[${PYTHON_USEDEP}]
-	=sci-ml/comfyui-workflow-templates-0.1.86[${PYTHON_USEDEP}]
-	=sci-ml/comfyui-embedded-docs-0.2.6[${PYTHON_USEDEP}]
-	sci-ml/pytorch[${PYTHON_USEDEP}]
-	sci-ml/torchsde[${PYTHON_USEDEP}]
-	sci-ml/torchvision[${PYTHON_USEDEP}]
-	sci-ml/torchaudio[${PYTHON_USEDEP}]
-	>=dev-python/numpy-1.25.0[${PYTHON_USEDEP}]
-	dev-python/einops[${PYTHON_USEDEP}]
-	>=sci-ml/transformers-4.37.2[${PYTHON_USEDEP}]
-	>=sci-ml/tokenizers-0.13.3[${PYTHON_USEDEP}]
-	sci-ml/sentencepiece[${PYTHON_USEDEP}]
-	>=sci-ml/safetensors-0.4.2[${PYTHON_USEDEP}]
-	>=dev-python/aiohttp-3.11.8[${PYTHON_USEDEP}]
-	>=dev-python/yarl-1.18.0[${PYTHON_USEDEP}]
-	dev-python/pyyaml[${PYTHON_USEDEP}]
-	dev-python/pillow[${PYTHON_USEDEP}]
-	dev-python/scipy[${PYTHON_USEDEP}]
-	dev-python/tqdm[${PYTHON_USEDEP}]
-	dev-python/psutil[${PYTHON_USEDEP}]
-	dev-python/alembic[${PYTHON_USEDEP}]
-	dev-python/sqlalchemy[${PYTHON_USEDEP}]
-	>=dev-python/av-14.2.0[${PYTHON_USEDEP}]
+	sci-ml/pytorch[${PYTHON_SINGLE_USEDEP}]
+	$(python_gen_cond_dep '
+		=sci-ml/comfyui-frontend-package-1.26.13[${PYTHON_USEDEP}]
+		=sci-ml/comfyui-workflow-templates-0.1.86[${PYTHON_USEDEP}]
+		=sci-ml/comfyui-embedded-docs-0.2.6[${PYTHON_USEDEP}]
+		sci-ml/torchsde[${PYTHON_USEDEP}]
+		sci-ml/torchaudio[${PYTHON_USEDEP}]
+		sci-ml/torchvision[${PYTHON_USEDEP}]
+		>=dev-python/numpy-1.25.0[${PYTHON_USEDEP}]
+		dev-python/einops[${PYTHON_USEDEP}]
+		>=sci-ml/transformers-4.37.2[${PYTHON_USEDEP}]
+		>=sci-ml/tokenizers-0.13.3[${PYTHON_USEDEP}]
+		sci-ml/sentencepiece[${PYTHON_USEDEP}]
+		>=sci-ml/safetensors-0.4.2[${PYTHON_USEDEP}]
+		>=dev-python/aiohttp-3.11.8[${PYTHON_USEDEP}]
+		>=dev-python/yarl-1.18.0[${PYTHON_USEDEP}]
+		dev-python/pyyaml[${PYTHON_USEDEP}]
+		dev-python/pillow[${PYTHON_USEDEP}]
+		dev-python/scipy[${PYTHON_USEDEP}]
+		dev-python/tqdm[${PYTHON_USEDEP}]
+		dev-python/psutil[${PYTHON_USEDEP}]
+		dev-python/alembic[${PYTHON_USEDEP}]
+		dev-python/sqlalchemy[${PYTHON_USEDEP}]
+		>=dev-python/av-14.2.0[${PYTHON_USEDEP}]
+	')
 "
 
 RDEPEND="
