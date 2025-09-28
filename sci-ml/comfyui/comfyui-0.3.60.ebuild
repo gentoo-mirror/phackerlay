@@ -11,6 +11,7 @@ inherit systemd distutils-r1
 
 DESCRIPTION="The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface"
 HOMEPAGE="https://github.com/comfyanonymous/ComfyUI"
+SRC_URI="https://github.com/comfyanonymous/ComfyUI/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 
@@ -19,7 +20,7 @@ IUSE="systemd"
 REQUIRED_USE=""
 
 # https://github.com/comfyanonymous/ComfyUI/blob/master/requirements.txt
-BDEPEND="
+RDEPEND="
 	sci-ml/pytorch[${PYTHON_SINGLE_USEDEP}]
 	sci-libs/torchaudio[${PYTHON_SINGLE_USEDEP}]
 	sci-ml/torchvision[${PYTHON_SINGLE_USEDEP}]
@@ -46,34 +47,44 @@ BDEPEND="
 		>=dev-python/av-14.2.0[${PYTHON_USEDEP}]
 	')
 "
-
-RDEPEND="
+DEPEND="
     acct-user/genai
     acct-group/genai
 "
 
-DEPEND=""
+BDEPEND="${DEPEND}"
 
-#INSTALL_DIR="/opt/comfyui/"
-#CONFIG_DIR="/etc/comfyui"
+RESTRICT="test"
 
-SRC_URI="https://github.com/comfyanonymous/ComfyUI/archive/refs/tags/v${PV}.tar.gz -> ${MY_P}.tar.gz"
-#KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 
 S="${WORKDIR}/ComfyUI-${PV}"
 
+src_compile() {
+	:
+}
+
 src_install() {
-	default
-#    if use systemd; then
-#        systemd_newunit "${FILESDIR}"/comfyui.service comfyui.service
-#    fi
+	insinto ${EPREFIX}/opt/comfyui
+	doins -r ${S}/*
+
+	chmod +x ${D}/${EPREFIX}/opt/comfyui/main.py
+        sed -i "1s:^:#!/usr/bin/$(echo $PYTHON_SINGLE_TARGET | sed 's:_:.:') \n:" ${D}/${EPREFIX}/opt/comfyui/main.py
+
+	dosym ${EPREFIX}/opt/comfyui/main.py /usr/bin/comfyui
+
+    newconfd "${FILESDIR}/${PN}.confd" "${PN}"
+
+    if use systemd; then
+        systemd_newunit "${FILESDIR}"/${PN}.service ${PN}.service
+    fi
 }
 
 pkg_prerm() {
     if use systemd; then
         einfo "Stopping systemd services."
         systemctl daemon-reload
-        systemctl stop comfyui.service
+        (systemctl | grep comfyui) && systemctl stop comfyui.service
     fi
 }
 

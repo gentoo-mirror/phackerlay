@@ -15,3 +15,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
+src_prepare() {
+	sed -e "s:os.getenv(\"COMFYUI_FRONTEND_VERSION\") or \"0.1.0\":\"${PV}\":" -i ${S}/setup.py || die
+	default
+}

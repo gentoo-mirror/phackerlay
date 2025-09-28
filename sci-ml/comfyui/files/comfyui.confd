@@ -1,0 +1,2 @@
+# see `comfyui --help`
+COMFYUI_ARGS="--base-directory /opt/genai/.comfyui"
