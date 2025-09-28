@@ -1,0 +1,11 @@
+--- a/llm/server.go	2025-09-26 23:09:10.600762871 +0300
++++ b/llm/server.go	2025-09-28 13:38:57.711983564 +0300
+@@ -367,7 +367,7 @@
+ 		}
+ 		// Always filter down the set of GPUs in case there are any unsupported devices that might crash
+ 		envWorkarounds = append(envWorkarounds, gpus.GetVisibleDevicesEnv()...)
+-		pathEnvVal := strings.Join(libraryPaths, string(filepath.ListSeparator))
++		pathEnvVal := strings.Join(ggmlPaths, string(filepath.ListSeparator)) + string(filepath.ListSeparator) + strings.Join(libraryPaths, string(filepath.ListSeparator))
+
+ 		// Update or add the path variable with our adjusted version
+ 		pathNeeded := true
