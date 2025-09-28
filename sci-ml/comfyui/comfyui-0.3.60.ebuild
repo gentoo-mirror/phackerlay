@@ -22,7 +22,7 @@ BDEPEND="
 	=sci-ml/comfyui-frontend-package-1.26.13[${PYTHON_USEDEP}]
 	=sci-ml/comfyui-workflow-templates-0.1.86[${PYTHON_USEDEP}]
 	=sci-ml/comfyui-embedded-docs-0.2.6[${PYTHON_USEDEP}]
-	sci-ml/torch[${PYTHON_USEDEP}]
+	sci-ml/pytorch[${PYTHON_USEDEP}]
 	sci-ml/torchsde[${PYTHON_USEDEP}]
 	sci-ml/torchvision[${PYTHON_USEDEP}]
 	sci-ml/torchaudio[${PYTHON_USEDEP}]
