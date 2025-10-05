@@ -113,7 +113,7 @@ sci-ml/comfyui-embedded-docs 0.2.6: ComfyUI help pages
 sci-ml/comfyui-frontend-package 1.26.13: Official front-end implementation of ComfyUI
 sci-ml/comfyui-workflow-templates 0.1.91: ComfyUI template workflows
 sci-ml/ggml 0.9.4: Tensor library for machine learning
-sci-ml/llama-cpp 9999: Port of Facebook's LLaMA model in C/C++
+sci-ml/llama-cpp 0.6644: Port of Facebook's LLaMA model in C/C++
 sci-ml/ollama 0.12.3: Get up and running with Llama 3, Mistral, Gemma, and other language models
 sci-ml/torchsde 0.2.6: Differentiable SDE solvers with GPU support and efficient sensitivity analysis
 sci-ml/whisper-cpp 1.8.0: Port of OpenAI's Whisper model in C/C++
