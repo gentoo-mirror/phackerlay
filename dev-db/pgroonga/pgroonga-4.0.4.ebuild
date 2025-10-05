@@ -3,7 +3,7 @@
 
 EAPI=8
 
-POSTGRES_COMPAT=( {16..17} )
+POSTGRES_COMPAT=( {16..18} )
 POSTGRES_USEDEP="server"
 
 inherit postgres-multi autotools

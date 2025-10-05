@@ -29,7 +29,7 @@ RDEPEND="
 	>=sci-ml/tokenizers-0.13.3[${PYTHON_SINGLE_USEDEP}]
 	$(python_gen_cond_dep '
 		=sci-ml/comfyui-frontend-package-1.26.13[${PYTHON_USEDEP}]
-		=sci-ml/comfyui-workflow-templates-0.1.86[${PYTHON_USEDEP}]
+		=sci-ml/comfyui-workflow-templates-0.1.91[${PYTHON_USEDEP}]
 		=sci-ml/comfyui-embedded-docs-0.2.6[${PYTHON_USEDEP}]
 		>=dev-python/numpy-1.25.0[${PYTHON_USEDEP}]
 		dev-python/einops[${PYTHON_USEDEP}]
