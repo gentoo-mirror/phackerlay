@@ -15,7 +15,7 @@ SRC_URI="https://github.com/ggml-org/llama.cpp/archive/refs/tags/b${BUILD_NUMBER
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="curl server"
+IUSE="+curl +server"
 KEYWORDS="~amd64"
 
 # curl is needed for pulling models from huggingface
@@ -29,6 +29,8 @@ DEPEND="${CDEPEND}
 RDEPEND="${CDEPEND}
 	dev-python/numpy
 "
+
+S=${WORKDIR}/llama.cpp-b${BUILD_NUMBER}
 
 src_configure() {
 	local mycmakeargs=(
